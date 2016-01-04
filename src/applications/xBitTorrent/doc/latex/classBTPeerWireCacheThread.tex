@@ -1,0 +1,233 @@
+\hypertarget{classBTPeerWireCacheThread}{}\section{B\+T\+Peer\+Wire\+Cache\+Thread Class Reference}
+\label{classBTPeerWireCacheThread}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+
+
+{\ttfamily \#include $<$B\+T\+Peer\+Wire\+Cache\+Thread.\+h$>$}
+
+Inheritance diagram for B\+T\+Peer\+Wire\+Cache\+Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTPeerWireCacheThread}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTPeerWireCacheThread_a64d59956f320cd1f02a9cd25bb5a9b0e}{B\+T\+Peer\+Wire\+Cache\+Thread} ()
+\item 
+virtual \hyperlink{classBTPeerWireCacheThread_a53ff411ef0e4195e47a1243f8fbc5890}{$\sim$\+B\+T\+Peer\+Wire\+Cache\+Thread} ()
+\item 
+virtual void \hyperlink{classBTPeerWireCacheThread_ae2b849a82f1fbc804720d8dbd6a1da03}{init} (T\+C\+P\+Srv\+Host\+App $\ast$hostmodule, T\+C\+P\+Socket $\ast$socket)
+\item 
+void \hyperlink{classBTPeerWireCacheThread_a25c8569e9f081e494010b52ef49ffc28}{set\+Remote\+Peer\+I\+D} (string)
+\item 
+string \hyperlink{classBTPeerWireCacheThread_a73e132e3219c223e9a76807b8f690e1c}{get\+Remote\+Peer\+I\+D} ()
+\item 
+int \hyperlink{classBTPeerWireCacheThread_a1381df92c8aa197f77d2acdb427d9a5c}{get\+State} ()
+\item 
+void \hyperlink{classBTPeerWireCacheThread_a7011178cc92072e84e221fc9ce0a1b7e}{set\+State} (int)
+\item 
+bool \hyperlink{classBTPeerWireCacheThread_acaaeb8995d597ff9dacab531989ce7ab}{active\+Connection} ()
+\item 
+void \hyperlink{classBTPeerWireCacheThread_af3e0310651d1223378f3a80a13e981c9}{set\+Active\+Connection} (bool)
+\item 
+void \hyperlink{classBTPeerWireCacheThread_ab919706b39311ea8dff25267faa51e73}{send\+Message} (c\+Message $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBTPeerWireCacheThread_a99d533084cc41ba0eb431786e611ed67}{close\+Connection} ()
+\item 
+void \hyperlink{classBTPeerWireCacheThread_a1443d7cf4e65960990d5eafbbdaa38be}{cancel\+Block\+Request} ()
+\item 
+c\+Message $\ast$ \hyperlink{classBTPeerWireCacheThread_a2877951d5f8147d380840d0964703157}{create\+B\+T\+Peer\+Wire\+Message} (const char $\ast$, int, int, int, int)
+\item 
+virtual void \hyperlink{classBTPeerWireCacheThread_abd3b5c0f91f4812fbbba05020a219e5d}{established} ()
+\item 
+virtual void \hyperlink{classBTPeerWireCacheThread_a2e60ec0775d674781d177982c6cadad9}{data\+Arrived} (c\+Message $\ast$, bool)
+\item 
+virtual void \hyperlink{classBTPeerWireCacheThread_ab65e46311fbacfb79e046d132cc626d6}{timer\+Expired} (c\+Message $\ast$)
+\item 
+virtual void \hyperlink{classBTPeerWireCacheThread_a010c0f0560e66bcecfe1a2a144f04d2d}{peer\+Closed} ()
+\item 
+virtual void \hyperlink{classBTPeerWireCacheThread_aa155e51409bf401597d3359f5106edf8}{closed} ()
+\item 
+virtual void \hyperlink{classBTPeerWireCacheThread_a7c1707a8368a36f544279a7e76b4295d}{failure} (int)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTPeerWireBase}{B\+T\+Peer\+Wire\+Base} $\ast$ \hyperlink{classBTPeerWireCacheThread_a3b3958e3db0092891e2316c5867b93c4}{peer\+Wire\+Base}
+\item 
+string \hyperlink{classBTPeerWireCacheThread_a63ec54a272a54c81f7900e5a8cdf5f8a}{remote\+Cache\+I\+D\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireCacheThread_ab0fe60bb80ce09de5bc14153075af0b7}{state\+\_\+var}
+\item 
+bool \hyperlink{classBTPeerWireCacheThread_ab2d101d565b86e392386a1140feae26a}{active\+Connection\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTPeerWireCacheThread_a64d59956f320cd1f02a9cd25bb5a9b0e}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{B\+T\+Peer\+Wire\+Cache\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Peer\+Wire\+Cache\+Thread\+::\+B\+T\+Peer\+Wire\+Cache\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireCacheThread_a64d59956f320cd1f02a9cd25bb5a9b0e}
+\hypertarget{classBTPeerWireCacheThread_a53ff411ef0e4195e47a1243f8fbc5890}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!````~B\+T\+Peer\+Wire\+Cache\+Thread@{$\sim$\+B\+T\+Peer\+Wire\+Cache\+Thread}}
+\index{````~B\+T\+Peer\+Wire\+Cache\+Thread@{$\sim$\+B\+T\+Peer\+Wire\+Cache\+Thread}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{$\sim$\+B\+T\+Peer\+Wire\+Cache\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Peer\+Wire\+Cache\+Thread\+::$\sim$\+B\+T\+Peer\+Wire\+Cache\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPeerWireCacheThread_a53ff411ef0e4195e47a1243f8fbc5890}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTPeerWireCacheThread_acaaeb8995d597ff9dacab531989ce7ab}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!active\+Connection@{active\+Connection}}
+\index{active\+Connection@{active\+Connection}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{active\+Connection()}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Cache\+Thread\+::active\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireCacheThread_acaaeb8995d597ff9dacab531989ce7ab}
+\hypertarget{classBTPeerWireCacheThread_a1443d7cf4e65960990d5eafbbdaa38be}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!cancel\+Block\+Request@{cancel\+Block\+Request}}
+\index{cancel\+Block\+Request@{cancel\+Block\+Request}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{cancel\+Block\+Request()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::cancel\+Block\+Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireCacheThread_a1443d7cf4e65960990d5eafbbdaa38be}
+\hypertarget{classBTPeerWireCacheThread_a99d533084cc41ba0eb431786e611ed67}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!close\+Connection@{close\+Connection}}
+\index{close\+Connection@{close\+Connection}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{close\+Connection()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::close\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireCacheThread_a99d533084cc41ba0eb431786e611ed67}
+\hypertarget{classBTPeerWireCacheThread_aa155e51409bf401597d3359f5106edf8}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!closed@{closed}}
+\index{closed@{closed}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{closed()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::closed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireCacheThread_aa155e51409bf401597d3359f5106edf8}
+\hypertarget{classBTPeerWireCacheThread_a2877951d5f8147d380840d0964703157}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!create\+B\+T\+Peer\+Wire\+Message@{create\+B\+T\+Peer\+Wire\+Message}}
+\index{create\+B\+T\+Peer\+Wire\+Message@{create\+B\+T\+Peer\+Wire\+Message}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{create\+B\+T\+Peer\+Wire\+Message(const char $\ast$, int, int, int, int)}]{\setlength{\rightskip}{0pt plus 5cm}c\+Message $\ast$ B\+T\+Peer\+Wire\+Cache\+Thread\+::create\+B\+T\+Peer\+Wire\+Message (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{int}]{kind, }
+\item[{int}]{index, }
+\item[{int}]{begin, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireCacheThread_a2877951d5f8147d380840d0964703157}
+\hypertarget{classBTPeerWireCacheThread_a2e60ec0775d674781d177982c6cadad9}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!data\+Arrived@{data\+Arrived}}
+\index{data\+Arrived@{data\+Arrived}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{data\+Arrived(c\+Message $\ast$, bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::data\+Arrived (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{mmsg, }
+\item[{bool}]{bool1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireCacheThread_a2e60ec0775d674781d177982c6cadad9}
+\hypertarget{classBTPeerWireCacheThread_abd3b5c0f91f4812fbbba05020a219e5d}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!established@{established}}
+\index{established@{established}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{established()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::established (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireCacheThread_abd3b5c0f91f4812fbbba05020a219e5d}
+\hypertarget{classBTPeerWireCacheThread_a7c1707a8368a36f544279a7e76b4295d}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!failure@{failure}}
+\index{failure@{failure}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{failure(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::failure (
+\begin{DoxyParamCaption}
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireCacheThread_a7c1707a8368a36f544279a7e76b4295d}
+\hypertarget{classBTPeerWireCacheThread_a73e132e3219c223e9a76807b8f690e1c}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!get\+Remote\+Peer\+I\+D@{get\+Remote\+Peer\+I\+D}}
+\index{get\+Remote\+Peer\+I\+D@{get\+Remote\+Peer\+I\+D}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{get\+Remote\+Peer\+I\+D()}]{\setlength{\rightskip}{0pt plus 5cm}string B\+T\+Peer\+Wire\+Cache\+Thread\+::get\+Remote\+Peer\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireCacheThread_a73e132e3219c223e9a76807b8f690e1c}
+\hypertarget{classBTPeerWireCacheThread_a1381df92c8aa197f77d2acdb427d9a5c}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{get\+State()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Cache\+Thread\+::get\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireCacheThread_a1381df92c8aa197f77d2acdb427d9a5c}
+\hypertarget{classBTPeerWireCacheThread_ae2b849a82f1fbc804720d8dbd6a1da03}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!init@{init}}
+\index{init@{init}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{init(\+T\+C\+P\+Srv\+Host\+App $\ast$hostmodule, T\+C\+P\+Socket $\ast$socket)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::init (
+\begin{DoxyParamCaption}
+\item[{T\+C\+P\+Srv\+Host\+App $\ast$}]{hostmodule, }
+\item[{T\+C\+P\+Socket $\ast$}]{socket}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPeerWireCacheThread_ae2b849a82f1fbc804720d8dbd6a1da03}
+\hypertarget{classBTPeerWireCacheThread_a010c0f0560e66bcecfe1a2a144f04d2d}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!peer\+Closed@{peer\+Closed}}
+\index{peer\+Closed@{peer\+Closed}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{peer\+Closed()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::peer\+Closed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireCacheThread_a010c0f0560e66bcecfe1a2a144f04d2d}
+\hypertarget{classBTPeerWireCacheThread_ab919706b39311ea8dff25267faa51e73}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!send\+Message@{send\+Message}}
+\index{send\+Message@{send\+Message}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{send\+Message(c\+Message $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::send\+Message (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{mmsg}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireCacheThread_ab919706b39311ea8dff25267faa51e73}
+\hypertarget{classBTPeerWireCacheThread_af3e0310651d1223378f3a80a13e981c9}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!set\+Active\+Connection@{set\+Active\+Connection}}
+\index{set\+Active\+Connection@{set\+Active\+Connection}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{set\+Active\+Connection(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::set\+Active\+Connection (
+\begin{DoxyParamCaption}
+\item[{bool}]{con}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireCacheThread_af3e0310651d1223378f3a80a13e981c9}
+\hypertarget{classBTPeerWireCacheThread_a25c8569e9f081e494010b52ef49ffc28}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!set\+Remote\+Peer\+I\+D@{set\+Remote\+Peer\+I\+D}}
+\index{set\+Remote\+Peer\+I\+D@{set\+Remote\+Peer\+I\+D}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{set\+Remote\+Peer\+I\+D(string)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::set\+Remote\+Peer\+I\+D (
+\begin{DoxyParamCaption}
+\item[{string}]{cache\+I\+D}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireCacheThread_a25c8569e9f081e494010b52ef49ffc28}
+\hypertarget{classBTPeerWireCacheThread_a7011178cc92072e84e221fc9ce0a1b7e}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{set\+State(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::set\+State (
+\begin{DoxyParamCaption}
+\item[{int}]{state}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireCacheThread_a7011178cc92072e84e221fc9ce0a1b7e}
+\hypertarget{classBTPeerWireCacheThread_ab65e46311fbacfb79e046d132cc626d6}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!timer\+Expired@{timer\+Expired}}
+\index{timer\+Expired@{timer\+Expired}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{timer\+Expired(c\+Message $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Cache\+Thread\+::timer\+Expired (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{timer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireCacheThread_ab65e46311fbacfb79e046d132cc626d6}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTPeerWireCacheThread_ab2d101d565b86e392386a1140feae26a}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!active\+Connection\+\_\+var@{active\+Connection\+\_\+var}}
+\index{active\+Connection\+\_\+var@{active\+Connection\+\_\+var}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{active\+Connection\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Cache\+Thread\+::active\+Connection\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireCacheThread_ab2d101d565b86e392386a1140feae26a}
+\hypertarget{classBTPeerWireCacheThread_a3b3958e3db0092891e2316c5867b93c4}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!peer\+Wire\+Base@{peer\+Wire\+Base}}
+\index{peer\+Wire\+Base@{peer\+Wire\+Base}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{peer\+Wire\+Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Peer\+Wire\+Base}$\ast$ B\+T\+Peer\+Wire\+Cache\+Thread\+::peer\+Wire\+Base\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireCacheThread_a3b3958e3db0092891e2316c5867b93c4}
+\hypertarget{classBTPeerWireCacheThread_a63ec54a272a54c81f7900e5a8cdf5f8a}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!remote\+Cache\+I\+D\+\_\+var@{remote\+Cache\+I\+D\+\_\+var}}
+\index{remote\+Cache\+I\+D\+\_\+var@{remote\+Cache\+I\+D\+\_\+var}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{remote\+Cache\+I\+D\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}string B\+T\+Peer\+Wire\+Cache\+Thread\+::remote\+Cache\+I\+D\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireCacheThread_a63ec54a272a54c81f7900e5a8cdf5f8a}
+\hypertarget{classBTPeerWireCacheThread_ab0fe60bb80ce09de5bc14153075af0b7}{}\index{B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}!state\+\_\+var@{state\+\_\+var}}
+\index{state\+\_\+var@{state\+\_\+var}!B\+T\+Peer\+Wire\+Cache\+Thread@{B\+T\+Peer\+Wire\+Cache\+Thread}}
+\subsubsection[{state\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Cache\+Thread\+::state\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireCacheThread_ab0fe60bb80ce09de5bc14153075af0b7}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTPeerWireCacheThread_8h}{B\+T\+Peer\+Wire\+Cache\+Thread.\+h}\item 
+\hyperlink{BTPeerWireCacheThread_8cc}{B\+T\+Peer\+Wire\+Cache\+Thread.\+cc}\end{DoxyCompactItemize}

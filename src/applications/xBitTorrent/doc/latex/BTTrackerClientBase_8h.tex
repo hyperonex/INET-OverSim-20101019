@@ -1,0 +1,77 @@
+\hypertarget{BTTrackerClientBase_8h}{}\section{B\+T\+Tracker\+Client\+Base.\+h File Reference}
+\label{BTTrackerClientBase_8h}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$omnetpp.\+h$>$}\\*
+{\ttfamily \#include $<$I\+P\+Address\+Resolver.\+h$>$}\\*
+{\ttfamily \#include $<$Interface\+Table.\+h$>$}\\*
+{\ttfamily \#include $<$Interface\+Entry.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}../../networklayer/ipv4/\+I\+Pv4\+Interface\+Data.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../../networklayer/ipv6/\+I\+Pv6\+Interface\+Data.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../tcpapp/\+T\+C\+P\+Generic\+Cli\+App\+Base.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}B\+T\+Tracker\+Msg\+\_\+m.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classBTTrackerClientBase}{B\+T\+Tracker\+Client\+Base}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_a3ad0abc821b5db7c720434551f77d981}{E\+V\+T\+\_\+\+T\+O\+U\+T}~1
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_a88cbff7417240879b490e32330a2fb59}{E\+V\+T\+\_\+\+C\+O\+N\+N}~2
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_a15cb8fa68719900d9c7b2c3451c49c86}{E\+V\+T\+\_\+\+S\+T\+O\+P}~3
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_add03b9d625e7603bdf59b5802f993d10}{E\+V\+T\+\_\+\+C\+O\+M\+P}~4
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_aaacc3e9bb84b5bb5a84c346aac4ae15b}{S\+T\+\_\+\+S\+T\+A\+R\+T\+E\+D}~0
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_a20b6e5704af3f6ee75ad5ec2d67516d9}{S\+T\+\_\+\+N\+O\+R\+M\+A\+L}~1
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_ab26d8a66ac555ebcfe70a465de89fa1c}{S\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+D}~2
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_a119ad585c78fce150f0d5e15ad7dee46}{S\+T\+\_\+\+S\+T\+O\+P\+P\+E\+D}~3
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_a4e06d6239fca59cf9cd1df870d1a4b3d}{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+N\+O\+R\+M}~4
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_af6b48288c5e0ea47c6e491e172a242d7}{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+C\+O\+M\+P}~5
+\item 
+\#define \hyperlink{BTTrackerClientBase_8h_ab5fff4a056c4e9e06a7b913eff1003fa}{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+S\+T\+O\+P}~6
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{BTTrackerClientBase_8h_add03b9d625e7603bdf59b5802f993d10}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!E\+V\+T\+\_\+\+C\+O\+M\+P@{E\+V\+T\+\_\+\+C\+O\+M\+P}}
+\index{E\+V\+T\+\_\+\+C\+O\+M\+P@{E\+V\+T\+\_\+\+C\+O\+M\+P}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{E\+V\+T\+\_\+\+C\+O\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+V\+T\+\_\+\+C\+O\+M\+P~4}\label{BTTrackerClientBase_8h_add03b9d625e7603bdf59b5802f993d10}
+\hypertarget{BTTrackerClientBase_8h_a88cbff7417240879b490e32330a2fb59}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!E\+V\+T\+\_\+\+C\+O\+N\+N@{E\+V\+T\+\_\+\+C\+O\+N\+N}}
+\index{E\+V\+T\+\_\+\+C\+O\+N\+N@{E\+V\+T\+\_\+\+C\+O\+N\+N}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{E\+V\+T\+\_\+\+C\+O\+N\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+V\+T\+\_\+\+C\+O\+N\+N~2}\label{BTTrackerClientBase_8h_a88cbff7417240879b490e32330a2fb59}
+\hypertarget{BTTrackerClientBase_8h_a15cb8fa68719900d9c7b2c3451c49c86}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!E\+V\+T\+\_\+\+S\+T\+O\+P@{E\+V\+T\+\_\+\+S\+T\+O\+P}}
+\index{E\+V\+T\+\_\+\+S\+T\+O\+P@{E\+V\+T\+\_\+\+S\+T\+O\+P}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{E\+V\+T\+\_\+\+S\+T\+O\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+V\+T\+\_\+\+S\+T\+O\+P~3}\label{BTTrackerClientBase_8h_a15cb8fa68719900d9c7b2c3451c49c86}
+\hypertarget{BTTrackerClientBase_8h_a3ad0abc821b5db7c720434551f77d981}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!E\+V\+T\+\_\+\+T\+O\+U\+T@{E\+V\+T\+\_\+\+T\+O\+U\+T}}
+\index{E\+V\+T\+\_\+\+T\+O\+U\+T@{E\+V\+T\+\_\+\+T\+O\+U\+T}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{E\+V\+T\+\_\+\+T\+O\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+V\+T\+\_\+\+T\+O\+U\+T~1}\label{BTTrackerClientBase_8h_a3ad0abc821b5db7c720434551f77d981}
+\hypertarget{BTTrackerClientBase_8h_ab26d8a66ac555ebcfe70a465de89fa1c}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!S\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+D@{S\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+D}}
+\index{S\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+D@{S\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+D}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{S\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+D~2}\label{BTTrackerClientBase_8h_ab26d8a66ac555ebcfe70a465de89fa1c}
+\hypertarget{BTTrackerClientBase_8h_a20b6e5704af3f6ee75ad5ec2d67516d9}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!S\+T\+\_\+\+N\+O\+R\+M\+A\+L@{S\+T\+\_\+\+N\+O\+R\+M\+A\+L}}
+\index{S\+T\+\_\+\+N\+O\+R\+M\+A\+L@{S\+T\+\_\+\+N\+O\+R\+M\+A\+L}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{S\+T\+\_\+\+N\+O\+R\+M\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+\_\+\+N\+O\+R\+M\+A\+L~1}\label{BTTrackerClientBase_8h_a20b6e5704af3f6ee75ad5ec2d67516d9}
+\hypertarget{BTTrackerClientBase_8h_aaacc3e9bb84b5bb5a84c346aac4ae15b}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!S\+T\+\_\+\+S\+T\+A\+R\+T\+E\+D@{S\+T\+\_\+\+S\+T\+A\+R\+T\+E\+D}}
+\index{S\+T\+\_\+\+S\+T\+A\+R\+T\+E\+D@{S\+T\+\_\+\+S\+T\+A\+R\+T\+E\+D}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{S\+T\+\_\+\+S\+T\+A\+R\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+\_\+\+S\+T\+A\+R\+T\+E\+D~0}\label{BTTrackerClientBase_8h_aaacc3e9bb84b5bb5a84c346aac4ae15b}
+\hypertarget{BTTrackerClientBase_8h_a119ad585c78fce150f0d5e15ad7dee46}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!S\+T\+\_\+\+S\+T\+O\+P\+P\+E\+D@{S\+T\+\_\+\+S\+T\+O\+P\+P\+E\+D}}
+\index{S\+T\+\_\+\+S\+T\+O\+P\+P\+E\+D@{S\+T\+\_\+\+S\+T\+O\+P\+P\+E\+D}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{S\+T\+\_\+\+S\+T\+O\+P\+P\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+\_\+\+S\+T\+O\+P\+P\+E\+D~3}\label{BTTrackerClientBase_8h_a119ad585c78fce150f0d5e15ad7dee46}
+\hypertarget{BTTrackerClientBase_8h_af6b48288c5e0ea47c6e491e172a242d7}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+C\+O\+M\+P@{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+C\+O\+M\+P}}
+\index{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+C\+O\+M\+P@{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+C\+O\+M\+P}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+C\+O\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+C\+O\+M\+P~5}\label{BTTrackerClientBase_8h_af6b48288c5e0ea47c6e491e172a242d7}
+\hypertarget{BTTrackerClientBase_8h_a4e06d6239fca59cf9cd1df870d1a4b3d}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+N\+O\+R\+M@{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+N\+O\+R\+M}}
+\index{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+N\+O\+R\+M@{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+N\+O\+R\+M}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+N\+O\+R\+M}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+N\+O\+R\+M~4}\label{BTTrackerClientBase_8h_a4e06d6239fca59cf9cd1df870d1a4b3d}
+\hypertarget{BTTrackerClientBase_8h_ab5fff4a056c4e9e06a7b913eff1003fa}{}\index{B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}!S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+S\+T\+O\+P@{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+S\+T\+O\+P}}
+\index{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+S\+T\+O\+P@{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+S\+T\+O\+P}!B\+T\+Tracker\+Client\+Base.\+h@{B\+T\+Tracker\+Client\+Base.\+h}}
+\subsubsection[{S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+S\+T\+O\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+\_\+\+T\+R\+A\+N\+S\+\_\+\+S\+T\+O\+P~6}\label{BTTrackerClientBase_8h_ab5fff4a056c4e9e06a7b913eff1003fa}

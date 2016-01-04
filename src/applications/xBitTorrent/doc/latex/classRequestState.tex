@@ -1,0 +1,255 @@
+\hypertarget{classRequestState}{}\section{Request\+State Class Reference}
+\label{classRequestState}\index{Request\+State@{Request\+State}}
+
+
+{\ttfamily \#include $<$B\+T\+Utils.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRequestState_aeade20f4a2271803ef166ca390c26d9c}{add\+Request} (\hyperlink{classRequestEntry}{Request\+Entry})
+\item 
+void \hyperlink{classRequestState_a74ad68dcafce95055dd64d3dcb690145}{add\+Request} (int, int, int, simtime\+\_\+t, const char $\ast$, httpt\+Base\+Message $\ast$)
+\item 
+void \hyperlink{classRequestState_a7859b0cea8ea4cb5d4ff8aca0eb79338}{insert} (\hyperlink{classRequestEntry}{Request\+Entry})
+\item 
+int \hyperlink{classRequestState_a3a38071b4be609a898265995a5b225a3}{find\+Request} (\hyperlink{classRequestEntry}{Request\+Entry})
+\item 
+int \hyperlink{classRequestState_af39d7e6daff9ba4aa8ebccbbc3dd94fe}{find\+Request} (int, int)
+\item 
+void \hyperlink{classRequestState_a0d9bf9e32c6bcf3e36fb4ba7d6bd0e0f}{remove\+Request} (\hyperlink{classRequestEntry}{Request\+Entry}, bool silently=false)
+\item 
+void \hyperlink{classRequestState_aa3f970551263497b058eab8870072561}{remove\+Request} (int, int, bool)
+\item 
+void \hyperlink{classRequestState_aed304f6405d49874d3be344ba5e121c6}{remove\+Request} (int)
+\item 
+void \hyperlink{classRequestState_a02ebfdef5b0d26e9a7e99265c96543d6}{sort\+Peers} ()
+\item 
+\hyperlink{BTUtils_8h_a23f79ef107bda748bd273978e5eea31a}{Request\+Entry\+Vector} \hyperlink{classRequestState_a29a5fb653ad4105df840cd66a75df2b7}{get\+Vector} ()
+\item 
+void \hyperlink{classRequestState_a83acebde0d4c49ac0a603b3d85b58273}{print} ()
+\item 
+\hyperlink{classRequestEntry}{Request\+Entry} \hyperlink{classRequestState_a72bb345bed1782d924be5d306f176709}{get\+Request\+Entry} (unsigned int)
+\item 
+\hyperlink{classRequestEntry}{Request\+Entry} \hyperlink{classRequestState_a4f4049ae8d8ece59da9a23cbaf4d1647}{get\+First\+Come} ()
+\item 
+int \hyperlink{classRequestState_a0d1e170fc76766e00fedaeed143c4a9e}{get\+Num\+Requests} ()
+\item 
+int \hyperlink{classRequestState_a895ffd3e74a15ee43c528686e41ad90f}{max\+Block\+Requested} (int)
+\item 
+int \hyperlink{classRequestState_ad2e5ee757eb3bfe857659bf8358b9e1b}{min\+Block\+Requested} (int)
+\item 
+unsigned int \hyperlink{classRequestState_aec74e416ae1806a0e644c89630900584}{max\+Size} ()
+\item 
+void \hyperlink{classRequestState_a33ece5716af3a8151c66ed0e61afacb9}{set\+Max\+Size} (unsigned int)
+\item 
+bool \hyperlink{classRequestState_a22466a48dc196cc6c624aa68eae4c95e}{can\+Request\+More} ()
+\item 
+int \hyperlink{classRequestState_a380d94594bdf87f7e1ba94290a375fdc}{size} ()
+\item 
+bool \hyperlink{classRequestState_a8febe67f78e25aaf5255aa695e47c8d6}{check\+Size} ()
+\item 
+void \hyperlink{classRequestState_ab4b182ebffa1f492a81fce25d8ab4f22}{set\+Check\+Size} (bool)
+\item 
+void \hyperlink{classRequestState_af539f838900e758ddccc3373ace678b0}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTUtils_8h_a23f79ef107bda748bd273978e5eea31a}{Request\+Entry\+Vector} \hyperlink{classRequestState_ac61708dc216522bb0cac60a9d6742569}{request\+Vector}
+\item 
+unsigned int \hyperlink{classRequestState_a522c2201650b04cf0c6db6851bb5920b}{max\+Size\+\_\+var}
+\item 
+bool \hyperlink{classRequestState_ab245f922913e545c7509a9955a4e2575}{check\+Size\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRequestState_aeade20f4a2271803ef166ca390c26d9c}{}\index{Request\+State@{Request\+State}!add\+Request@{add\+Request}}
+\index{add\+Request@{add\+Request}!Request\+State@{Request\+State}}
+\subsubsection[{add\+Request(\+Request\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::add\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf Request\+Entry}}]{re}
+\end{DoxyParamCaption}
+)}\label{classRequestState_aeade20f4a2271803ef166ca390c26d9c}
+\hypertarget{classRequestState_a74ad68dcafce95055dd64d3dcb690145}{}\index{Request\+State@{Request\+State}!add\+Request@{add\+Request}}
+\index{add\+Request@{add\+Request}!Request\+State@{Request\+State}}
+\subsubsection[{add\+Request(int, int, int, simtime\+\_\+t, const char $\ast$, httpt\+Base\+Message $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::add\+Request (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{int}]{begin, }
+\item[{int}]{length, }
+\item[{simtime\+\_\+t}]{t, }
+\item[{const char $\ast$}]{id, }
+\item[{httpt\+Base\+Message $\ast$}]{http\+Reply}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a74ad68dcafce95055dd64d3dcb690145}
+\hypertarget{classRequestState_a22466a48dc196cc6c624aa68eae4c95e}{}\index{Request\+State@{Request\+State}!can\+Request\+More@{can\+Request\+More}}
+\index{can\+Request\+More@{can\+Request\+More}!Request\+State@{Request\+State}}
+\subsubsection[{can\+Request\+More()}]{\setlength{\rightskip}{0pt plus 5cm}bool Request\+State\+::can\+Request\+More (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a22466a48dc196cc6c624aa68eae4c95e}
+\hypertarget{classRequestState_a8febe67f78e25aaf5255aa695e47c8d6}{}\index{Request\+State@{Request\+State}!check\+Size@{check\+Size}}
+\index{check\+Size@{check\+Size}!Request\+State@{Request\+State}}
+\subsubsection[{check\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}bool Request\+State\+::check\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a8febe67f78e25aaf5255aa695e47c8d6}
+\hypertarget{classRequestState_af539f838900e758ddccc3373ace678b0}{}\index{Request\+State@{Request\+State}!clear@{clear}}
+\index{clear@{clear}!Request\+State@{Request\+State}}
+\subsubsection[{clear()}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestState_af539f838900e758ddccc3373ace678b0}
+\hypertarget{classRequestState_a3a38071b4be609a898265995a5b225a3}{}\index{Request\+State@{Request\+State}!find\+Request@{find\+Request}}
+\index{find\+Request@{find\+Request}!Request\+State@{Request\+State}}
+\subsubsection[{find\+Request(\+Request\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+State\+::find\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf Request\+Entry}}]{entry}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a3a38071b4be609a898265995a5b225a3}
+\hypertarget{classRequestState_af39d7e6daff9ba4aa8ebccbbc3dd94fe}{}\index{Request\+State@{Request\+State}!find\+Request@{find\+Request}}
+\index{find\+Request@{find\+Request}!Request\+State@{Request\+State}}
+\subsubsection[{find\+Request(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+State\+::find\+Request (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{int}]{begin}
+\end{DoxyParamCaption}
+)}\label{classRequestState_af39d7e6daff9ba4aa8ebccbbc3dd94fe}
+\hypertarget{classRequestState_a4f4049ae8d8ece59da9a23cbaf4d1647}{}\index{Request\+State@{Request\+State}!get\+First\+Come@{get\+First\+Come}}
+\index{get\+First\+Come@{get\+First\+Come}!Request\+State@{Request\+State}}
+\subsubsection[{get\+First\+Come()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request\+Entry} Request\+State\+::get\+First\+Come (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a4f4049ae8d8ece59da9a23cbaf4d1647}
+\hypertarget{classRequestState_a0d1e170fc76766e00fedaeed143c4a9e}{}\index{Request\+State@{Request\+State}!get\+Num\+Requests@{get\+Num\+Requests}}
+\index{get\+Num\+Requests@{get\+Num\+Requests}!Request\+State@{Request\+State}}
+\subsubsection[{get\+Num\+Requests()}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+State\+::get\+Num\+Requests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a0d1e170fc76766e00fedaeed143c4a9e}
+\hypertarget{classRequestState_a72bb345bed1782d924be5d306f176709}{}\index{Request\+State@{Request\+State}!get\+Request\+Entry@{get\+Request\+Entry}}
+\index{get\+Request\+Entry@{get\+Request\+Entry}!Request\+State@{Request\+State}}
+\subsubsection[{get\+Request\+Entry(unsigned int)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request\+Entry} Request\+State\+::get\+Request\+Entry (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a72bb345bed1782d924be5d306f176709}
+\hypertarget{classRequestState_a29a5fb653ad4105df840cd66a75df2b7}{}\index{Request\+State@{Request\+State}!get\+Vector@{get\+Vector}}
+\index{get\+Vector@{get\+Vector}!Request\+State@{Request\+State}}
+\subsubsection[{get\+Vector()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request\+Entry\+Vector} Request\+State\+::get\+Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a29a5fb653ad4105df840cd66a75df2b7}
+\hypertarget{classRequestState_a7859b0cea8ea4cb5d4ff8aca0eb79338}{}\index{Request\+State@{Request\+State}!insert@{insert}}
+\index{insert@{insert}!Request\+State@{Request\+State}}
+\subsubsection[{insert(\+Request\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Request\+Entry}}]{entry}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a7859b0cea8ea4cb5d4ff8aca0eb79338}
+\hypertarget{classRequestState_a895ffd3e74a15ee43c528686e41ad90f}{}\index{Request\+State@{Request\+State}!max\+Block\+Requested@{max\+Block\+Requested}}
+\index{max\+Block\+Requested@{max\+Block\+Requested}!Request\+State@{Request\+State}}
+\subsubsection[{max\+Block\+Requested(int)}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+State\+::max\+Block\+Requested (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\+Index}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a895ffd3e74a15ee43c528686e41ad90f}
+\hypertarget{classRequestState_aec74e416ae1806a0e644c89630900584}{}\index{Request\+State@{Request\+State}!max\+Size@{max\+Size}}
+\index{max\+Size@{max\+Size}!Request\+State@{Request\+State}}
+\subsubsection[{max\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Request\+State\+::max\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestState_aec74e416ae1806a0e644c89630900584}
+\hypertarget{classRequestState_ad2e5ee757eb3bfe857659bf8358b9e1b}{}\index{Request\+State@{Request\+State}!min\+Block\+Requested@{min\+Block\+Requested}}
+\index{min\+Block\+Requested@{min\+Block\+Requested}!Request\+State@{Request\+State}}
+\subsubsection[{min\+Block\+Requested(int)}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+State\+::min\+Block\+Requested (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\+Index}
+\end{DoxyParamCaption}
+)}\label{classRequestState_ad2e5ee757eb3bfe857659bf8358b9e1b}
+\hypertarget{classRequestState_a83acebde0d4c49ac0a603b3d85b58273}{}\index{Request\+State@{Request\+State}!print@{print}}
+\index{print@{print}!Request\+State@{Request\+State}}
+\subsubsection[{print()}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a83acebde0d4c49ac0a603b3d85b58273}
+\hypertarget{classRequestState_a0d9bf9e32c6bcf3e36fb4ba7d6bd0e0f}{}\index{Request\+State@{Request\+State}!remove\+Request@{remove\+Request}}
+\index{remove\+Request@{remove\+Request}!Request\+State@{Request\+State}}
+\subsubsection[{remove\+Request(\+Request\+Entry, bool silently=false)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::remove\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf Request\+Entry}}]{entry, }
+\item[{bool}]{silently = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a0d9bf9e32c6bcf3e36fb4ba7d6bd0e0f}
+\hypertarget{classRequestState_aa3f970551263497b058eab8870072561}{}\index{Request\+State@{Request\+State}!remove\+Request@{remove\+Request}}
+\index{remove\+Request@{remove\+Request}!Request\+State@{Request\+State}}
+\subsubsection[{remove\+Request(int, int, bool)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::remove\+Request (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{int}]{begin, }
+\item[{bool}]{silently}
+\end{DoxyParamCaption}
+)}\label{classRequestState_aa3f970551263497b058eab8870072561}
+\hypertarget{classRequestState_aed304f6405d49874d3be344ba5e121c6}{}\index{Request\+State@{Request\+State}!remove\+Request@{remove\+Request}}
+\index{remove\+Request@{remove\+Request}!Request\+State@{Request\+State}}
+\subsubsection[{remove\+Request(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::remove\+Request (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{classRequestState_aed304f6405d49874d3be344ba5e121c6}
+\hypertarget{classRequestState_ab4b182ebffa1f492a81fce25d8ab4f22}{}\index{Request\+State@{Request\+State}!set\+Check\+Size@{set\+Check\+Size}}
+\index{set\+Check\+Size@{set\+Check\+Size}!Request\+State@{Request\+State}}
+\subsubsection[{set\+Check\+Size(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::set\+Check\+Size (
+\begin{DoxyParamCaption}
+\item[{bool}]{check\+Size}
+\end{DoxyParamCaption}
+)}\label{classRequestState_ab4b182ebffa1f492a81fce25d8ab4f22}
+\hypertarget{classRequestState_a33ece5716af3a8151c66ed0e61afacb9}{}\index{Request\+State@{Request\+State}!set\+Max\+Size@{set\+Max\+Size}}
+\index{set\+Max\+Size@{set\+Max\+Size}!Request\+State@{Request\+State}}
+\subsubsection[{set\+Max\+Size(unsigned int)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::set\+Max\+Size (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a33ece5716af3a8151c66ed0e61afacb9}
+\hypertarget{classRequestState_a380d94594bdf87f7e1ba94290a375fdc}{}\index{Request\+State@{Request\+State}!size@{size}}
+\index{size@{size}!Request\+State@{Request\+State}}
+\subsubsection[{size()}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+State\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a380d94594bdf87f7e1ba94290a375fdc}
+\hypertarget{classRequestState_a02ebfdef5b0d26e9a7e99265c96543d6}{}\index{Request\+State@{Request\+State}!sort\+Peers@{sort\+Peers}}
+\index{sort\+Peers@{sort\+Peers}!Request\+State@{Request\+State}}
+\subsubsection[{sort\+Peers()}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+State\+::sort\+Peers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestState_a02ebfdef5b0d26e9a7e99265c96543d6}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRequestState_ab245f922913e545c7509a9955a4e2575}{}\index{Request\+State@{Request\+State}!check\+Size\+\_\+var@{check\+Size\+\_\+var}}
+\index{check\+Size\+\_\+var@{check\+Size\+\_\+var}!Request\+State@{Request\+State}}
+\subsubsection[{check\+Size\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool Request\+State\+::check\+Size\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classRequestState_ab245f922913e545c7509a9955a4e2575}
+\hypertarget{classRequestState_a522c2201650b04cf0c6db6851bb5920b}{}\index{Request\+State@{Request\+State}!max\+Size\+\_\+var@{max\+Size\+\_\+var}}
+\index{max\+Size\+\_\+var@{max\+Size\+\_\+var}!Request\+State@{Request\+State}}
+\subsubsection[{max\+Size\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Request\+State\+::max\+Size\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classRequestState_a522c2201650b04cf0c6db6851bb5920b}
+\hypertarget{classRequestState_ac61708dc216522bb0cac60a9d6742569}{}\index{Request\+State@{Request\+State}!request\+Vector@{request\+Vector}}
+\index{request\+Vector@{request\+Vector}!Request\+State@{Request\+State}}
+\subsubsection[{request\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request\+Entry\+Vector} Request\+State\+::request\+Vector\hspace{0.3cm}{\ttfamily [protected]}}\label{classRequestState_ac61708dc216522bb0cac60a9d6742569}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTUtils_8h}{B\+T\+Utils.\+h}\item 
+\hyperlink{BTUtils_8cc}{B\+T\+Utils.\+cc}\end{DoxyCompactItemize}

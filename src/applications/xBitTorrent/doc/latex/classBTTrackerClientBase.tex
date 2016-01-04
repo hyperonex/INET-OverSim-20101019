@@ -1,0 +1,496 @@
+\hypertarget{classBTTrackerClientBase}{}\section{B\+T\+Tracker\+Client\+Base Class Reference}
+\label{classBTTrackerClientBase}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+
+
+{\ttfamily \#include $<$B\+T\+Tracker\+Client\+Base.\+h$>$}
+
+Inheritance diagram for B\+T\+Tracker\+Client\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTTrackerClientBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTTrackerClientBase_af2daf873e282ca0f12a34ba657d801de}{B\+T\+Tracker\+Client\+Base} ()
+\item 
+virtual \hyperlink{classBTTrackerClientBase_a52ebc86c77b27289b4ac3d3131b6e9d3}{$\sim$\+B\+T\+Tracker\+Client\+Base} ()
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientBase_a65879dbc1ec398c124f27c5d4ca63552}{cstate} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_a4cd61fb7ac4fed418aceb9ec76489f70}{set\+Cstate} (size\+\_\+t)
+\item 
+const string \& \hyperlink{classBTTrackerClientBase_a25d94d6851c1a20566a73fc8bb79fae4}{tracker\+Id} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_a1e34cc7545623b3e60e81f82d8321f7f}{set\+Tracker\+Id} (const string \&)
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientBase_a3e1eee0a4b600eb25e4406af05c86822}{connect\+Give\+Up} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_aadbed5705c9858f1d90050dbfeca5559}{set\+Connect\+Give\+Up} (size\+\_\+t)
+\item 
+simtime\+\_\+t \hyperlink{classBTTrackerClientBase_a65eb496c2f438e0a9a67b5adb83c1ffc}{session\+Timeout} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_a85374136d41a2df83f5ffba345d8046b}{set\+Session\+Timeout} (simtime\+\_\+t)
+\item 
+double \hyperlink{classBTTrackerClientBase_af5b16a044b06fe75dd8bc8c399bc8b29}{reconnect\+Interval} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_a6c41e7aeaa0633a2742bb7ec558ac28f}{set\+Reconnect\+Interval} (double)
+\item 
+const string \& \hyperlink{classBTTrackerClientBase_ad56587246469f660fedef3c50c10554d}{info\+Hash} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_a6f764b043ac1aba4937c02818b2aa8e5}{set\+Info\+Hash} (const string \&)
+\item 
+const string \& \hyperlink{classBTTrackerClientBase_aaa2e7b0d4d3770dedd7baff0fbd2da45}{peer\+Id} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_a38b8f2500d5c39c8a1d079970985c877}{set\+Peer\+Id} (const string \&)
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientBase_ab0833d033c769937a3a51e39904f9fc0}{peer\+Port} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_aec9b615f0e50e53854df6b6eac0d83c2}{set\+Peer\+Port} (size\+\_\+t)
+\item 
+bool \hyperlink{classBTTrackerClientBase_a678dcdf76412fbed63bf9a8b0b9fc686}{compact} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_a251809d0b4ea9f07b2ca3c26fa4ea2b7}{set\+Compact} (bool)
+\item 
+bool \hyperlink{classBTTrackerClientBase_ae1a3c76c6a8605acb228748ca0a68ad6}{no\+Peer\+Id} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_a9b4700cf1790d17bc73d7a18078226cd}{set\+No\+Peer\+Id} (bool)
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientBase_a161caadc519753d4469377515c7a4fcf}{num\+Want} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_a21ee3296f8698ac6f49fec71e3caf57d}{set\+Num\+Want} (size\+\_\+t)
+\item 
+const string \& \hyperlink{classBTTrackerClientBase_a0137bb8858b6f40e1f82bb34a9009cff}{key} () const 
+\item 
+void \hyperlink{classBTTrackerClientBase_ad3c6c86644a0657a062ee7a6d312e4ad}{set\+Key} (const string \&)
+\item 
+virtual const char $\ast$ \hyperlink{classBTTrackerClientBase_ac2d122e57e8a049579b08214da47c0d5}{generate\+Peer\+I\+D} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_ab069678d1177731f94c52620f91e6f55}{announce} ()
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_a245a5285af4b921bc4750245b8c73e0d}{find\+And\+Set\+I\+P\+Address} ()
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_adc7c0ed12a24c892801841a96f663a2a}{find\+And\+Set\+Announce\+Size} (c\+Message $\ast$) const 
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_a3427a3d40ea862c9e362061e1e65c616}{initialize} ()
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_a04f42878a2710962bbb88f96706c6dca}{handle\+Message} (c\+Message $\ast$)
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_aa7f93bb3a652daa74b54b1eedaafc7ad}{handle\+Timer} (c\+Message $\ast$)
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_a44eed7960a877b2b162180bc5383ef6a}{connect} ()
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_a7ae7c9871d98d153e0c6755d18a2b9e5}{close} ()
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_a140fb33f9b56bddc2e60c4270fc6f685}{socket\+Established} (int, void $\ast$)
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_acccef00f80f12202e4b63b1098af1d75}{socket\+Data\+Arrived} (int, void $\ast$, c\+Packet $\ast$, bool)
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_ad9b4cdff6c47ef5e12018fb010b608e7}{socket\+Peer\+Closed} (int, void $\ast$)
+\item 
+virtual void \hyperlink{classBTTrackerClientBase_a2f099a4c762287c598b449e8183f4679}{socket\+Failure} (int, void $\ast$, int)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+c\+Message $\ast$ \hyperlink{classBTTrackerClientBase_a728682a65c38c4152152bc5a64a768cf}{evt\+Tout}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientBase_a0eead109fc2d0e3cd0462b1e19f87545}{state\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientBase_a1d356eceda84b31bef362f262c664a71}{transient\+\_\+var}
+\item 
+string \hyperlink{classBTTrackerClientBase_aee1b8d7f800c7642c1bdc435e968ec3b}{tracker\+Id\+\_\+var}
+\item 
+I\+Pv\+X\+Address \hyperlink{classBTTrackerClientBase_a17ed36fc72a43ca1e95020de9acc5e77}{ipaddress\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientBase_a7cad897127fe659fd57a3bf41a3645e0}{connect\+Give\+Up\+\_\+var}
+\item 
+simtime\+\_\+t \hyperlink{classBTTrackerClientBase_ab3b0b46284315a9b2e71daf379b7a3ff}{session\+Timeout\+\_\+var}
+\item 
+simtime\+\_\+t \hyperlink{classBTTrackerClientBase_a4fb36f2c092a853cc4611b1faa51b802}{reconnect\+Interval\+\_\+var}
+\item 
+string \hyperlink{classBTTrackerClientBase_ade240dc1b9440fa2d6a8ba23ed8db3ae}{info\+Hash\+\_\+var}
+\item 
+string \hyperlink{classBTTrackerClientBase_aa9be905707abb2eb69f831ffcd9a67e8}{peer\+Id\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientBase_a729473eedff089d0ae0be578cc1af653}{peer\+Port\+\_\+var}
+\item 
+bool \hyperlink{classBTTrackerClientBase_a8a7ea410b57b218ab38ee9394951557f}{compact\+\_\+var}
+\item 
+bool \hyperlink{classBTTrackerClientBase_ab23d101af767f0979c9de612fb2d511e}{no\+Peer\+Id\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientBase_a8e15dea1f9c602da6e78d85e271092e6}{num\+Want\+\_\+var}
+\item 
+string \hyperlink{classBTTrackerClientBase_a7ce835ff5b9d4e65905e6ef3635ad827}{key\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bit\+Torrent protocol. Implements a tracker client as described at \href{http://wiki.theory.org/BitTorrentSpecification}{\tt http\+://wiki.\+theory.\+org/\+Bit\+Torrent\+Specification} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTTrackerClientBase_af2daf873e282ca0f12a34ba657d801de}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{B\+T\+Tracker\+Client\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Client\+Base\+::\+B\+T\+Tracker\+Client\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_af2daf873e282ca0f12a34ba657d801de}
+Constructor. \hypertarget{classBTTrackerClientBase_a52ebc86c77b27289b4ac3d3131b6e9d3}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!````~B\+T\+Tracker\+Client\+Base@{$\sim$\+B\+T\+Tracker\+Client\+Base}}
+\index{````~B\+T\+Tracker\+Client\+Base@{$\sim$\+B\+T\+Tracker\+Client\+Base}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{$\sim$\+B\+T\+Tracker\+Client\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Client\+Base\+::$\sim$\+B\+T\+Tracker\+Client\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerClientBase_a52ebc86c77b27289b4ac3d3131b6e9d3}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTTrackerClientBase_ab069678d1177731f94c52620f91e6f55}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!announce@{announce}}
+\index{announce@{announce}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{announce()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::announce (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_ab069678d1177731f94c52620f91e6f55}
+Sends an announce to the tracker.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTTrackerClientBase_a7ae7c9871d98d153e0c6755d18a2b9e5}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!close@{close}}
+\index{close@{close}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{close()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_a7ae7c9871d98d153e0c6755d18a2b9e5}
+Closes an active connection \hypertarget{classBTTrackerClientBase_a678dcdf76412fbed63bf9a8b0b9fc686}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!compact@{compact}}
+\index{compact@{compact}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{compact() const }]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Client\+Base\+::compact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_a678dcdf76412fbed63bf9a8b0b9fc686}
+Get the compact flag. \hypertarget{classBTTrackerClientBase_a44eed7960a877b2b162180bc5383ef6a}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!connect@{connect}}
+\index{connect@{connect}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{connect()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_a44eed7960a877b2b162180bc5383ef6a}
+Starts a new connection.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTTrackerClientBase_a3e1eee0a4b600eb25e4406af05c86822}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!connect\+Give\+Up@{connect\+Give\+Up}}
+\index{connect\+Give\+Up@{connect\+Give\+Up}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{connect\+Give\+Up() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Base\+::connect\+Give\+Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_a3e1eee0a4b600eb25e4406af05c86822}
+Get the re-\/connect tries. \hypertarget{classBTTrackerClientBase_a65879dbc1ec398c124f27c5d4ca63552}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!cstate@{cstate}}
+\index{cstate@{cstate}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{cstate() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Base\+::cstate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_a65879dbc1ec398c124f27c5d4ca63552}
+Get the state of the client. \hypertarget{classBTTrackerClientBase_adc7c0ed12a24c892801841a96f663a2a}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!find\+And\+Set\+Announce\+Size@{find\+And\+Set\+Announce\+Size}}
+\index{find\+And\+Set\+Announce\+Size@{find\+And\+Set\+Announce\+Size}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{find\+And\+Set\+Announce\+Size(c\+Message $\ast$) const }]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::find\+And\+Set\+Announce\+Size (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_adc7c0ed12a24c892801841a96f663a2a}
+Set the size of the announce message.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTTrackerClientBase_a245a5285af4b921bc4750245b8c73e0d}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!find\+And\+Set\+I\+P\+Address@{find\+And\+Set\+I\+P\+Address}}
+\index{find\+And\+Set\+I\+P\+Address@{find\+And\+Set\+I\+P\+Address}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{find\+And\+Set\+I\+P\+Address()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::find\+And\+Set\+I\+P\+Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_a245a5285af4b921bc4750245b8c73e0d}
+Find the I\+P address of the client.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTTrackerClientBase_ac2d122e57e8a049579b08214da47c0d5}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!generate\+Peer\+I\+D@{generate\+Peer\+I\+D}}
+\index{generate\+Peer\+I\+D@{generate\+Peer\+I\+D}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{generate\+Peer\+I\+D()}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Tracker\+Client\+Base\+::generate\+Peer\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerClientBase_ac2d122e57e8a049579b08214da47c0d5}
+Generates an Azureus-\/style 20 character long, unique peer I\+D, with\+:
+\begin{DoxyItemize}
+\item client I\+D = \textquotesingle{}O\+M\textquotesingle{} (O\+Mnet++)
+\item version number = 0001 (See \href{http://wiki.theory.org/BitTorrentSpecification}{\tt http\+://wiki.\+theory.\+org/\+Bit\+Torrent\+Specification} for more information)
+\end{DoxyItemize}
+
+The peer I\+D is augmented with the hosting module\textquotesingle{}s name, for clarity/debugging purposes.
+
+This method should be re-\/implemented in future subclasses in order to change the.\+way peer I\+Ds are generated. \hypertarget{classBTTrackerClientBase_a04f42878a2710962bbb88f96706c6dca}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!handle\+Message@{handle\+Message}}
+\index{handle\+Message@{handle\+Message}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{handle\+Message(c\+Message $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::handle\+Message (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_a04f42878a2710962bbb88f96706c6dca}
+Called each time a new message is received. \hypertarget{classBTTrackerClientBase_aa7f93bb3a652daa74b54b1eedaafc7ad}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!handle\+Timer@{handle\+Timer}}
+\index{handle\+Timer@{handle\+Timer}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{handle\+Timer(c\+Message $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::handle\+Timer (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_aa7f93bb3a652daa74b54b1eedaafc7ad}
+Called from \hyperlink{classBTTrackerClientBase_aa7f93bb3a652daa74b54b1eedaafc7ad}{handle\+Timer()} each time a self message or a message from btorrent\+In gate is received. \hypertarget{classBTTrackerClientBase_ad56587246469f660fedef3c50c10554d}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!info\+Hash@{info\+Hash}}
+\index{info\+Hash@{info\+Hash}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{info\+Hash() const }]{\setlength{\rightskip}{0pt plus 5cm}const string \& B\+T\+Tracker\+Client\+Base\+::info\+Hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_ad56587246469f660fedef3c50c10554d}
+Get the info hash. \hypertarget{classBTTrackerClientBase_a3427a3d40ea862c9e362061e1e65c616}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!initialize@{initialize}}
+\index{initialize@{initialize}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{initialize()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_a3427a3d40ea862c9e362061e1e65c616}
+Called after the module creation. \hypertarget{classBTTrackerClientBase_a0137bb8858b6f40e1f82bb34a9009cff}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!key@{key}}
+\index{key@{key}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{key() const }]{\setlength{\rightskip}{0pt plus 5cm}const string \& B\+T\+Tracker\+Client\+Base\+::key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_a0137bb8858b6f40e1f82bb34a9009cff}
+Get the peer\textquotesingle{}s key. \hypertarget{classBTTrackerClientBase_ae1a3c76c6a8605acb228748ca0a68ad6}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!no\+Peer\+Id@{no\+Peer\+Id}}
+\index{no\+Peer\+Id@{no\+Peer\+Id}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{no\+Peer\+Id() const }]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Client\+Base\+::no\+Peer\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_ae1a3c76c6a8605acb228748ca0a68ad6}
+Get the no\+\_\+peer\+\_\+id flag. \hypertarget{classBTTrackerClientBase_a161caadc519753d4469377515c7a4fcf}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!num\+Want@{num\+Want}}
+\index{num\+Want@{num\+Want}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{num\+Want() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Base\+::num\+Want (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_a161caadc519753d4469377515c7a4fcf}
+Get the num\+Want peers count. \hypertarget{classBTTrackerClientBase_aaa2e7b0d4d3770dedd7baff0fbd2da45}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!peer\+Id@{peer\+Id}}
+\index{peer\+Id@{peer\+Id}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{peer\+Id() const }]{\setlength{\rightskip}{0pt plus 5cm}const string \& B\+T\+Tracker\+Client\+Base\+::peer\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_aaa2e7b0d4d3770dedd7baff0fbd2da45}
+Get the peer id. \hypertarget{classBTTrackerClientBase_ab0833d033c769937a3a51e39904f9fc0}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!peer\+Port@{peer\+Port}}
+\index{peer\+Port@{peer\+Port}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{peer\+Port() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Base\+::peer\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_ab0833d033c769937a3a51e39904f9fc0}
+Get the peer port. \hypertarget{classBTTrackerClientBase_af5b16a044b06fe75dd8bc8c399bc8b29}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!reconnect\+Interval@{reconnect\+Interval}}
+\index{reconnect\+Interval@{reconnect\+Interval}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{reconnect\+Interval() const }]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Tracker\+Client\+Base\+::reconnect\+Interval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_af5b16a044b06fe75dd8bc8c399bc8b29}
+Get the re-\/connect interval. \hypertarget{classBTTrackerClientBase_a65eb496c2f438e0a9a67b5adb83c1ffc}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!session\+Timeout@{session\+Timeout}}
+\index{session\+Timeout@{session\+Timeout}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{session\+Timeout() const }]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t B\+T\+Tracker\+Client\+Base\+::session\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_a65eb496c2f438e0a9a67b5adb83c1ffc}
+Get the session timeout (seconds). \hypertarget{classBTTrackerClientBase_a251809d0b4ea9f07b2ca3c26fa4ea2b7}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Compact@{set\+Compact}}
+\index{set\+Compact@{set\+Compact}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Compact(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Compact (
+\begin{DoxyParamCaption}
+\item[{bool}]{compact}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_a251809d0b4ea9f07b2ca3c26fa4ea2b7}
+Set the compact flag. \hypertarget{classBTTrackerClientBase_aadbed5705c9858f1d90050dbfeca5559}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Connect\+Give\+Up@{set\+Connect\+Give\+Up}}
+\index{set\+Connect\+Give\+Up@{set\+Connect\+Give\+Up}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Connect\+Give\+Up(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Connect\+Give\+Up (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{connect\+Give\+Up}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_aadbed5705c9858f1d90050dbfeca5559}
+Set the re-\/connect tries. \hypertarget{classBTTrackerClientBase_a4cd61fb7ac4fed418aceb9ec76489f70}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Cstate@{set\+Cstate}}
+\index{set\+Cstate@{set\+Cstate}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Cstate(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Cstate (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{state}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_a4cd61fb7ac4fed418aceb9ec76489f70}
+Set the state of the client. \hypertarget{classBTTrackerClientBase_a6f764b043ac1aba4937c02818b2aa8e5}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Info\+Hash@{set\+Info\+Hash}}
+\index{set\+Info\+Hash@{set\+Info\+Hash}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Info\+Hash(const string \&)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Info\+Hash (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{info\+Hash}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_a6f764b043ac1aba4937c02818b2aa8e5}
+Set the info hash. \hypertarget{classBTTrackerClientBase_ad3c6c86644a0657a062ee7a6d312e4ad}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Key@{set\+Key}}
+\index{set\+Key@{set\+Key}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Key(const string \&)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Key (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{key}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_ad3c6c86644a0657a062ee7a6d312e4ad}
+Set the peer\textquotesingle{}s key. \hypertarget{classBTTrackerClientBase_a9b4700cf1790d17bc73d7a18078226cd}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+No\+Peer\+Id@{set\+No\+Peer\+Id}}
+\index{set\+No\+Peer\+Id@{set\+No\+Peer\+Id}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+No\+Peer\+Id(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+No\+Peer\+Id (
+\begin{DoxyParamCaption}
+\item[{bool}]{no\+Peer\+Id}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_a9b4700cf1790d17bc73d7a18078226cd}
+Set the no\+\_\+peer\+\_\+id flag. \hypertarget{classBTTrackerClientBase_a21ee3296f8698ac6f49fec71e3caf57d}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Num\+Want@{set\+Num\+Want}}
+\index{set\+Num\+Want@{set\+Num\+Want}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Num\+Want(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Num\+Want (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num\+Want}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_a21ee3296f8698ac6f49fec71e3caf57d}
+Set the num\+Want peers count. \hypertarget{classBTTrackerClientBase_a38b8f2500d5c39c8a1d079970985c877}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Peer\+Id@{set\+Peer\+Id}}
+\index{set\+Peer\+Id@{set\+Peer\+Id}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Peer\+Id(const string \&)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Peer\+Id (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{peer\+Id}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_a38b8f2500d5c39c8a1d079970985c877}
+Set the peer id. \hypertarget{classBTTrackerClientBase_aec9b615f0e50e53854df6b6eac0d83c2}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Peer\+Port@{set\+Peer\+Port}}
+\index{set\+Peer\+Port@{set\+Peer\+Port}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Peer\+Port(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Peer\+Port (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{peer\+Port}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_aec9b615f0e50e53854df6b6eac0d83c2}
+Set the peer port. \hypertarget{classBTTrackerClientBase_a6c41e7aeaa0633a2742bb7ec558ac28f}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Reconnect\+Interval@{set\+Reconnect\+Interval}}
+\index{set\+Reconnect\+Interval@{set\+Reconnect\+Interval}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Reconnect\+Interval(double)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Reconnect\+Interval (
+\begin{DoxyParamCaption}
+\item[{double}]{reconnect\+Interval}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_a6c41e7aeaa0633a2742bb7ec558ac28f}
+Set the re-\/connect interval. \hypertarget{classBTTrackerClientBase_a85374136d41a2df83f5ffba345d8046b}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Session\+Timeout@{set\+Session\+Timeout}}
+\index{set\+Session\+Timeout@{set\+Session\+Timeout}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Session\+Timeout(simtime\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Session\+Timeout (
+\begin{DoxyParamCaption}
+\item[{simtime\+\_\+t}]{session\+Timeout}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_a85374136d41a2df83f5ffba345d8046b}
+Set the session timeout (seconds). \hypertarget{classBTTrackerClientBase_a1e34cc7545623b3e60e81f82d8321f7f}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!set\+Tracker\+Id@{set\+Tracker\+Id}}
+\index{set\+Tracker\+Id@{set\+Tracker\+Id}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{set\+Tracker\+Id(const string \&)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::set\+Tracker\+Id (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{tracker\+Id}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientBase_a1e34cc7545623b3e60e81f82d8321f7f}
+Set the tracker id. \hypertarget{classBTTrackerClientBase_acccef00f80f12202e4b63b1098af1d75}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!socket\+Data\+Arrived@{socket\+Data\+Arrived}}
+\index{socket\+Data\+Arrived@{socket\+Data\+Arrived}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{socket\+Data\+Arrived(int, void $\ast$, c\+Packet $\ast$, bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::socket\+Data\+Arrived (
+\begin{DoxyParamCaption}
+\item[{int}]{conn\+Id, }
+\item[{void $\ast$}]{ptr, }
+\item[{c\+Packet $\ast$}]{msg, }
+\item[{bool}]{urgent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_acccef00f80f12202e4b63b1098af1d75}
+Handles the response from the tracker.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTTrackerClientBase_a140fb33f9b56bddc2e60c4270fc6f685}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!socket\+Established@{socket\+Established}}
+\index{socket\+Established@{socket\+Established}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{socket\+Established(int, void $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::socket\+Established (
+\begin{DoxyParamCaption}
+\item[{int}]{conn\+Id, }
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_a140fb33f9b56bddc2e60c4270fc6f685}
+Starts a session and performs some logging.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTTrackerClientBase_a2f099a4c762287c598b449e8183f4679}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!socket\+Failure@{socket\+Failure}}
+\index{socket\+Failure@{socket\+Failure}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{socket\+Failure(int, void $\ast$, int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::socket\+Failure (
+\begin{DoxyParamCaption}
+\item[{int}]{conn\+Id, }
+\item[{void $\ast$}]{your\+Ptr, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_a2f099a4c762287c598b449e8183f4679}
+Handles connection failures.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTTrackerClientBase_ad9b4cdff6c47ef5e12018fb010b608e7}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!socket\+Peer\+Closed@{socket\+Peer\+Closed}}
+\index{socket\+Peer\+Closed@{socket\+Peer\+Closed}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{socket\+Peer\+Closed(int, void $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Base\+::socket\+Peer\+Closed (
+\begin{DoxyParamCaption}
+\item[{int}]{conn\+Id, }
+\item[{void $\ast$}]{your\+Ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientBase_ad9b4cdff6c47ef5e12018fb010b608e7}
+Handles the connection teardown.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTTrackerClientBase_a25d94d6851c1a20566a73fc8bb79fae4}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!tracker\+Id@{tracker\+Id}}
+\index{tracker\+Id@{tracker\+Id}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{tracker\+Id() const }]{\setlength{\rightskip}{0pt plus 5cm}const string \& B\+T\+Tracker\+Client\+Base\+::tracker\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientBase_a25d94d6851c1a20566a73fc8bb79fae4}
+Get the tracker id. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTTrackerClientBase_a8a7ea410b57b218ab38ee9394951557f}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!compact\+\_\+var@{compact\+\_\+var}}
+\index{compact\+\_\+var@{compact\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{compact\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Client\+Base\+::compact\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_a8a7ea410b57b218ab38ee9394951557f}
+\hypertarget{classBTTrackerClientBase_a7cad897127fe659fd57a3bf41a3645e0}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!connect\+Give\+Up\+\_\+var@{connect\+Give\+Up\+\_\+var}}
+\index{connect\+Give\+Up\+\_\+var@{connect\+Give\+Up\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{connect\+Give\+Up\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Base\+::connect\+Give\+Up\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_a7cad897127fe659fd57a3bf41a3645e0}
+\hypertarget{classBTTrackerClientBase_a728682a65c38c4152152bc5a64a768cf}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!evt\+Tout@{evt\+Tout}}
+\index{evt\+Tout@{evt\+Tout}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{evt\+Tout}]{\setlength{\rightskip}{0pt plus 5cm}c\+Message$\ast$ B\+T\+Tracker\+Client\+Base\+::evt\+Tout\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_a728682a65c38c4152152bc5a64a768cf}
+\hypertarget{classBTTrackerClientBase_ade240dc1b9440fa2d6a8ba23ed8db3ae}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!info\+Hash\+\_\+var@{info\+Hash\+\_\+var}}
+\index{info\+Hash\+\_\+var@{info\+Hash\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{info\+Hash\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}string B\+T\+Tracker\+Client\+Base\+::info\+Hash\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_ade240dc1b9440fa2d6a8ba23ed8db3ae}
+\hypertarget{classBTTrackerClientBase_a17ed36fc72a43ca1e95020de9acc5e77}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!ipaddress\+\_\+var@{ipaddress\+\_\+var}}
+\index{ipaddress\+\_\+var@{ipaddress\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{ipaddress\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}I\+Pv\+X\+Address B\+T\+Tracker\+Client\+Base\+::ipaddress\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_a17ed36fc72a43ca1e95020de9acc5e77}
+\hypertarget{classBTTrackerClientBase_a7ce835ff5b9d4e65905e6ef3635ad827}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!key\+\_\+var@{key\+\_\+var}}
+\index{key\+\_\+var@{key\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{key\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}string B\+T\+Tracker\+Client\+Base\+::key\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_a7ce835ff5b9d4e65905e6ef3635ad827}
+\hypertarget{classBTTrackerClientBase_ab23d101af767f0979c9de612fb2d511e}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!no\+Peer\+Id\+\_\+var@{no\+Peer\+Id\+\_\+var}}
+\index{no\+Peer\+Id\+\_\+var@{no\+Peer\+Id\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{no\+Peer\+Id\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Client\+Base\+::no\+Peer\+Id\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_ab23d101af767f0979c9de612fb2d511e}
+\hypertarget{classBTTrackerClientBase_a8e15dea1f9c602da6e78d85e271092e6}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!num\+Want\+\_\+var@{num\+Want\+\_\+var}}
+\index{num\+Want\+\_\+var@{num\+Want\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{num\+Want\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Base\+::num\+Want\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_a8e15dea1f9c602da6e78d85e271092e6}
+\hypertarget{classBTTrackerClientBase_aa9be905707abb2eb69f831ffcd9a67e8}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!peer\+Id\+\_\+var@{peer\+Id\+\_\+var}}
+\index{peer\+Id\+\_\+var@{peer\+Id\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{peer\+Id\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}string B\+T\+Tracker\+Client\+Base\+::peer\+Id\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_aa9be905707abb2eb69f831ffcd9a67e8}
+\hypertarget{classBTTrackerClientBase_a729473eedff089d0ae0be578cc1af653}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!peer\+Port\+\_\+var@{peer\+Port\+\_\+var}}
+\index{peer\+Port\+\_\+var@{peer\+Port\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{peer\+Port\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Base\+::peer\+Port\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_a729473eedff089d0ae0be578cc1af653}
+\hypertarget{classBTTrackerClientBase_a4fb36f2c092a853cc4611b1faa51b802}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!reconnect\+Interval\+\_\+var@{reconnect\+Interval\+\_\+var}}
+\index{reconnect\+Interval\+\_\+var@{reconnect\+Interval\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{reconnect\+Interval\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t B\+T\+Tracker\+Client\+Base\+::reconnect\+Interval\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_a4fb36f2c092a853cc4611b1faa51b802}
+\hypertarget{classBTTrackerClientBase_ab3b0b46284315a9b2e71daf379b7a3ff}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!session\+Timeout\+\_\+var@{session\+Timeout\+\_\+var}}
+\index{session\+Timeout\+\_\+var@{session\+Timeout\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{session\+Timeout\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t B\+T\+Tracker\+Client\+Base\+::session\+Timeout\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_ab3b0b46284315a9b2e71daf379b7a3ff}
+\hypertarget{classBTTrackerClientBase_a0eead109fc2d0e3cd0462b1e19f87545}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!state\+\_\+var@{state\+\_\+var}}
+\index{state\+\_\+var@{state\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{state\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Base\+::state\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_a0eead109fc2d0e3cd0462b1e19f87545}
+\hypertarget{classBTTrackerClientBase_aee1b8d7f800c7642c1bdc435e968ec3b}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!tracker\+Id\+\_\+var@{tracker\+Id\+\_\+var}}
+\index{tracker\+Id\+\_\+var@{tracker\+Id\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{tracker\+Id\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}string B\+T\+Tracker\+Client\+Base\+::tracker\+Id\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_aee1b8d7f800c7642c1bdc435e968ec3b}
+\hypertarget{classBTTrackerClientBase_a1d356eceda84b31bef362f262c664a71}{}\index{B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}!transient\+\_\+var@{transient\+\_\+var}}
+\index{transient\+\_\+var@{transient\+\_\+var}!B\+T\+Tracker\+Client\+Base@{B\+T\+Tracker\+Client\+Base}}
+\subsubsection[{transient\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Base\+::transient\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientBase_a1d356eceda84b31bef362f262c664a71}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTTrackerClientBase_8h}{B\+T\+Tracker\+Client\+Base.\+h}\item 
+\hyperlink{BTTrackerClientBase_8cc}{B\+T\+Tracker\+Client\+Base.\+cc}\end{DoxyCompactItemize}

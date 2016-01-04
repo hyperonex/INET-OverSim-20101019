@@ -1,0 +1,367 @@
+\hypertarget{classBTTrackerBase}{}\section{B\+T\+Tracker\+Base Class Reference}
+\label{classBTTrackerBase}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+
+
+{\ttfamily \#include $<$B\+T\+Tracker\+Base.\+h$>$}
+
+Inheritance diagram for B\+T\+Tracker\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTTrackerBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTTrackerBase_a05a7a0e4b4514e39d25dcf7d34bc254f}{B\+T\+Tracker\+Base} ()
+\item 
+virtual \hyperlink{classBTTrackerBase_a8b324ddad0dae22cccb338ce183e12b4}{$\sim$\+B\+T\+Tracker\+Base} ()
+\item 
+const string \& \hyperlink{classBTTrackerBase_ad3744373908aaae2c9f88a989f711164}{info\+Hash} () const 
+\item 
+void \hyperlink{classBTTrackerBase_aa205b2d356794b9414429b6a9bced23b}{set\+Info\+Hash} (const string \&)
+\item 
+const string \& \hyperlink{classBTTrackerBase_a3892d03da0e26565e6e7e2f813026d7e}{tracker\+Id} () const 
+\item 
+void \hyperlink{classBTTrackerBase_ab8a18224107ed0910dc0bd1638e6c79e}{set\+Tracker\+Id} (const string \&)
+\item 
+bool \hyperlink{classBTTrackerBase_a30633c30f74aa526f500587df8f449be}{always\+Send\+Tracker\+Id} () const 
+\item 
+void \hyperlink{classBTTrackerBase_ad0894e8d363b622b5bb499d13fb62669}{set\+Always\+Send\+Tracker\+Id} (bool)
+\item 
+bool \hyperlink{classBTTrackerBase_a65a57779fc1a54b53d8730e645246588}{compact\+Support} () const 
+\item 
+void \hyperlink{classBTTrackerBase_adfebd2b9c4efb1c140bf89a926aa67f8}{set\+Compact\+Support} (bool)
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_a0c341d939c255dea96f2fd9e84fe4dc9}{max\+Peers\+In\+Reply} () const 
+\item 
+void \hyperlink{classBTTrackerBase_aefc9c49a92f7283de65369d4cfe1236d}{set\+Max\+Peers\+In\+Reply} (size\+\_\+t)
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_a6485fae29881927c04d7271ac28f01eb}{announce\+Interval} () const 
+\item 
+void \hyperlink{classBTTrackerBase_a05438a148023a31cd72d352e381af208}{set\+Announce\+Interval} (size\+\_\+t)
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_a46737e1276c56c9dc83264cc8cde501a}{cleanup\+Interval} () const 
+\item 
+void \hyperlink{classBTTrackerBase_ae455bf93bf9c4aac9346e28132358767}{set\+Cleanup\+Interval} (size\+\_\+t)
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_aa25cbbeee60a86a81bd862d74bb098b5}{session\+Timeout} () const 
+\item 
+void \hyperlink{classBTTrackerBase_a978f8dc10a807b37eac2615f8a6b6a36}{set\+Session\+Timeout} (size\+\_\+t)
+\item 
+c\+Array \& \hyperlink{classBTTrackerBase_ab5dd962e8b31d9da764cac4339f88bb6}{peers} ()
+\item 
+int \hyperlink{classBTTrackerBase_aee3f129e66a6690df7e6e3279599f171}{contains} (\hyperlink{classBTTrackerStructBase}{B\+T\+Tracker\+Struct\+Base} $\ast$) const 
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_ae5c78b500fcbcf7a4881d3f584a3027d}{seeds} () const 
+\item 
+void \hyperlink{classBTTrackerBase_af9b9f0ed01cf67b1e464402f6f884f42}{set\+Seeds} (size\+\_\+t)
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_aabbe120067d9081485e90a4e71e675b7}{peers\+Num} () const 
+\item 
+void \hyperlink{classBTTrackerBase_aee0793e4cabbd2f61104587c4aff5a31}{set\+Peers\+Num} (size\+\_\+t)
+\item 
+void \hyperlink{classBTTrackerBase_ad1b9190f3117918ce2404f6fae5af26a}{clean\+Up\+Peers} ()
+\item 
+void \hyperlink{classBTTrackerBase_ae2ccfb420d08172f2ed5b544c9067fd5}{clean\+Remove\+Peer} (\hyperlink{classBTTrackerStructBase}{B\+T\+Tracker\+Struct\+Base} $\ast$)
+\item 
+void \hyperlink{classBTTrackerBase_ab1600e226ac13ecfbf9993e50cd8f1b2}{clean\+Remove\+Peer} (int)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classBTTrackerBase_a0bc53255febc095ae8ac4b5efc53d193}{initialize} ()
+\item 
+virtual void \hyperlink{classBTTrackerBase_a88120a6f9fb7e0ddbc3b4c794b842572}{handle\+Message} (c\+Message $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classBTTrackerBase_a6164025eda001522313b120b94cf1049}{info\+Hash\+\_\+var}
+\item 
+string \hyperlink{classBTTrackerBase_adf43f3c801c6904772843b85bc6d2c13}{tracker\+Id\+\_\+var}
+\item 
+bool \hyperlink{classBTTrackerBase_aa627eb44986bdbbbd1afa58900c2d0f7}{always\+Send\+Tracker\+Id\+\_\+var}
+\item 
+bool \hyperlink{classBTTrackerBase_aeb6d8973fe084f768e436a8ce5da35d7}{compact\+Support\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_ad4b07408463db605eca2706185353107}{max\+Peers\+In\+Reply\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_a878a13b70d17fa3e4af1d9548e15c381}{announce\+Interval\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_a7b008007cf154ef938d38898b4d25d7c}{cleanup\+Interval\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_a1ced4f437ab0e81e1904c17c4e7b3f02}{session\+Timeout\+\_\+var}
+\item 
+c\+Array \hyperlink{classBTTrackerBase_a7e935c84f601dc0f7f7c51fd7b9bc8bd}{peers\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_a4741f78f0b5f6393f6b2634f0fd77109}{seeds\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_aa13e59ee55a6ee18af0828fa9e54a01d}{peers\+Num\+\_\+var}
+\item 
+c\+Message $\ast$ \hyperlink{classBTTrackerBase_a12ea7d9b9e19b425289d8d3197cebae6}{clean}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerBase_a951142be9da0bbc37937e0f9199af38f}{curr\+Clean\+\_\+exit\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bit\+Torrent protocol. Implements a threaded tracker as described at \href{http://wiki.theory.org/BitTorrentSpecification}{\tt http\+://wiki.\+theory.\+org/\+Bit\+Torrent\+Specification} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTTrackerBase_a05a7a0e4b4514e39d25dcf7d34bc254f}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{B\+T\+Tracker\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Base\+::\+B\+T\+Tracker\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_a05a7a0e4b4514e39d25dcf7d34bc254f}
+Constructor. \hypertarget{classBTTrackerBase_a8b324ddad0dae22cccb338ce183e12b4}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!````~B\+T\+Tracker\+Base@{$\sim$\+B\+T\+Tracker\+Base}}
+\index{````~B\+T\+Tracker\+Base@{$\sim$\+B\+T\+Tracker\+Base}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{$\sim$\+B\+T\+Tracker\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Base\+::$\sim$\+B\+T\+Tracker\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerBase_a8b324ddad0dae22cccb338ce183e12b4}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTTrackerBase_a30633c30f74aa526f500587df8f449be}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!always\+Send\+Tracker\+Id@{always\+Send\+Tracker\+Id}}
+\index{always\+Send\+Tracker\+Id@{always\+Send\+Tracker\+Id}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{always\+Send\+Tracker\+Id() const }]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Base\+::always\+Send\+Tracker\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_a30633c30f74aa526f500587df8f449be}
+Get the always\+Send\+Tracker\+Id flag. If the flag is true the tracker id will be returned in every response. If the flag is set to false the tracker id will be returned to the client only in the first response. \hypertarget{classBTTrackerBase_a6485fae29881927c04d7271ac28f01eb}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!announce\+Interval@{announce\+Interval}}
+\index{announce\+Interval@{announce\+Interval}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{announce\+Interval() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::announce\+Interval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_a6485fae29881927c04d7271ac28f01eb}
+\hypertarget{classBTTrackerBase_ae2ccfb420d08172f2ed5b544c9067fd5}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!clean\+Remove\+Peer@{clean\+Remove\+Peer}}
+\index{clean\+Remove\+Peer@{clean\+Remove\+Peer}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{clean\+Remove\+Peer(\+B\+T\+Tracker\+Struct\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::clean\+Remove\+Peer (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Tracker\+Struct\+Base} $\ast$}]{peer}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_ae2ccfb420d08172f2ed5b544c9067fd5}
+Remove a peer from the peer set ensuring memory deallocation. \hypertarget{classBTTrackerBase_ab1600e226ac13ecfbf9993e50cd8f1b2}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!clean\+Remove\+Peer@{clean\+Remove\+Peer}}
+\index{clean\+Remove\+Peer@{clean\+Remove\+Peer}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{clean\+Remove\+Peer(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::clean\+Remove\+Peer (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_ab1600e226ac13ecfbf9993e50cd8f1b2}
+Remove a peer from the peer set ensuring memory deallocation. \hypertarget{classBTTrackerBase_a46737e1276c56c9dc83264cc8cde501a}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!cleanup\+Interval@{cleanup\+Interval}}
+\index{cleanup\+Interval@{cleanup\+Interval}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{cleanup\+Interval() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::cleanup\+Interval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_a46737e1276c56c9dc83264cc8cde501a}
+Get the announce interval (in seconds). \hypertarget{classBTTrackerBase_ad1b9190f3117918ce2404f6fae5af26a}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!clean\+Up\+Peers@{clean\+Up\+Peers}}
+\index{clean\+Up\+Peers@{clean\+Up\+Peers}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{clean\+Up\+Peers()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::clean\+Up\+Peers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_ad1b9190f3117918ce2404f6fae5af26a}
+Deallocating memory used for the peer set. \hypertarget{classBTTrackerBase_a65a57779fc1a54b53d8730e645246588}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!compact\+Support@{compact\+Support}}
+\index{compact\+Support@{compact\+Support}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{compact\+Support() const }]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Base\+::compact\+Support (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_a65a57779fc1a54b53d8730e645246588}
+Get the compact\+Support flag. Support for compact responses or not. \hypertarget{classBTTrackerBase_aee3f129e66a6690df7e6e3279599f171}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!contains@{contains}}
+\index{contains@{contains}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{contains(\+B\+T\+Tracker\+Struct\+Base $\ast$) const }]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Tracker\+Base\+::contains (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Tracker\+Struct\+Base} $\ast$}]{obj}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_aee3f129e66a6690df7e6e3279599f171}
+Returns the position of obj inside the peers container (if it is contained) or -\/1 if obj is not found.
+
+This lame method was inserted because the find() method of the c\+Array class is so stupid that does not use the overloaded == operator. \hypertarget{classBTTrackerBase_a88120a6f9fb7e0ddbc3b4c794b842572}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!handle\+Message@{handle\+Message}}
+\index{handle\+Message@{handle\+Message}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{handle\+Message(c\+Message $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::handle\+Message (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerBase_a88120a6f9fb7e0ddbc3b4c794b842572}
+Called each time a new message is received. \hypertarget{classBTTrackerBase_ad3744373908aaae2c9f88a989f711164}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!info\+Hash@{info\+Hash}}
+\index{info\+Hash@{info\+Hash}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{info\+Hash() const }]{\setlength{\rightskip}{0pt plus 5cm}const string \& B\+T\+Tracker\+Base\+::info\+Hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_ad3744373908aaae2c9f88a989f711164}
+Get the info hash of tracker. This is the info hash of the .torrent file which the tracker monitors. \hypertarget{classBTTrackerBase_a0bc53255febc095ae8ac4b5efc53d193}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!initialize@{initialize}}
+\index{initialize@{initialize}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{initialize()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerBase_a0bc53255febc095ae8ac4b5efc53d193}
+Called after the module creation. \hypertarget{classBTTrackerBase_a0c341d939c255dea96f2fd9e84fe4dc9}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!max\+Peers\+In\+Reply@{max\+Peers\+In\+Reply}}
+\index{max\+Peers\+In\+Reply@{max\+Peers\+In\+Reply}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{max\+Peers\+In\+Reply() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::max\+Peers\+In\+Reply (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_a0c341d939c255dea96f2fd9e84fe4dc9}
+\hypertarget{classBTTrackerBase_ab5dd962e8b31d9da764cac4339f88bb6}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!peers@{peers}}
+\index{peers@{peers}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{peers()}]{\setlength{\rightskip}{0pt plus 5cm}c\+Array \& B\+T\+Tracker\+Base\+::peers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_ab5dd962e8b31d9da764cac4339f88bb6}
+Get the peers container. \hypertarget{classBTTrackerBase_aabbe120067d9081485e90a4e71e675b7}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!peers\+Num@{peers\+Num}}
+\index{peers\+Num@{peers\+Num}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{peers\+Num() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::peers\+Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_aabbe120067d9081485e90a4e71e675b7}
+Get the peers count. \hypertarget{classBTTrackerBase_ae5c78b500fcbcf7a4881d3f584a3027d}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!seeds@{seeds}}
+\index{seeds@{seeds}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{seeds() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::seeds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_ae5c78b500fcbcf7a4881d3f584a3027d}
+Get the seeds count. \hypertarget{classBTTrackerBase_aa25cbbeee60a86a81bd862d74bb098b5}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!session\+Timeout@{session\+Timeout}}
+\index{session\+Timeout@{session\+Timeout}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{session\+Timeout() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::session\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_aa25cbbeee60a86a81bd862d74bb098b5}
+Get the cleanup interval (in seconds). \hypertarget{classBTTrackerBase_ad0894e8d363b622b5bb499d13fb62669}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!set\+Always\+Send\+Tracker\+Id@{set\+Always\+Send\+Tracker\+Id}}
+\index{set\+Always\+Send\+Tracker\+Id@{set\+Always\+Send\+Tracker\+Id}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{set\+Always\+Send\+Tracker\+Id(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::set\+Always\+Send\+Tracker\+Id (
+\begin{DoxyParamCaption}
+\item[{bool}]{always\+Send\+Tracker\+Id}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_ad0894e8d363b622b5bb499d13fb62669}
+Set the always\+Send\+Tracker\+Id flag. If the flag is true the tracker id will be returned in every response. If the flag is set to false the tracker id will be returned to the client only in the first response. \hypertarget{classBTTrackerBase_a05438a148023a31cd72d352e381af208}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!set\+Announce\+Interval@{set\+Announce\+Interval}}
+\index{set\+Announce\+Interval@{set\+Announce\+Interval}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{set\+Announce\+Interval(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::set\+Announce\+Interval (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{announce\+Interval}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_a05438a148023a31cd72d352e381af208}
+Set the announce interval (in seconds). \hypertarget{classBTTrackerBase_ae455bf93bf9c4aac9346e28132358767}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!set\+Cleanup\+Interval@{set\+Cleanup\+Interval}}
+\index{set\+Cleanup\+Interval@{set\+Cleanup\+Interval}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{set\+Cleanup\+Interval(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::set\+Cleanup\+Interval (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{cleanup\+Interval}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_ae455bf93bf9c4aac9346e28132358767}
+Set the cleanup interval (in seconds). \hypertarget{classBTTrackerBase_adfebd2b9c4efb1c140bf89a926aa67f8}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!set\+Compact\+Support@{set\+Compact\+Support}}
+\index{set\+Compact\+Support@{set\+Compact\+Support}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{set\+Compact\+Support(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::set\+Compact\+Support (
+\begin{DoxyParamCaption}
+\item[{bool}]{compact\+Support}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_adfebd2b9c4efb1c140bf89a926aa67f8}
+Set the compact\+Support flag. Support for compact responses or not. \hypertarget{classBTTrackerBase_aa205b2d356794b9414429b6a9bced23b}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!set\+Info\+Hash@{set\+Info\+Hash}}
+\index{set\+Info\+Hash@{set\+Info\+Hash}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{set\+Info\+Hash(const string \&)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::set\+Info\+Hash (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{info\+Hash}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_aa205b2d356794b9414429b6a9bced23b}
+Set the info hash of tracker. This is the info hash of the .torrent file which the tracker monitors. \hypertarget{classBTTrackerBase_aefc9c49a92f7283de65369d4cfe1236d}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!set\+Max\+Peers\+In\+Reply@{set\+Max\+Peers\+In\+Reply}}
+\index{set\+Max\+Peers\+In\+Reply@{set\+Max\+Peers\+In\+Reply}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{set\+Max\+Peers\+In\+Reply(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::set\+Max\+Peers\+In\+Reply (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{max\+Peers\+In\+Reply}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_aefc9c49a92f7283de65369d4cfe1236d}
+Set the maximum number of peers which can be included in a response. \hypertarget{classBTTrackerBase_aee0793e4cabbd2f61104587c4aff5a31}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!set\+Peers\+Num@{set\+Peers\+Num}}
+\index{set\+Peers\+Num@{set\+Peers\+Num}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{set\+Peers\+Num(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::set\+Peers\+Num (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{peers\+Num}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_aee0793e4cabbd2f61104587c4aff5a31}
+Set the peers count. \hypertarget{classBTTrackerBase_af9b9f0ed01cf67b1e464402f6f884f42}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!set\+Seeds@{set\+Seeds}}
+\index{set\+Seeds@{set\+Seeds}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{set\+Seeds(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::set\+Seeds (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{seeds}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_af9b9f0ed01cf67b1e464402f6f884f42}
+Set the seeds count. \hypertarget{classBTTrackerBase_a978f8dc10a807b37eac2615f8a6b6a36}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!set\+Session\+Timeout@{set\+Session\+Timeout}}
+\index{set\+Session\+Timeout@{set\+Session\+Timeout}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{set\+Session\+Timeout(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::set\+Session\+Timeout (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{session\+Timeout}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_a978f8dc10a807b37eac2615f8a6b6a36}
+Set the session timeout value (in seconds). \hypertarget{classBTTrackerBase_ab8a18224107ed0910dc0bd1638e6c79e}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!set\+Tracker\+Id@{set\+Tracker\+Id}}
+\index{set\+Tracker\+Id@{set\+Tracker\+Id}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{set\+Tracker\+Id(const string \&)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Base\+::set\+Tracker\+Id (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{tracker\+Id}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerBase_ab8a18224107ed0910dc0bd1638e6c79e}
+Set the tracker id. This value is returned back to a client after the first announce and should be included in future announces. \hypertarget{classBTTrackerBase_a3892d03da0e26565e6e7e2f813026d7e}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!tracker\+Id@{tracker\+Id}}
+\index{tracker\+Id@{tracker\+Id}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{tracker\+Id() const }]{\setlength{\rightskip}{0pt plus 5cm}const string \& B\+T\+Tracker\+Base\+::tracker\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerBase_a3892d03da0e26565e6e7e2f813026d7e}
+Get the tracker id. This value is returned back to a client after the first announce and should be included in future announces. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTTrackerBase_aa627eb44986bdbbbd1afa58900c2d0f7}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!always\+Send\+Tracker\+Id\+\_\+var@{always\+Send\+Tracker\+Id\+\_\+var}}
+\index{always\+Send\+Tracker\+Id\+\_\+var@{always\+Send\+Tracker\+Id\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{always\+Send\+Tracker\+Id\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Base\+::always\+Send\+Tracker\+Id\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_aa627eb44986bdbbbd1afa58900c2d0f7}
+\hypertarget{classBTTrackerBase_a878a13b70d17fa3e4af1d9548e15c381}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!announce\+Interval\+\_\+var@{announce\+Interval\+\_\+var}}
+\index{announce\+Interval\+\_\+var@{announce\+Interval\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{announce\+Interval\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::announce\+Interval\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_a878a13b70d17fa3e4af1d9548e15c381}
+\hypertarget{classBTTrackerBase_a12ea7d9b9e19b425289d8d3197cebae6}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!clean@{clean}}
+\index{clean@{clean}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}c\+Message$\ast$ B\+T\+Tracker\+Base\+::clean\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_a12ea7d9b9e19b425289d8d3197cebae6}
+\hypertarget{classBTTrackerBase_a7b008007cf154ef938d38898b4d25d7c}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!cleanup\+Interval\+\_\+var@{cleanup\+Interval\+\_\+var}}
+\index{cleanup\+Interval\+\_\+var@{cleanup\+Interval\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{cleanup\+Interval\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::cleanup\+Interval\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_a7b008007cf154ef938d38898b4d25d7c}
+\hypertarget{classBTTrackerBase_aeb6d8973fe084f768e436a8ce5da35d7}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!compact\+Support\+\_\+var@{compact\+Support\+\_\+var}}
+\index{compact\+Support\+\_\+var@{compact\+Support\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{compact\+Support\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Base\+::compact\+Support\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_aeb6d8973fe084f768e436a8ce5da35d7}
+\hypertarget{classBTTrackerBase_a951142be9da0bbc37937e0f9199af38f}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!curr\+Clean\+\_\+exit\+\_\+var@{curr\+Clean\+\_\+exit\+\_\+var}}
+\index{curr\+Clean\+\_\+exit\+\_\+var@{curr\+Clean\+\_\+exit\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{curr\+Clean\+\_\+exit\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::curr\+Clean\+\_\+exit\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_a951142be9da0bbc37937e0f9199af38f}
+\hypertarget{classBTTrackerBase_a6164025eda001522313b120b94cf1049}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!info\+Hash\+\_\+var@{info\+Hash\+\_\+var}}
+\index{info\+Hash\+\_\+var@{info\+Hash\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{info\+Hash\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}string B\+T\+Tracker\+Base\+::info\+Hash\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_a6164025eda001522313b120b94cf1049}
+\hypertarget{classBTTrackerBase_ad4b07408463db605eca2706185353107}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!max\+Peers\+In\+Reply\+\_\+var@{max\+Peers\+In\+Reply\+\_\+var}}
+\index{max\+Peers\+In\+Reply\+\_\+var@{max\+Peers\+In\+Reply\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{max\+Peers\+In\+Reply\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::max\+Peers\+In\+Reply\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_ad4b07408463db605eca2706185353107}
+\hypertarget{classBTTrackerBase_a7e935c84f601dc0f7f7c51fd7b9bc8bd}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!peers\+\_\+var@{peers\+\_\+var}}
+\index{peers\+\_\+var@{peers\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{peers\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}c\+Array B\+T\+Tracker\+Base\+::peers\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_a7e935c84f601dc0f7f7c51fd7b9bc8bd}
+\hypertarget{classBTTrackerBase_aa13e59ee55a6ee18af0828fa9e54a01d}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!peers\+Num\+\_\+var@{peers\+Num\+\_\+var}}
+\index{peers\+Num\+\_\+var@{peers\+Num\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{peers\+Num\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::peers\+Num\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_aa13e59ee55a6ee18af0828fa9e54a01d}
+\hypertarget{classBTTrackerBase_a4741f78f0b5f6393f6b2634f0fd77109}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!seeds\+\_\+var@{seeds\+\_\+var}}
+\index{seeds\+\_\+var@{seeds\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{seeds\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::seeds\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_a4741f78f0b5f6393f6b2634f0fd77109}
+\hypertarget{classBTTrackerBase_a1ced4f437ab0e81e1904c17c4e7b3f02}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!session\+Timeout\+\_\+var@{session\+Timeout\+\_\+var}}
+\index{session\+Timeout\+\_\+var@{session\+Timeout\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{session\+Timeout\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Base\+::session\+Timeout\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_a1ced4f437ab0e81e1904c17c4e7b3f02}
+\hypertarget{classBTTrackerBase_adf43f3c801c6904772843b85bc6d2c13}{}\index{B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}!tracker\+Id\+\_\+var@{tracker\+Id\+\_\+var}}
+\index{tracker\+Id\+\_\+var@{tracker\+Id\+\_\+var}!B\+T\+Tracker\+Base@{B\+T\+Tracker\+Base}}
+\subsubsection[{tracker\+Id\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}string B\+T\+Tracker\+Base\+::tracker\+Id\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerBase_adf43f3c801c6904772843b85bc6d2c13}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTTrackerBase_8h}{B\+T\+Tracker\+Base.\+h}\item 
+\hyperlink{BTTrackerBase_8cc}{B\+T\+Tracker\+Base.\+cc}\end{DoxyCompactItemize}

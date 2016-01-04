@@ -1,0 +1,156 @@
+version 2
+run General-0-20150115-11:44:23-3469
+attr configname General
+attr datetime 20150115-11:44:23
+attr experiment General
+attr inifile /home/achraf/Developpement/omnetpp-4.1/projects/INET-OverSim-20101019/src/httptools/cache/webcache/test/extfilter/extfilter.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network CacheExtensionFilterTest
+attr processid 3469
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar CacheExtensionFilterTest.clients[0].tcpApp[0] 	session.count 	1
+scalar CacheExtensionFilterTest.clients[0].tcpApp[0] 	html.requested 	7
+scalar CacheExtensionFilterTest.clients[0].tcpApp[0] 	html.received 	7
+scalar CacheExtensionFilterTest.clients[0].tcpApp[0] 	html.errors 	0
+scalar CacheExtensionFilterTest.clients[0].tcpApp[0] 	html.image.requested 	35
+scalar CacheExtensionFilterTest.clients[0].tcpApp[0] 	html.image.received 	33
+scalar CacheExtensionFilterTest.clients[0].tcpApp[0] 	html.text.requested 	14
+scalar CacheExtensionFilterTest.clients[0].tcpApp[0] 	html.text.received 	12
+scalar CacheExtensionFilterTest.clients[0].tcpApp[0] 	sock.opened 	14
+scalar CacheExtensionFilterTest.clients[0].tcpApp[0] 	sock.broken 	0
+scalar CacheExtensionFilterTest.clients[0].pingApp 	"Pings sent" 	0
+scalar CacheExtensionFilterTest.clients[0].networkLayer.ip 	"datagrams multicast" 	0
+scalar CacheExtensionFilterTest.clients[0].networkLayer.ip 	"datagrams locally delivered" 	167
+scalar CacheExtensionFilterTest.clients[0].networkLayer.ip 	"datagrams dropped" 	0
+scalar CacheExtensionFilterTest.clients[0].networkLayer.ip 	"datagrams unroutable" 	0
+scalar CacheExtensionFilterTest.clients[0].networkLayer.ip 	"datagrams forwarded" 	181
+scalar CacheExtensionFilterTest.clients[0].networkLayer.arp 	"ARP requests sent" 	0
+scalar CacheExtensionFilterTest.clients[0].networkLayer.arp 	"ARP replies sent" 	0
+scalar CacheExtensionFilterTest.clients[0].networkLayer.arp 	"ARP resolutions" 	0
+scalar CacheExtensionFilterTest.clients[0].networkLayer.arp 	"failed ARP resolutions" 	0
+scalar CacheExtensionFilterTest.clients[0].ppp[0].queue 	queuedrops:count 	0
+attr source  qdrop
+attr title  "packets dropped by queue, count"
+scalar CacheExtensionFilterTest.clients[0].ppp[0].queue 	queuercvd:count 	181
+attr source  qrcvd
+attr title  "packets received by queue, count"
+scalar CacheExtensionFilterTest.clients[1].tcpApp[0] 	session.count 	1
+scalar CacheExtensionFilterTest.clients[1].tcpApp[0] 	html.requested 	3
+scalar CacheExtensionFilterTest.clients[1].tcpApp[0] 	html.received 	3
+scalar CacheExtensionFilterTest.clients[1].tcpApp[0] 	html.errors 	0
+scalar CacheExtensionFilterTest.clients[1].tcpApp[0] 	html.image.requested 	15
+scalar CacheExtensionFilterTest.clients[1].tcpApp[0] 	html.image.received 	15
+scalar CacheExtensionFilterTest.clients[1].tcpApp[0] 	html.text.requested 	6
+scalar CacheExtensionFilterTest.clients[1].tcpApp[0] 	html.text.received 	6
+scalar CacheExtensionFilterTest.clients[1].tcpApp[0] 	sock.opened 	6
+scalar CacheExtensionFilterTest.clients[1].tcpApp[0] 	sock.broken 	0
+scalar CacheExtensionFilterTest.clients[1].pingApp 	"Pings sent" 	0
+scalar CacheExtensionFilterTest.clients[1].networkLayer.ip 	"datagrams multicast" 	0
+scalar CacheExtensionFilterTest.clients[1].networkLayer.ip 	"datagrams locally delivered" 	72
+scalar CacheExtensionFilterTest.clients[1].networkLayer.ip 	"datagrams dropped" 	0
+scalar CacheExtensionFilterTest.clients[1].networkLayer.ip 	"datagrams unroutable" 	0
+scalar CacheExtensionFilterTest.clients[1].networkLayer.ip 	"datagrams forwarded" 	78
+scalar CacheExtensionFilterTest.clients[1].networkLayer.arp 	"ARP requests sent" 	0
+scalar CacheExtensionFilterTest.clients[1].networkLayer.arp 	"ARP replies sent" 	0
+scalar CacheExtensionFilterTest.clients[1].networkLayer.arp 	"ARP resolutions" 	0
+scalar CacheExtensionFilterTest.clients[1].networkLayer.arp 	"failed ARP resolutions" 	0
+scalar CacheExtensionFilterTest.clients[1].ppp[0].queue 	queuedrops:count 	0
+attr source  qdrop
+attr title  "packets dropped by queue, count"
+scalar CacheExtensionFilterTest.clients[1].ppp[0].queue 	queuercvd:count 	78
+attr source  qrcvd
+attr title  "packets received by queue, count"
+scalar CacheExtensionFilterTest.server.tcpApp[0] 	HTML.served 	1
+scalar CacheExtensionFilterTest.server.tcpApp[0] 	images.served 	5
+scalar CacheExtensionFilterTest.server.tcpApp[0] 	text.served 	2
+scalar CacheExtensionFilterTest.server.tcpApp[0] 	bad.requests 	0
+scalar CacheExtensionFilterTest.server.tcpApp[0] 	sock.opened 	6
+scalar CacheExtensionFilterTest.server.tcpApp[0] 	sock.broken 	0
+scalar CacheExtensionFilterTest.server.pingApp 	"Pings sent" 	0
+scalar CacheExtensionFilterTest.server.networkLayer.ip 	"datagrams multicast" 	0
+scalar CacheExtensionFilterTest.server.networkLayer.ip 	"datagrams locally delivered" 	35
+scalar CacheExtensionFilterTest.server.networkLayer.ip 	"datagrams dropped" 	0
+scalar CacheExtensionFilterTest.server.networkLayer.ip 	"datagrams unroutable" 	0
+scalar CacheExtensionFilterTest.server.networkLayer.ip 	"datagrams forwarded" 	30
+scalar CacheExtensionFilterTest.server.networkLayer.arp 	"ARP requests sent" 	0
+scalar CacheExtensionFilterTest.server.networkLayer.arp 	"ARP replies sent" 	0
+scalar CacheExtensionFilterTest.server.networkLayer.arp 	"ARP resolutions" 	0
+scalar CacheExtensionFilterTest.server.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar CacheExtensionFilterTest.server.ppp[0].queue 	queuedrops:count 	2
+attr source  qdrop
+attr title  "packets dropped by queue, count"
+scalar CacheExtensionFilterTest.server.ppp[0].queue 	queuercvd:count 	30
+attr source  qrcvd
+attr title  "packets received by queue, count"
+scalar CacheExtensionFilterTest.router.networkLayer.ip 	"datagrams multicast" 	0
+scalar CacheExtensionFilterTest.router.networkLayer.ip 	"datagrams locally delivered" 	0
+scalar CacheExtensionFilterTest.router.networkLayer.ip 	"datagrams dropped" 	0
+scalar CacheExtensionFilterTest.router.networkLayer.ip 	"datagrams unroutable" 	0
+scalar CacheExtensionFilterTest.router.networkLayer.ip 	"datagrams forwarded" 	500
+scalar CacheExtensionFilterTest.router.networkLayer.arp 	"ARP requests sent" 	0
+scalar CacheExtensionFilterTest.router.networkLayer.arp 	"ARP replies sent" 	0
+scalar CacheExtensionFilterTest.router.networkLayer.arp 	"ARP resolutions" 	0
+scalar CacheExtensionFilterTest.router.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar CacheExtensionFilterTest.router.ppp[0].queue 	queuedrops:count 	0
+attr source  qdrop
+attr title  "packets dropped by queue, count"
+scalar CacheExtensionFilterTest.router.ppp[0].queue 	queuercvd:count 	259
+attr source  qrcvd
+attr title  "packets received by queue, count"
+scalar CacheExtensionFilterTest.router.ppp[1].queue 	queuedrops:count 	0
+attr source  qdrop
+attr title  "packets dropped by queue, count"
+scalar CacheExtensionFilterTest.router.ppp[1].queue 	queuercvd:count 	169
+attr source  qrcvd
+attr title  "packets received by queue, count"
+scalar CacheExtensionFilterTest.router.ppp[2].queue 	queuedrops:count 	0
+attr source  qdrop
+attr title  "packets dropped by queue, count"
+scalar CacheExtensionFilterTest.router.ppp[2].queue 	queuercvd:count 	72
+attr source  qrcvd
+attr title  "packets received by queue, count"
+scalar CacheExtensionFilterTest.cache.tcpApp[0] 	cache.sockets.server.opened:dcount 	20
+attr pattern  cache*.socket*.**
+attr source  sockevent
+attr title  "socket events, dcount"
+scalar CacheExtensionFilterTest.cache.tcpApp[0] 	cache.requests.downstream.hits:dcount 	72
+attr pattern  cache*.requests.**
+attr source  reqevent
+attr title  "request events, dcount"
+scalar CacheExtensionFilterTest.cache.tcpApp[0] 	cache.requests.downstream.misses:dcount 	8
+attr pattern  cache*.requests.**
+attr source  reqevent
+attr title  "request events, dcount"
+scalar CacheExtensionFilterTest.cache.tcpApp[0] 	cache.requests.downstream.received:dcount 	80
+attr pattern  cache*.requests.**
+attr source  reqevent
+attr title  "request events, dcount"
+scalar CacheExtensionFilterTest.cache.pingApp 	"Pings sent" 	0
+scalar CacheExtensionFilterTest.cache.networkLayer.ip 	"datagrams multicast" 	0
+scalar CacheExtensionFilterTest.cache.networkLayer.ip 	"datagrams locally delivered" 	287
+scalar CacheExtensionFilterTest.cache.networkLayer.ip 	"datagrams dropped" 	0
+scalar CacheExtensionFilterTest.cache.networkLayer.ip 	"datagrams unroutable" 	0
+scalar CacheExtensionFilterTest.cache.networkLayer.ip 	"datagrams forwarded" 	276
+scalar CacheExtensionFilterTest.cache.networkLayer.arp 	"ARP requests sent" 	0
+scalar CacheExtensionFilterTest.cache.networkLayer.arp 	"ARP replies sent" 	0
+scalar CacheExtensionFilterTest.cache.networkLayer.arp 	"ARP resolutions" 	0
+scalar CacheExtensionFilterTest.cache.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar CacheExtensionFilterTest.cache.ppp[0].queue 	queuedrops:count 	0
+attr source  qdrop
+attr title  "packets dropped by queue, count"
+scalar CacheExtensionFilterTest.cache.ppp[0].queue 	queuercvd:count 	241
+attr source  qrcvd
+attr title  "packets received by queue, count"
+scalar CacheExtensionFilterTest.cache.ppp[1].queue 	queuedrops:count 	0
+attr source  qdrop
+attr title  "packets dropped by queue, count"
+scalar CacheExtensionFilterTest.cache.ppp[1].queue 	queuercvd:count 	35
+attr source  qrcvd
+attr title  "packets received by queue, count"

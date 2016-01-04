@@ -1,0 +1,155 @@
+\hypertarget{classBTPeerStateMsg}{}\section{B\+T\+Peer\+State\+Msg Class Reference}
+\label{classBTPeerStateMsg}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+
+
+{\ttfamily \#include $<$B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h$>$}
+
+Inheritance diagram for B\+T\+Peer\+State\+Msg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTPeerStateMsg}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTPeerStateMsg_ab7d14b0f1d4efff5a78abd8b6a1d857d}{B\+T\+Peer\+State\+Msg} (const char $\ast$name=N\+U\+L\+L, int kind=0)
+\item 
+\hyperlink{classBTPeerStateMsg_a5c60767152d203f9c1b539fb1e6ca7cf}{B\+T\+Peer\+State\+Msg} (const \hyperlink{classBTPeerStateMsg}{B\+T\+Peer\+State\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTPeerStateMsg_aadb697d2f314297b44ce4b99b9ef01c9}{$\sim$\+B\+T\+Peer\+State\+Msg} ()
+\item 
+\hyperlink{classBTPeerStateMsg}{B\+T\+Peer\+State\+Msg} \& \hyperlink{classBTPeerStateMsg_add8adb86d08e11cb1a836c8374a03503}{operator=} (const \hyperlink{classBTPeerStateMsg}{B\+T\+Peer\+State\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTPeerStateMsg}{B\+T\+Peer\+State\+Msg} $\ast$ \hyperlink{classBTPeerStateMsg_a73cc28ed5a32f0f89c43de5513549460}{dup} () const 
+\item 
+virtual void \hyperlink{classBTPeerStateMsg_ad7476812a0163cb9e40a2a5aaf3e4c81}{parsim\+Pack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual void \hyperlink{classBTPeerStateMsg_a41a706a3d36a9ad449bd7a0e260c7ca3}{parsim\+Unpack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual int \hyperlink{classBTPeerStateMsg_a06b4c4e77f189574c6938358c2195ed7}{length\+\_\+prefix} () const 
+\item 
+virtual void \hyperlink{classBTPeerStateMsg_a581d8941765c73c6381c8222011bbfe9}{set\+Length\+\_\+prefix} (int \hyperlink{classBTPeerStateMsg_ade7e3e6dbe30b3bdd9e796215e6a1ec6}{length\+\_\+prefix\+\_\+var})
+\item 
+virtual unsigned short \hyperlink{classBTPeerStateMsg_aa9c6f9b590d1d509d2338c9e18793331}{I\+D} () const 
+\item 
+virtual void \hyperlink{classBTPeerStateMsg_ac577434d76afb18476583b018a7c04d5}{set\+I\+D} (unsigned short \hyperlink{classBTPeerStateMsg_a10914bbd68aee3cf35b7a1718c7a0e9d}{I\+D\+\_\+var})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBTPeerStateMsg_a58637665e79ee29402f85af914d16ffb}{operator==} (const \hyperlink{classBTPeerStateMsg}{B\+T\+Peer\+State\+Msg} \&)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classBTPeerStateMsg_ade7e3e6dbe30b3bdd9e796215e6a1ec6}{length\+\_\+prefix\+\_\+var}
+\item 
+unsigned short \hyperlink{classBTPeerStateMsg_a10914bbd68aee3cf35b7a1718c7a0e9d}{I\+D\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTPeerStateMsg_ab7d14b0f1d4efff5a78abd8b6a1d857d}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{B\+T\+Peer\+State\+Msg(const char $\ast$name=\+N\+U\+L\+L, int kind=0)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Peer\+State\+Msg\+::\+B\+T\+Peer\+State\+Msg (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name = {\ttfamily NULL}, }
+\item[{int}]{kind = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classBTPeerStateMsg_ab7d14b0f1d4efff5a78abd8b6a1d857d}
+\hypertarget{classBTPeerStateMsg_a5c60767152d203f9c1b539fb1e6ca7cf}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{B\+T\+Peer\+State\+Msg(const B\+T\+Peer\+State\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Peer\+State\+Msg\+::\+B\+T\+Peer\+State\+Msg (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Peer\+State\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTPeerStateMsg_a5c60767152d203f9c1b539fb1e6ca7cf}
+\hypertarget{classBTPeerStateMsg_aadb697d2f314297b44ce4b99b9ef01c9}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!````~B\+T\+Peer\+State\+Msg@{$\sim$\+B\+T\+Peer\+State\+Msg}}
+\index{````~B\+T\+Peer\+State\+Msg@{$\sim$\+B\+T\+Peer\+State\+Msg}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{$\sim$\+B\+T\+Peer\+State\+Msg()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Peer\+State\+Msg\+::$\sim$\+B\+T\+Peer\+State\+Msg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPeerStateMsg_aadb697d2f314297b44ce4b99b9ef01c9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTPeerStateMsg_a73cc28ed5a32f0f89c43de5513549460}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!dup@{dup}}
+\index{dup@{dup}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{dup() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+T\+Peer\+State\+Msg}$\ast$ B\+T\+Peer\+State\+Msg\+::dup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTPeerStateMsg_a73cc28ed5a32f0f89c43de5513549460}
+\hypertarget{classBTPeerStateMsg_aa9c6f9b590d1d509d2338c9e18793331}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!I\+D@{I\+D}}
+\index{I\+D@{I\+D}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{I\+D() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned short B\+T\+Peer\+State\+Msg\+::\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPeerStateMsg_aa9c6f9b590d1d509d2338c9e18793331}
+\hypertarget{classBTPeerStateMsg_a06b4c4e77f189574c6938358c2195ed7}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!length\+\_\+prefix@{length\+\_\+prefix}}
+\index{length\+\_\+prefix@{length\+\_\+prefix}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{length\+\_\+prefix() const }]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+State\+Msg\+::length\+\_\+prefix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPeerStateMsg_a06b4c4e77f189574c6938358c2195ed7}
+\hypertarget{classBTPeerStateMsg_add8adb86d08e11cb1a836c8374a03503}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{operator=(const B\+T\+Peer\+State\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Peer\+State\+Msg} \& B\+T\+Peer\+State\+Msg\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Peer\+State\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTPeerStateMsg_add8adb86d08e11cb1a836c8374a03503}
+\hypertarget{classBTPeerStateMsg_a58637665e79ee29402f85af914d16ffb}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!operator==@{operator==}}
+\index{operator==@{operator==}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{operator==(const B\+T\+Peer\+State\+Msg \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+State\+Msg\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Peer\+State\+Msg} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerStateMsg_a58637665e79ee29402f85af914d16ffb}
+\hypertarget{classBTPeerStateMsg_ad7476812a0163cb9e40a2a5aaf3e4c81}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!parsim\+Pack@{parsim\+Pack}}
+\index{parsim\+Pack@{parsim\+Pack}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{parsim\+Pack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+State\+Msg\+::parsim\+Pack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPeerStateMsg_ad7476812a0163cb9e40a2a5aaf3e4c81}
+\hypertarget{classBTPeerStateMsg_a41a706a3d36a9ad449bd7a0e260c7ca3}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!parsim\+Unpack@{parsim\+Unpack}}
+\index{parsim\+Unpack@{parsim\+Unpack}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{parsim\+Unpack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+State\+Msg\+::parsim\+Unpack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPeerStateMsg_a41a706a3d36a9ad449bd7a0e260c7ca3}
+\hypertarget{classBTPeerStateMsg_ac577434d76afb18476583b018a7c04d5}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!set\+I\+D@{set\+I\+D}}
+\index{set\+I\+D@{set\+I\+D}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{set\+I\+D(unsigned short I\+D\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+State\+Msg\+::set\+I\+D (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{I\+D\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPeerStateMsg_ac577434d76afb18476583b018a7c04d5}
+\hypertarget{classBTPeerStateMsg_a581d8941765c73c6381c8222011bbfe9}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!set\+Length\+\_\+prefix@{set\+Length\+\_\+prefix}}
+\index{set\+Length\+\_\+prefix@{set\+Length\+\_\+prefix}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{set\+Length\+\_\+prefix(int length\+\_\+prefix\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+State\+Msg\+::set\+Length\+\_\+prefix (
+\begin{DoxyParamCaption}
+\item[{int}]{length\+\_\+prefix\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPeerStateMsg_a581d8941765c73c6381c8222011bbfe9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTPeerStateMsg_a10914bbd68aee3cf35b7a1718c7a0e9d}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!I\+D\+\_\+var@{I\+D\+\_\+var}}
+\index{I\+D\+\_\+var@{I\+D\+\_\+var}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{I\+D\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short B\+T\+Peer\+State\+Msg\+::\+I\+D\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerStateMsg_a10914bbd68aee3cf35b7a1718c7a0e9d}
+\hypertarget{classBTPeerStateMsg_ade7e3e6dbe30b3bdd9e796215e6a1ec6}{}\index{B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}!length\+\_\+prefix\+\_\+var@{length\+\_\+prefix\+\_\+var}}
+\index{length\+\_\+prefix\+\_\+var@{length\+\_\+prefix\+\_\+var}!B\+T\+Peer\+State\+Msg@{B\+T\+Peer\+State\+Msg}}
+\subsubsection[{length\+\_\+prefix\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+State\+Msg\+::length\+\_\+prefix\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerStateMsg_ade7e3e6dbe30b3bdd9e796215e6a1ec6}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTPeerWireMsg__m_8h}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h}\item 
+\hyperlink{BTPeerWireMsg__m_8cc}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}\end{DoxyCompactItemize}

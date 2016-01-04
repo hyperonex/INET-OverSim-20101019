@@ -1,0 +1,185 @@
+\hypertarget{classPeerEntry}{}\section{Peer\+Entry Class Reference}
+\label{classPeerEntry}\index{Peer\+Entry@{Peer\+Entry}}
+
+
+{\ttfamily \#include $<$B\+T\+Utils.\+h$>$}
+
+Inheritance diagram for Peer\+Entry\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPeerEntry}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPeerEntry_a4ee1f78b5c23cd7762cd399b5a5e8e58}{Peer\+Entry} ()
+\item 
+\hyperlink{classPeerEntry_a8a4776f60687e12738d39b99878a34b6}{Peer\+Entry} (\hyperlink{structPEER}{P\+E\+E\+R}, T\+C\+P\+Server\+Thread\+Base $\ast$, double)
+\item 
+\hyperlink{classPeerEntry_a6ac51e17ae2ca055ac80cffa93e9d074}{Peer\+Entry} (const \hyperlink{classPeerEntry}{Peer\+Entry} \&)
+\item 
+virtual \hyperlink{classPeerEntry_a4910d2784aea7a78d6a595e6d533af36}{$\sim$\+Peer\+Entry} ()
+\item 
+string \hyperlink{classPeerEntry_ad9d39bcf7ef8e4544b3a0ceee9e5b94f}{get\+Peer\+I\+D} ()
+\item 
+I\+Pv\+X\+Address \hyperlink{classPeerEntry_a387e85f61fe883e5020d415c35a0f79d}{get\+Peer\+I\+P} ()
+\item 
+unsigned int \hyperlink{classPeerEntry_a78b6e66766700afbf24b30abeacd7583}{get\+Peer\+Port} ()
+\item 
+void \hyperlink{classPeerEntry_a65594d3c04eded4743909e160db3e923}{set\+Peer\+I\+D} (opp\+\_\+string)
+\item 
+\hyperlink{structPEER}{P\+E\+E\+R} \hyperlink{classPeerEntry_a145089116f45cc2c8a06b7989a927c89}{get\+Peer} ()
+\item 
+void \hyperlink{classPeerEntry_a8a7932c0dcfdedf7b758d0794eea9015}{set\+Peer} (\hyperlink{structPEER}{P\+E\+E\+R} peer)
+\item 
+T\+C\+P\+Server\+Thread\+Base $\ast$ \hyperlink{classPeerEntry_a29fdb30de6469f154ae1fdb97bff9704}{get\+Peer\+Thread} ()
+\item 
+bool \hyperlink{classPeerEntry_ac1e496d1d68c52527fb192158dddc045}{operator$<$} (const \hyperlink{classPeerEntry}{Peer\+Entry} \&) const 
+\item 
+bool \hyperlink{classPeerEntry_ad71e7231029292b90b8100fc0604fb25}{is\+Valid} ()
+\item 
+double \hyperlink{classPeerEntry_a4c0f40b9bac8e4327b46f1b7f2c9d955}{conn\+Time} ()
+\item 
+void \hyperlink{classPeerEntry_a342f838cb5c7f4a1865a1cb6962c24fa}{set\+Conn\+Time} (double)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structPEER}{P\+E\+E\+R} \hyperlink{classPeerEntry_a65fcdc0c83cb8f3e2b59ef19c067504f}{peer\+Info}
+\item 
+T\+C\+P\+Server\+Thread\+Base $\ast$ \hyperlink{classPeerEntry_a75511a2a33f122eb90d7108164f040c9}{thread}
+\item 
+double \hyperlink{classPeerEntry_aa44bee1c1c87de58c0b64dcdce6273d7}{conn\+Time\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPeerEntry_a4ee1f78b5c23cd7762cd399b5a5e8e58}{}\index{Peer\+Entry@{Peer\+Entry}!Peer\+Entry@{Peer\+Entry}}
+\index{Peer\+Entry@{Peer\+Entry}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{Peer\+Entry()}]{\setlength{\rightskip}{0pt plus 5cm}Peer\+Entry\+::\+Peer\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a4ee1f78b5c23cd7762cd399b5a5e8e58}
+\hypertarget{classPeerEntry_a8a4776f60687e12738d39b99878a34b6}{}\index{Peer\+Entry@{Peer\+Entry}!Peer\+Entry@{Peer\+Entry}}
+\index{Peer\+Entry@{Peer\+Entry}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{Peer\+Entry(\+P\+E\+E\+R, T\+C\+P\+Server\+Thread\+Base $\ast$, double)}]{\setlength{\rightskip}{0pt plus 5cm}Peer\+Entry\+::\+Peer\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+E\+E\+R}}]{peer, }
+\item[{T\+C\+P\+Server\+Thread\+Base $\ast$}]{thread, }
+\item[{double}]{conn\+Time}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a8a4776f60687e12738d39b99878a34b6}
+\hypertarget{classPeerEntry_a6ac51e17ae2ca055ac80cffa93e9d074}{}\index{Peer\+Entry@{Peer\+Entry}!Peer\+Entry@{Peer\+Entry}}
+\index{Peer\+Entry@{Peer\+Entry}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{Peer\+Entry(const Peer\+Entry \&)}]{\setlength{\rightskip}{0pt plus 5cm}Peer\+Entry\+::\+Peer\+Entry (
+\begin{DoxyParamCaption}
+\item[{const {\bf Peer\+Entry} \&}]{pe}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a6ac51e17ae2ca055ac80cffa93e9d074}
+\hypertarget{classPeerEntry_a4910d2784aea7a78d6a595e6d533af36}{}\index{Peer\+Entry@{Peer\+Entry}!````~Peer\+Entry@{$\sim$\+Peer\+Entry}}
+\index{````~Peer\+Entry@{$\sim$\+Peer\+Entry}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{$\sim$\+Peer\+Entry()}]{\setlength{\rightskip}{0pt plus 5cm}Peer\+Entry\+::$\sim$\+Peer\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classPeerEntry_a4910d2784aea7a78d6a595e6d533af36}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPeerEntry_a4c0f40b9bac8e4327b46f1b7f2c9d955}{}\index{Peer\+Entry@{Peer\+Entry}!conn\+Time@{conn\+Time}}
+\index{conn\+Time@{conn\+Time}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{conn\+Time()}]{\setlength{\rightskip}{0pt plus 5cm}double Peer\+Entry\+::conn\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a4c0f40b9bac8e4327b46f1b7f2c9d955}
+\hypertarget{classPeerEntry_a145089116f45cc2c8a06b7989a927c89}{}\index{Peer\+Entry@{Peer\+Entry}!get\+Peer@{get\+Peer}}
+\index{get\+Peer@{get\+Peer}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{get\+Peer()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+E\+E\+R} Peer\+Entry\+::get\+Peer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a145089116f45cc2c8a06b7989a927c89}
+\hypertarget{classPeerEntry_ad9d39bcf7ef8e4544b3a0ceee9e5b94f}{}\index{Peer\+Entry@{Peer\+Entry}!get\+Peer\+I\+D@{get\+Peer\+I\+D}}
+\index{get\+Peer\+I\+D@{get\+Peer\+I\+D}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{get\+Peer\+I\+D()}]{\setlength{\rightskip}{0pt plus 5cm}string Peer\+Entry\+::get\+Peer\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_ad9d39bcf7ef8e4544b3a0ceee9e5b94f}
+\hypertarget{classPeerEntry_a387e85f61fe883e5020d415c35a0f79d}{}\index{Peer\+Entry@{Peer\+Entry}!get\+Peer\+I\+P@{get\+Peer\+I\+P}}
+\index{get\+Peer\+I\+P@{get\+Peer\+I\+P}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{get\+Peer\+I\+P()}]{\setlength{\rightskip}{0pt plus 5cm}I\+Pv\+X\+Address Peer\+Entry\+::get\+Peer\+I\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a387e85f61fe883e5020d415c35a0f79d}
+\hypertarget{classPeerEntry_a78b6e66766700afbf24b30abeacd7583}{}\index{Peer\+Entry@{Peer\+Entry}!get\+Peer\+Port@{get\+Peer\+Port}}
+\index{get\+Peer\+Port@{get\+Peer\+Port}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{get\+Peer\+Port()}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Peer\+Entry\+::get\+Peer\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a78b6e66766700afbf24b30abeacd7583}
+\hypertarget{classPeerEntry_a29fdb30de6469f154ae1fdb97bff9704}{}\index{Peer\+Entry@{Peer\+Entry}!get\+Peer\+Thread@{get\+Peer\+Thread}}
+\index{get\+Peer\+Thread@{get\+Peer\+Thread}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{get\+Peer\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P\+Server\+Thread\+Base $\ast$ Peer\+Entry\+::get\+Peer\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a29fdb30de6469f154ae1fdb97bff9704}
+\hypertarget{classPeerEntry_ad71e7231029292b90b8100fc0604fb25}{}\index{Peer\+Entry@{Peer\+Entry}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{is\+Valid()}]{\setlength{\rightskip}{0pt plus 5cm}bool Peer\+Entry\+::is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_ad71e7231029292b90b8100fc0604fb25}
+\hypertarget{classPeerEntry_ac1e496d1d68c52527fb192158dddc045}{}\index{Peer\+Entry@{Peer\+Entry}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{operator$<$(const Peer\+Entry \&) const }]{\setlength{\rightskip}{0pt plus 5cm}bool Peer\+Entry\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Peer\+Entry} \&}]{item}
+\end{DoxyParamCaption}
+) const}\label{classPeerEntry_ac1e496d1d68c52527fb192158dddc045}
+\hypertarget{classPeerEntry_a342f838cb5c7f4a1865a1cb6962c24fa}{}\index{Peer\+Entry@{Peer\+Entry}!set\+Conn\+Time@{set\+Conn\+Time}}
+\index{set\+Conn\+Time@{set\+Conn\+Time}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{set\+Conn\+Time(double)}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+Entry\+::set\+Conn\+Time (
+\begin{DoxyParamCaption}
+\item[{double}]{conn\+Time}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a342f838cb5c7f4a1865a1cb6962c24fa}
+\hypertarget{classPeerEntry_a8a7932c0dcfdedf7b758d0794eea9015}{}\index{Peer\+Entry@{Peer\+Entry}!set\+Peer@{set\+Peer}}
+\index{set\+Peer@{set\+Peer}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{set\+Peer(\+P\+E\+E\+R peer)}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+Entry\+::set\+Peer (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+E\+E\+R}}]{peer}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a8a7932c0dcfdedf7b758d0794eea9015}
+\hypertarget{classPeerEntry_a65594d3c04eded4743909e160db3e923}{}\index{Peer\+Entry@{Peer\+Entry}!set\+Peer\+I\+D@{set\+Peer\+I\+D}}
+\index{set\+Peer\+I\+D@{set\+Peer\+I\+D}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{set\+Peer\+I\+D(opp\+\_\+string)}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+Entry\+::set\+Peer\+I\+D (
+\begin{DoxyParamCaption}
+\item[{opp\+\_\+string}]{id}
+\end{DoxyParamCaption}
+)}\label{classPeerEntry_a65594d3c04eded4743909e160db3e923}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPeerEntry_aa44bee1c1c87de58c0b64dcdce6273d7}{}\index{Peer\+Entry@{Peer\+Entry}!conn\+Time\+\_\+var@{conn\+Time\+\_\+var}}
+\index{conn\+Time\+\_\+var@{conn\+Time\+\_\+var}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{conn\+Time\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double Peer\+Entry\+::conn\+Time\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classPeerEntry_aa44bee1c1c87de58c0b64dcdce6273d7}
+\hypertarget{classPeerEntry_a65fcdc0c83cb8f3e2b59ef19c067504f}{}\index{Peer\+Entry@{Peer\+Entry}!peer\+Info@{peer\+Info}}
+\index{peer\+Info@{peer\+Info}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{peer\+Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+E\+E\+R} Peer\+Entry\+::peer\+Info\hspace{0.3cm}{\ttfamily [protected]}}\label{classPeerEntry_a65fcdc0c83cb8f3e2b59ef19c067504f}
+\hypertarget{classPeerEntry_a75511a2a33f122eb90d7108164f040c9}{}\index{Peer\+Entry@{Peer\+Entry}!thread@{thread}}
+\index{thread@{thread}!Peer\+Entry@{Peer\+Entry}}
+\subsubsection[{thread}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P\+Server\+Thread\+Base$\ast$ Peer\+Entry\+::thread\hspace{0.3cm}{\ttfamily [protected]}}\label{classPeerEntry_a75511a2a33f122eb90d7108164f040c9}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTUtils_8h}{B\+T\+Utils.\+h}\item 
+\hyperlink{BTUtils_8cc}{B\+T\+Utils.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,233 @@
+\hypertarget{BTPeerWireMsg__m_8cc}{}\section{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc File Reference}
+\label{BTPeerWireMsg__m_8cc}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include \char`\"{}B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classBTMsgHandshakeDescriptor}{B\+T\+Msg\+Handshake\+Descriptor}
+\item 
+class \hyperlink{classBTKeepAliveMsgDescriptor}{B\+T\+Keep\+Alive\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTPeerStateMsgDescriptor}{B\+T\+Peer\+State\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTHaveMsgDescriptor}{B\+T\+Have\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTBitfieldMsgDescriptor}{B\+T\+Bitfield\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTRequestCancelMsgDescriptor}{B\+T\+Request\+Cancel\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTPieceMsgDescriptor}{B\+T\+Piece\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTInternalMsgDescriptor}{B\+T\+Internal\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTAcceptConnectionMsgDescriptor}{B\+T\+Accept\+Connection\+Msg\+Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \hyperlink{BTPeerWireMsg__m_8cc_abe11a22228762d74cdc9a8f3b0a5e471}{operator$<$$<$} (std\+::ostream \&out, const T \&)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{BTPeerWireMsg__m_8cc_a755186d879e9062ff0ab1a9c5ac6d1f3}{do\+Packing} (c\+Comm\+Buffer $\ast$, T \&t)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{BTPeerWireMsg__m_8cc_a71a00faa3eb0e796485c67c5dc0031ac}{do\+Unpacking} (c\+Comm\+Buffer $\ast$, T \&t)
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a9d8bccded7e070a1fa4a685144929b1a}{E\+X\+E\+C\+U\+T\+E\+\_\+\+O\+N\+\_\+\+S\+T\+A\+R\+T\+U\+P} (c\+Enum $\ast$e=c\+Enum\+::find(\char`\"{}Peer\+Wire\+Msg\+I\+Ds\char`\"{});if(!e) enums.\+get\+Instance() -\/$>$add(e=new c\+Enum(\char`\"{}Peer\+Wire\+Msg\+I\+Ds\char`\"{}));e-\/$>$insert(\hyperlink{BTPeerWireMsg__m_8h_abe1b2b794326d1b1583952ec6f3f7de3a191f9ced424e14cd69f05d78e8cbe29b}{C\+H\+O\+K\+E},\char`\"{}C\+H\+O\+K\+E\char`\"{});e-\/$>$insert(\hyperlink{BTPeerWireMsg__m_8h_abe1b2b794326d1b1583952ec6f3f7de3a640faf963e7161ff7680acc60ed945df}{U\+N\+C\+H\+O\+K\+E},\char`\"{}U\+N\+C\+H\+O\+K\+E\char`\"{});e-\/$>$insert(\hyperlink{BTPeerWireMsg__m_8h_abe1b2b794326d1b1583952ec6f3f7de3a1db7325fc6a8276c8673a69cc4746596}{I\+N\+T\+E\+R\+E\+S\+T\+E\+D},\char`\"{}I\+N\+T\+E\+R\+E\+S\+T\+E\+D\char`\"{});e-\/$>$insert(\hyperlink{BTPeerWireMsg__m_8h_abe1b2b794326d1b1583952ec6f3f7de3ab2c58a77255346baa64f96f3fb518707}{N\+O\+T\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+E\+D},\char`\"{}N\+O\+T\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+E\+D\char`\"{});e-\/$>$insert(\hyperlink{BTPeerWireMsg__m_8h_abe1b2b794326d1b1583952ec6f3f7de3a052b5f58c77775b9fa94abbcf89490d3}{H\+A\+V\+E},\char`\"{}H\+A\+V\+E\char`\"{});e-\/$>$insert(\hyperlink{BTPeerWireMsg__m_8h_abe1b2b794326d1b1583952ec6f3f7de3a36ab1b4a3e2aae501c18160ba4dedab0}{B\+I\+T\+F\+I\+E\+L\+D},\char`\"{}B\+I\+T\+F\+I\+E\+L\+D\char`\"{});e-\/$>$insert(\hyperlink{BTPeerWireMsg__m_8h_abe1b2b794326d1b1583952ec6f3f7de3abaf6b8e08edf0e9d2eb38551fed1fb39}{R\+E\+Q\+U\+E\+S\+T},\char`\"{}R\+E\+Q\+U\+E\+S\+T\char`\"{});e-\/$>$insert(\hyperlink{BTPeerWireMsg__m_8h_abe1b2b794326d1b1583952ec6f3f7de3aa076a6a53f35fea7406422c6915439a5}{P\+I\+E\+C\+E},\char`\"{}P\+I\+E\+C\+E\char`\"{});e-\/$>$insert(\hyperlink{BTPeerWireMsg__m_8h_abe1b2b794326d1b1583952ec6f3f7de3ae4842754cb17e5234637e3a85a7f3d90}{C\+A\+N\+C\+E\+L},\char`\"{}C\+A\+N\+C\+E\+L\char`\"{});)
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_acff4dd9545e1d46e8a81b2e6df5eb622}{Register\+\_\+\+Class} (\hyperlink{classBTMsgHandshake}{B\+T\+Msg\+Handshake})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a4d2137ba96320e4349a65a4ad3331fdf}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTMsgHandshakeDescriptor}{B\+T\+Msg\+Handshake\+Descriptor})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_aea6929496d22be5d3551b86a3af7ad35}{Register\+\_\+\+Class} (\hyperlink{classBTKeepAliveMsg}{B\+T\+Keep\+Alive\+Msg})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a9f7353b9937ccb04e0d0332955d6a316}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTKeepAliveMsgDescriptor}{B\+T\+Keep\+Alive\+Msg\+Descriptor})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a7320abe5d9aec4ed594f27a446f4f08a}{Register\+\_\+\+Class} (\hyperlink{classBTPeerStateMsg}{B\+T\+Peer\+State\+Msg})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a8b481f0c3d3866af5719b06923e38c15}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTPeerStateMsgDescriptor}{B\+T\+Peer\+State\+Msg\+Descriptor})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a5a4aeac331dca0e0de79c29280493d38}{Register\+\_\+\+Class} (\hyperlink{classBTHaveMsg}{B\+T\+Have\+Msg})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_ae1d48f2e13fecc5a853ea58b995ceb8f}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTHaveMsgDescriptor}{B\+T\+Have\+Msg\+Descriptor})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_ae21cd71290131940eb0304fd2cd993ca}{Register\+\_\+\+Class} (\hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a35dd084cd0b5eb2b05caa1dfcaf4765b}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTBitfieldMsgDescriptor}{B\+T\+Bitfield\+Msg\+Descriptor})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a03334f7a74d961e16d546bf7e7cfc113}{Register\+\_\+\+Class} (\hyperlink{classBTRequestCancelMsg}{B\+T\+Request\+Cancel\+Msg})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_ab84527e32e725fc6d376c50bf130ba59}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTRequestCancelMsgDescriptor}{B\+T\+Request\+Cancel\+Msg\+Descriptor})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_ae296f020130909803c70c2c3828c0a93}{Register\+\_\+\+Class} (\hyperlink{classBTPieceMsg}{B\+T\+Piece\+Msg})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_aa1d60190655fdffb6b7b5d24ed8a7050}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTPieceMsgDescriptor}{B\+T\+Piece\+Msg\+Descriptor})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a6a03e14d7555c393747c4d4c134c3aa7}{Register\+\_\+\+Class} (\hyperlink{classBTInternalMsg}{B\+T\+Internal\+Msg})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_af6c7bb9635b233969e7d26793523637b}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTInternalMsgDescriptor}{B\+T\+Internal\+Msg\+Descriptor})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a611fe30920170eb500eb2bfd669540db}{Register\+\_\+\+Class} (\hyperlink{classBTAcceptConnectionMsg}{B\+T\+Accept\+Connection\+Msg})
+\item 
+\hyperlink{BTPeerWireMsg__m_8cc_a95d7db29709a91ae4174ccd50f2092d9}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTAcceptConnectionMsgDescriptor}{B\+T\+Accept\+Connection\+Msg\+Descriptor})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{BTPeerWireMsg__m_8cc_a755186d879e9062ff0ab1a9c5ac6d1f3}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!do\+Packing@{do\+Packing}}
+\index{do\+Packing@{do\+Packing}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{do\+Packing(c\+Comm\+Buffer $\ast$, T \&t)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void do\+Packing (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{, }
+\item[{T \&}]{t}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a755186d879e9062ff0ab1a9c5ac6d1f3}
+\hypertarget{BTPeerWireMsg__m_8cc_a71a00faa3eb0e796485c67c5dc0031ac}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!do\+Unpacking@{do\+Unpacking}}
+\index{do\+Unpacking@{do\+Unpacking}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{do\+Unpacking(c\+Comm\+Buffer $\ast$, T \&t)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void do\+Unpacking (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{, }
+\item[{T \&}]{t}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a71a00faa3eb0e796485c67c5dc0031ac}
+\hypertarget{BTPeerWireMsg__m_8cc_a9d8bccded7e070a1fa4a685144929b1a}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!E\+X\+E\+C\+U\+T\+E\+\_\+\+O\+N\+\_\+\+S\+T\+A\+R\+T\+U\+P@{E\+X\+E\+C\+U\+T\+E\+\_\+\+O\+N\+\_\+\+S\+T\+A\+R\+T\+U\+P}}
+\index{E\+X\+E\+C\+U\+T\+E\+\_\+\+O\+N\+\_\+\+S\+T\+A\+R\+T\+U\+P@{E\+X\+E\+C\+U\+T\+E\+\_\+\+O\+N\+\_\+\+S\+T\+A\+R\+T\+U\+P}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{E\+X\+E\+C\+U\+T\+E\+\_\+\+O\+N\+\_\+\+S\+T\+A\+R\+T\+U\+P(c\+Enum $\ast$e=c\+Enum\+::find(""Peer\+Wire\+Msg\+I\+Ds"");if("!e) enums.\+get\+Instance() -\/$>$add(e=new c\+Enum(""Peer\+Wire\+Msg\+I\+Ds""));e-\/$>$insert(\+C\+H\+O\+K\+E,""C\+H\+O\+K\+E"");e-\/$>$insert(\+U\+N\+C\+H\+O\+K\+E,""U\+N\+C\+H\+O\+K\+E"");e-\/$>$insert(\+I\+N\+T\+E\+R\+E\+S\+T\+E\+D,""I\+N\+T\+E\+R\+E\+S\+T\+E\+D"");e-\/$>$insert(\+N\+O\+T\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+E\+D,""N\+O\+T\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+E\+D"");e-\/$>$insert(\+H\+A\+V\+E,""H\+A\+V\+E"");e-\/$>$insert(\+B\+I\+T\+F\+I\+E\+L\+D,""B\+I\+T\+F\+I\+E\+L\+D"");e-\/$>$insert(\+R\+E\+Q\+U\+E\+S\+T,""R\+E\+Q\+U\+E\+S\+T"");e-\/$>$insert(\+P\+I\+E\+C\+E,""P\+I\+E\+C\+E"");e-\/$>$insert(\+C\+A\+N\+C\+E\+L,""C\+A\+N\+C\+E\+L"");)}]{\setlength{\rightskip}{0pt plus 5cm}E\+X\+E\+C\+U\+T\+E\+\_\+\+O\+N\+\_\+\+S\+T\+A\+R\+T\+U\+P (
+\begin{DoxyParamCaption}
+\item[{c\+Enum $\ast$}]{e = {\ttfamily cEnum\+:\+:find(\char`\"{}PeerWireMsgIDs\char`\"{});if(!e)~enums.getInstance()~-\/$>$add(e=new~cEnum(\char`\"{}PeerWireMsgIDs\char`\"{}));e-\/$>$insert({\bf C\+H\+O\+K\+E},\char`\"{}CHOKE\char`\"{});e-\/$>$insert({\bf U\+N\+C\+H\+O\+K\+E},\char`\"{}UNCHOKE\char`\"{});e-\/$>$insert({\bf I\+N\+T\+E\+R\+E\+S\+T\+E\+D},\char`\"{}INTERESTED\char`\"{});e-\/$>$insert({\bf N\+O\+T\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+E\+D},\char`\"{}NOT\+\_\+INTERESTED\char`\"{});e-\/$>$insert({\bf H\+A\+V\+E},\char`\"{}HAVE\char`\"{});e-\/$>$insert({\bf B\+I\+T\+F\+I\+E\+L\+D},\char`\"{}BITFIELD\char`\"{});e-\/$>$insert({\bf R\+E\+Q\+U\+E\+S\+T},\char`\"{}REQUEST\char`\"{});e-\/$>$insert({\bf P\+I\+E\+C\+E},\char`\"{}PIECE\char`\"{});e-\/$>$insert({\bf C\+A\+N\+C\+E\+L},\char`\"{}CANCEL\char`\"{});}}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a9d8bccded7e070a1fa4a685144929b1a}
+\hypertarget{BTPeerWireMsg__m_8cc_abe11a22228762d74cdc9a8f3b0a5e471}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{operator$<$$<$(std\+::ostream \&out, const T \&)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{const T \&}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_abe11a22228762d74cdc9a8f3b0a5e471}
+\hypertarget{BTPeerWireMsg__m_8cc_acff4dd9545e1d46e8a81b2e6df5eb622}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Msg\+Handshake)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Msg\+Handshake}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_acff4dd9545e1d46e8a81b2e6df5eb622}
+\hypertarget{BTPeerWireMsg__m_8cc_aea6929496d22be5d3551b86a3af7ad35}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Keep\+Alive\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Keep\+Alive\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_aea6929496d22be5d3551b86a3af7ad35}
+\hypertarget{BTPeerWireMsg__m_8cc_a7320abe5d9aec4ed594f27a446f4f08a}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Peer\+State\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Peer\+State\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a7320abe5d9aec4ed594f27a446f4f08a}
+\hypertarget{BTPeerWireMsg__m_8cc_a5a4aeac331dca0e0de79c29280493d38}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Have\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Have\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a5a4aeac331dca0e0de79c29280493d38}
+\hypertarget{BTPeerWireMsg__m_8cc_ae21cd71290131940eb0304fd2cd993ca}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Bitfield\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Bitfield\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_ae21cd71290131940eb0304fd2cd993ca}
+\hypertarget{BTPeerWireMsg__m_8cc_a03334f7a74d961e16d546bf7e7cfc113}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Request\+Cancel\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Request\+Cancel\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a03334f7a74d961e16d546bf7e7cfc113}
+\hypertarget{BTPeerWireMsg__m_8cc_ae296f020130909803c70c2c3828c0a93}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Piece\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Piece\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_ae296f020130909803c70c2c3828c0a93}
+\hypertarget{BTPeerWireMsg__m_8cc_a6a03e14d7555c393747c4d4c134c3aa7}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Internal\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Internal\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a6a03e14d7555c393747c4d4c134c3aa7}
+\hypertarget{BTPeerWireMsg__m_8cc_a611fe30920170eb500eb2bfd669540db}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Accept\+Connection\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Accept\+Connection\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a611fe30920170eb500eb2bfd669540db}
+\hypertarget{BTPeerWireMsg__m_8cc_a4d2137ba96320e4349a65a4ad3331fdf}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Msg\+Handshake\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Msg\+Handshake\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a4d2137ba96320e4349a65a4ad3331fdf}
+\hypertarget{BTPeerWireMsg__m_8cc_a9f7353b9937ccb04e0d0332955d6a316}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Keep\+Alive\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Keep\+Alive\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a9f7353b9937ccb04e0d0332955d6a316}
+\hypertarget{BTPeerWireMsg__m_8cc_a8b481f0c3d3866af5719b06923e38c15}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Peer\+State\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Peer\+State\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a8b481f0c3d3866af5719b06923e38c15}
+\hypertarget{BTPeerWireMsg__m_8cc_ae1d48f2e13fecc5a853ea58b995ceb8f}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Have\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Have\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_ae1d48f2e13fecc5a853ea58b995ceb8f}
+\hypertarget{BTPeerWireMsg__m_8cc_a35dd084cd0b5eb2b05caa1dfcaf4765b}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Bitfield\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Bitfield\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a35dd084cd0b5eb2b05caa1dfcaf4765b}
+\hypertarget{BTPeerWireMsg__m_8cc_ab84527e32e725fc6d376c50bf130ba59}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Request\+Cancel\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Request\+Cancel\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_ab84527e32e725fc6d376c50bf130ba59}
+\hypertarget{BTPeerWireMsg__m_8cc_aa1d60190655fdffb6b7b5d24ed8a7050}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Piece\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Piece\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_aa1d60190655fdffb6b7b5d24ed8a7050}
+\hypertarget{BTPeerWireMsg__m_8cc_af6c7bb9635b233969e7d26793523637b}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Internal\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Internal\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_af6c7bb9635b233969e7d26793523637b}
+\hypertarget{BTPeerWireMsg__m_8cc_a95d7db29709a91ae4174ccd50f2092d9}{}\index{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc@{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Accept\+Connection\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Accept\+Connection\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireMsg__m_8cc_a95d7db29709a91ae4174ccd50f2092d9}

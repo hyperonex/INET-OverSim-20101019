@@ -1,0 +1,29 @@
+file 177054 1448294513                                          
+version 2
+run General-0-20141209-12:22:13-4126
+attr configname General
+attr datetime 20141209-12:22:13
+attr experiment General
+attr inifile /home/achraf/Developpement/omnetpp-4.1/projects/INET-OverSim-20101019/src/httptools/videocomponents/client/test/omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network TestNetwork
+attr processid 4126
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+vector 2  TestNetwork.client.tcpApp[0]  rtt  ETV
+2	6583 51938 118 616087 5.523271023042 205.377255136801 1203 0.029128140533362 0.08948584798778 81.657220045879 5.6936237946614
+vector 1  TestNetwork.client.tcpApp[0]  sampledRate  ETV
+1	58521 52606 395 616376 5.618767023042 205.493767023042 1600 16537.435992442 1022208 1538762393.436 1.4856290571274e+15
+vector 0  TestNetwork.client.tcpApp[0]  rate  ETV
+0	111127 65927 395 616376 5.618767023042 205.493767023042 1600 2067.1794990552 972405.84720243 1532024158.0709 1.4737919776467e+15
+vector 6  TestNetwork.client.tcpApp[0]  bufferSize  ETV
+6	802 2933 4506 616488 7.493767023042 207.493767023042 101 0 144 11232 1381796
+vector 3  TestNetwork.client.tcpApp[0]  quality  ETV
+3	3764 2819 4506 616375 7.493767023042 205.493767023042 100 1 30 1202 16682
+vector 4  TestNetwork.client.tcpApp[0]  missedBlocks  ETV
+4	3735 29 616471 616471 205.530535136801 205.530535136801 1 99 99 99 9801

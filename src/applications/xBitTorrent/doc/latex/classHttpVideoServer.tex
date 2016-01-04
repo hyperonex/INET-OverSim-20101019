@@ -1,0 +1,261 @@
+\hypertarget{classHttpVideoServer}{}\section{Http\+Video\+Server Class Reference}
+\label{classHttpVideoServer}\index{Http\+Video\+Server@{Http\+Video\+Server}}
+
+
+{\ttfamily \#include $<$Http\+Video\+Server.\+h$>$}
+
+Inheritance diagram for Http\+Video\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHttpVideoServer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHttpVideoServer_a1d986a4456ab4b0304a8d3be52a5a8fe}{Http\+Video\+Server} ()
+\item 
+virtual \hyperlink{classHttpVideoServer_ab66b707c3d507d35137bfa971b3dffb7}{$\sim$\+Http\+Video\+Server} ()
+\item 
+double \hyperlink{classHttpVideoServer_a9a536cf80f010801085c141553e0840e}{file\+Size} ()
+\item 
+void \hyperlink{classHttpVideoServer_a40553e7f42d5ad39dc67a5cdaa29d396}{set\+File\+Size} (double)
+\item 
+double \hyperlink{classHttpVideoServer_aa2dd1fcd255474530247fa57f0732672}{piece\+Size} ()
+\item 
+void \hyperlink{classHttpVideoServer_a3f5282e81b55f1b70803ac535a985c16}{set\+Piece\+Size} (double)
+\item 
+double \hyperlink{classHttpVideoServer_a0a8769771ade7f0efb642ca9becf2eda}{block\+Size} ()
+\item 
+void \hyperlink{classHttpVideoServer_ab8c7c178fedee7a0fecf005bfba02038}{set\+Block\+Size} (double)
+\item 
+int \hyperlink{classHttpVideoServer_a83e741f6fd02aafa0147f9d9883e1709}{num\+Pieces} ()
+\item 
+void \hyperlink{classHttpVideoServer_ad45d130635cb7264a65461777c50bdfa}{set\+Num\+Pieces} (int)
+\item 
+int \hyperlink{classHttpVideoServer_afa57d2d7c4cfb9b095afab2722f74e32}{num\+Blocks} ()
+\item 
+void \hyperlink{classHttpVideoServer_ac6efcd99e2103e6765ce72eb4ead70c6}{set\+Num\+Blocks} (int)
+\item 
+\hyperlink{classBitField}{Bit\+Field} $\ast$ \hyperlink{classHttpVideoServer_a812a89eb04d1244bd38c02153741ae4b}{local\+Bitfield} ()
+\item 
+void \hyperlink{classHttpVideoServer_a32874ad8aee9502fee85f39e4fc85416}{initialize\+Local\+Bitfield} (bool)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classHttpVideoServer_a3127ef997a71295b1f6de5550958471c}{initialize} ()
+\item 
+virtual void \hyperlink{classHttpVideoServer_ada12e18a6a9441c9d6e6ed4d342ef152}{handle\+Message} (c\+Message $\ast$msg)
+\item 
+virtual void \hyperlink{classHttpVideoServer_a2dc6f992b9415e07df68d88671b644c3}{accept\+Callback} (int socket\+\_\+id, int ret\+\_\+status, void $\ast$my\+Ptr)
+\item 
+virtual void \hyperlink{classHttpVideoServer_aded1f1456e066d10b8d973d9c40e211c}{recv\+Callback} (int socket\+\_\+id, int ret\+\_\+status, c\+Packet $\ast$msg, void $\ast$my\+Ptr)
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf httpt\+Server\+Base redefinitions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual httpt\+Reply\+Message $\ast$ \hyperlink{classHttpVideoServer_acfd022e0c52ecbf11ce85dad3e7cd970}{handle\+Get\+Request} (httpt\+Request\+Message $\ast$request, string resource)
+\item 
+virtual void \hyperlink{classHttpVideoServer_aa127b68d76ece8f70f78350c93f62516}{update\+Display} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classHttpVideoServer_af45336d8522d6f0a882c04ea4cc4301e}{file\+\_\+size\+\_\+var}
+\item 
+double \hyperlink{classHttpVideoServer_a6cb1c220cced89e22cb6b945013adecb}{piece\+\_\+size\+\_\+var}
+\item 
+double \hyperlink{classHttpVideoServer_adf1a02001ad6ab37a3f0728df6bcb618}{block\+\_\+size\+\_\+var}
+\item 
+int \hyperlink{classHttpVideoServer_ae630ec3629f6a4e00a7a28e583395ee2}{num\+Pieces\+\_\+var}
+\item 
+int \hyperlink{classHttpVideoServer_a39d06af889c6ae735c472bd5a04d5fc5}{num\+Blocks\+\_\+var}
+\item 
+\hyperlink{classBitField}{Bit\+Field} $\ast$ \hyperlink{classHttpVideoServer_a8686906ce2ad0b0226567bcb0386e4f8}{local\+Bitfield\+\_\+var}
+\item 
+T\+C\+P\+Socket\+A\+P\+I\+\_\+\+Inet $\ast$ \hyperlink{classHttpVideoServer_ab30327bad9fa9a59dad39b759f9e83c0}{tcp\+\_\+api}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHttpVideoServer_a1d986a4456ab4b0304a8d3be52a5a8fe}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!Http\+Video\+Server@{Http\+Video\+Server}}
+\index{Http\+Video\+Server@{Http\+Video\+Server}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{Http\+Video\+Server()}]{\setlength{\rightskip}{0pt plus 5cm}Http\+Video\+Server\+::\+Http\+Video\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_a1d986a4456ab4b0304a8d3be52a5a8fe}
+\hypertarget{classHttpVideoServer_ab66b707c3d507d35137bfa971b3dffb7}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!````~Http\+Video\+Server@{$\sim$\+Http\+Video\+Server}}
+\index{````~Http\+Video\+Server@{$\sim$\+Http\+Video\+Server}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{$\sim$\+Http\+Video\+Server()}]{\setlength{\rightskip}{0pt plus 5cm}Http\+Video\+Server\+::$\sim$\+Http\+Video\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHttpVideoServer_ab66b707c3d507d35137bfa971b3dffb7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHttpVideoServer_a2dc6f992b9415e07df68d88671b644c3}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!accept\+Callback@{accept\+Callback}}
+\index{accept\+Callback@{accept\+Callback}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{accept\+Callback(int socket\+\_\+id, int ret\+\_\+status, void $\ast$my\+Ptr)}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::accept\+Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{socket\+\_\+id, }
+\item[{int}]{ret\+\_\+status, }
+\item[{void $\ast$}]{my\+Ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classHttpVideoServer_a2dc6f992b9415e07df68d88671b644c3}
+\hypertarget{classHttpVideoServer_a0a8769771ade7f0efb642ca9becf2eda}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!block\+Size@{block\+Size}}
+\index{block\+Size@{block\+Size}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{block\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}double Http\+Video\+Server\+::block\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_a0a8769771ade7f0efb642ca9becf2eda}
+\hypertarget{classHttpVideoServer_a9a536cf80f010801085c141553e0840e}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!file\+Size@{file\+Size}}
+\index{file\+Size@{file\+Size}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{file\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}double Http\+Video\+Server\+::file\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_a9a536cf80f010801085c141553e0840e}
+\hypertarget{classHttpVideoServer_acfd022e0c52ecbf11ce85dad3e7cd970}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!handle\+Get\+Request@{handle\+Get\+Request}}
+\index{handle\+Get\+Request@{handle\+Get\+Request}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{handle\+Get\+Request(httpt\+Request\+Message $\ast$request, string resource)}]{\setlength{\rightskip}{0pt plus 5cm}httpt\+Reply\+Message $\ast$ Http\+Video\+Server\+::handle\+Get\+Request (
+\begin{DoxyParamCaption}
+\item[{httpt\+Request\+Message $\ast$}]{request, }
+\item[{string}]{resource}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classHttpVideoServer_acfd022e0c52ecbf11ce85dad3e7cd970}
+\hypertarget{classHttpVideoServer_ada12e18a6a9441c9d6e6ed4d342ef152}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!handle\+Message@{handle\+Message}}
+\index{handle\+Message@{handle\+Message}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{handle\+Message(c\+Message $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::handle\+Message (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classHttpVideoServer_ada12e18a6a9441c9d6e6ed4d342ef152}
+\hypertarget{classHttpVideoServer_a3127ef997a71295b1f6de5550958471c}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!initialize@{initialize}}
+\index{initialize@{initialize}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{initialize()}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classHttpVideoServer_a3127ef997a71295b1f6de5550958471c}
+\hypertarget{classHttpVideoServer_a32874ad8aee9502fee85f39e4fc85416}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!initialize\+Local\+Bitfield@{initialize\+Local\+Bitfield}}
+\index{initialize\+Local\+Bitfield@{initialize\+Local\+Bitfield}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{initialize\+Local\+Bitfield(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::initialize\+Local\+Bitfield (
+\begin{DoxyParamCaption}
+\item[{bool}]{seeder}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_a32874ad8aee9502fee85f39e4fc85416}
+\hypertarget{classHttpVideoServer_a812a89eb04d1244bd38c02153741ae4b}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!local\+Bitfield@{local\+Bitfield}}
+\index{local\+Bitfield@{local\+Bitfield}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{local\+Bitfield()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bit\+Field} $\ast$ Http\+Video\+Server\+::local\+Bitfield (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_a812a89eb04d1244bd38c02153741ae4b}
+\hypertarget{classHttpVideoServer_afa57d2d7c4cfb9b095afab2722f74e32}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!num\+Blocks@{num\+Blocks}}
+\index{num\+Blocks@{num\+Blocks}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{num\+Blocks()}]{\setlength{\rightskip}{0pt plus 5cm}int Http\+Video\+Server\+::num\+Blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_afa57d2d7c4cfb9b095afab2722f74e32}
+\hypertarget{classHttpVideoServer_a83e741f6fd02aafa0147f9d9883e1709}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!num\+Pieces@{num\+Pieces}}
+\index{num\+Pieces@{num\+Pieces}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{num\+Pieces()}]{\setlength{\rightskip}{0pt plus 5cm}int Http\+Video\+Server\+::num\+Pieces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_a83e741f6fd02aafa0147f9d9883e1709}
+\hypertarget{classHttpVideoServer_aa2dd1fcd255474530247fa57f0732672}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!piece\+Size@{piece\+Size}}
+\index{piece\+Size@{piece\+Size}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{piece\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}double Http\+Video\+Server\+::piece\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_aa2dd1fcd255474530247fa57f0732672}
+\hypertarget{classHttpVideoServer_aded1f1456e066d10b8d973d9c40e211c}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!recv\+Callback@{recv\+Callback}}
+\index{recv\+Callback@{recv\+Callback}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{recv\+Callback(int socket\+\_\+id, int ret\+\_\+status, c\+Packet $\ast$msg, void $\ast$my\+Ptr)}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::recv\+Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{socket\+\_\+id, }
+\item[{int}]{ret\+\_\+status, }
+\item[{c\+Packet $\ast$}]{msg, }
+\item[{void $\ast$}]{my\+Ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classHttpVideoServer_aded1f1456e066d10b8d973d9c40e211c}
+\hypertarget{classHttpVideoServer_ab8c7c178fedee7a0fecf005bfba02038}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!set\+Block\+Size@{set\+Block\+Size}}
+\index{set\+Block\+Size@{set\+Block\+Size}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{set\+Block\+Size(double)}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::set\+Block\+Size (
+\begin{DoxyParamCaption}
+\item[{double}]{block\+\_\+size}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_ab8c7c178fedee7a0fecf005bfba02038}
+\hypertarget{classHttpVideoServer_a40553e7f42d5ad39dc67a5cdaa29d396}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!set\+File\+Size@{set\+File\+Size}}
+\index{set\+File\+Size@{set\+File\+Size}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{set\+File\+Size(double)}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::set\+File\+Size (
+\begin{DoxyParamCaption}
+\item[{double}]{file\+\_\+size}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_a40553e7f42d5ad39dc67a5cdaa29d396}
+\hypertarget{classHttpVideoServer_ac6efcd99e2103e6765ce72eb4ead70c6}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!set\+Num\+Blocks@{set\+Num\+Blocks}}
+\index{set\+Num\+Blocks@{set\+Num\+Blocks}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{set\+Num\+Blocks(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::set\+Num\+Blocks (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Blocks}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_ac6efcd99e2103e6765ce72eb4ead70c6}
+\hypertarget{classHttpVideoServer_ad45d130635cb7264a65461777c50bdfa}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!set\+Num\+Pieces@{set\+Num\+Pieces}}
+\index{set\+Num\+Pieces@{set\+Num\+Pieces}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{set\+Num\+Pieces(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::set\+Num\+Pieces (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Pieces}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_ad45d130635cb7264a65461777c50bdfa}
+\hypertarget{classHttpVideoServer_a3f5282e81b55f1b70803ac535a985c16}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!set\+Piece\+Size@{set\+Piece\+Size}}
+\index{set\+Piece\+Size@{set\+Piece\+Size}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{set\+Piece\+Size(double)}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::set\+Piece\+Size (
+\begin{DoxyParamCaption}
+\item[{double}]{piece\+\_\+size}
+\end{DoxyParamCaption}
+)}\label{classHttpVideoServer_a3f5282e81b55f1b70803ac535a985c16}
+\hypertarget{classHttpVideoServer_aa127b68d76ece8f70f78350c93f62516}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!update\+Display@{update\+Display}}
+\index{update\+Display@{update\+Display}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{update\+Display()}]{\setlength{\rightskip}{0pt plus 5cm}void Http\+Video\+Server\+::update\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classHttpVideoServer_aa127b68d76ece8f70f78350c93f62516}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHttpVideoServer_adf1a02001ad6ab37a3f0728df6bcb618}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!block\+\_\+size\+\_\+var@{block\+\_\+size\+\_\+var}}
+\index{block\+\_\+size\+\_\+var@{block\+\_\+size\+\_\+var}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{block\+\_\+size\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double Http\+Video\+Server\+::block\+\_\+size\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classHttpVideoServer_adf1a02001ad6ab37a3f0728df6bcb618}
+\hypertarget{classHttpVideoServer_af45336d8522d6f0a882c04ea4cc4301e}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!file\+\_\+size\+\_\+var@{file\+\_\+size\+\_\+var}}
+\index{file\+\_\+size\+\_\+var@{file\+\_\+size\+\_\+var}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{file\+\_\+size\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double Http\+Video\+Server\+::file\+\_\+size\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classHttpVideoServer_af45336d8522d6f0a882c04ea4cc4301e}
+\hypertarget{classHttpVideoServer_a8686906ce2ad0b0226567bcb0386e4f8}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!local\+Bitfield\+\_\+var@{local\+Bitfield\+\_\+var}}
+\index{local\+Bitfield\+\_\+var@{local\+Bitfield\+\_\+var}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{local\+Bitfield\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bit\+Field}$\ast$ Http\+Video\+Server\+::local\+Bitfield\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classHttpVideoServer_a8686906ce2ad0b0226567bcb0386e4f8}
+\hypertarget{classHttpVideoServer_a39d06af889c6ae735c472bd5a04d5fc5}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!num\+Blocks\+\_\+var@{num\+Blocks\+\_\+var}}
+\index{num\+Blocks\+\_\+var@{num\+Blocks\+\_\+var}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{num\+Blocks\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Http\+Video\+Server\+::num\+Blocks\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classHttpVideoServer_a39d06af889c6ae735c472bd5a04d5fc5}
+\hypertarget{classHttpVideoServer_ae630ec3629f6a4e00a7a28e583395ee2}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!num\+Pieces\+\_\+var@{num\+Pieces\+\_\+var}}
+\index{num\+Pieces\+\_\+var@{num\+Pieces\+\_\+var}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{num\+Pieces\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Http\+Video\+Server\+::num\+Pieces\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classHttpVideoServer_ae630ec3629f6a4e00a7a28e583395ee2}
+\hypertarget{classHttpVideoServer_a6cb1c220cced89e22cb6b945013adecb}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!piece\+\_\+size\+\_\+var@{piece\+\_\+size\+\_\+var}}
+\index{piece\+\_\+size\+\_\+var@{piece\+\_\+size\+\_\+var}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{piece\+\_\+size\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double Http\+Video\+Server\+::piece\+\_\+size\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classHttpVideoServer_a6cb1c220cced89e22cb6b945013adecb}
+\hypertarget{classHttpVideoServer_ab30327bad9fa9a59dad39b759f9e83c0}{}\index{Http\+Video\+Server@{Http\+Video\+Server}!tcp\+\_\+api@{tcp\+\_\+api}}
+\index{tcp\+\_\+api@{tcp\+\_\+api}!Http\+Video\+Server@{Http\+Video\+Server}}
+\subsubsection[{tcp\+\_\+api}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P\+Socket\+A\+P\+I\+\_\+\+Inet$\ast$ Http\+Video\+Server\+::tcp\+\_\+api\hspace{0.3cm}{\ttfamily [protected]}}\label{classHttpVideoServer_ab30327bad9fa9a59dad39b759f9e83c0}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{HttpVideoServer_8h}{Http\+Video\+Server.\+h}\item 
+\hyperlink{HttpVideoServer_8cc}{Http\+Video\+Server.\+cc}\end{DoxyCompactItemize}

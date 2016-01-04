@@ -1,0 +1,1460 @@
+\hypertarget{classBTPeerWireBase}{}\section{B\+T\+Peer\+Wire\+Base Class Reference}
+\label{classBTPeerWireBase}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+
+
+{\ttfamily \#include $<$B\+T\+Peer\+Wire\+Base.\+h$>$}
+
+Inheritance diagram for B\+T\+Peer\+Wire\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTPeerWireBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTPeerWireBase_ac0f4fe0fb674d693ec56e936b07ec9ce}{B\+T\+Peer\+Wire\+Base} ()
+\item 
+virtual \hyperlink{classBTPeerWireBase_a973e3484fdff1603e77aab6b8dc036b7}{$\sim$\+B\+T\+Peer\+Wire\+Base} ()
+\item 
+\hyperlink{classPeerState}{Peer\+State} \hyperlink{classBTPeerWireBase_aaece1bc1f54f78f704a6d8f122866ec8}{get\+Peer\+State} ()
+\item 
+double \hyperlink{classBTPeerWireBase_a5ba1f14a19dfbc488080c0fde88e1440}{file\+Size} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a424ebf4ed4a42eb208939f198d7fb7f4}{set\+File\+Size} (double)
+\item 
+double \hyperlink{classBTPeerWireBase_ac66fc52cacb612adfa1314eb06610afe}{piece\+Size} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a49e5078e88e79d72256f94b604503b2f}{set\+Piece\+Size} (double)
+\item 
+double \hyperlink{classBTPeerWireBase_a876a1131637f5db2ae216fe7ac19332a}{block\+Size} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a070f6c47f701e48e7843f731ec07c1a4}{set\+Block\+Size} (double)
+\item 
+bool \hyperlink{classBTPeerWireBase_ad75a24948d3225218fdcba16a3b97152}{http\+Use} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a80ba3561ebe152f11b19081e2193bbf0}{set\+Http\+Use} (bool)
+\item 
+bool \hyperlink{classBTPeerWireBase_aa06acdd860849b17b073c9eedffc5fab}{http\+Cache\+Use} ()
+\item 
+void \hyperlink{classBTPeerWireBase_ac1292272489b42e6c5e012247f05ad77}{set\+Http\+Cache\+Use} (bool)
+\item 
+T\+C\+P\+Server\+Thread\+Base $\ast$ \hyperlink{classBTPeerWireBase_a200ae42b2d1b1b107b6dc5de99da0dc7}{get\+Cache\+Thread} ()
+\item 
+int \hyperlink{classBTPeerWireBase_ac638e905388b0d4a3fdfba66d4e1a995}{D\+H\+T\+Port} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a10bffb581df8f5365309cd74c780d9ad}{set\+D\+H\+T\+Port} (int)
+\item 
+const char $\ast$ \hyperlink{classBTPeerWireBase_aa7b0cc25e91a06b24f7b95574f0244cb}{pstr} ()
+\item 
+int \hyperlink{classBTPeerWireBase_a29176942239a5a4e8f6106cd0fc89bca}{pstrlen} ()
+\item 
+int \hyperlink{classBTPeerWireBase_a850b87f6cf6d6a0ade4895971ccef6f1}{keep\+Alive} ()
+\item 
+void \hyperlink{classBTPeerWireBase_ac7f31840e3d4b21046150178489115b0}{set\+Keep\+Alive} (int)
+\item 
+bool \hyperlink{classBTPeerWireBase_a06e9594abde1cb67ea5cad74334d9df5}{have\+Supression} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a4daf47299e5700e78bb436d03fb28176}{set\+Have\+Supression} (bool)
+\item 
+int \hyperlink{classBTPeerWireBase_a38731ea77adc66c533c5ffdf122cec49}{chocking\+Interval} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a12b80e9d6e09391fad908943db5b64d8}{set\+Chocking\+Interval} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_a86978d47f64d7858603ac0427a2c20c6}{downloaders} ()
+\item 
+void \hyperlink{classBTPeerWireBase_ab93d18bc780a3990b06cc6eb979a7370}{set\+Downloaders} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_a3187e8c3c18900e9fe4f1ed3f70c6e2c}{opt\+Unchocked\+Peers} ()
+\item 
+void \hyperlink{classBTPeerWireBase_ae813171f08455037f0ce10b0bea4d67a}{set\+Opt\+Unchocked\+Peers} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_afa74119e211727dd403f8ef1530d2d37}{opt\+Unchocking\+Interval} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a6514733983625bef88ebf5f1f150a7b2}{set\+Opt\+Unchocking\+Interval} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_ac674d6064f8d1dd54f5acf2f928fc28f}{snubbing\+Interval} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a783cb5b489206fc889f4f65d75d8faef}{set\+Snubbing\+Interval} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_a30a1f9ba6320b0a048941a9fd7b21832}{rarest\+List\+Size} ()
+\item 
+void \hyperlink{classBTPeerWireBase_aaf4f7667b97a8a822aa786f733a0c0f5}{set\+Rarest\+List\+Size} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_ad6cf7e2dcd772c4dbbe9eab522bdd0d5}{request\+Queue\+Depth} ()
+\item 
+void \hyperlink{classBTPeerWireBase_af47f87051f1ca07b2de86389c5ad4b80}{set\+Request\+Queue\+Depth} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_a25f1944b519274b519ae97c6ca8c9cd3}{min\+Num\+Connections} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a0c4732ce52b8d764b4193254343af554}{set\+Min\+Num\+Connections} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_a6631a73bc91baf371d07a39875e86ad4}{max\+Num\+Connections} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a32043d147fb1a8a2f1b99a6d014d53fe}{set\+Max\+Num\+Connections} (int)
+\item 
+bool \hyperlink{classBTPeerWireBase_a8ead752e4053f1998856e5e8c47ff759}{super\+Seed\+Mode} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a2465710d8e3555d859ceee03b6310a33}{set\+Super\+Seed\+Mode} (bool)
+\item 
+int \hyperlink{classBTPeerWireBase_a0d0d461305c68f8a1220f2c3a6ce3077}{max\+Num\+Empty\+Tracker\+Responses} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a3c48ea8679cbbeb59fa19c64361ee089}{set\+Max\+Num\+Empty\+Tracker\+Responses} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_a18e202d18a4260b3c569ccf08a82f44d}{current\+Num\+Empty\+Tracker\+Responses} ()
+\item 
+void \hyperlink{classBTPeerWireBase_ae09405b6778985b374b0535b9495f374}{set\+Current\+Num\+Empty\+Tracker\+Responses} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_a8057a2998c2dcc5ebc96c51f62ad1ff4}{current\+Num\+Connections} ()
+\item 
+void \hyperlink{classBTPeerWireBase_ae341c076136c11ff24176be976ab2e4b}{set\+Current\+Num\+Connections} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_adb866231c50fa05206cb82491b847c2b}{pending\+Num\+Connections} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a734e7f46269546945f42db6968fa95b0}{set\+Pending\+Num\+Connections} (int)
+\item 
+\hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} $\ast$ \hyperlink{classBTPeerWireBase_a2c8fc43d80de9ea28f43a942aa8f873f}{tracker\+Response} ()
+\item 
+void \hyperlink{classBTPeerWireBase_aa1dc18c9f0d02c7ae4e6b65197bfd233}{set\+Tracker\+Response} (\hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} $\ast$)
+\item 
+void \hyperlink{classBTPeerWireBase_a1d8cafcc5310e3b28ed438908ed81e2c}{delete\+Tracker\+Response} ()
+\item 
+bool \hyperlink{classBTPeerWireBase_abd91bf168aa4b0deed49f7d69519620c}{have\+Tracker\+Response} ()
+\item 
+int \hyperlink{classBTPeerWireBase_a90058e1bc00f9b03c75823dabb6c5fc8}{num\+Pieces} ()
+\item 
+void \hyperlink{classBTPeerWireBase_ac543b7fce8c6e00b54db8d4dc593a912}{set\+Num\+Pieces} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_a068ea90a8af22bee0f3078f66dbd2e3b}{num\+Blocks} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a3f9ccbd22afd04e758478f6ad52a958b}{set\+Num\+Blocks} (int)
+\item 
+\hyperlink{classBitField}{Bit\+Field} $\ast$ \hyperlink{classBTPeerWireBase_af8e40ebfbd550a4cb1d767a507d95d27}{local\+Bitfield} ()
+\item 
+void \hyperlink{classBTPeerWireBase_acced5c7380896462f1e319dc95b849a0}{initialize\+Local\+Bitfield} (bool)
+\item 
+int \hyperlink{classBTPeerWireBase_a4df8bf274c9665653b47258ad68d70f1}{time\+To\+Seed} ()
+\item 
+void \hyperlink{classBTPeerWireBase_abc3f55145a744df1a5935b4165f11396}{set\+Time\+To\+Seed} (int)
+\item 
+double \hyperlink{classBTPeerWireBase_a505e20c7e80e85c2e073c4ef2a59bce1}{newly\+Connected\+Opt\+Unchoke\+Prob} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a9cda120fc0f9b9b2f3c9346fcfb3b475}{set\+Newly\+Connected\+Opt\+Unchoke\+Prob} (double)
+\item 
+simtime\+\_\+t \hyperlink{classBTPeerWireBase_a6ee7db499a44c8006ff69c598919c996}{download\+Duration} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a554668c82ae960fc241d9df04fcb3bff}{set\+Download\+Duration} (simtime\+\_\+t)
+\item 
+int \hyperlink{classBTPeerWireBase_a9a08a96de65ceb863067fa644a5f6fee}{announce\+Interval} ()
+\item 
+void \hyperlink{classBTPeerWireBase_ae174d6a8c9beaadb6f4202bbfaec5410}{set\+Announce\+Interval} (int)
+\item 
+bool \hyperlink{classBTPeerWireBase_a6938ee5f895636391583a3abf39417bd}{enable\+End\+Game\+Mode} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a1bda4eaf6a7d6124024847ba1087c9c0}{set\+Enable\+End\+Game\+Mode} (bool)
+\item 
+int \hyperlink{classBTPeerWireBase_a45e9486bf6a08a2d934116bb123b3f76}{get\+Download\+Rate\+Sampling\+Duration} ()
+\item 
+void \hyperlink{classBTPeerWireBase_acd98be8adb3693de3865c646bead6020}{set\+Download\+Rate\+Sampling\+Duration} (int)
+\item 
+double \hyperlink{classBTPeerWireBase_a4a61b6e3fffa24a52632365dac8e1fe1}{blocks\+From\+Seeder} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a43078197377df283deb4a705dd76516c}{set\+Blocks\+From\+Seeder} (double)
+\item 
+void \hyperlink{classBTPeerWireBase_ac2c593879a386a1391639846224fb8b5}{increament\+Blocks\+From\+Seeder} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a2f99ecdabfa39dca3d9cec84bf61932b}{set\+Proc\+Delay} (float)
+\item 
+float \hyperlink{classBTPeerWireBase_a53d8619da352c6cd1122dde0f7c890bc}{proc\+Delay} ()
+\item 
+void \hyperlink{classBTPeerWireBase_af0e1b0b39d53a590f764df081dce141b}{increase\+Pending\+Num\+Connections} ()
+\item 
+void \hyperlink{classBTPeerWireBase_abf6a9874393313bc542fd589277672f0}{decrease\+Pending\+Num\+Connections} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a171ff2a801c7c4258f47f1f530746f11}{increase\+Current\+Num\+Connections} ()
+\item 
+void \hyperlink{classBTPeerWireBase_aae62beb7d0021fab6a3dd17b76af47a3}{decrease\+Current\+Num\+Connections} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a2937fc536deecbda9c861154a7ca65de}{check\+Connections} ()
+\item 
+void \hyperlink{classBTPeerWireBase_aabe8d2fba3a2da7a32690baca39be942}{update\+Bit\+Field} (int, int, bool, const char $\ast$)
+\item 
+int \hyperlink{classBTPeerWireBase_a661bbe1ff3795579bd6f2fc23fbe9b2c}{get\+State} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a9abbdc9337cd510dbb05234bf94731ed}{set\+State} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_a4c89b0458e21469e451cba1e4dca7516}{update\+Block\+Requests} (int, int, bool)
+\item 
+const char $\ast$ \hyperlink{classBTPeerWireBase_a3092c670ad079c66a079e0f44db3da2b}{to\+String} (int)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{classBTPeerWireBase_aba05b9c96ed2ca76bc5f6716906ac375}{debugged\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classBTPeerWireBase_a3dbfbfe574e394cf5ea2abd7481af0a7}{initialize} ()
+\item 
+virtual void \hyperlink{classBTPeerWireBase_a152e039e8e6238e3eced4394ef3328c4}{finish} ()
+\item 
+virtual void \hyperlink{classBTPeerWireBase_ac80ef62532bb46794a803a551bb42cf1}{handle\+Message} (c\+Message $\ast$msg)
+\item 
+virtual void \hyperlink{classBTPeerWireBase_a1bf13893f9fdfd12314717cd4f6d5b6f}{remove\+Thread} (T\+C\+P\+Server\+Thread\+Base $\ast$)
+\item 
+void \hyperlink{classBTPeerWireBase_a55736edb35150638f52c67333bd2122c}{handle\+Thread\+Message} (c\+Message $\ast$msg)
+\item 
+void \hyperlink{classBTPeerWireBase_af98aff965846c4f22da03df26f308e66}{handle\+Self\+Message} (c\+Message $\ast$msg)
+\item 
+void \hyperlink{classBTPeerWireBase_ad8a73e47f71d79833b118031872f9a66}{initialize\+Piece\+Frequencies} (int)
+\item 
+void \hyperlink{classBTPeerWireBase_aad05e4c7433361e16f81f0a7546b7071}{print\+Piece\+Frequencies} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a2729ff7330ec1d914abc25dfa8823a2f}{increase\+Piece\+Frequency} (int)
+\item 
+void \hyperlink{classBTPeerWireBase_ab9d11bec8560f32ff67dd21b6f5f0759}{update\+Piece\+Frequencies} (\hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} $\ast$)
+\item 
+bool \hyperlink{classBTPeerWireBase_a15b4bc3902d8dd1de64353b0a23b5cc1}{connection\+Already\+Established} (int)
+\item 
+int \hyperlink{classBTPeerWireBase_a8b610462b59f94fe47c5bec21ec5f18d}{am\+Interested} (\hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} $\ast$)
+\item 
+int \hyperlink{classBTPeerWireBase_aed1b611d84031494e55da3cfed0d38f1}{am\+Interested} (\hyperlink{classBitField}{Bit\+Field} $\ast$)
+\item 
+T\+C\+P\+Server\+Thread\+Base $\ast$ \hyperlink{classBTPeerWireBase_a7e2401afda7eb4d9e51e3bec259f110f}{initialize\+Cache\+Thread} ()
+\item 
+virtual void \hyperlink{classBTPeerWireBase_ab6edc706a0c799b7dbd1d05f69007d78}{inform\+Peers} (int)
+\item 
+virtual void \hyperlink{classBTPeerWireBase_aa9e58e68585e760accc3eb8466ef3e26}{schedule\+Super\+Seed\+Have\+Msg} (T\+C\+P\+Server\+Thread\+Base $\ast$)
+\item 
+virtual void \hyperlink{classBTPeerWireBase_a12abf7046049a31525e72edf3f21c749}{checkand\+Schedule\+Have\+Msgs} (\hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} $\ast$, const char $\ast$)
+\item 
+virtual void \hyperlink{classBTPeerWireBase_ae475ea57dc6493b3966606a361dd6c75}{make\+Next\+Peer\+Move} (T\+C\+P\+Server\+Thread\+Base $\ast$)
+\item 
+void \hyperlink{classBTPeerWireBase_a11ebbc7ea240c2f926b5a417d78ec872}{update\+Interests} ()
+\item 
+virtual void \hyperlink{classBTPeerWireBase_a63cab614f3b8b6dc45cbaea9c83a9667}{schedule\+Connections} (\hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} $\ast$)
+\item 
+void \hyperlink{classBTPeerWireBase_a8345d9e6dbecc9b468b399d9abab3443}{stop\+Listening} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a04accb49268464353db3163ef531285e}{start\+Listening} ()
+\item 
+void \hyperlink{classBTPeerWireBase_ac4af5dc7161abe213c9b094ad05fca20}{stop\+Choking\+Alorithms} ()
+\item 
+virtual void \hyperlink{classBTPeerWireBase_aa75fedc2c61505a7297cf49220884207}{Choking\+Algorithm} ()
+\item 
+virtual void \hyperlink{classBTPeerWireBase_a19aa23680757719101150a776ed2f554}{choke\+Worst\+Downloader} ()
+\item 
+virtual void \hyperlink{classBTPeerWireBase_a0daabdae004f8ae00d1713b355faed29}{Optimistic\+Un\+Choking\+Algorithm} ()
+\item 
+virtual int \hyperlink{classBTPeerWireBase_ad2fa17f7c1edd3a810a2096fe7b9628d}{choose\+Opt\+Unchoke\+Peer} (int)
+\item 
+virtual \hyperlink{classBlockItem}{Block\+Item} $\ast$ \hyperlink{classBTPeerWireBase_ad7505fecedb42835e9b17277678cdec5}{select\+Piece} (\hyperlink{classBitField}{Bit\+Field} $\ast$, bool)
+\item 
+virtual bool \hyperlink{classBTPeerWireBase_aa6dc6370b6ef5b1e84c7d02505ffebbf}{enter\+End\+Game\+Mode} ()
+\item 
+virtual void \hyperlink{classBTPeerWireBase_afc4fec75e43462e0197fad7100cc17a0}{schedule\+End\+Game\+Requests} ()
+\item 
+virtual void \hyperlink{classBTPeerWireBase_a061ffb43d2ff5ed63c9863c47c487792}{schedule\+End\+Game\+Cancel} (int, int, const char $\ast$)
+\item 
+void \hyperlink{classBTPeerWireBase_a52324b2b9722e0facde1083ace692308}{write\+Stats} ()
+\item 
+void \hyperlink{classBTPeerWireBase_a0361382dab9a77ede78aacef835a3470}{print\+Connections} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classBTPeerWireBase_af5f801d2246936ff734d46da2c636808}{file\+\_\+size\+\_\+var}
+\item 
+double \hyperlink{classBTPeerWireBase_a991184da11bea370518375ed22d40851}{piece\+\_\+size\+\_\+var}
+\item 
+double \hyperlink{classBTPeerWireBase_ab42c0dee2bf5f0c4367dda80479e1cd4}{block\+\_\+size\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_ac39f13c6abf79c49378ee6a2e2969b38}{num\+Pieces\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a9e23c447331f54f304a1a80780f4c822}{num\+Blocks\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTPeerWireBase_aaf7c8a682c94dc9722f7bb0820de3c4b}{D\+H\+T\+\_\+port\+\_\+var}
+\item 
+const char $\ast$ \hyperlink{classBTPeerWireBase_a5438f411c39373ffe971d6de0c58816e}{pstr\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a64c379ccef5c078ae8d9ece6849d8647}{pstrlen\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a792fc76ee2289e77d94944da9c1c5d66}{keep\+\_\+alive\+\_\+var}
+\item 
+bool \hyperlink{classBTPeerWireBase_a0eed3e65be2cde5f4a95b75723dd8f7e}{have\+\_\+supression\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a1a8252e85b38f85bb3eee0b42a31b2a4}{chocking\+\_\+interval\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_aa616c5456eb2e3b264392c2b9c115ea8}{downloaders\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a174271fb81f37a9a66906bc215f15517}{opt\+Unchocked\+Peers\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a79a89401f798432ad87174b8d58345b0}{opt\+Unchocking\+\_\+interval\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a14ded2e1d21de7380d6d90099093b981}{snubbing\+\_\+interval\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a6e818940d81beb683b6bd4ce75fc5c63}{rarest\+\_\+list\+\_\+size\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a64714d821af01e62d7156332d8681908}{min\+Num\+Connections\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_af61e2c3444cf0ff89f3e09e4e4ef0858}{max\+Num\+Connections\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a14f7b2a86b180d25b81cb49669f5cb50}{request\+\_\+queue\+\_\+depth\+\_\+var}
+\item 
+bool \hyperlink{classBTPeerWireBase_a938d0530b2065918dc19a616848b4a4f}{super\+\_\+seed\+\_\+mode\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_aa74a8ae6e2471a3133cf5cfd5975a0f6}{time\+To\+Seed\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a5ecd01e493691d21286ae49c8e5d1d63}{max\+Num\+Empty\+Tracker\+Responses\+\_\+var}
+\item 
+double \hyperlink{classBTPeerWireBase_acb9f3589a323f2512b50ecfc7cd133ba}{newly\+Connected\+Opt\+Unchoke\+Prob\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a55a4220687e05aa8038a8c9b2619a1df}{current\+Num\+Empty\+Tracker\+Responses\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a3dfe6134d0d722553e9fabed0259bc22}{current\+Num\+Connections\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_ae02e259afa6ce80b7ea09ca482a807d8}{pending\+Num\+Connections\+\_\+var}
+\item 
+simtime\+\_\+t \hyperlink{classBTPeerWireBase_abaebcb4b4c4d9b3680dcdc4a3f74a2b7}{download\+Duration\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_a917d38e8848421da2de31b7af5e5fee7}{download\+Rate\+Sampling\+Duration\+\_\+var}
+\item 
+double \hyperlink{classBTPeerWireBase_a8b2e1655dd0c93ab97938d9dab95d4ce}{announce\+Interval\+\_\+var}
+\item 
+bool \hyperlink{classBTPeerWireBase_ac02672631f997bf0b445811f97815dee}{enable\+End\+Game\+Mode\+\_\+var}
+\item 
+const char $\ast$ \hyperlink{classBTPeerWireBase_a27a8fde9f860de7cb0024a6a9409b014}{cache\+Ip\+Address\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_aa3bfe78d5613aad46605338c74f8c970}{cache\+Port\+\_\+var}
+\item 
+T\+C\+P\+Server\+Thread\+Base $\ast$ \hyperlink{classBTPeerWireBase_a82ee3fdd3e35088bed5883fb3e5c7bc6}{cache\+Thread}
+\item 
+bool \hyperlink{classBTPeerWireBase_ad26a2be1531a341894c3bb2b35ee465e}{use\+\_\+http\+\_\+var}
+\item 
+bool \hyperlink{classBTPeerWireBase_a5dffbc63fa4a4c544a77cbfb4a46908c}{use\+\_\+chache\+\_\+server\+\_\+var}
+\item 
+T\+C\+P $\ast$ \hyperlink{classBTPeerWireBase_aff8cb31aa43842c0fab059e388e221ef}{tcp}
+\item 
+int \hyperlink{classBTPeerWireBase_a7ae53ebd43795e141d27ebdbb3588219}{proc\+Delay\+\_\+var}
+\item 
+c\+Message $\ast$ \hyperlink{classBTPeerWireBase_ad44a6450f42876e94ca1372e51edcd42}{evt\+Choke\+Alg}
+\item 
+c\+Message $\ast$ \hyperlink{classBTPeerWireBase_a94d72b62108190bbf2183b6b371b8e4c}{evt\+Opt\+Un\+Choke}
+\item 
+c\+Message $\ast$ \hyperlink{classBTPeerWireBase_ad75a6b3df2cc0f51e44aa3acb837c936}{evt\+Tracker\+Comm}
+\item 
+c\+Message $\ast$ \hyperlink{classBTPeerWireBase_a19574db56758ba0a45cd9c0017bef38b}{evt\+Cache\+Thread\+Creation}
+\item 
+\hyperlink{classBitField}{Bit\+Field} $\ast$ \hyperlink{classBTPeerWireBase_a723a90b749291f3f862fa39ce2df1034}{local\+Bitfield\+\_\+var}
+\item 
+\hyperlink{classPieceFreqState}{Piece\+Freq\+State} \hyperlink{classBTPeerWireBase_a179b178d1173d13aa608714414058589}{piece\+Freq\+State}
+\item 
+\hyperlink{classPeerState}{Peer\+State} \hyperlink{classBTPeerWireBase_a5d67dee532c53e838961c5cd37e12430}{peer\+State}
+\item 
+\hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} $\ast$ \hyperlink{classBTPeerWireBase_a4dd433fcd65380323cb62e4b74b73b96}{tracker\+Response\+\_\+var}
+\item 
+int \hyperlink{classBTPeerWireBase_aaef46a7d9537a431b80d5fed52ec841e}{state\+\_\+var}
+\item 
+\hyperlink{BTUtils_8h_a23f79ef107bda748bd273978e5eea31a}{Request\+Entry\+Vector} \hyperlink{classBTPeerWireBase_a057a81a91aecb54a9bb1f20ba371f399}{end\+Game\+Requests}
+\item 
+\hyperlink{BitField_8h_ad6742c937d1179f80218e1cd18cbf8b5}{Block\+Item\+Vector} \hyperlink{classBTPeerWireBase_ae87ae67a5ad8978dde57998c632aff09}{super\+Seed\+Pending}
+\item 
+c\+Module $\ast$ \hyperlink{classBTPeerWireBase_abc5d6735698c92b5926620f2968c3e0e}{bt\+Statistics\+Module}
+\item 
+c\+Simple\+Module $\ast$ \hyperlink{classBTPeerWireBase_a90c1bb128400f8a1fdd9990709a48df8}{bt\+Statistics}
+\item 
+set$<$ string $>$ \hyperlink{classBTPeerWireBase_a319c7c648087f56c1656b7d04a13a016}{data\+Provider\+Peer\+I\+Ds}
+\item 
+double \hyperlink{classBTPeerWireBase_a4b39809a3fd1b882e1399340b607eb4e}{blocks\+From\+Seeder\+\_\+var}
+\item 
+set$<$ string $>$ \hyperlink{classBTPeerWireBase_ae3c59b22b14bbd3aeeb29f1b377bdeb6}{closed\+Remote\+Peers\+I\+D}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bit\+Torrent protocol
+
+Server side of peer-\/wire protocol\+: handles all request/response messages during the client $<$-\/$>$ peer conversation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTPeerWireBase_ac0f4fe0fb674d693ec56e936b07ec9ce}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{B\+T\+Peer\+Wire\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Peer\+Wire\+Base\+::\+B\+T\+Peer\+Wire\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ac0f4fe0fb674d693ec56e936b07ec9ce}
+\hypertarget{classBTPeerWireBase_a973e3484fdff1603e77aab6b8dc036b7}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!````~B\+T\+Peer\+Wire\+Base@{$\sim$\+B\+T\+Peer\+Wire\+Base}}
+\index{````~B\+T\+Peer\+Wire\+Base@{$\sim$\+B\+T\+Peer\+Wire\+Base}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{$\sim$\+B\+T\+Peer\+Wire\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Peer\+Wire\+Base\+::$\sim$\+B\+T\+Peer\+Wire\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPeerWireBase_a973e3484fdff1603e77aab6b8dc036b7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTPeerWireBase_a8b610462b59f94fe47c5bec21ec5f18d}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!am\+Interested@{am\+Interested}}
+\index{am\+Interested@{am\+Interested}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{am\+Interested(\+B\+T\+Bitfield\+Msg $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::am\+Interested (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Bitfield\+Msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a8b610462b59f94fe47c5bec21ec5f18d}
+Determine if this client is interested in any piece of a peer.
+
+Checks the local bitfield against a remote one and determines whether this client is interested in a piece available at the remote peer. \hypertarget{classBTPeerWireBase_aed1b611d84031494e55da3cfed0d38f1}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!am\+Interested@{am\+Interested}}
+\index{am\+Interested@{am\+Interested}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{am\+Interested(\+Bit\+Field $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::am\+Interested (
+\begin{DoxyParamCaption}
+\item[{{\bf Bit\+Field} $\ast$}]{bit\+Field}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_aed1b611d84031494e55da3cfed0d38f1}
+Checks the local bitfield against a remote one and determines whether this client is interested in a piece available at the remote peer. \hypertarget{classBTPeerWireBase_a9a08a96de65ceb863067fa644a5f6fee}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!announce\+Interval@{announce\+Interval}}
+\index{announce\+Interval@{announce\+Interval}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{announce\+Interval()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::announce\+Interval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a9a08a96de65ceb863067fa644a5f6fee}
+\hypertarget{classBTPeerWireBase_a4a61b6e3fffa24a52632365dac8e1fe1}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!blocks\+From\+Seeder@{blocks\+From\+Seeder}}
+\index{blocks\+From\+Seeder@{blocks\+From\+Seeder}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{blocks\+From\+Seeder()}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::blocks\+From\+Seeder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a4a61b6e3fffa24a52632365dac8e1fe1}
+\hypertarget{classBTPeerWireBase_a876a1131637f5db2ae216fe7ac19332a}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!block\+Size@{block\+Size}}
+\index{block\+Size@{block\+Size}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{block\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::block\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a876a1131637f5db2ae216fe7ac19332a}
+\hypertarget{classBTPeerWireBase_a12abf7046049a31525e72edf3f21c749}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!checkand\+Schedule\+Have\+Msgs@{checkand\+Schedule\+Have\+Msgs}}
+\index{checkand\+Schedule\+Have\+Msgs@{checkand\+Schedule\+Have\+Msgs}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{checkand\+Schedule\+Have\+Msgs(\+B\+T\+Bitfield\+Msg $\ast$, const char $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::checkand\+Schedule\+Have\+Msgs (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Bitfield\+Msg} $\ast$}]{msg, }
+\item[{const char $\ast$}]{peer\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_a12abf7046049a31525e72edf3f21c749}
+In super-\/seeding mode, it schedules a Have msg to a peer that previously downloaded a piece.
+
+In super-\/seeding mode, it schedules a Have msg to a peer that previously downloaded a piece, only if this piece has been seen in an other peer\textquotesingle{}s bitfield.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_a2937fc536deecbda9c861154a7ca65de}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!check\+Connections@{check\+Connections}}
+\index{check\+Connections@{check\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{check\+Connections()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::check\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a2937fc536deecbda9c861154a7ca65de}
+\hypertarget{classBTPeerWireBase_a38731ea77adc66c533c5ffdf122cec49}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!chocking\+Interval@{chocking\+Interval}}
+\index{chocking\+Interval@{chocking\+Interval}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{chocking\+Interval()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::chocking\+Interval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a38731ea77adc66c533c5ffdf122cec49}
+\hypertarget{classBTPeerWireBase_a19aa23680757719101150a776ed2f554}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!choke\+Worst\+Downloader@{choke\+Worst\+Downloader}}
+\index{choke\+Worst\+Downloader@{choke\+Worst\+Downloader}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{choke\+Worst\+Downloader()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::choke\+Worst\+Downloader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_a19aa23680757719101150a776ed2f554}
+Called when a peer with an upload rate better than (at least) one of the current downloaders gets interested. In this case, the downloader with the worst upload rate gets choked.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_aa75fedc2c61505a7297cf49220884207}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!Choking\+Algorithm@{Choking\+Algorithm}}
+\index{Choking\+Algorithm@{Choking\+Algorithm}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{Choking\+Algorithm()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::\+Choking\+Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_aa75fedc2c61505a7297cf49220884207}
+Choking algorithm as specified in the $<$a href="\href{http://wiki.theory.org/BitTorrentSpecification}{\tt http\+://wiki.\+theory.\+org/\+Bit\+Torrent\+Specification}"$>$ Bit\+Torrent Protocol Specification v1.\+0. 
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_ad2fa17f7c1edd3a810a2096fe7b9628d}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!choose\+Opt\+Unchoke\+Peer@{choose\+Opt\+Unchoke\+Peer}}
+\index{choose\+Opt\+Unchoke\+Peer@{choose\+Opt\+Unchoke\+Peer}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{choose\+Opt\+Unchoke\+Peer(int)}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::choose\+Opt\+Unchoke\+Peer (
+\begin{DoxyParamCaption}
+\item[{int}]{candidates\+Vector\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_ad2fa17f7c1edd3a810a2096fe7b9628d}
+Given the set of the candidate peers (for optimistic unchocking), it chooses one, giving priority to newly connected peers. The followed $<$a href="\href{http://wiki.theory.org/BitTorrentSpecification}{\tt http\+://wiki.\+theory.\+org/\+Bit\+Torrent\+Specification}"$>$ specification  states that \char`\"{}$<$i$>$\+Newly connected peers are three times as likely to start as the current optimistic unchoke as
+anywhere else in the rotation$<$/i$>$\char`\"{}. This is interprented as follows\+:
+
+The candidate peers have been inserted in the candidates vector in decreasing connection time (the time elapsed since the establishement of their connection with this client) i.\+e. the last peer in the vector is the most recently connected. As defined in the specification, we select a newly connected peer with a probability three times greater than the probability of selecting any other peer.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_a15b4bc3902d8dd1de64353b0a23b5cc1}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!connection\+Already\+Established@{connection\+Already\+Established}}
+\index{connection\+Already\+Established@{connection\+Already\+Established}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{connection\+Already\+Established(int)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::connection\+Already\+Established (
+\begin{DoxyParamCaption}
+\item[{int}]{conn\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a15b4bc3902d8dd1de64353b0a23b5cc1}
+Method that decides whether to accept an \textquotesingle{}incoming\textquotesingle{} connection or not.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_a8057a2998c2dcc5ebc96c51f62ad1ff4}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!current\+Num\+Connections@{current\+Num\+Connections}}
+\index{current\+Num\+Connections@{current\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{current\+Num\+Connections()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::current\+Num\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a8057a2998c2dcc5ebc96c51f62ad1ff4}
+\hypertarget{classBTPeerWireBase_a18e202d18a4260b3c569ccf08a82f44d}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!current\+Num\+Empty\+Tracker\+Responses@{current\+Num\+Empty\+Tracker\+Responses}}
+\index{current\+Num\+Empty\+Tracker\+Responses@{current\+Num\+Empty\+Tracker\+Responses}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{current\+Num\+Empty\+Tracker\+Responses()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::current\+Num\+Empty\+Tracker\+Responses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a18e202d18a4260b3c569ccf08a82f44d}
+\hypertarget{classBTPeerWireBase_aae62beb7d0021fab6a3dd17b76af47a3}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!decrease\+Current\+Num\+Connections@{decrease\+Current\+Num\+Connections}}
+\index{decrease\+Current\+Num\+Connections@{decrease\+Current\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{decrease\+Current\+Num\+Connections()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::decrease\+Current\+Num\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_aae62beb7d0021fab6a3dd17b76af47a3}
+\hypertarget{classBTPeerWireBase_abf6a9874393313bc542fd589277672f0}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!decrease\+Pending\+Num\+Connections@{decrease\+Pending\+Num\+Connections}}
+\index{decrease\+Pending\+Num\+Connections@{decrease\+Pending\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{decrease\+Pending\+Num\+Connections()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::decrease\+Pending\+Num\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_abf6a9874393313bc542fd589277672f0}
+\hypertarget{classBTPeerWireBase_a1d8cafcc5310e3b28ed438908ed81e2c}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!delete\+Tracker\+Response@{delete\+Tracker\+Response}}
+\index{delete\+Tracker\+Response@{delete\+Tracker\+Response}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{delete\+Tracker\+Response()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::delete\+Tracker\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a1d8cafcc5310e3b28ed438908ed81e2c}
+\hypertarget{classBTPeerWireBase_ac638e905388b0d4a3fdfba66d4e1a995}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!D\+H\+T\+Port@{D\+H\+T\+Port}}
+\index{D\+H\+T\+Port@{D\+H\+T\+Port}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{D\+H\+T\+Port()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::\+D\+H\+T\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ac638e905388b0d4a3fdfba66d4e1a995}
+\hypertarget{classBTPeerWireBase_a6ee7db499a44c8006ff69c598919c996}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!download\+Duration@{download\+Duration}}
+\index{download\+Duration@{download\+Duration}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{download\+Duration()}]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t B\+T\+Peer\+Wire\+Base\+::download\+Duration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a6ee7db499a44c8006ff69c598919c996}
+\hypertarget{classBTPeerWireBase_a86978d47f64d7858603ac0427a2c20c6}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!downloaders@{downloaders}}
+\index{downloaders@{downloaders}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{downloaders()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::downloaders (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a86978d47f64d7858603ac0427a2c20c6}
+\hypertarget{classBTPeerWireBase_a6938ee5f895636391583a3abf39417bd}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!enable\+End\+Game\+Mode@{enable\+End\+Game\+Mode}}
+\index{enable\+End\+Game\+Mode@{enable\+End\+Game\+Mode}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{enable\+End\+Game\+Mode()}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::enable\+End\+Game\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a6938ee5f895636391583a3abf39417bd}
+\hypertarget{classBTPeerWireBase_aa6dc6370b6ef5b1e84c7d02505ffebbf}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!enter\+End\+Game\+Mode@{enter\+End\+Game\+Mode}}
+\index{enter\+End\+Game\+Mode@{enter\+End\+Game\+Mode}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{enter\+End\+Game\+Mode()}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::enter\+End\+Game\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_aa6dc6370b6ef5b1e84c7d02505ffebbf}
+Determined whether the client shall enter the end-\/game mode.
+
+Determins whether this client should enter the end-\/game phase. According to the $<$a href="\href{http://wiki.theory.org/BitTorrentSpecification}{\tt http\+://wiki.\+theory.\+org/\+Bit\+Torrent\+Specification}"$>$ specification  "{\itshape  There is no documented thresholds, recommended percentages, or block counts that could be used as a guide or Recommended Best Practice here.}. In this implementation, we follow the approach described in\+: B. Cohen, â€œ\+Incentives build robustness in bittorrent,â€� in Proc. First Workshop on Economics of Peer-\/to-\/\+Peer Systems, Berkeley, U\+S\+A, June 2003 and also adopted in $<$a href="\href{http://hal.inria.fr/inria-00000156/en}{\tt http\+://hal.\+inria.\+fr/inria-\/00000156/en}"$>$ the technical report suggested by the $<$a href="\href{http://wiki.theory.org/BitTorrentSpecification}{\tt http\+://wiki.\+theory.\+org/\+Bit\+Torrent\+Specification}"$>$ specification . In this approach, the end game mode \char`\"{}$<$i$>$... starts once a peer has requested all blocks, i.\+e., blocks are either requested or already
+received.$<$/i$>$\char`\"{} . At the same time, since the specification indicates that \char`\"{}$<$i$>$ ... it\textquotesingle{}s a good idea to keep the
+number of the pending block low (1 or 2 blocks)...\char`\"{}, we make a compromise and set this threashold to the maximum size of the request queue.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_a5ba1f14a19dfbc488080c0fde88e1440}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!file\+Size@{file\+Size}}
+\index{file\+Size@{file\+Size}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{file\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::file\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a5ba1f14a19dfbc488080c0fde88e1440}
+\hypertarget{classBTPeerWireBase_a152e039e8e6238e3eced4394ef3328c4}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!finish@{finish}}
+\index{finish@{finish}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{finish()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_a152e039e8e6238e3eced4394ef3328c4}
+\hypertarget{classBTPeerWireBase_a200ae42b2d1b1b107b6dc5de99da0dc7}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!get\+Cache\+Thread@{get\+Cache\+Thread}}
+\index{get\+Cache\+Thread@{get\+Cache\+Thread}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{get\+Cache\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P\+Server\+Thread\+Base $\ast$ B\+T\+Peer\+Wire\+Base\+::get\+Cache\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a200ae42b2d1b1b107b6dc5de99da0dc7}
+\hypertarget{classBTPeerWireBase_a45e9486bf6a08a2d934116bb123b3f76}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!get\+Download\+Rate\+Sampling\+Duration@{get\+Download\+Rate\+Sampling\+Duration}}
+\index{get\+Download\+Rate\+Sampling\+Duration@{get\+Download\+Rate\+Sampling\+Duration}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{get\+Download\+Rate\+Sampling\+Duration()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::get\+Download\+Rate\+Sampling\+Duration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a45e9486bf6a08a2d934116bb123b3f76}
+\hypertarget{classBTPeerWireBase_aaece1bc1f54f78f704a6d8f122866ec8}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!get\+Peer\+State@{get\+Peer\+State}}
+\index{get\+Peer\+State@{get\+Peer\+State}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{get\+Peer\+State()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Peer\+State} B\+T\+Peer\+Wire\+Base\+::get\+Peer\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_aaece1bc1f54f78f704a6d8f122866ec8}
+\hypertarget{classBTPeerWireBase_a661bbe1ff3795579bd6f2fc23fbe9b2c}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{get\+State()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::get\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a661bbe1ff3795579bd6f2fc23fbe9b2c}
+\hypertarget{classBTPeerWireBase_ac80ef62532bb46794a803a551bb42cf1}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!handle\+Message@{handle\+Message}}
+\index{handle\+Message@{handle\+Message}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{handle\+Message(c\+Message $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::handle\+Message (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_ac80ef62532bb46794a803a551bb42cf1}
+Main peer wire protocol functionality. This method manages connections/messages/timers etc. The major deviation from the standard T\+C\+P\+Srv\+Host (I\+N\+E\+T) is that it also supports active establishment of connections (and the corresponding threads). \hypertarget{classBTPeerWireBase_af98aff965846c4f22da03df26f308e66}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!handle\+Self\+Message@{handle\+Self\+Message}}
+\index{handle\+Self\+Message@{handle\+Self\+Message}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{handle\+Self\+Message(c\+Message $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::handle\+Self\+Message (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_af98aff965846c4f22da03df26f308e66}
+Handles a message scheduled by this Peer Wire protocol base module. It practically handles timers scheduled by this module for itself. \hypertarget{classBTPeerWireBase_a55736edb35150638f52c67333bd2122c}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!handle\+Thread\+Message@{handle\+Thread\+Message}}
+\index{handle\+Thread\+Message@{handle\+Thread\+Message}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{handle\+Thread\+Message(c\+Message $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::handle\+Thread\+Message (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a55736edb35150638f52c67333bd2122c}
+Handles a message sent by a thread to inform this Peer Wire protocol base module about an event or an action that must take place. \hypertarget{classBTPeerWireBase_a06e9594abde1cb67ea5cad74334d9df5}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!have\+Supression@{have\+Supression}}
+\index{have\+Supression@{have\+Supression}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{have\+Supression()}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::have\+Supression (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a06e9594abde1cb67ea5cad74334d9df5}
+\hypertarget{classBTPeerWireBase_abd91bf168aa4b0deed49f7d69519620c}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!have\+Tracker\+Response@{have\+Tracker\+Response}}
+\index{have\+Tracker\+Response@{have\+Tracker\+Response}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{have\+Tracker\+Response()}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::have\+Tracker\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_abd91bf168aa4b0deed49f7d69519620c}
+\hypertarget{classBTPeerWireBase_aa06acdd860849b17b073c9eedffc5fab}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!http\+Cache\+Use@{http\+Cache\+Use}}
+\index{http\+Cache\+Use@{http\+Cache\+Use}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{http\+Cache\+Use()}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::http\+Cache\+Use (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_aa06acdd860849b17b073c9eedffc5fab}
+\hypertarget{classBTPeerWireBase_ad75a24948d3225218fdcba16a3b97152}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!http\+Use@{http\+Use}}
+\index{http\+Use@{http\+Use}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{http\+Use()}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::http\+Use (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ad75a24948d3225218fdcba16a3b97152}
+\hypertarget{classBTPeerWireBase_ac2c593879a386a1391639846224fb8b5}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!increament\+Blocks\+From\+Seeder@{increament\+Blocks\+From\+Seeder}}
+\index{increament\+Blocks\+From\+Seeder@{increament\+Blocks\+From\+Seeder}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{increament\+Blocks\+From\+Seeder()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::increament\+Blocks\+From\+Seeder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ac2c593879a386a1391639846224fb8b5}
+\hypertarget{classBTPeerWireBase_a171ff2a801c7c4258f47f1f530746f11}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!increase\+Current\+Num\+Connections@{increase\+Current\+Num\+Connections}}
+\index{increase\+Current\+Num\+Connections@{increase\+Current\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{increase\+Current\+Num\+Connections()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::increase\+Current\+Num\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a171ff2a801c7c4258f47f1f530746f11}
+\hypertarget{classBTPeerWireBase_af0e1b0b39d53a590f764df081dce141b}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!increase\+Pending\+Num\+Connections@{increase\+Pending\+Num\+Connections}}
+\index{increase\+Pending\+Num\+Connections@{increase\+Pending\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{increase\+Pending\+Num\+Connections()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::increase\+Pending\+Num\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_af0e1b0b39d53a590f764df081dce141b}
+\hypertarget{classBTPeerWireBase_a2729ff7330ec1d914abc25dfa8823a2f}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!increase\+Piece\+Frequency@{increase\+Piece\+Frequency}}
+\index{increase\+Piece\+Frequency@{increase\+Piece\+Frequency}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{increase\+Piece\+Frequency(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::increase\+Piece\+Frequency (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a2729ff7330ec1d914abc25dfa8823a2f}
+\hypertarget{classBTPeerWireBase_ab6edc706a0c799b7dbd1d05f69007d78}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!inform\+Peers@{inform\+Peers}}
+\index{inform\+Peers@{inform\+Peers}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{inform\+Peers(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::inform\+Peers (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_ab6edc706a0c799b7dbd1d05f69007d78}
+Informs all connected peers about the reception of a piece.
+
+Schedules a Have msg to inform connected peers about the reception of this piece. \hypertarget{classBTPeerWireBase_a3dbfbfe574e394cf5ea2abd7481af0a7}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!initialize@{initialize}}
+\index{initialize@{initialize}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{initialize()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_a3dbfbfe574e394cf5ea2abd7481af0a7}
+\hypertarget{classBTPeerWireBase_a7e2401afda7eb4d9e51e3bec259f110f}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!initialize\+Cache\+Thread@{initialize\+Cache\+Thread}}
+\index{initialize\+Cache\+Thread@{initialize\+Cache\+Thread}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{initialize\+Cache\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P\+Server\+Thread\+Base $\ast$ B\+T\+Peer\+Wire\+Base\+::initialize\+Cache\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a7e2401afda7eb4d9e51e3bec259f110f}
+Initialize the cache thread to send Http request through the cache
+
+This method is called to intialize the cache thread which will be used by all the peers\textquotesingle{} threads to send H\+T\+T\+P piece request \hypertarget{classBTPeerWireBase_acced5c7380896462f1e319dc95b849a0}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!initialize\+Local\+Bitfield@{initialize\+Local\+Bitfield}}
+\index{initialize\+Local\+Bitfield@{initialize\+Local\+Bitfield}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{initialize\+Local\+Bitfield(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::initialize\+Local\+Bitfield (
+\begin{DoxyParamCaption}
+\item[{bool}]{seeder}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_acced5c7380896462f1e319dc95b849a0}
+\hypertarget{classBTPeerWireBase_ad8a73e47f71d79833b118031872f9a66}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!initialize\+Piece\+Frequencies@{initialize\+Piece\+Frequencies}}
+\index{initialize\+Piece\+Frequencies@{initialize\+Piece\+Frequencies}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{initialize\+Piece\+Frequencies(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::initialize\+Piece\+Frequencies (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ad8a73e47f71d79833b118031872f9a66}
+\hypertarget{classBTPeerWireBase_a850b87f6cf6d6a0ade4895971ccef6f1}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!keep\+Alive@{keep\+Alive}}
+\index{keep\+Alive@{keep\+Alive}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{keep\+Alive()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::keep\+Alive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a850b87f6cf6d6a0ade4895971ccef6f1}
+\hypertarget{classBTPeerWireBase_af8e40ebfbd550a4cb1d767a507d95d27}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!local\+Bitfield@{local\+Bitfield}}
+\index{local\+Bitfield@{local\+Bitfield}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{local\+Bitfield()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bit\+Field} $\ast$ B\+T\+Peer\+Wire\+Base\+::local\+Bitfield (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_af8e40ebfbd550a4cb1d767a507d95d27}
+\hypertarget{classBTPeerWireBase_ae475ea57dc6493b3966606a361dd6c75}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!make\+Next\+Peer\+Move@{make\+Next\+Peer\+Move}}
+\index{make\+Next\+Peer\+Move@{make\+Next\+Peer\+Move}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{make\+Next\+Peer\+Move(\+T\+C\+P\+Server\+Thread\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::make\+Next\+Peer\+Move (
+\begin{DoxyParamCaption}
+\item[{T\+C\+P\+Server\+Thread\+Base $\ast$}]{thread}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_ae475ea57dc6493b3966606a361dd6c75}
+Makes the next move regarding a certain peer that has just provided a piece or has just unchoked this client.
+
+Makes the next move regarding a certain peer that has just provided a piece or has just unchoked this client. This may either mean requesting one more piece or denoting that this client is not interested in this remote peer any more.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_a6631a73bc91baf371d07a39875e86ad4}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!max\+Num\+Connections@{max\+Num\+Connections}}
+\index{max\+Num\+Connections@{max\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{max\+Num\+Connections()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::max\+Num\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a6631a73bc91baf371d07a39875e86ad4}
+\hypertarget{classBTPeerWireBase_a0d0d461305c68f8a1220f2c3a6ce3077}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!max\+Num\+Empty\+Tracker\+Responses@{max\+Num\+Empty\+Tracker\+Responses}}
+\index{max\+Num\+Empty\+Tracker\+Responses@{max\+Num\+Empty\+Tracker\+Responses}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{max\+Num\+Empty\+Tracker\+Responses()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::max\+Num\+Empty\+Tracker\+Responses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a0d0d461305c68f8a1220f2c3a6ce3077}
+\hypertarget{classBTPeerWireBase_a25f1944b519274b519ae97c6ca8c9cd3}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!min\+Num\+Connections@{min\+Num\+Connections}}
+\index{min\+Num\+Connections@{min\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{min\+Num\+Connections()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::min\+Num\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a25f1944b519274b519ae97c6ca8c9cd3}
+\hypertarget{classBTPeerWireBase_a505e20c7e80e85c2e073c4ef2a59bce1}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!newly\+Connected\+Opt\+Unchoke\+Prob@{newly\+Connected\+Opt\+Unchoke\+Prob}}
+\index{newly\+Connected\+Opt\+Unchoke\+Prob@{newly\+Connected\+Opt\+Unchoke\+Prob}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{newly\+Connected\+Opt\+Unchoke\+Prob()}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::newly\+Connected\+Opt\+Unchoke\+Prob (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a505e20c7e80e85c2e073c4ef2a59bce1}
+\hypertarget{classBTPeerWireBase_a068ea90a8af22bee0f3078f66dbd2e3b}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!num\+Blocks@{num\+Blocks}}
+\index{num\+Blocks@{num\+Blocks}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{num\+Blocks()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::num\+Blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a068ea90a8af22bee0f3078f66dbd2e3b}
+\hypertarget{classBTPeerWireBase_a90058e1bc00f9b03c75823dabb6c5fc8}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!num\+Pieces@{num\+Pieces}}
+\index{num\+Pieces@{num\+Pieces}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{num\+Pieces()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::num\+Pieces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a90058e1bc00f9b03c75823dabb6c5fc8}
+\hypertarget{classBTPeerWireBase_a0daabdae004f8ae00d1713b355faed29}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!Optimistic\+Un\+Choking\+Algorithm@{Optimistic\+Un\+Choking\+Algorithm}}
+\index{Optimistic\+Un\+Choking\+Algorithm@{Optimistic\+Un\+Choking\+Algorithm}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{Optimistic\+Un\+Choking\+Algorithm()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::\+Optimistic\+Un\+Choking\+Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_a0daabdae004f8ae00d1713b355faed29}
+Optimistic Unchoking algorithm. The implementation deviates from the $<$a href="\href{http://wiki.theory.org/BitTorrentSpecification}{\tt http\+://wiki.\+theory.\+org/\+Bit\+Torrent\+Specification}"$>$ specification  in the following aspect\+: the peer that is selected to be optimistically unchoked, is interested and does not count for a downloader. The reasoning behind this deviation is that if this peer is not interested it means that it already has some data. In effect, the bootstrapping aspect of this algorithm is weakened i.\+e. optimistic unchoking is also used (apart from finding better connections) to let newly connected peers download some data that can later \char`\"{}exchange\char`\"{}.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_a3187e8c3c18900e9fe4f1ed3f70c6e2c}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!opt\+Unchocked\+Peers@{opt\+Unchocked\+Peers}}
+\index{opt\+Unchocked\+Peers@{opt\+Unchocked\+Peers}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{opt\+Unchocked\+Peers()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::opt\+Unchocked\+Peers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a3187e8c3c18900e9fe4f1ed3f70c6e2c}
+\hypertarget{classBTPeerWireBase_afa74119e211727dd403f8ef1530d2d37}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!opt\+Unchocking\+Interval@{opt\+Unchocking\+Interval}}
+\index{opt\+Unchocking\+Interval@{opt\+Unchocking\+Interval}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{opt\+Unchocking\+Interval()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::opt\+Unchocking\+Interval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_afa74119e211727dd403f8ef1530d2d37}
+\hypertarget{classBTPeerWireBase_adb866231c50fa05206cb82491b847c2b}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!pending\+Num\+Connections@{pending\+Num\+Connections}}
+\index{pending\+Num\+Connections@{pending\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{pending\+Num\+Connections()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::pending\+Num\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_adb866231c50fa05206cb82491b847c2b}
+\hypertarget{classBTPeerWireBase_ac66fc52cacb612adfa1314eb06610afe}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!piece\+Size@{piece\+Size}}
+\index{piece\+Size@{piece\+Size}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{piece\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::piece\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ac66fc52cacb612adfa1314eb06610afe}
+\hypertarget{classBTPeerWireBase_a0361382dab9a77ede78aacef835a3470}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!print\+Connections@{print\+Connections}}
+\index{print\+Connections@{print\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{print\+Connections()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::print\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a0361382dab9a77ede78aacef835a3470}
+Help method used to print information about this clients peer state i.\+e. connections with other peers. \hypertarget{classBTPeerWireBase_aad05e4c7433361e16f81f0a7546b7071}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!print\+Piece\+Frequencies@{print\+Piece\+Frequencies}}
+\index{print\+Piece\+Frequencies@{print\+Piece\+Frequencies}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{print\+Piece\+Frequencies()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::print\+Piece\+Frequencies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_aad05e4c7433361e16f81f0a7546b7071}
+\hypertarget{classBTPeerWireBase_a53d8619da352c6cd1122dde0f7c890bc}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!proc\+Delay@{proc\+Delay}}
+\index{proc\+Delay@{proc\+Delay}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{proc\+Delay()}]{\setlength{\rightskip}{0pt plus 5cm}float B\+T\+Peer\+Wire\+Base\+::proc\+Delay (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a53d8619da352c6cd1122dde0f7c890bc}
+\hypertarget{classBTPeerWireBase_aa7b0cc25e91a06b24f7b95574f0244cb}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!pstr@{pstr}}
+\index{pstr@{pstr}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{pstr()}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Peer\+Wire\+Base\+::pstr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_aa7b0cc25e91a06b24f7b95574f0244cb}
+\hypertarget{classBTPeerWireBase_a29176942239a5a4e8f6106cd0fc89bca}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!pstrlen@{pstrlen}}
+\index{pstrlen@{pstrlen}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{pstrlen()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::pstrlen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a29176942239a5a4e8f6106cd0fc89bca}
+\hypertarget{classBTPeerWireBase_a30a1f9ba6320b0a048941a9fd7b21832}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!rarest\+List\+Size@{rarest\+List\+Size}}
+\index{rarest\+List\+Size@{rarest\+List\+Size}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{rarest\+List\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::rarest\+List\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a30a1f9ba6320b0a048941a9fd7b21832}
+\hypertarget{classBTPeerWireBase_a1bf13893f9fdfd12314717cd4f6d5b6f}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!remove\+Thread@{remove\+Thread}}
+\index{remove\+Thread@{remove\+Thread}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{remove\+Thread(\+T\+C\+P\+Server\+Thread\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::remove\+Thread (
+\begin{DoxyParamCaption}
+\item[{T\+C\+P\+Server\+Thread\+Base $\ast$}]{thread}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_a1bf13893f9fdfd12314717cd4f6d5b6f}
+\hypertarget{classBTPeerWireBase_ad6cf7e2dcd772c4dbbe9eab522bdd0d5}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!request\+Queue\+Depth@{request\+Queue\+Depth}}
+\index{request\+Queue\+Depth@{request\+Queue\+Depth}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{request\+Queue\+Depth()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::request\+Queue\+Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ad6cf7e2dcd772c4dbbe9eab522bdd0d5}
+\hypertarget{classBTPeerWireBase_a63cab614f3b8b6dc45cbaea9c83a9667}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!schedule\+Connections@{schedule\+Connections}}
+\index{schedule\+Connections@{schedule\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{schedule\+Connections(\+B\+T\+Tracker\+Msg\+Response $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::schedule\+Connections (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Tracker\+Msg\+Response} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_a63cab614f3b8b6dc45cbaea9c83a9667}
+Method that handles the received peer set and schedules (or not) one or more connection attempts.
+
+Schedules the establishment of connections with other peers. Note that this is orthogonal to the chocking algorithm. The latter is rather enforced on the connections established by this method.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_a061ffb43d2ff5ed63c9863c47c487792}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!schedule\+End\+Game\+Cancel@{schedule\+End\+Game\+Cancel}}
+\index{schedule\+End\+Game\+Cancel@{schedule\+End\+Game\+Cancel}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{schedule\+End\+Game\+Cancel(int, int, const char $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::schedule\+End\+Game\+Cancel (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\+Index, }
+\item[{int}]{block\+Index, }
+\item[{const char $\ast$}]{block\+Provider}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_a061ffb43d2ff5ed63c9863c47c487792}
+Schedules the Cancel messages in the end-\/game mode.
+
+Called when the client is in end-\/game mode and a block has arrived. It schedules a Cancel message for each peer to which a request was previously sent for this block.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. 1024$\ast$block\+Size() \hypertarget{classBTPeerWireBase_afc4fec75e43462e0197fad7100cc17a0}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!schedule\+End\+Game\+Requests@{schedule\+End\+Game\+Requests}}
+\index{schedule\+End\+Game\+Requests@{schedule\+End\+Game\+Requests}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{schedule\+End\+Game\+Requests()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::schedule\+End\+Game\+Requests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_afc4fec75e43462e0197fad7100cc17a0}
+Schedules the requests in the end-\/game mode.
+
+This method schedules the transmission of the requests in the end-\/game phase i.\+e. the phase in which all remaining blocks are requested by all non-\/choking peers in the peer set.
+
+This is impplemented with a double pass over the peer set. In the first pass all pending requests are gathered and in the second pass each request is send to all peers (except the one it has already been sent to). This may seem inefficient but it is only executed at the end game mode. Otherwise, we would have to maintain all requests in this module rather than in each thread. This would reduce the simplicity and flexibility, the threads offer us and would result in a high base-\/thread communication overhead during the normal mode of the game, which is the major part of it.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_aa9e58e68585e760accc3eb8466ef3e26}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!schedule\+Super\+Seed\+Have\+Msg@{schedule\+Super\+Seed\+Have\+Msg}}
+\index{schedule\+Super\+Seed\+Have\+Msg@{schedule\+Super\+Seed\+Have\+Msg}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{schedule\+Super\+Seed\+Have\+Msg(\+T\+C\+P\+Server\+Thread\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::schedule\+Super\+Seed\+Have\+Msg (
+\begin{DoxyParamCaption}
+\item[{T\+C\+P\+Server\+Thread\+Base $\ast$}]{thread}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_aa9e58e68585e760accc3eb8466ef3e26}
+Schedules a Have msg in super-\/seed mode
+
+Schedules the transmission of a Have Msg in super-\/seed mode i.\+e. a Have msg redarding a rare piece not available at the remote peer.
+
+This method should be re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_ad7505fecedb42835e9b17277678cdec5}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!select\+Piece@{select\+Piece}}
+\index{select\+Piece@{select\+Piece}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{select\+Piece(\+Bit\+Field $\ast$, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Block\+Item} $\ast$ B\+T\+Peer\+Wire\+Base\+::select\+Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Bit\+Field} $\ast$}]{remote\+Bitfield, }
+\item[{bool}]{super\+Seed\+Mode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTPeerWireBase_ad7505fecedb42835e9b17277678cdec5}
+Select the piece that we will request from this peer Currently implementing Rarer First policy.
+
+Selects the piece that this client will request from the (remote) peer. It actually implements the Rarest First policy. Note that when this client has not downloaded any piece, this method actually implements the Random First policy. In case super\+Seed\+Mode var is set true, it operates in reverse mode i.\+e. it will select a rare piece available in this client and not available in the remote peer.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the client. \hypertarget{classBTPeerWireBase_ae174d6a8c9beaadb6f4202bbfaec5410}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Announce\+Interval@{set\+Announce\+Interval}}
+\index{set\+Announce\+Interval@{set\+Announce\+Interval}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Announce\+Interval(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Announce\+Interval (
+\begin{DoxyParamCaption}
+\item[{int}]{announce\+Interval}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ae174d6a8c9beaadb6f4202bbfaec5410}
+\hypertarget{classBTPeerWireBase_a43078197377df283deb4a705dd76516c}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Blocks\+From\+Seeder@{set\+Blocks\+From\+Seeder}}
+\index{set\+Blocks\+From\+Seeder@{set\+Blocks\+From\+Seeder}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Blocks\+From\+Seeder(double)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Blocks\+From\+Seeder (
+\begin{DoxyParamCaption}
+\item[{double}]{blocks\+From\+Seeder}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a43078197377df283deb4a705dd76516c}
+\hypertarget{classBTPeerWireBase_a070f6c47f701e48e7843f731ec07c1a4}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Block\+Size@{set\+Block\+Size}}
+\index{set\+Block\+Size@{set\+Block\+Size}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Block\+Size(double)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Block\+Size (
+\begin{DoxyParamCaption}
+\item[{double}]{block\+\_\+size}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a070f6c47f701e48e7843f731ec07c1a4}
+\hypertarget{classBTPeerWireBase_a12b80e9d6e09391fad908943db5b64d8}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Chocking\+Interval@{set\+Chocking\+Interval}}
+\index{set\+Chocking\+Interval@{set\+Chocking\+Interval}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Chocking\+Interval(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Chocking\+Interval (
+\begin{DoxyParamCaption}
+\item[{int}]{chocking\+\_\+interval}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a12b80e9d6e09391fad908943db5b64d8}
+\hypertarget{classBTPeerWireBase_ae341c076136c11ff24176be976ab2e4b}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Current\+Num\+Connections@{set\+Current\+Num\+Connections}}
+\index{set\+Current\+Num\+Connections@{set\+Current\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Current\+Num\+Connections(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Current\+Num\+Connections (
+\begin{DoxyParamCaption}
+\item[{int}]{curr\+Num\+Conns}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ae341c076136c11ff24176be976ab2e4b}
+\hypertarget{classBTPeerWireBase_ae09405b6778985b374b0535b9495f374}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Current\+Num\+Empty\+Tracker\+Responses@{set\+Current\+Num\+Empty\+Tracker\+Responses}}
+\index{set\+Current\+Num\+Empty\+Tracker\+Responses@{set\+Current\+Num\+Empty\+Tracker\+Responses}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Current\+Num\+Empty\+Tracker\+Responses(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Current\+Num\+Empty\+Tracker\+Responses (
+\begin{DoxyParamCaption}
+\item[{int}]{current\+Num\+Empty\+Tracker\+Responses}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ae09405b6778985b374b0535b9495f374}
+\hypertarget{classBTPeerWireBase_a10bffb581df8f5365309cd74c780d9ad}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+D\+H\+T\+Port@{set\+D\+H\+T\+Port}}
+\index{set\+D\+H\+T\+Port@{set\+D\+H\+T\+Port}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+D\+H\+T\+Port(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+D\+H\+T\+Port (
+\begin{DoxyParamCaption}
+\item[{int}]{D\+H\+T\+\_\+port}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a10bffb581df8f5365309cd74c780d9ad}
+\hypertarget{classBTPeerWireBase_a554668c82ae960fc241d9df04fcb3bff}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Download\+Duration@{set\+Download\+Duration}}
+\index{set\+Download\+Duration@{set\+Download\+Duration}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Download\+Duration(simtime\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Download\+Duration (
+\begin{DoxyParamCaption}
+\item[{simtime\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a554668c82ae960fc241d9df04fcb3bff}
+\hypertarget{classBTPeerWireBase_ab93d18bc780a3990b06cc6eb979a7370}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Downloaders@{set\+Downloaders}}
+\index{set\+Downloaders@{set\+Downloaders}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Downloaders(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Downloaders (
+\begin{DoxyParamCaption}
+\item[{int}]{downloaders}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ab93d18bc780a3990b06cc6eb979a7370}
+\hypertarget{classBTPeerWireBase_acd98be8adb3693de3865c646bead6020}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Download\+Rate\+Sampling\+Duration@{set\+Download\+Rate\+Sampling\+Duration}}
+\index{set\+Download\+Rate\+Sampling\+Duration@{set\+Download\+Rate\+Sampling\+Duration}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Download\+Rate\+Sampling\+Duration(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Download\+Rate\+Sampling\+Duration (
+\begin{DoxyParamCaption}
+\item[{int}]{download\+Rate\+Sampling\+Duration}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_acd98be8adb3693de3865c646bead6020}
+\hypertarget{classBTPeerWireBase_a1bda4eaf6a7d6124024847ba1087c9c0}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Enable\+End\+Game\+Mode@{set\+Enable\+End\+Game\+Mode}}
+\index{set\+Enable\+End\+Game\+Mode@{set\+Enable\+End\+Game\+Mode}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Enable\+End\+Game\+Mode(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Enable\+End\+Game\+Mode (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable\+End\+Game\+Mode}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a1bda4eaf6a7d6124024847ba1087c9c0}
+\hypertarget{classBTPeerWireBase_a424ebf4ed4a42eb208939f198d7fb7f4}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+File\+Size@{set\+File\+Size}}
+\index{set\+File\+Size@{set\+File\+Size}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+File\+Size(double)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+File\+Size (
+\begin{DoxyParamCaption}
+\item[{double}]{file\+\_\+size}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a424ebf4ed4a42eb208939f198d7fb7f4}
+\hypertarget{classBTPeerWireBase_a4daf47299e5700e78bb436d03fb28176}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Have\+Supression@{set\+Have\+Supression}}
+\index{set\+Have\+Supression@{set\+Have\+Supression}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Have\+Supression(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Have\+Supression (
+\begin{DoxyParamCaption}
+\item[{bool}]{have\+\_\+supression}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a4daf47299e5700e78bb436d03fb28176}
+\hypertarget{classBTPeerWireBase_ac1292272489b42e6c5e012247f05ad77}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Http\+Cache\+Use@{set\+Http\+Cache\+Use}}
+\index{set\+Http\+Cache\+Use@{set\+Http\+Cache\+Use}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Http\+Cache\+Use(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Http\+Cache\+Use (
+\begin{DoxyParamCaption}
+\item[{bool}]{cache\+Use}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ac1292272489b42e6c5e012247f05ad77}
+\hypertarget{classBTPeerWireBase_a80ba3561ebe152f11b19081e2193bbf0}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Http\+Use@{set\+Http\+Use}}
+\index{set\+Http\+Use@{set\+Http\+Use}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Http\+Use(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Http\+Use (
+\begin{DoxyParamCaption}
+\item[{bool}]{use\+Http}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a80ba3561ebe152f11b19081e2193bbf0}
+\hypertarget{classBTPeerWireBase_ac7f31840e3d4b21046150178489115b0}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Keep\+Alive@{set\+Keep\+Alive}}
+\index{set\+Keep\+Alive@{set\+Keep\+Alive}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Keep\+Alive(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Keep\+Alive (
+\begin{DoxyParamCaption}
+\item[{int}]{keep\+\_\+alive}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ac7f31840e3d4b21046150178489115b0}
+\hypertarget{classBTPeerWireBase_a32043d147fb1a8a2f1b99a6d014d53fe}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Max\+Num\+Connections@{set\+Max\+Num\+Connections}}
+\index{set\+Max\+Num\+Connections@{set\+Max\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Max\+Num\+Connections(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Max\+Num\+Connections (
+\begin{DoxyParamCaption}
+\item[{int}]{max\+Num\+Conns}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a32043d147fb1a8a2f1b99a6d014d53fe}
+\hypertarget{classBTPeerWireBase_a3c48ea8679cbbeb59fa19c64361ee089}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Max\+Num\+Empty\+Tracker\+Responses@{set\+Max\+Num\+Empty\+Tracker\+Responses}}
+\index{set\+Max\+Num\+Empty\+Tracker\+Responses@{set\+Max\+Num\+Empty\+Tracker\+Responses}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Max\+Num\+Empty\+Tracker\+Responses(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Max\+Num\+Empty\+Tracker\+Responses (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a3c48ea8679cbbeb59fa19c64361ee089}
+\hypertarget{classBTPeerWireBase_a0c4732ce52b8d764b4193254343af554}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Min\+Num\+Connections@{set\+Min\+Num\+Connections}}
+\index{set\+Min\+Num\+Connections@{set\+Min\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Min\+Num\+Connections(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Min\+Num\+Connections (
+\begin{DoxyParamCaption}
+\item[{int}]{min\+Num\+Conns}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a0c4732ce52b8d764b4193254343af554}
+\hypertarget{classBTPeerWireBase_a9cda120fc0f9b9b2f3c9346fcfb3b475}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Newly\+Connected\+Opt\+Unchoke\+Prob@{set\+Newly\+Connected\+Opt\+Unchoke\+Prob}}
+\index{set\+Newly\+Connected\+Opt\+Unchoke\+Prob@{set\+Newly\+Connected\+Opt\+Unchoke\+Prob}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Newly\+Connected\+Opt\+Unchoke\+Prob(double)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Newly\+Connected\+Opt\+Unchoke\+Prob (
+\begin{DoxyParamCaption}
+\item[{double}]{newly\+Connected\+Opt\+Unchoke\+Prob}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a9cda120fc0f9b9b2f3c9346fcfb3b475}
+\hypertarget{classBTPeerWireBase_a3f9ccbd22afd04e758478f6ad52a958b}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Num\+Blocks@{set\+Num\+Blocks}}
+\index{set\+Num\+Blocks@{set\+Num\+Blocks}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Num\+Blocks(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Num\+Blocks (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Blocks}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a3f9ccbd22afd04e758478f6ad52a958b}
+\hypertarget{classBTPeerWireBase_ac543b7fce8c6e00b54db8d4dc593a912}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Num\+Pieces@{set\+Num\+Pieces}}
+\index{set\+Num\+Pieces@{set\+Num\+Pieces}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Num\+Pieces(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Num\+Pieces (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Pieces}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ac543b7fce8c6e00b54db8d4dc593a912}
+\hypertarget{classBTPeerWireBase_ae813171f08455037f0ce10b0bea4d67a}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Opt\+Unchocked\+Peers@{set\+Opt\+Unchocked\+Peers}}
+\index{set\+Opt\+Unchocked\+Peers@{set\+Opt\+Unchocked\+Peers}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Opt\+Unchocked\+Peers(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Opt\+Unchocked\+Peers (
+\begin{DoxyParamCaption}
+\item[{int}]{opt\+Unchocked\+Peers}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ae813171f08455037f0ce10b0bea4d67a}
+\hypertarget{classBTPeerWireBase_a6514733983625bef88ebf5f1f150a7b2}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Opt\+Unchocking\+Interval@{set\+Opt\+Unchocking\+Interval}}
+\index{set\+Opt\+Unchocking\+Interval@{set\+Opt\+Unchocking\+Interval}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Opt\+Unchocking\+Interval(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Opt\+Unchocking\+Interval (
+\begin{DoxyParamCaption}
+\item[{int}]{opt\+Unchocking\+\_\+interval}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a6514733983625bef88ebf5f1f150a7b2}
+\hypertarget{classBTPeerWireBase_a734e7f46269546945f42db6968fa95b0}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Pending\+Num\+Connections@{set\+Pending\+Num\+Connections}}
+\index{set\+Pending\+Num\+Connections@{set\+Pending\+Num\+Connections}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Pending\+Num\+Connections(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Pending\+Num\+Connections (
+\begin{DoxyParamCaption}
+\item[{int}]{pending\+Num\+Conns}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a734e7f46269546945f42db6968fa95b0}
+\hypertarget{classBTPeerWireBase_a49e5078e88e79d72256f94b604503b2f}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Piece\+Size@{set\+Piece\+Size}}
+\index{set\+Piece\+Size@{set\+Piece\+Size}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Piece\+Size(double)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Piece\+Size (
+\begin{DoxyParamCaption}
+\item[{double}]{piece\+\_\+size}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a49e5078e88e79d72256f94b604503b2f}
+\hypertarget{classBTPeerWireBase_a2f99ecdabfa39dca3d9cec84bf61932b}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Proc\+Delay@{set\+Proc\+Delay}}
+\index{set\+Proc\+Delay@{set\+Proc\+Delay}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Proc\+Delay(float)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Proc\+Delay (
+\begin{DoxyParamCaption}
+\item[{float}]{delay}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a2f99ecdabfa39dca3d9cec84bf61932b}
+\hypertarget{classBTPeerWireBase_aaf4f7667b97a8a822aa786f733a0c0f5}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Rarest\+List\+Size@{set\+Rarest\+List\+Size}}
+\index{set\+Rarest\+List\+Size@{set\+Rarest\+List\+Size}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Rarest\+List\+Size(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Rarest\+List\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_aaf4f7667b97a8a822aa786f733a0c0f5}
+\hypertarget{classBTPeerWireBase_af47f87051f1ca07b2de86389c5ad4b80}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Request\+Queue\+Depth@{set\+Request\+Queue\+Depth}}
+\index{set\+Request\+Queue\+Depth@{set\+Request\+Queue\+Depth}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Request\+Queue\+Depth(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Request\+Queue\+Depth (
+\begin{DoxyParamCaption}
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_af47f87051f1ca07b2de86389c5ad4b80}
+\hypertarget{classBTPeerWireBase_a783cb5b489206fc889f4f65d75d8faef}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Snubbing\+Interval@{set\+Snubbing\+Interval}}
+\index{set\+Snubbing\+Interval@{set\+Snubbing\+Interval}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Snubbing\+Interval(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Snubbing\+Interval (
+\begin{DoxyParamCaption}
+\item[{int}]{snubbing\+\_\+interval}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a783cb5b489206fc889f4f65d75d8faef}
+\hypertarget{classBTPeerWireBase_a9abbdc9337cd510dbb05234bf94731ed}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+State(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+State (
+\begin{DoxyParamCaption}
+\item[{int}]{state}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a9abbdc9337cd510dbb05234bf94731ed}
+\hypertarget{classBTPeerWireBase_a2465710d8e3555d859ceee03b6310a33}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Super\+Seed\+Mode@{set\+Super\+Seed\+Mode}}
+\index{set\+Super\+Seed\+Mode@{set\+Super\+Seed\+Mode}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Super\+Seed\+Mode(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Super\+Seed\+Mode (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a2465710d8e3555d859ceee03b6310a33}
+\hypertarget{classBTPeerWireBase_abc3f55145a744df1a5935b4165f11396}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Time\+To\+Seed@{set\+Time\+To\+Seed}}
+\index{set\+Time\+To\+Seed@{set\+Time\+To\+Seed}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Time\+To\+Seed(int)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Time\+To\+Seed (
+\begin{DoxyParamCaption}
+\item[{int}]{time\+To\+Seed}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_abc3f55145a744df1a5935b4165f11396}
+\hypertarget{classBTPeerWireBase_aa1dc18c9f0d02c7ae4e6b65197bfd233}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!set\+Tracker\+Response@{set\+Tracker\+Response}}
+\index{set\+Tracker\+Response@{set\+Tracker\+Response}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{set\+Tracker\+Response(\+B\+T\+Tracker\+Msg\+Response $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::set\+Tracker\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Tracker\+Msg\+Response} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_aa1dc18c9f0d02c7ae4e6b65197bfd233}
+\hypertarget{classBTPeerWireBase_ac674d6064f8d1dd54f5acf2f928fc28f}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!snubbing\+Interval@{snubbing\+Interval}}
+\index{snubbing\+Interval@{snubbing\+Interval}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{snubbing\+Interval()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::snubbing\+Interval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_ac674d6064f8d1dd54f5acf2f928fc28f}
+\hypertarget{classBTPeerWireBase_a04accb49268464353db3163ef531285e}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!start\+Listening@{start\+Listening}}
+\index{start\+Listening@{start\+Listening}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{start\+Listening()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::start\+Listening (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a04accb49268464353db3163ef531285e}
+This method is called in order to prepare the server socket for incoming connection requests, in case it was previously closed to cap the number of allowed T\+C\+P connections. \hypertarget{classBTPeerWireBase_ac4af5dc7161abe213c9b094ad05fca20}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!stop\+Choking\+Alorithms@{stop\+Choking\+Alorithms}}
+\index{stop\+Choking\+Alorithms@{stop\+Choking\+Alorithms}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{stop\+Choking\+Alorithms()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::stop\+Choking\+Alorithms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ac4af5dc7161abe213c9b094ad05fca20}
+\hypertarget{classBTPeerWireBase_a8345d9e6dbecc9b468b399d9abab3443}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!stop\+Listening@{stop\+Listening}}
+\index{stop\+Listening@{stop\+Listening}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{stop\+Listening()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::stop\+Listening (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a8345d9e6dbecc9b468b399d9abab3443}
+This method is called in order to close the server socket listening for incoming connection requests. This way the number of allowed T\+C\+P connections is capped. \hypertarget{classBTPeerWireBase_a8ead752e4053f1998856e5e8c47ff759}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!super\+Seed\+Mode@{super\+Seed\+Mode}}
+\index{super\+Seed\+Mode@{super\+Seed\+Mode}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{super\+Seed\+Mode()}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::super\+Seed\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a8ead752e4053f1998856e5e8c47ff759}
+\hypertarget{classBTPeerWireBase_a4df8bf274c9665653b47258ad68d70f1}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!time\+To\+Seed@{time\+To\+Seed}}
+\index{time\+To\+Seed@{time\+To\+Seed}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{time\+To\+Seed()}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::time\+To\+Seed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a4df8bf274c9665653b47258ad68d70f1}
+\hypertarget{classBTPeerWireBase_a3092c670ad079c66a079e0f44db3da2b}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{to\+String(int)}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Peer\+Wire\+Base\+::to\+String (
+\begin{DoxyParamCaption}
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a3092c670ad079c66a079e0f44db3da2b}
+\hypertarget{classBTPeerWireBase_a2c8fc43d80de9ea28f43a942aa8f873f}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!tracker\+Response@{tracker\+Response}}
+\index{tracker\+Response@{tracker\+Response}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{tracker\+Response()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Tracker\+Msg\+Response} $\ast$ B\+T\+Peer\+Wire\+Base\+::tracker\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a2c8fc43d80de9ea28f43a942aa8f873f}
+\hypertarget{classBTPeerWireBase_aabe8d2fba3a2da7a32690baca39be942}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!update\+Bit\+Field@{update\+Bit\+Field}}
+\index{update\+Bit\+Field@{update\+Bit\+Field}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{update\+Bit\+Field(int, int, bool, const char $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::update\+Bit\+Field (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\+Index, }
+\item[{int}]{block\+Index, }
+\item[{bool}]{expected, }
+\item[{const char $\ast$}]{block\+Provider}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_aabe8d2fba3a2da7a32690baca39be942}
+\hypertarget{classBTPeerWireBase_a4c89b0458e21469e451cba1e4dca7516}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!update\+Block\+Requests@{update\+Block\+Requests}}
+\index{update\+Block\+Requests@{update\+Block\+Requests}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{update\+Block\+Requests(int, int, bool)}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::update\+Block\+Requests (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\+Index, }
+\item[{int}]{block\+Index, }
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}\label{classBTPeerWireBase_a4c89b0458e21469e451cba1e4dca7516}
+Updates the bitfield to show whether a block has been requested.
+
+Updates the state about the requests placed by this client. A block is marked as requested when a thread sends a request for it to a peer. The whole piece this block belongs to is also marked as requested so that we avoid situation in which multiple threads request blocks of the same piece. This would induce unecessary synchronization overhead. However, if a request is cancelled (e.\+g. the peer has choked this client) the blocks/pieces are set back to not requested so that no thread is blocked from requesting a block. \hypertarget{classBTPeerWireBase_a11ebbc7ea240c2f926b5a417d78ec872}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!update\+Interests@{update\+Interests}}
+\index{update\+Interests@{update\+Interests}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{update\+Interests()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::update\+Interests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a11ebbc7ea240c2f926b5a417d78ec872}
+Here we try to avoid the situation in which a peer thread is unchoked but it cannot ask for more blocks because they have been marked as requested B\+U\+T the peer thread that marked them as such has been choked. The former thread must be informed so that it can ask for data. \hypertarget{classBTPeerWireBase_ab9d11bec8560f32ff67dd21b6f5f0759}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!update\+Piece\+Frequencies@{update\+Piece\+Frequencies}}
+\index{update\+Piece\+Frequencies@{update\+Piece\+Frequencies}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{update\+Piece\+Frequencies(\+B\+T\+Bitfield\+Msg $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::update\+Piece\+Frequencies (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Bitfield\+Msg} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ab9d11bec8560f32ff67dd21b6f5f0759}
+\hypertarget{classBTPeerWireBase_a52324b2b9722e0facde1083ace692308}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!write\+Stats@{write\+Stats}}
+\index{write\+Stats@{write\+Stats}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{write\+Stats()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Peer\+Wire\+Base\+::write\+Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a52324b2b9722e0facde1083ace692308}
+Sends measurements to the \hyperlink{classBTStatistics}{B\+T\+Statistics} Module 
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTPeerWireBase_a8b2e1655dd0c93ab97938d9dab95d4ce}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!announce\+Interval\+\_\+var@{announce\+Interval\+\_\+var}}
+\index{announce\+Interval\+\_\+var@{announce\+Interval\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{announce\+Interval\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::announce\+Interval\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a8b2e1655dd0c93ab97938d9dab95d4ce}
+\hypertarget{classBTPeerWireBase_ab42c0dee2bf5f0c4367dda80479e1cd4}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!block\+\_\+size\+\_\+var@{block\+\_\+size\+\_\+var}}
+\index{block\+\_\+size\+\_\+var@{block\+\_\+size\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{block\+\_\+size\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::block\+\_\+size\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ab42c0dee2bf5f0c4367dda80479e1cd4}
+\hypertarget{classBTPeerWireBase_a4b39809a3fd1b882e1399340b607eb4e}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!blocks\+From\+Seeder\+\_\+var@{blocks\+From\+Seeder\+\_\+var}}
+\index{blocks\+From\+Seeder\+\_\+var@{blocks\+From\+Seeder\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{blocks\+From\+Seeder\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::blocks\+From\+Seeder\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a4b39809a3fd1b882e1399340b607eb4e}
+\hypertarget{classBTPeerWireBase_a90c1bb128400f8a1fdd9990709a48df8}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!bt\+Statistics@{bt\+Statistics}}
+\index{bt\+Statistics@{bt\+Statistics}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{bt\+Statistics}]{\setlength{\rightskip}{0pt plus 5cm}c\+Simple\+Module$\ast$ B\+T\+Peer\+Wire\+Base\+::bt\+Statistics\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a90c1bb128400f8a1fdd9990709a48df8}
+\hypertarget{classBTPeerWireBase_abc5d6735698c92b5926620f2968c3e0e}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!bt\+Statistics\+Module@{bt\+Statistics\+Module}}
+\index{bt\+Statistics\+Module@{bt\+Statistics\+Module}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{bt\+Statistics\+Module}]{\setlength{\rightskip}{0pt plus 5cm}c\+Module$\ast$ B\+T\+Peer\+Wire\+Base\+::bt\+Statistics\+Module\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_abc5d6735698c92b5926620f2968c3e0e}
+\hypertarget{classBTPeerWireBase_a27a8fde9f860de7cb0024a6a9409b014}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!cache\+Ip\+Address\+\_\+var@{cache\+Ip\+Address\+\_\+var}}
+\index{cache\+Ip\+Address\+\_\+var@{cache\+Ip\+Address\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{cache\+Ip\+Address\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ B\+T\+Peer\+Wire\+Base\+::cache\+Ip\+Address\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a27a8fde9f860de7cb0024a6a9409b014}
+\hypertarget{classBTPeerWireBase_aa3bfe78d5613aad46605338c74f8c970}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!cache\+Port\+\_\+var@{cache\+Port\+\_\+var}}
+\index{cache\+Port\+\_\+var@{cache\+Port\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{cache\+Port\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::cache\+Port\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_aa3bfe78d5613aad46605338c74f8c970}
+\hypertarget{classBTPeerWireBase_a82ee3fdd3e35088bed5883fb3e5c7bc6}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!cache\+Thread@{cache\+Thread}}
+\index{cache\+Thread@{cache\+Thread}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{cache\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P\+Server\+Thread\+Base$\ast$ B\+T\+Peer\+Wire\+Base\+::cache\+Thread\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a82ee3fdd3e35088bed5883fb3e5c7bc6}
+\hypertarget{classBTPeerWireBase_a1a8252e85b38f85bb3eee0b42a31b2a4}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!chocking\+\_\+interval\+\_\+var@{chocking\+\_\+interval\+\_\+var}}
+\index{chocking\+\_\+interval\+\_\+var@{chocking\+\_\+interval\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{chocking\+\_\+interval\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::chocking\+\_\+interval\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a1a8252e85b38f85bb3eee0b42a31b2a4}
+\hypertarget{classBTPeerWireBase_ae3c59b22b14bbd3aeeb29f1b377bdeb6}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!closed\+Remote\+Peers\+I\+D@{closed\+Remote\+Peers\+I\+D}}
+\index{closed\+Remote\+Peers\+I\+D@{closed\+Remote\+Peers\+I\+D}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{closed\+Remote\+Peers\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}set$<$string$>$ B\+T\+Peer\+Wire\+Base\+::closed\+Remote\+Peers\+I\+D\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ae3c59b22b14bbd3aeeb29f1b377bdeb6}
+\hypertarget{classBTPeerWireBase_a3dfe6134d0d722553e9fabed0259bc22}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!current\+Num\+Connections\+\_\+var@{current\+Num\+Connections\+\_\+var}}
+\index{current\+Num\+Connections\+\_\+var@{current\+Num\+Connections\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{current\+Num\+Connections\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::current\+Num\+Connections\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a3dfe6134d0d722553e9fabed0259bc22}
+\hypertarget{classBTPeerWireBase_a55a4220687e05aa8038a8c9b2619a1df}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!current\+Num\+Empty\+Tracker\+Responses\+\_\+var@{current\+Num\+Empty\+Tracker\+Responses\+\_\+var}}
+\index{current\+Num\+Empty\+Tracker\+Responses\+\_\+var@{current\+Num\+Empty\+Tracker\+Responses\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{current\+Num\+Empty\+Tracker\+Responses\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::current\+Num\+Empty\+Tracker\+Responses\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a55a4220687e05aa8038a8c9b2619a1df}
+\hypertarget{classBTPeerWireBase_a319c7c648087f56c1656b7d04a13a016}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!data\+Provider\+Peer\+I\+Ds@{data\+Provider\+Peer\+I\+Ds}}
+\index{data\+Provider\+Peer\+I\+Ds@{data\+Provider\+Peer\+I\+Ds}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{data\+Provider\+Peer\+I\+Ds}]{\setlength{\rightskip}{0pt plus 5cm}set$<$string$>$ B\+T\+Peer\+Wire\+Base\+::data\+Provider\+Peer\+I\+Ds\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a319c7c648087f56c1656b7d04a13a016}
+\hypertarget{classBTPeerWireBase_aba05b9c96ed2ca76bc5f6716906ac375}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!debugged\+Node@{debugged\+Node}}
+\index{debugged\+Node@{debugged\+Node}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{debugged\+Node}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ B\+T\+Peer\+Wire\+Base\+::debugged\+Node}\label{classBTPeerWireBase_aba05b9c96ed2ca76bc5f6716906ac375}
+\hypertarget{classBTPeerWireBase_aaf7c8a682c94dc9722f7bb0820de3c4b}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!D\+H\+T\+\_\+port\+\_\+var@{D\+H\+T\+\_\+port\+\_\+var}}
+\index{D\+H\+T\+\_\+port\+\_\+var@{D\+H\+T\+\_\+port\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{D\+H\+T\+\_\+port\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Peer\+Wire\+Base\+::\+D\+H\+T\+\_\+port\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_aaf7c8a682c94dc9722f7bb0820de3c4b}
+\hypertarget{classBTPeerWireBase_abaebcb4b4c4d9b3680dcdc4a3f74a2b7}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!download\+Duration\+\_\+var@{download\+Duration\+\_\+var}}
+\index{download\+Duration\+\_\+var@{download\+Duration\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{download\+Duration\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t B\+T\+Peer\+Wire\+Base\+::download\+Duration\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_abaebcb4b4c4d9b3680dcdc4a3f74a2b7}
+\hypertarget{classBTPeerWireBase_aa616c5456eb2e3b264392c2b9c115ea8}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!downloaders\+\_\+var@{downloaders\+\_\+var}}
+\index{downloaders\+\_\+var@{downloaders\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{downloaders\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::downloaders\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_aa616c5456eb2e3b264392c2b9c115ea8}
+\hypertarget{classBTPeerWireBase_a917d38e8848421da2de31b7af5e5fee7}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!download\+Rate\+Sampling\+Duration\+\_\+var@{download\+Rate\+Sampling\+Duration\+\_\+var}}
+\index{download\+Rate\+Sampling\+Duration\+\_\+var@{download\+Rate\+Sampling\+Duration\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{download\+Rate\+Sampling\+Duration\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::download\+Rate\+Sampling\+Duration\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a917d38e8848421da2de31b7af5e5fee7}
+\hypertarget{classBTPeerWireBase_ac02672631f997bf0b445811f97815dee}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!enable\+End\+Game\+Mode\+\_\+var@{enable\+End\+Game\+Mode\+\_\+var}}
+\index{enable\+End\+Game\+Mode\+\_\+var@{enable\+End\+Game\+Mode\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{enable\+End\+Game\+Mode\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::enable\+End\+Game\+Mode\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ac02672631f997bf0b445811f97815dee}
+\hypertarget{classBTPeerWireBase_a057a81a91aecb54a9bb1f20ba371f399}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!end\+Game\+Requests@{end\+Game\+Requests}}
+\index{end\+Game\+Requests@{end\+Game\+Requests}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{end\+Game\+Requests}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request\+Entry\+Vector} B\+T\+Peer\+Wire\+Base\+::end\+Game\+Requests\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a057a81a91aecb54a9bb1f20ba371f399}
+\hypertarget{classBTPeerWireBase_a19574db56758ba0a45cd9c0017bef38b}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!evt\+Cache\+Thread\+Creation@{evt\+Cache\+Thread\+Creation}}
+\index{evt\+Cache\+Thread\+Creation@{evt\+Cache\+Thread\+Creation}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{evt\+Cache\+Thread\+Creation}]{\setlength{\rightskip}{0pt plus 5cm}c\+Message$\ast$ B\+T\+Peer\+Wire\+Base\+::evt\+Cache\+Thread\+Creation\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a19574db56758ba0a45cd9c0017bef38b}
+\hypertarget{classBTPeerWireBase_ad44a6450f42876e94ca1372e51edcd42}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!evt\+Choke\+Alg@{evt\+Choke\+Alg}}
+\index{evt\+Choke\+Alg@{evt\+Choke\+Alg}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{evt\+Choke\+Alg}]{\setlength{\rightskip}{0pt plus 5cm}c\+Message$\ast$ B\+T\+Peer\+Wire\+Base\+::evt\+Choke\+Alg\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ad44a6450f42876e94ca1372e51edcd42}
+\hypertarget{classBTPeerWireBase_a94d72b62108190bbf2183b6b371b8e4c}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!evt\+Opt\+Un\+Choke@{evt\+Opt\+Un\+Choke}}
+\index{evt\+Opt\+Un\+Choke@{evt\+Opt\+Un\+Choke}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{evt\+Opt\+Un\+Choke}]{\setlength{\rightskip}{0pt plus 5cm}c\+Message$\ast$ B\+T\+Peer\+Wire\+Base\+::evt\+Opt\+Un\+Choke\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a94d72b62108190bbf2183b6b371b8e4c}
+\hypertarget{classBTPeerWireBase_ad75a6b3df2cc0f51e44aa3acb837c936}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!evt\+Tracker\+Comm@{evt\+Tracker\+Comm}}
+\index{evt\+Tracker\+Comm@{evt\+Tracker\+Comm}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{evt\+Tracker\+Comm}]{\setlength{\rightskip}{0pt plus 5cm}c\+Message$\ast$ B\+T\+Peer\+Wire\+Base\+::evt\+Tracker\+Comm\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ad75a6b3df2cc0f51e44aa3acb837c936}
+\hypertarget{classBTPeerWireBase_af5f801d2246936ff734d46da2c636808}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!file\+\_\+size\+\_\+var@{file\+\_\+size\+\_\+var}}
+\index{file\+\_\+size\+\_\+var@{file\+\_\+size\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{file\+\_\+size\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::file\+\_\+size\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_af5f801d2246936ff734d46da2c636808}
+\hypertarget{classBTPeerWireBase_a0eed3e65be2cde5f4a95b75723dd8f7e}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!have\+\_\+supression\+\_\+var@{have\+\_\+supression\+\_\+var}}
+\index{have\+\_\+supression\+\_\+var@{have\+\_\+supression\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{have\+\_\+supression\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::have\+\_\+supression\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a0eed3e65be2cde5f4a95b75723dd8f7e}
+\hypertarget{classBTPeerWireBase_a792fc76ee2289e77d94944da9c1c5d66}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!keep\+\_\+alive\+\_\+var@{keep\+\_\+alive\+\_\+var}}
+\index{keep\+\_\+alive\+\_\+var@{keep\+\_\+alive\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{keep\+\_\+alive\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::keep\+\_\+alive\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a792fc76ee2289e77d94944da9c1c5d66}
+\hypertarget{classBTPeerWireBase_a723a90b749291f3f862fa39ce2df1034}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!local\+Bitfield\+\_\+var@{local\+Bitfield\+\_\+var}}
+\index{local\+Bitfield\+\_\+var@{local\+Bitfield\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{local\+Bitfield\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bit\+Field}$\ast$ B\+T\+Peer\+Wire\+Base\+::local\+Bitfield\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a723a90b749291f3f862fa39ce2df1034}
+\hypertarget{classBTPeerWireBase_af61e2c3444cf0ff89f3e09e4e4ef0858}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!max\+Num\+Connections\+\_\+var@{max\+Num\+Connections\+\_\+var}}
+\index{max\+Num\+Connections\+\_\+var@{max\+Num\+Connections\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{max\+Num\+Connections\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::max\+Num\+Connections\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_af61e2c3444cf0ff89f3e09e4e4ef0858}
+\hypertarget{classBTPeerWireBase_a5ecd01e493691d21286ae49c8e5d1d63}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!max\+Num\+Empty\+Tracker\+Responses\+\_\+var@{max\+Num\+Empty\+Tracker\+Responses\+\_\+var}}
+\index{max\+Num\+Empty\+Tracker\+Responses\+\_\+var@{max\+Num\+Empty\+Tracker\+Responses\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{max\+Num\+Empty\+Tracker\+Responses\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::max\+Num\+Empty\+Tracker\+Responses\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a5ecd01e493691d21286ae49c8e5d1d63}
+\hypertarget{classBTPeerWireBase_a64714d821af01e62d7156332d8681908}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!min\+Num\+Connections\+\_\+var@{min\+Num\+Connections\+\_\+var}}
+\index{min\+Num\+Connections\+\_\+var@{min\+Num\+Connections\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{min\+Num\+Connections\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::min\+Num\+Connections\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a64714d821af01e62d7156332d8681908}
+\hypertarget{classBTPeerWireBase_acb9f3589a323f2512b50ecfc7cd133ba}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!newly\+Connected\+Opt\+Unchoke\+Prob\+\_\+var@{newly\+Connected\+Opt\+Unchoke\+Prob\+\_\+var}}
+\index{newly\+Connected\+Opt\+Unchoke\+Prob\+\_\+var@{newly\+Connected\+Opt\+Unchoke\+Prob\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{newly\+Connected\+Opt\+Unchoke\+Prob\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::newly\+Connected\+Opt\+Unchoke\+Prob\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_acb9f3589a323f2512b50ecfc7cd133ba}
+\hypertarget{classBTPeerWireBase_a9e23c447331f54f304a1a80780f4c822}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!num\+Blocks\+\_\+var@{num\+Blocks\+\_\+var}}
+\index{num\+Blocks\+\_\+var@{num\+Blocks\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{num\+Blocks\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::num\+Blocks\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a9e23c447331f54f304a1a80780f4c822}
+\hypertarget{classBTPeerWireBase_ac39f13c6abf79c49378ee6a2e2969b38}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!num\+Pieces\+\_\+var@{num\+Pieces\+\_\+var}}
+\index{num\+Pieces\+\_\+var@{num\+Pieces\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{num\+Pieces\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::num\+Pieces\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ac39f13c6abf79c49378ee6a2e2969b38}
+\hypertarget{classBTPeerWireBase_a174271fb81f37a9a66906bc215f15517}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!opt\+Unchocked\+Peers\+\_\+var@{opt\+Unchocked\+Peers\+\_\+var}}
+\index{opt\+Unchocked\+Peers\+\_\+var@{opt\+Unchocked\+Peers\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{opt\+Unchocked\+Peers\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::opt\+Unchocked\+Peers\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a174271fb81f37a9a66906bc215f15517}
+\hypertarget{classBTPeerWireBase_a79a89401f798432ad87174b8d58345b0}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!opt\+Unchocking\+\_\+interval\+\_\+var@{opt\+Unchocking\+\_\+interval\+\_\+var}}
+\index{opt\+Unchocking\+\_\+interval\+\_\+var@{opt\+Unchocking\+\_\+interval\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{opt\+Unchocking\+\_\+interval\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::opt\+Unchocking\+\_\+interval\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a79a89401f798432ad87174b8d58345b0}
+\hypertarget{classBTPeerWireBase_a5d67dee532c53e838961c5cd37e12430}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!peer\+State@{peer\+State}}
+\index{peer\+State@{peer\+State}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{peer\+State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Peer\+State} B\+T\+Peer\+Wire\+Base\+::peer\+State\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a5d67dee532c53e838961c5cd37e12430}
+\hypertarget{classBTPeerWireBase_ae02e259afa6ce80b7ea09ca482a807d8}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!pending\+Num\+Connections\+\_\+var@{pending\+Num\+Connections\+\_\+var}}
+\index{pending\+Num\+Connections\+\_\+var@{pending\+Num\+Connections\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{pending\+Num\+Connections\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::pending\+Num\+Connections\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ae02e259afa6ce80b7ea09ca482a807d8}
+\hypertarget{classBTPeerWireBase_a991184da11bea370518375ed22d40851}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!piece\+\_\+size\+\_\+var@{piece\+\_\+size\+\_\+var}}
+\index{piece\+\_\+size\+\_\+var@{piece\+\_\+size\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{piece\+\_\+size\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Peer\+Wire\+Base\+::piece\+\_\+size\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a991184da11bea370518375ed22d40851}
+\hypertarget{classBTPeerWireBase_a179b178d1173d13aa608714414058589}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!piece\+Freq\+State@{piece\+Freq\+State}}
+\index{piece\+Freq\+State@{piece\+Freq\+State}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{piece\+Freq\+State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece\+Freq\+State} B\+T\+Peer\+Wire\+Base\+::piece\+Freq\+State\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a179b178d1173d13aa608714414058589}
+\hypertarget{classBTPeerWireBase_a7ae53ebd43795e141d27ebdbb3588219}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!proc\+Delay\+\_\+var@{proc\+Delay\+\_\+var}}
+\index{proc\+Delay\+\_\+var@{proc\+Delay\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{proc\+Delay\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::proc\+Delay\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a7ae53ebd43795e141d27ebdbb3588219}
+\hypertarget{classBTPeerWireBase_a5438f411c39373ffe971d6de0c58816e}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!pstr\+\_\+var@{pstr\+\_\+var}}
+\index{pstr\+\_\+var@{pstr\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{pstr\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ B\+T\+Peer\+Wire\+Base\+::pstr\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a5438f411c39373ffe971d6de0c58816e}
+\hypertarget{classBTPeerWireBase_a64c379ccef5c078ae8d9ece6849d8647}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!pstrlen\+\_\+var@{pstrlen\+\_\+var}}
+\index{pstrlen\+\_\+var@{pstrlen\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{pstrlen\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::pstrlen\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a64c379ccef5c078ae8d9ece6849d8647}
+\hypertarget{classBTPeerWireBase_a6e818940d81beb683b6bd4ce75fc5c63}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!rarest\+\_\+list\+\_\+size\+\_\+var@{rarest\+\_\+list\+\_\+size\+\_\+var}}
+\index{rarest\+\_\+list\+\_\+size\+\_\+var@{rarest\+\_\+list\+\_\+size\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{rarest\+\_\+list\+\_\+size\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::rarest\+\_\+list\+\_\+size\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a6e818940d81beb683b6bd4ce75fc5c63}
+\hypertarget{classBTPeerWireBase_a14f7b2a86b180d25b81cb49669f5cb50}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!request\+\_\+queue\+\_\+depth\+\_\+var@{request\+\_\+queue\+\_\+depth\+\_\+var}}
+\index{request\+\_\+queue\+\_\+depth\+\_\+var@{request\+\_\+queue\+\_\+depth\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{request\+\_\+queue\+\_\+depth\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::request\+\_\+queue\+\_\+depth\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a14f7b2a86b180d25b81cb49669f5cb50}
+\hypertarget{classBTPeerWireBase_a14ded2e1d21de7380d6d90099093b981}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!snubbing\+\_\+interval\+\_\+var@{snubbing\+\_\+interval\+\_\+var}}
+\index{snubbing\+\_\+interval\+\_\+var@{snubbing\+\_\+interval\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{snubbing\+\_\+interval\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::snubbing\+\_\+interval\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a14ded2e1d21de7380d6d90099093b981}
+\hypertarget{classBTPeerWireBase_aaef46a7d9537a431b80d5fed52ec841e}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!state\+\_\+var@{state\+\_\+var}}
+\index{state\+\_\+var@{state\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{state\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::state\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_aaef46a7d9537a431b80d5fed52ec841e}
+\hypertarget{classBTPeerWireBase_a938d0530b2065918dc19a616848b4a4f}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!super\+\_\+seed\+\_\+mode\+\_\+var@{super\+\_\+seed\+\_\+mode\+\_\+var}}
+\index{super\+\_\+seed\+\_\+mode\+\_\+var@{super\+\_\+seed\+\_\+mode\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{super\+\_\+seed\+\_\+mode\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::super\+\_\+seed\+\_\+mode\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a938d0530b2065918dc19a616848b4a4f}
+\hypertarget{classBTPeerWireBase_ae87ae67a5ad8978dde57998c632aff09}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!super\+Seed\+Pending@{super\+Seed\+Pending}}
+\index{super\+Seed\+Pending@{super\+Seed\+Pending}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{super\+Seed\+Pending}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Block\+Item\+Vector} B\+T\+Peer\+Wire\+Base\+::super\+Seed\+Pending\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ae87ae67a5ad8978dde57998c632aff09}
+\hypertarget{classBTPeerWireBase_aff8cb31aa43842c0fab059e388e221ef}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!tcp@{tcp}}
+\index{tcp@{tcp}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{tcp}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P$\ast$ B\+T\+Peer\+Wire\+Base\+::tcp\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_aff8cb31aa43842c0fab059e388e221ef}
+\hypertarget{classBTPeerWireBase_aa74a8ae6e2471a3133cf5cfd5975a0f6}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!time\+To\+Seed\+\_\+var@{time\+To\+Seed\+\_\+var}}
+\index{time\+To\+Seed\+\_\+var@{time\+To\+Seed\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{time\+To\+Seed\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Peer\+Wire\+Base\+::time\+To\+Seed\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_aa74a8ae6e2471a3133cf5cfd5975a0f6}
+\hypertarget{classBTPeerWireBase_a4dd433fcd65380323cb62e4b74b73b96}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!tracker\+Response\+\_\+var@{tracker\+Response\+\_\+var}}
+\index{tracker\+Response\+\_\+var@{tracker\+Response\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{tracker\+Response\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Tracker\+Msg\+Response}$\ast$ B\+T\+Peer\+Wire\+Base\+::tracker\+Response\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a4dd433fcd65380323cb62e4b74b73b96}
+\hypertarget{classBTPeerWireBase_a5dffbc63fa4a4c544a77cbfb4a46908c}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!use\+\_\+chache\+\_\+server\+\_\+var@{use\+\_\+chache\+\_\+server\+\_\+var}}
+\index{use\+\_\+chache\+\_\+server\+\_\+var@{use\+\_\+chache\+\_\+server\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{use\+\_\+chache\+\_\+server\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::use\+\_\+chache\+\_\+server\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_a5dffbc63fa4a4c544a77cbfb4a46908c}
+\hypertarget{classBTPeerWireBase_ad26a2be1531a341894c3bb2b35ee465e}{}\index{B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}!use\+\_\+http\+\_\+var@{use\+\_\+http\+\_\+var}}
+\index{use\+\_\+http\+\_\+var@{use\+\_\+http\+\_\+var}!B\+T\+Peer\+Wire\+Base@{B\+T\+Peer\+Wire\+Base}}
+\subsubsection[{use\+\_\+http\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Peer\+Wire\+Base\+::use\+\_\+http\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPeerWireBase_ad26a2be1531a341894c3bb2b35ee465e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTPeerWireBase_8h}{B\+T\+Peer\+Wire\+Base.\+h}\item 
+\hyperlink{BTPeerWireBase_8cc}{B\+T\+Peer\+Wire\+Base.\+cc}\end{DoxyCompactItemize}

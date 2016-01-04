@@ -1,0 +1,224 @@
+\hypertarget{classBTPieceMsg}{}\section{B\+T\+Piece\+Msg Class Reference}
+\label{classBTPieceMsg}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+
+
+{\ttfamily \#include $<$B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h$>$}
+
+Inheritance diagram for B\+T\+Piece\+Msg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTPieceMsg}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTPieceMsg_aab94a7d9cecf74bbcb4d33c73621e79d}{B\+T\+Piece\+Msg} (const char $\ast$name=N\+U\+L\+L, int kind=0)
+\item 
+\hyperlink{classBTPieceMsg_ab48d04a29681a8811a4c6d89da094694}{B\+T\+Piece\+Msg} (const \hyperlink{classBTPieceMsg}{B\+T\+Piece\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTPieceMsg_afd8e46d483a4b668ba2ddbb9ca590026}{$\sim$\+B\+T\+Piece\+Msg} ()
+\item 
+\hyperlink{classBTPieceMsg}{B\+T\+Piece\+Msg} \& \hyperlink{classBTPieceMsg_ac1bfbf0821b74bff9ba498d184e284f8}{operator=} (const \hyperlink{classBTPieceMsg}{B\+T\+Piece\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTPieceMsg}{B\+T\+Piece\+Msg} $\ast$ \hyperlink{classBTPieceMsg_a8a9595f0d774d5ca06c7639429a93466}{dup} () const 
+\item 
+virtual void \hyperlink{classBTPieceMsg_a4c624dd2267836deb6779537738c492d}{parsim\+Pack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual void \hyperlink{classBTPieceMsg_a8d1a9a3ac51eab276e6126dd4efece0a}{parsim\+Unpack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual int \hyperlink{classBTPieceMsg_a18301230ce36b59e267b85187f44bafb}{length\+\_\+prefix} () const 
+\item 
+virtual void \hyperlink{classBTPieceMsg_a8b2686847a190f607d47a468a987ee39}{set\+Length\+\_\+prefix} (int \hyperlink{classBTPieceMsg_a003b938dabb53ea470ef14fee77ce17c}{length\+\_\+prefix\+\_\+var})
+\item 
+virtual unsigned short \hyperlink{classBTPieceMsg_a735d57e9641da83acaef1ae2d07b8a68}{I\+D} () const 
+\item 
+virtual void \hyperlink{classBTPieceMsg_a11ae1569ddf762680aea8080bc5ff3a8}{set\+I\+D} (unsigned short \hyperlink{classBTPieceMsg_aa46d6993c9d02a3b4add2a69b811de48}{I\+D\+\_\+var})
+\item 
+virtual int \hyperlink{classBTPieceMsg_ad88358d275933f9df950b6ce5d2b13f8}{index} () const 
+\item 
+virtual void \hyperlink{classBTPieceMsg_aabb09154f661b4f224b683be6d97148a}{set\+Index} (int \hyperlink{classBTPieceMsg_a5caacefaece64a71bc6b5e209e4d13a0}{index\+\_\+var})
+\item 
+virtual int \hyperlink{classBTPieceMsg_a2d78a296cd35afe5da527cc6f1866e80}{begin} () const 
+\item 
+virtual void \hyperlink{classBTPieceMsg_aa17191c3a4c9706e161294a223c15393}{set\+Begin} (int \hyperlink{classBTPieceMsg_a0d1fed26edc84d361d74986fa4593c71}{begin\+\_\+var})
+\item 
+virtual const char $\ast$ \hyperlink{classBTPieceMsg_a39e81e0d245415035f119c31dbc54723}{data} () const 
+\item 
+virtual void \hyperlink{classBTPieceMsg_aa0628ba79c3d9f027c0a64f8f58bd6bb}{set\+Data} (const char $\ast$\hyperlink{classBTPieceMsg_ab0ce35b2c10df0e33900776ce415473d}{data\+\_\+var})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBTPieceMsg_a2a30af287383c392ef5abbc77a201b35}{operator==} (const \hyperlink{classBTPieceMsg}{B\+T\+Piece\+Msg} \&)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classBTPieceMsg_a003b938dabb53ea470ef14fee77ce17c}{length\+\_\+prefix\+\_\+var}
+\item 
+unsigned short \hyperlink{classBTPieceMsg_aa46d6993c9d02a3b4add2a69b811de48}{I\+D\+\_\+var}
+\item 
+int \hyperlink{classBTPieceMsg_a5caacefaece64a71bc6b5e209e4d13a0}{index\+\_\+var}
+\item 
+int \hyperlink{classBTPieceMsg_a0d1fed26edc84d361d74986fa4593c71}{begin\+\_\+var}
+\item 
+opp\+\_\+string \hyperlink{classBTPieceMsg_ab0ce35b2c10df0e33900776ce415473d}{data\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTPieceMsg_aab94a7d9cecf74bbcb4d33c73621e79d}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{B\+T\+Piece\+Msg(const char $\ast$name=\+N\+U\+L\+L, int kind=0)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Piece\+Msg\+::\+B\+T\+Piece\+Msg (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name = {\ttfamily NULL}, }
+\item[{int}]{kind = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classBTPieceMsg_aab94a7d9cecf74bbcb4d33c73621e79d}
+\hypertarget{classBTPieceMsg_ab48d04a29681a8811a4c6d89da094694}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{B\+T\+Piece\+Msg(const B\+T\+Piece\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Piece\+Msg\+::\+B\+T\+Piece\+Msg (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Piece\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTPieceMsg_ab48d04a29681a8811a4c6d89da094694}
+\hypertarget{classBTPieceMsg_afd8e46d483a4b668ba2ddbb9ca590026}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!````~B\+T\+Piece\+Msg@{$\sim$\+B\+T\+Piece\+Msg}}
+\index{````~B\+T\+Piece\+Msg@{$\sim$\+B\+T\+Piece\+Msg}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{$\sim$\+B\+T\+Piece\+Msg()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Piece\+Msg\+::$\sim$\+B\+T\+Piece\+Msg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_afd8e46d483a4b668ba2ddbb9ca590026}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTPieceMsg_a2d78a296cd35afe5da527cc6f1866e80}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!begin@{begin}}
+\index{begin@{begin}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{begin() const }]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Piece\+Msg\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_a2d78a296cd35afe5da527cc6f1866e80}
+\hypertarget{classBTPieceMsg_a39e81e0d245415035f119c31dbc54723}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!data@{data}}
+\index{data@{data}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{data() const }]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Piece\+Msg\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_a39e81e0d245415035f119c31dbc54723}
+\hypertarget{classBTPieceMsg_a8a9595f0d774d5ca06c7639429a93466}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!dup@{dup}}
+\index{dup@{dup}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{dup() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+T\+Piece\+Msg}$\ast$ B\+T\+Piece\+Msg\+::dup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTPieceMsg_a8a9595f0d774d5ca06c7639429a93466}
+\hypertarget{classBTPieceMsg_a735d57e9641da83acaef1ae2d07b8a68}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!I\+D@{I\+D}}
+\index{I\+D@{I\+D}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{I\+D() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned short B\+T\+Piece\+Msg\+::\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_a735d57e9641da83acaef1ae2d07b8a68}
+\hypertarget{classBTPieceMsg_ad88358d275933f9df950b6ce5d2b13f8}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!index@{index}}
+\index{index@{index}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{index() const }]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Piece\+Msg\+::index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_ad88358d275933f9df950b6ce5d2b13f8}
+\hypertarget{classBTPieceMsg_a18301230ce36b59e267b85187f44bafb}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!length\+\_\+prefix@{length\+\_\+prefix}}
+\index{length\+\_\+prefix@{length\+\_\+prefix}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{length\+\_\+prefix() const }]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Piece\+Msg\+::length\+\_\+prefix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_a18301230ce36b59e267b85187f44bafb}
+\hypertarget{classBTPieceMsg_ac1bfbf0821b74bff9ba498d184e284f8}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{operator=(const B\+T\+Piece\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Piece\+Msg} \& B\+T\+Piece\+Msg\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Piece\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTPieceMsg_ac1bfbf0821b74bff9ba498d184e284f8}
+\hypertarget{classBTPieceMsg_a2a30af287383c392ef5abbc77a201b35}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!operator==@{operator==}}
+\index{operator==@{operator==}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{operator==(const B\+T\+Piece\+Msg \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Piece\+Msg\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Piece\+Msg} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPieceMsg_a2a30af287383c392ef5abbc77a201b35}
+\hypertarget{classBTPieceMsg_a4c624dd2267836deb6779537738c492d}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!parsim\+Pack@{parsim\+Pack}}
+\index{parsim\+Pack@{parsim\+Pack}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{parsim\+Pack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Piece\+Msg\+::parsim\+Pack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_a4c624dd2267836deb6779537738c492d}
+\hypertarget{classBTPieceMsg_a8d1a9a3ac51eab276e6126dd4efece0a}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!parsim\+Unpack@{parsim\+Unpack}}
+\index{parsim\+Unpack@{parsim\+Unpack}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{parsim\+Unpack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Piece\+Msg\+::parsim\+Unpack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_a8d1a9a3ac51eab276e6126dd4efece0a}
+\hypertarget{classBTPieceMsg_aa17191c3a4c9706e161294a223c15393}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!set\+Begin@{set\+Begin}}
+\index{set\+Begin@{set\+Begin}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{set\+Begin(int begin\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Piece\+Msg\+::set\+Begin (
+\begin{DoxyParamCaption}
+\item[{int}]{begin\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_aa17191c3a4c9706e161294a223c15393}
+\hypertarget{classBTPieceMsg_aa0628ba79c3d9f027c0a64f8f58bd6bb}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{set\+Data(const char $\ast$data\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Piece\+Msg\+::set\+Data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_aa0628ba79c3d9f027c0a64f8f58bd6bb}
+\hypertarget{classBTPieceMsg_a11ae1569ddf762680aea8080bc5ff3a8}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!set\+I\+D@{set\+I\+D}}
+\index{set\+I\+D@{set\+I\+D}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{set\+I\+D(unsigned short I\+D\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Piece\+Msg\+::set\+I\+D (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{I\+D\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_a11ae1569ddf762680aea8080bc5ff3a8}
+\hypertarget{classBTPieceMsg_aabb09154f661b4f224b683be6d97148a}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!set\+Index@{set\+Index}}
+\index{set\+Index@{set\+Index}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{set\+Index(int index\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Piece\+Msg\+::set\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_aabb09154f661b4f224b683be6d97148a}
+\hypertarget{classBTPieceMsg_a8b2686847a190f607d47a468a987ee39}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!set\+Length\+\_\+prefix@{set\+Length\+\_\+prefix}}
+\index{set\+Length\+\_\+prefix@{set\+Length\+\_\+prefix}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{set\+Length\+\_\+prefix(int length\+\_\+prefix\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Piece\+Msg\+::set\+Length\+\_\+prefix (
+\begin{DoxyParamCaption}
+\item[{int}]{length\+\_\+prefix\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTPieceMsg_a8b2686847a190f607d47a468a987ee39}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTPieceMsg_a0d1fed26edc84d361d74986fa4593c71}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!begin\+\_\+var@{begin\+\_\+var}}
+\index{begin\+\_\+var@{begin\+\_\+var}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{begin\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Piece\+Msg\+::begin\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPieceMsg_a0d1fed26edc84d361d74986fa4593c71}
+\hypertarget{classBTPieceMsg_ab0ce35b2c10df0e33900776ce415473d}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!data\+\_\+var@{data\+\_\+var}}
+\index{data\+\_\+var@{data\+\_\+var}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{data\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}opp\+\_\+string B\+T\+Piece\+Msg\+::data\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPieceMsg_ab0ce35b2c10df0e33900776ce415473d}
+\hypertarget{classBTPieceMsg_aa46d6993c9d02a3b4add2a69b811de48}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!I\+D\+\_\+var@{I\+D\+\_\+var}}
+\index{I\+D\+\_\+var@{I\+D\+\_\+var}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{I\+D\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short B\+T\+Piece\+Msg\+::\+I\+D\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPieceMsg_aa46d6993c9d02a3b4add2a69b811de48}
+\hypertarget{classBTPieceMsg_a5caacefaece64a71bc6b5e209e4d13a0}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!index\+\_\+var@{index\+\_\+var}}
+\index{index\+\_\+var@{index\+\_\+var}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{index\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Piece\+Msg\+::index\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPieceMsg_a5caacefaece64a71bc6b5e209e4d13a0}
+\hypertarget{classBTPieceMsg_a003b938dabb53ea470ef14fee77ce17c}{}\index{B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}!length\+\_\+prefix\+\_\+var@{length\+\_\+prefix\+\_\+var}}
+\index{length\+\_\+prefix\+\_\+var@{length\+\_\+prefix\+\_\+var}!B\+T\+Piece\+Msg@{B\+T\+Piece\+Msg}}
+\subsubsection[{length\+\_\+prefix\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Piece\+Msg\+::length\+\_\+prefix\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTPieceMsg_a003b938dabb53ea470ef14fee77ce17c}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTPeerWireMsg__m_8h}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h}\item 
+\hyperlink{BTPeerWireMsg__m_8cc}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}\end{DoxyCompactItemize}

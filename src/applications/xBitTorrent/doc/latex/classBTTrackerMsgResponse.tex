@@ -1,0 +1,323 @@
+\hypertarget{classBTTrackerMsgResponse}{}\section{B\+T\+Tracker\+Msg\+Response Class Reference}
+\label{classBTTrackerMsgResponse}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+
+
+{\ttfamily \#include $<$B\+T\+Tracker\+Msg\+\_\+m.\+h$>$}
+
+Inheritance diagram for B\+T\+Tracker\+Msg\+Response\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTTrackerMsgResponse}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTTrackerMsgResponse_a05ee6c15854cdba8ae16b7807232b016}{B\+T\+Tracker\+Msg\+Response} (const char $\ast$name=N\+U\+L\+L, int kind=0)
+\item 
+\hyperlink{classBTTrackerMsgResponse_aabeacf4915a545945a63b1f926386e0e}{B\+T\+Tracker\+Msg\+Response} (const \hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} \&other)
+\item 
+virtual \hyperlink{classBTTrackerMsgResponse_a11df55807787aaeac721254f61b85bbe}{$\sim$\+B\+T\+Tracker\+Msg\+Response} ()
+\item 
+\hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} \& \hyperlink{classBTTrackerMsgResponse_a34f2ec6fc48d6110e7846b3f0e7f4f0e}{operator=} (const \hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} \&other)
+\item 
+virtual \hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} $\ast$ \hyperlink{classBTTrackerMsgResponse_ac4687cbe3db1cae2e8687827852ca715}{dup} () const 
+\item 
+virtual void \hyperlink{classBTTrackerMsgResponse_a120681b94c04543563bdd44cb5eb0f49}{parsim\+Pack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual void \hyperlink{classBTTrackerMsgResponse_af6a4a233cf072e92998d91615ab6370f}{parsim\+Unpack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual const char $\ast$ \hyperlink{classBTTrackerMsgResponse_abc7ca44a791c0af1f8ad217ee18fb29d}{failure} () const 
+\item 
+virtual void \hyperlink{classBTTrackerMsgResponse_af306016f43f2fc54bff1ffafbaea3aac}{set\+Failure} (const char $\ast$\hyperlink{classBTTrackerMsgResponse_a0dc56a9e8c562d00690f9f72ea59b1fd}{failure\+\_\+var})
+\item 
+virtual const char $\ast$ \hyperlink{classBTTrackerMsgResponse_a66a8fa7e7b230667452d839b290267c9}{warning} () const 
+\item 
+virtual void \hyperlink{classBTTrackerMsgResponse_a5429f5a7b6bd947aa618d1d0e0e60d47}{set\+Warning} (const char $\ast$\hyperlink{classBTTrackerMsgResponse_a2d586220ffb2eb63253d19dbbce252f8}{warning\+\_\+var})
+\item 
+virtual unsigned int \hyperlink{classBTTrackerMsgResponse_a48954301e2cdc31321857942f9527b17}{announce\+Interval} () const 
+\item 
+virtual void \hyperlink{classBTTrackerMsgResponse_a124a7861f43c4fcc358889bf29720bca}{set\+Announce\+Interval} (unsigned int \hyperlink{classBTTrackerMsgResponse_a0e2fa84a47aa20e0f4a17de270b819c0}{announce\+Interval\+\_\+var})
+\item 
+virtual const char $\ast$ \hyperlink{classBTTrackerMsgResponse_abd9d7bcdaca8ef26dae5a28d8d08cb63}{tracker\+Id} () const 
+\item 
+virtual void \hyperlink{classBTTrackerMsgResponse_aaa640fe58c4c2b21e79393d597d26a26}{set\+Tracker\+Id} (const char $\ast$\hyperlink{classBTTrackerMsgResponse_a95d4eed6b7304f41ac4d967020ca5024}{tracker\+Id\+\_\+var})
+\item 
+virtual unsigned int \hyperlink{classBTTrackerMsgResponse_af9d26abf0691613825a557e58ccec54a}{complete} () const 
+\item 
+virtual void \hyperlink{classBTTrackerMsgResponse_a979ad2935b9b3cbae4fc54d9ed60c4a8}{set\+Complete} (unsigned int \hyperlink{classBTTrackerMsgResponse_a6631a0aa7c951abebf37fe5aa4ae4322}{complete\+\_\+var})
+\item 
+virtual unsigned int \hyperlink{classBTTrackerMsgResponse_ae0a062ad41a0d89fe1bdd17505d3f0a1}{incomplete} () const 
+\item 
+virtual void \hyperlink{classBTTrackerMsgResponse_aec9027a492cc165f6479841601c6c7f0}{set\+Incomplete} (unsigned int \hyperlink{classBTTrackerMsgResponse_aeec84d5b5adc2526912e05764b71fd3e}{incomplete\+\_\+var})
+\item 
+virtual void \hyperlink{classBTTrackerMsgResponse_a8059cb8ffd2c4bdbba6cc31e9d6b9a72}{set\+Peers\+Array\+Size} (unsigned int size)
+\item 
+virtual unsigned int \hyperlink{classBTTrackerMsgResponse_ad551cd9378c48865770ec0b2fa0c6874}{peers\+Array\+Size} () const 
+\item 
+virtual \hyperlink{structPEER}{P\+E\+E\+R} \& \hyperlink{classBTTrackerMsgResponse_aed995854e4280b5c8d1df47a07043ec1}{peers} (unsigned int k)
+\item 
+virtual const \hyperlink{structPEER}{P\+E\+E\+R} \& \hyperlink{classBTTrackerMsgResponse_a7bd58838c9f076780fc316e7b4972603}{peers} (unsigned int k) const 
+\item 
+virtual void \hyperlink{classBTTrackerMsgResponse_a11aa8270e8faf38a3605ebf55b791b95}{set\+Peers} (unsigned int k, const \hyperlink{structPEER}{P\+E\+E\+R} \&\hyperlink{classBTTrackerMsgResponse_a1aa01eb6c2c6a28498173d1d0f578b72}{peers\+\_\+var})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBTTrackerMsgResponse_a33217d7065a2c648251407e0b61cd1a7}{operator==} (const \hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} \&)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+opp\+\_\+string \hyperlink{classBTTrackerMsgResponse_a0dc56a9e8c562d00690f9f72ea59b1fd}{failure\+\_\+var}
+\item 
+opp\+\_\+string \hyperlink{classBTTrackerMsgResponse_a2d586220ffb2eb63253d19dbbce252f8}{warning\+\_\+var}
+\item 
+unsigned int \hyperlink{classBTTrackerMsgResponse_a0e2fa84a47aa20e0f4a17de270b819c0}{announce\+Interval\+\_\+var}
+\item 
+opp\+\_\+string \hyperlink{classBTTrackerMsgResponse_a95d4eed6b7304f41ac4d967020ca5024}{tracker\+Id\+\_\+var}
+\item 
+unsigned int \hyperlink{classBTTrackerMsgResponse_a6631a0aa7c951abebf37fe5aa4ae4322}{complete\+\_\+var}
+\item 
+unsigned int \hyperlink{classBTTrackerMsgResponse_aeec84d5b5adc2526912e05764b71fd3e}{incomplete\+\_\+var}
+\item 
+\+::\hyperlink{structPEER}{P\+E\+E\+R} $\ast$ \hyperlink{classBTTrackerMsgResponse_a1aa01eb6c2c6a28498173d1d0f578b72}{peers\+\_\+var}
+\item 
+unsigned int \hyperlink{classBTTrackerMsgResponse_a4bf054f44b6387c2d6d71d4009d96f9a}{peers\+\_\+arraysize}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class generated from {\ttfamily applications/x\+Bit\+Torrent/\+B\+T\+Tracker\+Msg.\+msg} by opp\+\_\+msgc. 
+\begin{DoxyPre}
+message \hyperlink{classBTTrackerMsgResponse}{BTTrackerMsgResponse} extends cPacket
+\{
+    (true);\end{DoxyPre}
+
+
+
+\begin{DoxyPre}    string failure;         
+    string warning;         
+    unsigned int announceInterval;  
+    string trackerId;       
+    unsigned int complete;      
+    unsigned int incomplete;    
+    \hyperlink{structPEER}{PEER} peers[];           
+\}
+\end{DoxyPre}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTTrackerMsgResponse_a05ee6c15854cdba8ae16b7807232b016}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{B\+T\+Tracker\+Msg\+Response(const char $\ast$name=\+N\+U\+L\+L, int kind=0)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Msg\+Response\+::\+B\+T\+Tracker\+Msg\+Response (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name = {\ttfamily NULL}, }
+\item[{int}]{kind = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerMsgResponse_a05ee6c15854cdba8ae16b7807232b016}
+\hypertarget{classBTTrackerMsgResponse_aabeacf4915a545945a63b1f926386e0e}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{B\+T\+Tracker\+Msg\+Response(const B\+T\+Tracker\+Msg\+Response \&other)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Msg\+Response\+::\+B\+T\+Tracker\+Msg\+Response (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Tracker\+Msg\+Response} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerMsgResponse_aabeacf4915a545945a63b1f926386e0e}
+\hypertarget{classBTTrackerMsgResponse_a11df55807787aaeac721254f61b85bbe}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!````~B\+T\+Tracker\+Msg\+Response@{$\sim$\+B\+T\+Tracker\+Msg\+Response}}
+\index{````~B\+T\+Tracker\+Msg\+Response@{$\sim$\+B\+T\+Tracker\+Msg\+Response}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{$\sim$\+B\+T\+Tracker\+Msg\+Response()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Msg\+Response\+::$\sim$\+B\+T\+Tracker\+Msg\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_a11df55807787aaeac721254f61b85bbe}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTTrackerMsgResponse_a48954301e2cdc31321857942f9527b17}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!announce\+Interval@{announce\+Interval}}
+\index{announce\+Interval@{announce\+Interval}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{announce\+Interval() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Tracker\+Msg\+Response\+::announce\+Interval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_a48954301e2cdc31321857942f9527b17}
+\hypertarget{classBTTrackerMsgResponse_af9d26abf0691613825a557e58ccec54a}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!complete@{complete}}
+\index{complete@{complete}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{complete() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Tracker\+Msg\+Response\+::complete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_af9d26abf0691613825a557e58ccec54a}
+\hypertarget{classBTTrackerMsgResponse_ac4687cbe3db1cae2e8687827852ca715}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!dup@{dup}}
+\index{dup@{dup}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{dup() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+T\+Tracker\+Msg\+Response}$\ast$ B\+T\+Tracker\+Msg\+Response\+::dup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_ac4687cbe3db1cae2e8687827852ca715}
+\hypertarget{classBTTrackerMsgResponse_abc7ca44a791c0af1f8ad217ee18fb29d}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!failure@{failure}}
+\index{failure@{failure}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{failure() const }]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Tracker\+Msg\+Response\+::failure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_abc7ca44a791c0af1f8ad217ee18fb29d}
+\hypertarget{classBTTrackerMsgResponse_ae0a062ad41a0d89fe1bdd17505d3f0a1}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!incomplete@{incomplete}}
+\index{incomplete@{incomplete}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{incomplete() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Tracker\+Msg\+Response\+::incomplete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_ae0a062ad41a0d89fe1bdd17505d3f0a1}
+\hypertarget{classBTTrackerMsgResponse_a34f2ec6fc48d6110e7846b3f0e7f4f0e}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{operator=(const B\+T\+Tracker\+Msg\+Response \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Tracker\+Msg\+Response} \& B\+T\+Tracker\+Msg\+Response\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Tracker\+Msg\+Response} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerMsgResponse_a34f2ec6fc48d6110e7846b3f0e7f4f0e}
+\hypertarget{classBTTrackerMsgResponse_a33217d7065a2c648251407e0b61cd1a7}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!operator==@{operator==}}
+\index{operator==@{operator==}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{operator==(const B\+T\+Tracker\+Msg\+Response \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Msg\+Response\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Tracker\+Msg\+Response} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerMsgResponse_a33217d7065a2c648251407e0b61cd1a7}
+\hypertarget{classBTTrackerMsgResponse_a120681b94c04543563bdd44cb5eb0f49}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!parsim\+Pack@{parsim\+Pack}}
+\index{parsim\+Pack@{parsim\+Pack}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{parsim\+Pack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Msg\+Response\+::parsim\+Pack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_a120681b94c04543563bdd44cb5eb0f49}
+\hypertarget{classBTTrackerMsgResponse_af6a4a233cf072e92998d91615ab6370f}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!parsim\+Unpack@{parsim\+Unpack}}
+\index{parsim\+Unpack@{parsim\+Unpack}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{parsim\+Unpack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Msg\+Response\+::parsim\+Unpack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_af6a4a233cf072e92998d91615ab6370f}
+\hypertarget{classBTTrackerMsgResponse_aed995854e4280b5c8d1df47a07043ec1}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!peers@{peers}}
+\index{peers@{peers}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{peers(unsigned int k)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+E\+E\+R} \& B\+T\+Tracker\+Msg\+Response\+::peers (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{k}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_aed995854e4280b5c8d1df47a07043ec1}
+\hypertarget{classBTTrackerMsgResponse_a7bd58838c9f076780fc316e7b4972603}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!peers@{peers}}
+\index{peers@{peers}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{peers(unsigned int k) const }]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf P\+E\+E\+R}\& B\+T\+Tracker\+Msg\+Response\+::peers (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_a7bd58838c9f076780fc316e7b4972603}
+\hypertarget{classBTTrackerMsgResponse_ad551cd9378c48865770ec0b2fa0c6874}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!peers\+Array\+Size@{peers\+Array\+Size}}
+\index{peers\+Array\+Size@{peers\+Array\+Size}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{peers\+Array\+Size() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Tracker\+Msg\+Response\+::peers\+Array\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_ad551cd9378c48865770ec0b2fa0c6874}
+\hypertarget{classBTTrackerMsgResponse_a124a7861f43c4fcc358889bf29720bca}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!set\+Announce\+Interval@{set\+Announce\+Interval}}
+\index{set\+Announce\+Interval@{set\+Announce\+Interval}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{set\+Announce\+Interval(unsigned int announce\+Interval\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Msg\+Response\+::set\+Announce\+Interval (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{announce\+Interval\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_a124a7861f43c4fcc358889bf29720bca}
+\hypertarget{classBTTrackerMsgResponse_a979ad2935b9b3cbae4fc54d9ed60c4a8}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!set\+Complete@{set\+Complete}}
+\index{set\+Complete@{set\+Complete}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{set\+Complete(unsigned int complete\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Msg\+Response\+::set\+Complete (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{complete\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_a979ad2935b9b3cbae4fc54d9ed60c4a8}
+\hypertarget{classBTTrackerMsgResponse_af306016f43f2fc54bff1ffafbaea3aac}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!set\+Failure@{set\+Failure}}
+\index{set\+Failure@{set\+Failure}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{set\+Failure(const char $\ast$failure\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Msg\+Response\+::set\+Failure (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{failure\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_af306016f43f2fc54bff1ffafbaea3aac}
+\hypertarget{classBTTrackerMsgResponse_aec9027a492cc165f6479841601c6c7f0}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!set\+Incomplete@{set\+Incomplete}}
+\index{set\+Incomplete@{set\+Incomplete}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{set\+Incomplete(unsigned int incomplete\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Msg\+Response\+::set\+Incomplete (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{incomplete\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_aec9027a492cc165f6479841601c6c7f0}
+\hypertarget{classBTTrackerMsgResponse_a11aa8270e8faf38a3605ebf55b791b95}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!set\+Peers@{set\+Peers}}
+\index{set\+Peers@{set\+Peers}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{set\+Peers(unsigned int k, const P\+E\+E\+R \&peers\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Msg\+Response\+::set\+Peers (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{k, }
+\item[{const {\bf P\+E\+E\+R} \&}]{peers\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_a11aa8270e8faf38a3605ebf55b791b95}
+\hypertarget{classBTTrackerMsgResponse_a8059cb8ffd2c4bdbba6cc31e9d6b9a72}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!set\+Peers\+Array\+Size@{set\+Peers\+Array\+Size}}
+\index{set\+Peers\+Array\+Size@{set\+Peers\+Array\+Size}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{set\+Peers\+Array\+Size(unsigned int size)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Msg\+Response\+::set\+Peers\+Array\+Size (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_a8059cb8ffd2c4bdbba6cc31e9d6b9a72}
+\hypertarget{classBTTrackerMsgResponse_aaa640fe58c4c2b21e79393d597d26a26}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!set\+Tracker\+Id@{set\+Tracker\+Id}}
+\index{set\+Tracker\+Id@{set\+Tracker\+Id}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{set\+Tracker\+Id(const char $\ast$tracker\+Id\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Msg\+Response\+::set\+Tracker\+Id (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{tracker\+Id\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_aaa640fe58c4c2b21e79393d597d26a26}
+\hypertarget{classBTTrackerMsgResponse_a5429f5a7b6bd947aa618d1d0e0e60d47}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!set\+Warning@{set\+Warning}}
+\index{set\+Warning@{set\+Warning}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{set\+Warning(const char $\ast$warning\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Msg\+Response\+::set\+Warning (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{warning\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_a5429f5a7b6bd947aa618d1d0e0e60d47}
+\hypertarget{classBTTrackerMsgResponse_abd9d7bcdaca8ef26dae5a28d8d08cb63}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!tracker\+Id@{tracker\+Id}}
+\index{tracker\+Id@{tracker\+Id}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{tracker\+Id() const }]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Tracker\+Msg\+Response\+::tracker\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_abd9d7bcdaca8ef26dae5a28d8d08cb63}
+\hypertarget{classBTTrackerMsgResponse_a66a8fa7e7b230667452d839b290267c9}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!warning@{warning}}
+\index{warning@{warning}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{warning() const }]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Tracker\+Msg\+Response\+::warning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerMsgResponse_a66a8fa7e7b230667452d839b290267c9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTTrackerMsgResponse_a0e2fa84a47aa20e0f4a17de270b819c0}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!announce\+Interval\+\_\+var@{announce\+Interval\+\_\+var}}
+\index{announce\+Interval\+\_\+var@{announce\+Interval\+\_\+var}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{announce\+Interval\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Tracker\+Msg\+Response\+::announce\+Interval\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerMsgResponse_a0e2fa84a47aa20e0f4a17de270b819c0}
+\hypertarget{classBTTrackerMsgResponse_a6631a0aa7c951abebf37fe5aa4ae4322}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!complete\+\_\+var@{complete\+\_\+var}}
+\index{complete\+\_\+var@{complete\+\_\+var}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{complete\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Tracker\+Msg\+Response\+::complete\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerMsgResponse_a6631a0aa7c951abebf37fe5aa4ae4322}
+\hypertarget{classBTTrackerMsgResponse_a0dc56a9e8c562d00690f9f72ea59b1fd}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!failure\+\_\+var@{failure\+\_\+var}}
+\index{failure\+\_\+var@{failure\+\_\+var}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{failure\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}opp\+\_\+string B\+T\+Tracker\+Msg\+Response\+::failure\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerMsgResponse_a0dc56a9e8c562d00690f9f72ea59b1fd}
+\hypertarget{classBTTrackerMsgResponse_aeec84d5b5adc2526912e05764b71fd3e}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!incomplete\+\_\+var@{incomplete\+\_\+var}}
+\index{incomplete\+\_\+var@{incomplete\+\_\+var}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{incomplete\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Tracker\+Msg\+Response\+::incomplete\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerMsgResponse_aeec84d5b5adc2526912e05764b71fd3e}
+\hypertarget{classBTTrackerMsgResponse_a4bf054f44b6387c2d6d71d4009d96f9a}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!peers\+\_\+arraysize@{peers\+\_\+arraysize}}
+\index{peers\+\_\+arraysize@{peers\+\_\+arraysize}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{peers\+\_\+arraysize}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Tracker\+Msg\+Response\+::peers\+\_\+arraysize\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerMsgResponse_a4bf054f44b6387c2d6d71d4009d96f9a}
+\hypertarget{classBTTrackerMsgResponse_a1aa01eb6c2c6a28498173d1d0f578b72}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!peers\+\_\+var@{peers\+\_\+var}}
+\index{peers\+\_\+var@{peers\+\_\+var}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{peers\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}\+::{\bf P\+E\+E\+R}$\ast$ B\+T\+Tracker\+Msg\+Response\+::peers\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerMsgResponse_a1aa01eb6c2c6a28498173d1d0f578b72}
+\hypertarget{classBTTrackerMsgResponse_a95d4eed6b7304f41ac4d967020ca5024}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!tracker\+Id\+\_\+var@{tracker\+Id\+\_\+var}}
+\index{tracker\+Id\+\_\+var@{tracker\+Id\+\_\+var}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{tracker\+Id\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}opp\+\_\+string B\+T\+Tracker\+Msg\+Response\+::tracker\+Id\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerMsgResponse_a95d4eed6b7304f41ac4d967020ca5024}
+\hypertarget{classBTTrackerMsgResponse_a2d586220ffb2eb63253d19dbbce252f8}{}\index{B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}!warning\+\_\+var@{warning\+\_\+var}}
+\index{warning\+\_\+var@{warning\+\_\+var}!B\+T\+Tracker\+Msg\+Response@{B\+T\+Tracker\+Msg\+Response}}
+\subsubsection[{warning\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}opp\+\_\+string B\+T\+Tracker\+Msg\+Response\+::warning\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerMsgResponse_a2d586220ffb2eb63253d19dbbce252f8}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTTrackerMsg__m_8h}{B\+T\+Tracker\+Msg\+\_\+m.\+h}\item 
+\hyperlink{BTTrackerMsg__m_8cc}{B\+T\+Tracker\+Msg\+\_\+m.\+cc}\end{DoxyCompactItemize}

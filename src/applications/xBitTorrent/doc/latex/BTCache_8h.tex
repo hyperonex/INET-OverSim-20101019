@@ -1,0 +1,72 @@
+\hypertarget{BTCache_8h}{}\section{B\+T\+Cache.\+h File Reference}
+\label{BTCache_8h}\index{B\+T\+Cache.\+h@{B\+T\+Cache.\+h}}
+{\ttfamily \#include \char`\"{}httpt\+Server\+Base.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}L\+R\+U\+Cache.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\+C\+P\+Socket.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\+C\+P\+Socket\+Map.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\+P\+Address\+Resolver.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Web\+Resource.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}B\+T\+Statistics.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$T\+C\+P.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCACHE__SOCK__DS}{C\+A\+C\+H\+E\+\_\+\+S\+O\+C\+K\+\_\+\+D\+S}
+\item 
+class \hyperlink{classBTCache}{B\+T\+Cache}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{BTCache_8h_a55bfa56d68179db7e3c64afd745c09a2}{H\+T\+T\+P\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+S\+G}~6509
+\item 
+\#define \hyperlink{BTCache_8h_a1df8ee2aeb086be3098b8e2a4152b2c4}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+M\+S\+G}~6513
+\item 
+\#define \hyperlink{BTCache_8h_abebe20ab5ceb59d6ea1108b0c1465be4}{B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+H\+I\+T\+S}~764
+\item 
+\#define \hyperlink{BTCache_8h_acbee92c250ae99bb337c93b156b2ac60}{B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+M\+I\+S\+S\+E\+S}~765
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247}{Web\+Cache\+Sock\+Type} \{ \hyperlink{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247a67c96b24b23bcb408bae7626730a04b7}{S\+E\+R\+V\+E\+R}, 
+\hyperlink{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247a48e4cb37544c8e69715d45e5a83b2109}{C\+L\+I\+E\+N\+T}, 
+\hyperlink{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247a3bc9f514d1055fbd078bdd7380d3fd90}{L\+I\+S\+T\+E\+N\+E\+R}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{BTCache_8h_abebe20ab5ceb59d6ea1108b0c1465be4}{}\index{B\+T\+Cache.\+h@{B\+T\+Cache.\+h}!B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+H\+I\+T\+S@{B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+H\+I\+T\+S}}
+\index{B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+H\+I\+T\+S@{B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+H\+I\+T\+S}!B\+T\+Cache.\+h@{B\+T\+Cache.\+h}}
+\subsubsection[{B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+H\+I\+T\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+H\+I\+T\+S~764}\label{BTCache_8h_abebe20ab5ceb59d6ea1108b0c1465be4}
+\hypertarget{BTCache_8h_acbee92c250ae99bb337c93b156b2ac60}{}\index{B\+T\+Cache.\+h@{B\+T\+Cache.\+h}!B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+M\+I\+S\+S\+E\+S@{B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+M\+I\+S\+S\+E\+S}}
+\index{B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+M\+I\+S\+S\+E\+S@{B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+M\+I\+S\+S\+E\+S}!B\+T\+Cache.\+h@{B\+T\+Cache.\+h}}
+\subsubsection[{B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+M\+I\+S\+S\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+M\+I\+S\+S\+E\+S~765}\label{BTCache_8h_acbee92c250ae99bb337c93b156b2ac60}
+\hypertarget{BTCache_8h_a55bfa56d68179db7e3c64afd745c09a2}{}\index{B\+T\+Cache.\+h@{B\+T\+Cache.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+S\+G@{H\+T\+T\+P\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+S\+G}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+S\+G@{H\+T\+T\+P\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+S\+G}!B\+T\+Cache.\+h@{B\+T\+Cache.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+S\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+S\+G~6509}\label{BTCache_8h_a55bfa56d68179db7e3c64afd745c09a2}
+\hypertarget{BTCache_8h_a1df8ee2aeb086be3098b8e2a4152b2c4}{}\index{B\+T\+Cache.\+h@{B\+T\+Cache.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+M\+S\+G@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+M\+S\+G}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+M\+S\+G@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+M\+S\+G}!B\+T\+Cache.\+h@{B\+T\+Cache.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+M\+S\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+M\+S\+G~6513}\label{BTCache_8h_a1df8ee2aeb086be3098b8e2a4152b2c4}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247}{}\index{B\+T\+Cache.\+h@{B\+T\+Cache.\+h}!Web\+Cache\+Sock\+Type@{Web\+Cache\+Sock\+Type}}
+\index{Web\+Cache\+Sock\+Type@{Web\+Cache\+Sock\+Type}!B\+T\+Cache.\+h@{B\+T\+Cache.\+h}}
+\subsubsection[{Web\+Cache\+Sock\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Web\+Cache\+Sock\+Type}}\label{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+E\+R\+V\+E\+R@{S\+E\+R\+V\+E\+R}!B\+T\+Cache.\+h@{B\+T\+Cache.\+h}}\index{B\+T\+Cache.\+h@{B\+T\+Cache.\+h}!S\+E\+R\+V\+E\+R@{S\+E\+R\+V\+E\+R}}\item[{\em 
+\hypertarget{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247a67c96b24b23bcb408bae7626730a04b7}{}S\+E\+R\+V\+E\+R\label{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247a67c96b24b23bcb408bae7626730a04b7}
+}]\index{C\+L\+I\+E\+N\+T@{C\+L\+I\+E\+N\+T}!B\+T\+Cache.\+h@{B\+T\+Cache.\+h}}\index{B\+T\+Cache.\+h@{B\+T\+Cache.\+h}!C\+L\+I\+E\+N\+T@{C\+L\+I\+E\+N\+T}}\item[{\em 
+\hypertarget{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247a48e4cb37544c8e69715d45e5a83b2109}{}C\+L\+I\+E\+N\+T\label{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247a48e4cb37544c8e69715d45e5a83b2109}
+}]\index{L\+I\+S\+T\+E\+N\+E\+R@{L\+I\+S\+T\+E\+N\+E\+R}!B\+T\+Cache.\+h@{B\+T\+Cache.\+h}}\index{B\+T\+Cache.\+h@{B\+T\+Cache.\+h}!L\+I\+S\+T\+E\+N\+E\+R@{L\+I\+S\+T\+E\+N\+E\+R}}\item[{\em 
+\hypertarget{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247a3bc9f514d1055fbd078bdd7380d3fd90}{}L\+I\+S\+T\+E\+N\+E\+R\label{BTCache_8h_ac869adb93ddd200a3d13c12e2ed5b247a3bc9f514d1055fbd078bdd7380d3fd90}
+}]\end{description}
+\end{Desc}

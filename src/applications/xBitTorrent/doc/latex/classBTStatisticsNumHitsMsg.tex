@@ -1,0 +1,146 @@
+\hypertarget{classBTStatisticsNumHitsMsg}{}\section{B\+T\+Statistics\+Num\+Hits\+Msg Class Reference}
+\label{classBTStatisticsNumHitsMsg}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+
+
+{\ttfamily \#include $<$B\+T\+Statistics\+Msg\+\_\+m.\+h$>$}
+
+Inheritance diagram for B\+T\+Statistics\+Num\+Hits\+Msg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTStatisticsNumHitsMsg}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTStatisticsNumHitsMsg_a48a37fdce2832cda8c98f6864a602464}{B\+T\+Statistics\+Num\+Hits\+Msg} (const char $\ast$name=N\+U\+L\+L, int kind=0)
+\item 
+\hyperlink{classBTStatisticsNumHitsMsg_ab6d8b31a3fc613f9d6400f869dfc8532}{B\+T\+Statistics\+Num\+Hits\+Msg} (const \hyperlink{classBTStatisticsNumHitsMsg}{B\+T\+Statistics\+Num\+Hits\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTStatisticsNumHitsMsg_afb330a4e351d76177965e09d8fd52c7c}{$\sim$\+B\+T\+Statistics\+Num\+Hits\+Msg} ()
+\item 
+\hyperlink{classBTStatisticsNumHitsMsg}{B\+T\+Statistics\+Num\+Hits\+Msg} \& \hyperlink{classBTStatisticsNumHitsMsg_a74b35dfa26a72be8faf9334103913286}{operator=} (const \hyperlink{classBTStatisticsNumHitsMsg}{B\+T\+Statistics\+Num\+Hits\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTStatisticsNumHitsMsg}{B\+T\+Statistics\+Num\+Hits\+Msg} $\ast$ \hyperlink{classBTStatisticsNumHitsMsg_a74abfdee89f6fd590ba930534ece7a60}{dup} () const 
+\item 
+virtual void \hyperlink{classBTStatisticsNumHitsMsg_aad9ededcecb9b2fcae86683baa48851c}{parsim\+Pack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual void \hyperlink{classBTStatisticsNumHitsMsg_a28ce087da02b0d989b2120274e6e660c}{parsim\+Unpack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual double \hyperlink{classBTStatisticsNumHitsMsg_ada909e3fd93e099cb0ec5c25fca1047c}{num\+Hits} () const 
+\item 
+virtual void \hyperlink{classBTStatisticsNumHitsMsg_af0a902e211d083fbd601a0d6f6939c7d}{set\+Num\+Hits} (double \hyperlink{classBTStatisticsNumHitsMsg_a88f5611c41dac9956bc6a07fe15f28eb}{num\+Hits\+\_\+var})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBTStatisticsNumHitsMsg_ab81878625fc5d4d3b9be33811da01e8e}{operator==} (const \hyperlink{classBTStatisticsNumHitsMsg}{B\+T\+Statistics\+Num\+Hits\+Msg} \&)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classBTStatisticsNumHitsMsg_a88f5611c41dac9956bc6a07fe15f28eb}{num\+Hits\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class generated from {\ttfamily applications/x\+Bit\+Torrent/\+B\+T\+Statistics\+Msg.\+msg} by opp\+\_\+msgc. 
+\begin{DoxyPre}
+message \hyperlink{classBTStatisticsNumHitsMsg}{BTStatisticsNumHitsMsg} extends GenericAppMsg
+\{
+     (true);\end{DoxyPre}
+
+
+
+\begin{DoxyPre}    double numHits;
+\}
+\end{DoxyPre}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTStatisticsNumHitsMsg_a48a37fdce2832cda8c98f6864a602464}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{B\+T\+Statistics\+Num\+Hits\+Msg(const char $\ast$name=\+N\+U\+L\+L, int kind=0)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Statistics\+Num\+Hits\+Msg\+::\+B\+T\+Statistics\+Num\+Hits\+Msg (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name = {\ttfamily NULL}, }
+\item[{int}]{kind = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classBTStatisticsNumHitsMsg_a48a37fdce2832cda8c98f6864a602464}
+\hypertarget{classBTStatisticsNumHitsMsg_ab6d8b31a3fc613f9d6400f869dfc8532}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{B\+T\+Statistics\+Num\+Hits\+Msg(const B\+T\+Statistics\+Num\+Hits\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Statistics\+Num\+Hits\+Msg\+::\+B\+T\+Statistics\+Num\+Hits\+Msg (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Statistics\+Num\+Hits\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTStatisticsNumHitsMsg_ab6d8b31a3fc613f9d6400f869dfc8532}
+\hypertarget{classBTStatisticsNumHitsMsg_afb330a4e351d76177965e09d8fd52c7c}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!````~B\+T\+Statistics\+Num\+Hits\+Msg@{$\sim$\+B\+T\+Statistics\+Num\+Hits\+Msg}}
+\index{````~B\+T\+Statistics\+Num\+Hits\+Msg@{$\sim$\+B\+T\+Statistics\+Num\+Hits\+Msg}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{$\sim$\+B\+T\+Statistics\+Num\+Hits\+Msg()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Statistics\+Num\+Hits\+Msg\+::$\sim$\+B\+T\+Statistics\+Num\+Hits\+Msg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTStatisticsNumHitsMsg_afb330a4e351d76177965e09d8fd52c7c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTStatisticsNumHitsMsg_a74abfdee89f6fd590ba930534ece7a60}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!dup@{dup}}
+\index{dup@{dup}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{dup() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+T\+Statistics\+Num\+Hits\+Msg}$\ast$ B\+T\+Statistics\+Num\+Hits\+Msg\+::dup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTStatisticsNumHitsMsg_a74abfdee89f6fd590ba930534ece7a60}
+\hypertarget{classBTStatisticsNumHitsMsg_ada909e3fd93e099cb0ec5c25fca1047c}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!num\+Hits@{num\+Hits}}
+\index{num\+Hits@{num\+Hits}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{num\+Hits() const }]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Statistics\+Num\+Hits\+Msg\+::num\+Hits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTStatisticsNumHitsMsg_ada909e3fd93e099cb0ec5c25fca1047c}
+\hypertarget{classBTStatisticsNumHitsMsg_a74b35dfa26a72be8faf9334103913286}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{operator=(const B\+T\+Statistics\+Num\+Hits\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Statistics\+Num\+Hits\+Msg} \& B\+T\+Statistics\+Num\+Hits\+Msg\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Statistics\+Num\+Hits\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTStatisticsNumHitsMsg_a74b35dfa26a72be8faf9334103913286}
+\hypertarget{classBTStatisticsNumHitsMsg_ab81878625fc5d4d3b9be33811da01e8e}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!operator==@{operator==}}
+\index{operator==@{operator==}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{operator==(const B\+T\+Statistics\+Num\+Hits\+Msg \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Statistics\+Num\+Hits\+Msg\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Statistics\+Num\+Hits\+Msg} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatisticsNumHitsMsg_ab81878625fc5d4d3b9be33811da01e8e}
+\hypertarget{classBTStatisticsNumHitsMsg_aad9ededcecb9b2fcae86683baa48851c}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!parsim\+Pack@{parsim\+Pack}}
+\index{parsim\+Pack@{parsim\+Pack}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{parsim\+Pack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+Num\+Hits\+Msg\+::parsim\+Pack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTStatisticsNumHitsMsg_aad9ededcecb9b2fcae86683baa48851c}
+\hypertarget{classBTStatisticsNumHitsMsg_a28ce087da02b0d989b2120274e6e660c}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!parsim\+Unpack@{parsim\+Unpack}}
+\index{parsim\+Unpack@{parsim\+Unpack}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{parsim\+Unpack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+Num\+Hits\+Msg\+::parsim\+Unpack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTStatisticsNumHitsMsg_a28ce087da02b0d989b2120274e6e660c}
+\hypertarget{classBTStatisticsNumHitsMsg_af0a902e211d083fbd601a0d6f6939c7d}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!set\+Num\+Hits@{set\+Num\+Hits}}
+\index{set\+Num\+Hits@{set\+Num\+Hits}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{set\+Num\+Hits(double num\+Hits\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+Num\+Hits\+Msg\+::set\+Num\+Hits (
+\begin{DoxyParamCaption}
+\item[{double}]{num\+Hits\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTStatisticsNumHitsMsg_af0a902e211d083fbd601a0d6f6939c7d}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTStatisticsNumHitsMsg_a88f5611c41dac9956bc6a07fe15f28eb}{}\index{B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}!num\+Hits\+\_\+var@{num\+Hits\+\_\+var}}
+\index{num\+Hits\+\_\+var@{num\+Hits\+\_\+var}!B\+T\+Statistics\+Num\+Hits\+Msg@{B\+T\+Statistics\+Num\+Hits\+Msg}}
+\subsubsection[{num\+Hits\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Statistics\+Num\+Hits\+Msg\+::num\+Hits\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatisticsNumHitsMsg_a88f5611c41dac9956bc6a07fe15f28eb}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTStatisticsMsg__m_8h}{B\+T\+Statistics\+Msg\+\_\+m.\+h}\item 
+\hyperlink{BTStatisticsMsg__m_8cc}{B\+T\+Statistics\+Msg\+\_\+m.\+cc}\end{DoxyCompactItemize}

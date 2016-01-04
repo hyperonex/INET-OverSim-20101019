@@ -1,0 +1,206 @@
+\hypertarget{classBTTrackerStructBase}{}\section{B\+T\+Tracker\+Struct\+Base Class Reference}
+\label{classBTTrackerStructBase}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+
+
+{\ttfamily \#include $<$B\+T\+Tracker\+Base.\+h$>$}
+
+Inheritance diagram for B\+T\+Tracker\+Struct\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTTrackerStructBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTTrackerStructBase_a95263b3a44785f5ae58d4b4a8c0df889}{B\+T\+Tracker\+Struct\+Base} (const I\+Pv\+X\+Address \&, const string \&, size\+\_\+t, const string \&, simtime\+\_\+t, bool)
+\item 
+virtual \hyperlink{classBTTrackerStructBase_afbbc4194414fbe329ac2ffdb51e275f3}{$\sim$\+B\+T\+Tracker\+Struct\+Base} ()
+\item 
+bool \hyperlink{classBTTrackerStructBase_ac66964e8d8aad0678e5cf4364e99e90a}{operator==} (const \hyperlink{classBTTrackerStructBase}{B\+T\+Tracker\+Struct\+Base} \&)
+\item 
+const I\+Pv\+X\+Address \& \hyperlink{classBTTrackerStructBase_a98c29d3c64e02abdf592f9ad5ebc17b9}{ip\+Address} () const 
+\item 
+void \hyperlink{classBTTrackerStructBase_a4c2b84fb03388f33c1bfba42a14699a9}{set\+Ip\+Address} (const I\+Pv\+X\+Address \&)
+\item 
+const string \& \hyperlink{classBTTrackerStructBase_a93ee55a9c781903b6c2e2b665644580e}{peer\+Id} () const 
+\item 
+void \hyperlink{classBTTrackerStructBase_aa1df5beeeae37a93dea7b43c7c41e7a7}{set\+Peer\+Id} (const string \&)
+\item 
+size\+\_\+t \hyperlink{classBTTrackerStructBase_a2e453a4184d1b5ccaffbd128e3200168}{peer\+Port} () const 
+\item 
+void \hyperlink{classBTTrackerStructBase_a5380c7171b602657292d67f0a0644d59}{set\+Peer\+Port} (size\+\_\+t)
+\item 
+const string \& \hyperlink{classBTTrackerStructBase_a83ddbacdb11939b5c095e6fe8d4b3f4b}{key} () const 
+\item 
+void \hyperlink{classBTTrackerStructBase_a250522b23b74a585f1aaa452388db9d6}{set\+Key} (const string \&)
+\item 
+simtime\+\_\+t \hyperlink{classBTTrackerStructBase_a4ed22a465e65d8cea953d7a43e627c3a}{last\+Announce} () const 
+\item 
+void \hyperlink{classBTTrackerStructBase_ae4da4c1e130b373de29c28147c13217c}{set\+Last\+Announce} (simtime\+\_\+t)
+\item 
+bool \hyperlink{classBTTrackerStructBase_ad3793c0dc86881a076708bcb895d3c2d}{is\+Seed} () const 
+\item 
+void \hyperlink{classBTTrackerStructBase_ab7f248b9287269b8074b2cac4d377f31}{set\+Is\+Seed} (bool)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classBTTrackerStructBase_ae905721d92c8e64e682061215203ebde}{peer\+Id\+\_\+var}
+\item 
+I\+Pv\+X\+Address \hyperlink{classBTTrackerStructBase_a76d29084d65c22c38761bf8e23eb1a25}{ip\+Address\+\_\+var}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerStructBase_ad6c17ccdd1cc1a6ae18a5d08c6eabfcc}{peer\+Port\+\_\+var}
+\item 
+string \hyperlink{classBTTrackerStructBase_a041ac6c48d6829f3d72c1353568e7f43}{key\+\_\+var}
+\item 
+simtime\+\_\+t \hyperlink{classBTTrackerStructBase_aa46de4fbdf226d5fc79df612538c2005}{last\+Announce\+\_\+var}
+\item 
+bool \hyperlink{classBTTrackerStructBase_a6c6788c113c4e7ba4ea28ae879bee9d7}{is\+Seed\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bit\+Torrent protocol. Implements an entry in the peers\textbackslash{}\textquotesingle{} vector. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTTrackerStructBase_a95263b3a44785f5ae58d4b4a8c0df889}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{B\+T\+Tracker\+Struct\+Base(const I\+Pv\+X\+Address \&, const string \&, size\+\_\+t, const string \&, simtime\+\_\+t, bool)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Struct\+Base\+::\+B\+T\+Tracker\+Struct\+Base (
+\begin{DoxyParamCaption}
+\item[{const I\+Pv\+X\+Address \&}]{ip\+Address, }
+\item[{const string \&}]{peer\+Id, }
+\item[{size\+\_\+t}]{peer\+Port, }
+\item[{const string \&}]{key, }
+\item[{simtime\+\_\+t}]{last\+Announce, }
+\item[{bool}]{is\+Seed}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerStructBase_a95263b3a44785f5ae58d4b4a8c0df889}
+Constructor \hypertarget{classBTTrackerStructBase_afbbc4194414fbe329ac2ffdb51e275f3}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!````~B\+T\+Tracker\+Struct\+Base@{$\sim$\+B\+T\+Tracker\+Struct\+Base}}
+\index{````~B\+T\+Tracker\+Struct\+Base@{$\sim$\+B\+T\+Tracker\+Struct\+Base}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{$\sim$\+B\+T\+Tracker\+Struct\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Struct\+Base\+::$\sim$\+B\+T\+Tracker\+Struct\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerStructBase_afbbc4194414fbe329ac2ffdb51e275f3}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTTrackerStructBase_a98c29d3c64e02abdf592f9ad5ebc17b9}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!ip\+Address@{ip\+Address}}
+\index{ip\+Address@{ip\+Address}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{ip\+Address() const }]{\setlength{\rightskip}{0pt plus 5cm}const I\+Pv\+X\+Address \& B\+T\+Tracker\+Struct\+Base\+::ip\+Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerStructBase_a98c29d3c64e02abdf592f9ad5ebc17b9}
+Get the I\+P address. \hypertarget{classBTTrackerStructBase_ad3793c0dc86881a076708bcb895d3c2d}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!is\+Seed@{is\+Seed}}
+\index{is\+Seed@{is\+Seed}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{is\+Seed() const }]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Struct\+Base\+::is\+Seed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerStructBase_ad3793c0dc86881a076708bcb895d3c2d}
+Get the value of the is\+Seed flag. \hypertarget{classBTTrackerStructBase_a83ddbacdb11939b5c095e6fe8d4b3f4b}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!key@{key}}
+\index{key@{key}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{key() const }]{\setlength{\rightskip}{0pt plus 5cm}const string \& B\+T\+Tracker\+Struct\+Base\+::key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerStructBase_a83ddbacdb11939b5c095e6fe8d4b3f4b}
+Get the key. \hypertarget{classBTTrackerStructBase_a4ed22a465e65d8cea953d7a43e627c3a}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!last\+Announce@{last\+Announce}}
+\index{last\+Announce@{last\+Announce}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{last\+Announce() const }]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t B\+T\+Tracker\+Struct\+Base\+::last\+Announce (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerStructBase_a4ed22a465e65d8cea953d7a43e627c3a}
+Get the last announce. \hypertarget{classBTTrackerStructBase_ac66964e8d8aad0678e5cf4364e99e90a}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!operator==@{operator==}}
+\index{operator==@{operator==}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{operator==(const B\+T\+Tracker\+Struct\+Base \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Struct\+Base\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Tracker\+Struct\+Base} \&}]{rhs}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerStructBase_ac66964e8d8aad0678e5cf4364e99e90a}
+Operator ==. Two entries are considered equal if the have the same key or if they have the same I\+P address and peer id. \hypertarget{classBTTrackerStructBase_a93ee55a9c781903b6c2e2b665644580e}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!peer\+Id@{peer\+Id}}
+\index{peer\+Id@{peer\+Id}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{peer\+Id() const }]{\setlength{\rightskip}{0pt plus 5cm}const string \& B\+T\+Tracker\+Struct\+Base\+::peer\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerStructBase_a93ee55a9c781903b6c2e2b665644580e}
+Get the peer id. \hypertarget{classBTTrackerStructBase_a2e453a4184d1b5ccaffbd128e3200168}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!peer\+Port@{peer\+Port}}
+\index{peer\+Port@{peer\+Port}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{peer\+Port() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Struct\+Base\+::peer\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerStructBase_a2e453a4184d1b5ccaffbd128e3200168}
+Get the peer port. \hypertarget{classBTTrackerStructBase_a4c2b84fb03388f33c1bfba42a14699a9}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!set\+Ip\+Address@{set\+Ip\+Address}}
+\index{set\+Ip\+Address@{set\+Ip\+Address}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{set\+Ip\+Address(const I\+Pv\+X\+Address \&)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Struct\+Base\+::set\+Ip\+Address (
+\begin{DoxyParamCaption}
+\item[{const I\+Pv\+X\+Address \&}]{ip\+Address}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerStructBase_a4c2b84fb03388f33c1bfba42a14699a9}
+Set the I\+P address. \hypertarget{classBTTrackerStructBase_ab7f248b9287269b8074b2cac4d377f31}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!set\+Is\+Seed@{set\+Is\+Seed}}
+\index{set\+Is\+Seed@{set\+Is\+Seed}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{set\+Is\+Seed(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Struct\+Base\+::set\+Is\+Seed (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Seed}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerStructBase_ab7f248b9287269b8074b2cac4d377f31}
+Set the value of the is\+Seed flag. \hypertarget{classBTTrackerStructBase_a250522b23b74a585f1aaa452388db9d6}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!set\+Key@{set\+Key}}
+\index{set\+Key@{set\+Key}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{set\+Key(const string \&)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Struct\+Base\+::set\+Key (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{key}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerStructBase_a250522b23b74a585f1aaa452388db9d6}
+Set the key. \hypertarget{classBTTrackerStructBase_ae4da4c1e130b373de29c28147c13217c}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!set\+Last\+Announce@{set\+Last\+Announce}}
+\index{set\+Last\+Announce@{set\+Last\+Announce}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{set\+Last\+Announce(simtime\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Struct\+Base\+::set\+Last\+Announce (
+\begin{DoxyParamCaption}
+\item[{simtime\+\_\+t}]{last\+Announce}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerStructBase_ae4da4c1e130b373de29c28147c13217c}
+Set the last announce. \hypertarget{classBTTrackerStructBase_aa1df5beeeae37a93dea7b43c7c41e7a7}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!set\+Peer\+Id@{set\+Peer\+Id}}
+\index{set\+Peer\+Id@{set\+Peer\+Id}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{set\+Peer\+Id(const string \&)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Struct\+Base\+::set\+Peer\+Id (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{peer\+Id}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerStructBase_aa1df5beeeae37a93dea7b43c7c41e7a7}
+Set the peer id. \hypertarget{classBTTrackerStructBase_a5380c7171b602657292d67f0a0644d59}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!set\+Peer\+Port@{set\+Peer\+Port}}
+\index{set\+Peer\+Port@{set\+Peer\+Port}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{set\+Peer\+Port(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Struct\+Base\+::set\+Peer\+Port (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{peer\+Port}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerStructBase_a5380c7171b602657292d67f0a0644d59}
+Set the peer port. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTTrackerStructBase_a76d29084d65c22c38761bf8e23eb1a25}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!ip\+Address\+\_\+var@{ip\+Address\+\_\+var}}
+\index{ip\+Address\+\_\+var@{ip\+Address\+\_\+var}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{ip\+Address\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}I\+Pv\+X\+Address B\+T\+Tracker\+Struct\+Base\+::ip\+Address\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerStructBase_a76d29084d65c22c38761bf8e23eb1a25}
+\hypertarget{classBTTrackerStructBase_a6c6788c113c4e7ba4ea28ae879bee9d7}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!is\+Seed\+\_\+var@{is\+Seed\+\_\+var}}
+\index{is\+Seed\+\_\+var@{is\+Seed\+\_\+var}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{is\+Seed\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Tracker\+Struct\+Base\+::is\+Seed\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerStructBase_a6c6788c113c4e7ba4ea28ae879bee9d7}
+\hypertarget{classBTTrackerStructBase_a041ac6c48d6829f3d72c1353568e7f43}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!key\+\_\+var@{key\+\_\+var}}
+\index{key\+\_\+var@{key\+\_\+var}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{key\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}string B\+T\+Tracker\+Struct\+Base\+::key\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerStructBase_a041ac6c48d6829f3d72c1353568e7f43}
+\hypertarget{classBTTrackerStructBase_aa46de4fbdf226d5fc79df612538c2005}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!last\+Announce\+\_\+var@{last\+Announce\+\_\+var}}
+\index{last\+Announce\+\_\+var@{last\+Announce\+\_\+var}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{last\+Announce\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t B\+T\+Tracker\+Struct\+Base\+::last\+Announce\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerStructBase_aa46de4fbdf226d5fc79df612538c2005}
+\hypertarget{classBTTrackerStructBase_ae905721d92c8e64e682061215203ebde}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!peer\+Id\+\_\+var@{peer\+Id\+\_\+var}}
+\index{peer\+Id\+\_\+var@{peer\+Id\+\_\+var}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{peer\+Id\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}string B\+T\+Tracker\+Struct\+Base\+::peer\+Id\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerStructBase_ae905721d92c8e64e682061215203ebde}
+\hypertarget{classBTTrackerStructBase_ad6c17ccdd1cc1a6ae18a5d08c6eabfcc}{}\index{B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}!peer\+Port\+\_\+var@{peer\+Port\+\_\+var}}
+\index{peer\+Port\+\_\+var@{peer\+Port\+\_\+var}!B\+T\+Tracker\+Struct\+Base@{B\+T\+Tracker\+Struct\+Base}}
+\subsubsection[{peer\+Port\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Struct\+Base\+::peer\+Port\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerStructBase_ad6c17ccdd1cc1a6ae18a5d08c6eabfcc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTTrackerBase_8h}{B\+T\+Tracker\+Base.\+h}\item 
+\hyperlink{BTTrackerBase_8cc}{B\+T\+Tracker\+Base.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,251 @@
+\hypertarget{classBTInternalMsg}{}\section{B\+T\+Internal\+Msg Class Reference}
+\label{classBTInternalMsg}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+
+
+{\ttfamily \#include $<$B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h$>$}
+
+Inheritance diagram for B\+T\+Internal\+Msg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTInternalMsg}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTInternalMsg_a53b2c681b85235a280f2457f9fd5635c}{B\+T\+Internal\+Msg} (const char $\ast$name=N\+U\+L\+L, int kind=0)
+\item 
+\hyperlink{classBTInternalMsg_a357a57a913f8e9bbde6e0ec3bf8b2916}{B\+T\+Internal\+Msg} (const \hyperlink{classBTInternalMsg}{B\+T\+Internal\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTInternalMsg_afe98460fb9ac940a12be1575463db062}{$\sim$\+B\+T\+Internal\+Msg} ()
+\item 
+\hyperlink{classBTInternalMsg}{B\+T\+Internal\+Msg} \& \hyperlink{classBTInternalMsg_a51f11cbf48627a72aae6f10af630755c}{operator=} (const \hyperlink{classBTInternalMsg}{B\+T\+Internal\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTInternalMsg}{B\+T\+Internal\+Msg} $\ast$ \hyperlink{classBTInternalMsg_ae50271eba13f59591144f7376b759f47}{dup} () const 
+\item 
+virtual void \hyperlink{classBTInternalMsg_ab3a268d92a96f2ebacca8a8ddc573c2b}{parsim\+Pack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual void \hyperlink{classBTInternalMsg_ad036d69ceeb72e7745fed2dfe9a2e311}{parsim\+Unpack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual const char $\ast$ \hyperlink{classBTInternalMsg_a2e545dd7e0abe0b1d03339ad4b43ed26}{text} () const 
+\item 
+virtual void \hyperlink{classBTInternalMsg_a29a8ee557b699a3c753f75112c3d1dde}{set\+Text} (const char $\ast$\hyperlink{classBTInternalMsg_a8c02d34494805be9a533ffd978c02420}{text\+\_\+var})
+\item 
+virtual \hyperlink{structPEER}{P\+E\+E\+R} \& \hyperlink{classBTInternalMsg_ac31be4b9cd9bd9a974fe4b65dfad8469}{peer} ()
+\item 
+virtual const \hyperlink{structPEER}{P\+E\+E\+R} \& \hyperlink{classBTInternalMsg_ab81f702ef1442807b835649b63e0112c}{peer} () const 
+\item 
+virtual void \hyperlink{classBTInternalMsg_a095bd7691fd267f76303106940e5e5d4}{set\+Peer} (const \hyperlink{structPEER}{P\+E\+E\+R} \&\hyperlink{classBTInternalMsg_aedc6acce926c31ae1d032110de29e871}{peer\+\_\+var})
+\item 
+virtual int \hyperlink{classBTInternalMsg_a408ca06b66f3f1e4680925e6dee51a1c}{piece\+Index} () const 
+\item 
+virtual void \hyperlink{classBTInternalMsg_a6c96a1f240dd338dec85988abd54ae25}{set\+Piece\+Index} (int \hyperlink{classBTInternalMsg_a74c9e0793d23162bc836a76b78812d88}{piece\+Index\+\_\+var})
+\item 
+virtual int \hyperlink{classBTInternalMsg_a7a302c1aa5c2aec0829596105213405d}{block\+Index} () const 
+\item 
+virtual void \hyperlink{classBTInternalMsg_a6a9cfced7412b37f41b23895bbc05951}{set\+Block\+Index} (int \hyperlink{classBTInternalMsg_a9be734970c7a790c56f41915016518cf}{block\+Index\+\_\+var})
+\item 
+virtual bool \hyperlink{classBTInternalMsg_a38d6f81246543abd935b5d7699f08d16}{choked\+Piece} () const 
+\item 
+virtual void \hyperlink{classBTInternalMsg_a139833e3fe32ffb3753b723334e761ae}{set\+Choked\+Piece} (bool \hyperlink{classBTInternalMsg_a364b051cdf4428a35ba41b23ee59f103}{choked\+Piece\+\_\+var})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBTInternalMsg_a44c349d38925d3441076d28f5465d8f9}{operator==} (const \hyperlink{classBTInternalMsg}{B\+T\+Internal\+Msg} \&)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+opp\+\_\+string \hyperlink{classBTInternalMsg_a8c02d34494805be9a533ffd978c02420}{text\+\_\+var}
+\item 
+\+::\hyperlink{structPEER}{P\+E\+E\+R} \hyperlink{classBTInternalMsg_aedc6acce926c31ae1d032110de29e871}{peer\+\_\+var}
+\item 
+int \hyperlink{classBTInternalMsg_a74c9e0793d23162bc836a76b78812d88}{piece\+Index\+\_\+var}
+\item 
+int \hyperlink{classBTInternalMsg_a9be734970c7a790c56f41915016518cf}{block\+Index\+\_\+var}
+\item 
+bool \hyperlink{classBTInternalMsg_a364b051cdf4428a35ba41b23ee59f103}{choked\+Piece\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class generated from {\ttfamily applications/x\+Bit\+Torrent/\+B\+T\+Peer\+Wire\+Msg.\+msg} by opp\+\_\+msgc. 
+\begin{DoxyPre}
+message \hyperlink{classBTInternalMsg}{BTInternalMsg} extends cMessage
+\{
+    (true);\end{DoxyPre}
+
+
+
+\begin{DoxyPre}    string text;
+    \hyperlink{structPEER}{PEER} peer;
+    int pieceIndex;
+    int blockIndex;
+    bool chokedPiece;
+\}
+\end{DoxyPre}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTInternalMsg_a53b2c681b85235a280f2457f9fd5635c}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{B\+T\+Internal\+Msg(const char $\ast$name=\+N\+U\+L\+L, int kind=0)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Internal\+Msg\+::\+B\+T\+Internal\+Msg (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name = {\ttfamily NULL}, }
+\item[{int}]{kind = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classBTInternalMsg_a53b2c681b85235a280f2457f9fd5635c}
+\hypertarget{classBTInternalMsg_a357a57a913f8e9bbde6e0ec3bf8b2916}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{B\+T\+Internal\+Msg(const B\+T\+Internal\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Internal\+Msg\+::\+B\+T\+Internal\+Msg (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Internal\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTInternalMsg_a357a57a913f8e9bbde6e0ec3bf8b2916}
+\hypertarget{classBTInternalMsg_afe98460fb9ac940a12be1575463db062}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!````~B\+T\+Internal\+Msg@{$\sim$\+B\+T\+Internal\+Msg}}
+\index{````~B\+T\+Internal\+Msg@{$\sim$\+B\+T\+Internal\+Msg}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{$\sim$\+B\+T\+Internal\+Msg()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Internal\+Msg\+::$\sim$\+B\+T\+Internal\+Msg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_afe98460fb9ac940a12be1575463db062}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTInternalMsg_a7a302c1aa5c2aec0829596105213405d}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!block\+Index@{block\+Index}}
+\index{block\+Index@{block\+Index}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{block\+Index() const }]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Internal\+Msg\+::block\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_a7a302c1aa5c2aec0829596105213405d}
+\hypertarget{classBTInternalMsg_a38d6f81246543abd935b5d7699f08d16}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!choked\+Piece@{choked\+Piece}}
+\index{choked\+Piece@{choked\+Piece}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{choked\+Piece() const }]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Internal\+Msg\+::choked\+Piece (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_a38d6f81246543abd935b5d7699f08d16}
+\hypertarget{classBTInternalMsg_ae50271eba13f59591144f7376b759f47}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!dup@{dup}}
+\index{dup@{dup}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{dup() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+T\+Internal\+Msg}$\ast$ B\+T\+Internal\+Msg\+::dup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTInternalMsg_ae50271eba13f59591144f7376b759f47}
+\hypertarget{classBTInternalMsg_a51f11cbf48627a72aae6f10af630755c}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{operator=(const B\+T\+Internal\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Internal\+Msg} \& B\+T\+Internal\+Msg\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Internal\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTInternalMsg_a51f11cbf48627a72aae6f10af630755c}
+\hypertarget{classBTInternalMsg_a44c349d38925d3441076d28f5465d8f9}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!operator==@{operator==}}
+\index{operator==@{operator==}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{operator==(const B\+T\+Internal\+Msg \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Internal\+Msg\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Internal\+Msg} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTInternalMsg_a44c349d38925d3441076d28f5465d8f9}
+\hypertarget{classBTInternalMsg_ab3a268d92a96f2ebacca8a8ddc573c2b}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!parsim\+Pack@{parsim\+Pack}}
+\index{parsim\+Pack@{parsim\+Pack}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{parsim\+Pack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Internal\+Msg\+::parsim\+Pack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_ab3a268d92a96f2ebacca8a8ddc573c2b}
+\hypertarget{classBTInternalMsg_ad036d69ceeb72e7745fed2dfe9a2e311}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!parsim\+Unpack@{parsim\+Unpack}}
+\index{parsim\+Unpack@{parsim\+Unpack}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{parsim\+Unpack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Internal\+Msg\+::parsim\+Unpack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_ad036d69ceeb72e7745fed2dfe9a2e311}
+\hypertarget{classBTInternalMsg_ac31be4b9cd9bd9a974fe4b65dfad8469}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!peer@{peer}}
+\index{peer@{peer}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{peer()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+E\+E\+R} \& B\+T\+Internal\+Msg\+::peer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_ac31be4b9cd9bd9a974fe4b65dfad8469}
+\hypertarget{classBTInternalMsg_ab81f702ef1442807b835649b63e0112c}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!peer@{peer}}
+\index{peer@{peer}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{peer() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf P\+E\+E\+R}\& B\+T\+Internal\+Msg\+::peer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTInternalMsg_ab81f702ef1442807b835649b63e0112c}
+\hypertarget{classBTInternalMsg_a408ca06b66f3f1e4680925e6dee51a1c}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!piece\+Index@{piece\+Index}}
+\index{piece\+Index@{piece\+Index}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{piece\+Index() const }]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Internal\+Msg\+::piece\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_a408ca06b66f3f1e4680925e6dee51a1c}
+\hypertarget{classBTInternalMsg_a6a9cfced7412b37f41b23895bbc05951}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!set\+Block\+Index@{set\+Block\+Index}}
+\index{set\+Block\+Index@{set\+Block\+Index}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{set\+Block\+Index(int block\+Index\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Internal\+Msg\+::set\+Block\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{block\+Index\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_a6a9cfced7412b37f41b23895bbc05951}
+\hypertarget{classBTInternalMsg_a139833e3fe32ffb3753b723334e761ae}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!set\+Choked\+Piece@{set\+Choked\+Piece}}
+\index{set\+Choked\+Piece@{set\+Choked\+Piece}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{set\+Choked\+Piece(bool choked\+Piece\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Internal\+Msg\+::set\+Choked\+Piece (
+\begin{DoxyParamCaption}
+\item[{bool}]{choked\+Piece\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_a139833e3fe32ffb3753b723334e761ae}
+\hypertarget{classBTInternalMsg_a095bd7691fd267f76303106940e5e5d4}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!set\+Peer@{set\+Peer}}
+\index{set\+Peer@{set\+Peer}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{set\+Peer(const P\+E\+E\+R \&peer\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Internal\+Msg\+::set\+Peer (
+\begin{DoxyParamCaption}
+\item[{const {\bf P\+E\+E\+R} \&}]{peer\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_a095bd7691fd267f76303106940e5e5d4}
+\hypertarget{classBTInternalMsg_a6c96a1f240dd338dec85988abd54ae25}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!set\+Piece\+Index@{set\+Piece\+Index}}
+\index{set\+Piece\+Index@{set\+Piece\+Index}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{set\+Piece\+Index(int piece\+Index\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Internal\+Msg\+::set\+Piece\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\+Index\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_a6c96a1f240dd338dec85988abd54ae25}
+\hypertarget{classBTInternalMsg_a29a8ee557b699a3c753f75112c3d1dde}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!set\+Text@{set\+Text}}
+\index{set\+Text@{set\+Text}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{set\+Text(const char $\ast$text\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Internal\+Msg\+::set\+Text (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_a29a8ee557b699a3c753f75112c3d1dde}
+\hypertarget{classBTInternalMsg_a2e545dd7e0abe0b1d03339ad4b43ed26}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!text@{text}}
+\index{text@{text}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{text() const }]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Internal\+Msg\+::text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTInternalMsg_a2e545dd7e0abe0b1d03339ad4b43ed26}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTInternalMsg_a9be734970c7a790c56f41915016518cf}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!block\+Index\+\_\+var@{block\+Index\+\_\+var}}
+\index{block\+Index\+\_\+var@{block\+Index\+\_\+var}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{block\+Index\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Internal\+Msg\+::block\+Index\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTInternalMsg_a9be734970c7a790c56f41915016518cf}
+\hypertarget{classBTInternalMsg_a364b051cdf4428a35ba41b23ee59f103}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!choked\+Piece\+\_\+var@{choked\+Piece\+\_\+var}}
+\index{choked\+Piece\+\_\+var@{choked\+Piece\+\_\+var}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{choked\+Piece\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Internal\+Msg\+::choked\+Piece\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTInternalMsg_a364b051cdf4428a35ba41b23ee59f103}
+\hypertarget{classBTInternalMsg_aedc6acce926c31ae1d032110de29e871}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!peer\+\_\+var@{peer\+\_\+var}}
+\index{peer\+\_\+var@{peer\+\_\+var}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{peer\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}\+::{\bf P\+E\+E\+R} B\+T\+Internal\+Msg\+::peer\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTInternalMsg_aedc6acce926c31ae1d032110de29e871}
+\hypertarget{classBTInternalMsg_a74c9e0793d23162bc836a76b78812d88}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!piece\+Index\+\_\+var@{piece\+Index\+\_\+var}}
+\index{piece\+Index\+\_\+var@{piece\+Index\+\_\+var}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{piece\+Index\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Internal\+Msg\+::piece\+Index\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTInternalMsg_a74c9e0793d23162bc836a76b78812d88}
+\hypertarget{classBTInternalMsg_a8c02d34494805be9a533ffd978c02420}{}\index{B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}!text\+\_\+var@{text\+\_\+var}}
+\index{text\+\_\+var@{text\+\_\+var}!B\+T\+Internal\+Msg@{B\+T\+Internal\+Msg}}
+\subsubsection[{text\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}opp\+\_\+string B\+T\+Internal\+Msg\+::text\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTInternalMsg_a8c02d34494805be9a533ffd978c02420}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTPeerWireMsg__m_8h}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h}\item 
+\hyperlink{BTPeerWireMsg__m_8cc}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}\end{DoxyCompactItemize}

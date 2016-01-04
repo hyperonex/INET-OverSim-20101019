@@ -1,0 +1,41 @@
+\hypertarget{BTPeerWireClientHandlerBase_8cc}{}\section{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc File Reference}
+\label{BTPeerWireClientHandlerBase_8cc}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc}}
+{\ttfamily \#include \char`\"{}B\+T\+Peer\+Wire\+Base.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}B\+T\+Peer\+Wire\+Cache\+Thread.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{BTPeerWireClientHandlerBase_8cc_a9fcd9af91edddbb6b89edcdafa33e8a1}{B\+T\+E\+V}~E\+V $<$$<$ \char`\"{}\mbox{[}\char`\"{} $<$$<$ get\+Host\+Module()-\/$>$get\+Parent\+Module()-\/$>$get\+Full\+Name() $<$$<$ \char`\"{}\mbox{]}\+:\mbox{[}Peer\+Wire Thread\mbox{]}\+: \char`\"{}
+\item 
+\#define \hyperlink{BTPeerWireClientHandlerBase_8cc_a08c27d05ddee3875c23f204db15e4a3a}{B\+T\+E\+V\+\_\+\+V\+E\+R\+B}~E\+V $<$$<$ \char`\"{}\mbox{[}\char`\"{} $<$$<$ get\+Host\+Module()-\/$>$get\+Parent\+Module()-\/$>$get\+Full\+Name() $<$$<$ \char`\"{}\mbox{]}$<$=$>$\mbox{[}\char`\"{}$<$$<$ get\+Remote\+Peer\+I\+D()$<$$<$\char`\"{}\mbox{]}\+: \char`\"{}
+\item 
+\#define \hyperlink{BTPeerWireClientHandlerBase_8cc_a03812ed51648501f4a4bd0ec7bd1b33d}{D\+E\+B\+U\+G\+\_\+\+C\+L\+A\+S\+S}~false
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTPeerWireClientHandlerBase_8cc_ab7b3edeb127248d42771ba6b892d14b3}{Register\+\_\+\+Class} (\hyperlink{classBTPeerWireClientHandlerBase}{B\+T\+Peer\+Wire\+Client\+Handler\+Base})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{BTPeerWireClientHandlerBase_8cc_a9fcd9af91edddbb6b89edcdafa33e8a1}{}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc}!B\+T\+E\+V@{B\+T\+E\+V}}
+\index{B\+T\+E\+V@{B\+T\+E\+V}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc}}
+\subsubsection[{B\+T\+E\+V}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+T\+E\+V~E\+V $<$$<$ \char`\"{}\mbox{[}\char`\"{} $<$$<$ get\+Host\+Module()-\/$>$get\+Parent\+Module()-\/$>$get\+Full\+Name() $<$$<$ \char`\"{}\mbox{]}\+:\mbox{[}Peer\+Wire Thread\mbox{]}\+: \char`\"{}}\label{BTPeerWireClientHandlerBase_8cc_a9fcd9af91edddbb6b89edcdafa33e8a1}
+\hypertarget{BTPeerWireClientHandlerBase_8cc_a08c27d05ddee3875c23f204db15e4a3a}{}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc}!B\+T\+E\+V\+\_\+\+V\+E\+R\+B@{B\+T\+E\+V\+\_\+\+V\+E\+R\+B}}
+\index{B\+T\+E\+V\+\_\+\+V\+E\+R\+B@{B\+T\+E\+V\+\_\+\+V\+E\+R\+B}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc}}
+\subsubsection[{B\+T\+E\+V\+\_\+\+V\+E\+R\+B}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+T\+E\+V\+\_\+\+V\+E\+R\+B~E\+V $<$$<$ \char`\"{}\mbox{[}\char`\"{} $<$$<$ get\+Host\+Module()-\/$>$get\+Parent\+Module()-\/$>$get\+Full\+Name() $<$$<$ \char`\"{}\mbox{]}$<$=$>$\mbox{[}\char`\"{}$<$$<$ get\+Remote\+Peer\+I\+D()$<$$<$\char`\"{}\mbox{]}\+: \char`\"{}}\label{BTPeerWireClientHandlerBase_8cc_a08c27d05ddee3875c23f204db15e4a3a}
+\hypertarget{BTPeerWireClientHandlerBase_8cc_a03812ed51648501f4a4bd0ec7bd1b33d}{}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc}!D\+E\+B\+U\+G\+\_\+\+C\+L\+A\+S\+S@{D\+E\+B\+U\+G\+\_\+\+C\+L\+A\+S\+S}}
+\index{D\+E\+B\+U\+G\+\_\+\+C\+L\+A\+S\+S@{D\+E\+B\+U\+G\+\_\+\+C\+L\+A\+S\+S}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc}}
+\subsubsection[{D\+E\+B\+U\+G\+\_\+\+C\+L\+A\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+C\+L\+A\+S\+S~false}\label{BTPeerWireClientHandlerBase_8cc_a03812ed51648501f4a4bd0ec7bd1b33d}
+
+
+\subsection{Function Documentation}
+\hypertarget{BTPeerWireClientHandlerBase_8cc_ab7b3edeb127248d42771ba6b892d14b3}{}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Peer\+Wire\+Client\+Handler\+Base)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Peer\+Wire\+Client\+Handler\+Base}}]{}
+\end{DoxyParamCaption}
+)}\label{BTPeerWireClientHandlerBase_8cc_ab7b3edeb127248d42771ba6b892d14b3}

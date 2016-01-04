@@ -1,0 +1,168 @@
+\hypertarget{classBTStatistics}{}\section{B\+T\+Statistics Class Reference}
+\label{classBTStatistics}\index{B\+T\+Statistics@{B\+T\+Statistics}}
+
+
+{\ttfamily \#include $<$B\+T\+Statistics.\+h$>$}
+
+Inheritance diagram for B\+T\+Statistics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTStatistics}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTStatistics_ac45d4907a45437ff46e22673663e3039}{$\sim$\+B\+T\+Statistics} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBTStatistics_a019a72be755d8da5fe55096fc9859780}{check\+Finish} ()
+\item 
+virtual void \hyperlink{classBTStatistics_ade8599c76eddd32a9de2b147ad206a5c}{initialize} ()
+\item 
+virtual void \hyperlink{classBTStatistics_aa8d25bd062c2338cae68e798496c8f41}{handle\+Message} (c\+Message $\ast$msg)
+\item 
+virtual void \hyperlink{classBTStatistics_a79818ddd3f1e516bbf5dc34c7ff2aee4}{finish} ()
+\item 
+void \hyperlink{classBTStatistics_a7c2bd895d14a2b266847284e21293422}{do\+Finish} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classBTStatistics_aa9663e0a709e2bbe2b4859acc0c2b72b}{current\+Terminal\+Num}
+\item 
+int \hyperlink{classBTStatistics_a85c632cdb7b255da257b65e5370000b4}{target\+Overlay\+Terminal\+Num}
+\item 
+c\+Std\+Dev $\ast$ \hyperlink{classBTStatistics_a1342bc01b82315391b10d5c0560b4ee2}{dw\+Success}
+\item 
+c\+Out\+Vector \hyperlink{classBTStatistics_a3bf710ae5862b7c6b171a70ed570dec4}{dw\+Success\+\_\+vec}
+\item 
+c\+Std\+Dev $\ast$ \hyperlink{classBTStatistics_ad6701a3f8b96df4e7535020f9f57c8e6}{num\+Block\+Fail}
+\item 
+c\+Out\+Vector \hyperlink{classBTStatistics_ab9542f9a68503485c303d5d6667c8a44}{num\+Block\+Fail\+\_\+vec}
+\item 
+c\+Std\+Dev $\ast$ \hyperlink{classBTStatistics_a7ea82ebc767d80852b4d4857cc86c614}{data\+Providers}
+\item 
+c\+Out\+Vector \hyperlink{classBTStatistics_aa97b13fd73e1120a01c050fdc05e1eb0}{data\+Providers\+\_\+vec}
+\item 
+c\+Std\+Dev $\ast$ \hyperlink{classBTStatistics_ab0754ded61dc5b410ba3345415eb0cbe}{num\+Seeder\+Blocks}
+\item 
+c\+Out\+Vector \hyperlink{classBTStatistics_a6ff3cdec7cc91846c2482ebf1a1ebfe6}{num\+Seeder\+Blocks\+\_\+vec}
+\item 
+c\+Std\+Dev $\ast$ \hyperlink{classBTStatistics_ac24ef388a8ae35c9e4427dc146db48be}{num\+Hits}
+\item 
+c\+Out\+Vector \hyperlink{classBTStatistics_af717deda266c06bcbb0395b4e4d70908}{num\+Hits\+\_\+vec}
+\item 
+c\+Std\+Dev $\ast$ \hyperlink{classBTStatistics_aa1fc0cbf7c6596091752c923da48b334}{num\+Misses}
+\item 
+c\+Out\+Vector \hyperlink{classBTStatistics_aa2be128331e707564905616f8be6e113}{num\+Misses\+\_\+vec}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module that calculates the multicast groups sizes and randomly selects their participants (receivers and sender). It is also used for global statistics measurement such as stretch.
+
+\begin{DoxyAuthor}{Author}
+Konstantinos Katsaros 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTStatistics_ac45d4907a45437ff46e22673663e3039}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!````~B\+T\+Statistics@{$\sim$\+B\+T\+Statistics}}
+\index{````~B\+T\+Statistics@{$\sim$\+B\+T\+Statistics}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{$\sim$\+B\+T\+Statistics()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Statistics\+::$\sim$\+B\+T\+Statistics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTStatistics_ac45d4907a45437ff46e22673663e3039}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTStatistics_a019a72be755d8da5fe55096fc9859780}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!check\+Finish@{check\+Finish}}
+\index{check\+Finish@{check\+Finish}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{check\+Finish()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+::check\+Finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_a019a72be755d8da5fe55096fc9859780}
+Check whether the statistics collection has completed \hypertarget{classBTStatistics_a7c2bd895d14a2b266847284e21293422}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!do\+Finish@{do\+Finish}}
+\index{do\+Finish@{do\+Finish}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{do\+Finish()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+::do\+Finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_a7c2bd895d14a2b266847284e21293422}
+Do the actual \hyperlink{classBTStatistics_a79818ddd3f1e516bbf5dc34c7ff2aee4}{finish()} call and record scalars \hypertarget{classBTStatistics_a79818ddd3f1e516bbf5dc34c7ff2aee4}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!finish@{finish}}
+\index{finish@{finish}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{finish()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+::finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTStatistics_a79818ddd3f1e516bbf5dc34c7ff2aee4}
+Finish member function of module \hypertarget{classBTStatistics_aa8d25bd062c2338cae68e798496c8f41}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!handle\+Message@{handle\+Message}}
+\index{handle\+Message@{handle\+Message}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{handle\+Message(c\+Message $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+::handle\+Message (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTStatistics_aa8d25bd062c2338cae68e798496c8f41}
+Handle\+Message member function of module \hypertarget{classBTStatistics_ade8599c76eddd32a9de2b147ad206a5c}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!initialize@{initialize}}
+\index{initialize@{initialize}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{initialize()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTStatistics_ade8599c76eddd32a9de2b147ad206a5c}
+Init member function of module 
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTStatistics_aa9663e0a709e2bbe2b4859acc0c2b72b}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!current\+Terminal\+Num@{current\+Terminal\+Num}}
+\index{current\+Terminal\+Num@{current\+Terminal\+Num}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{current\+Terminal\+Num}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Statistics\+::current\+Terminal\+Num\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_aa9663e0a709e2bbe2b4859acc0c2b72b}
+\hypertarget{classBTStatistics_a7ea82ebc767d80852b4d4857cc86c614}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!data\+Providers@{data\+Providers}}
+\index{data\+Providers@{data\+Providers}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{data\+Providers}]{\setlength{\rightskip}{0pt plus 5cm}c\+Std\+Dev$\ast$ B\+T\+Statistics\+::data\+Providers\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_a7ea82ebc767d80852b4d4857cc86c614}
+\hypertarget{classBTStatistics_aa97b13fd73e1120a01c050fdc05e1eb0}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!data\+Providers\+\_\+vec@{data\+Providers\+\_\+vec}}
+\index{data\+Providers\+\_\+vec@{data\+Providers\+\_\+vec}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{data\+Providers\+\_\+vec}]{\setlength{\rightskip}{0pt plus 5cm}c\+Out\+Vector B\+T\+Statistics\+::data\+Providers\+\_\+vec\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_aa97b13fd73e1120a01c050fdc05e1eb0}
+\hypertarget{classBTStatistics_a1342bc01b82315391b10d5c0560b4ee2}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!dw\+Success@{dw\+Success}}
+\index{dw\+Success@{dw\+Success}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{dw\+Success}]{\setlength{\rightskip}{0pt plus 5cm}c\+Std\+Dev$\ast$ B\+T\+Statistics\+::dw\+Success\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_a1342bc01b82315391b10d5c0560b4ee2}
+\hypertarget{classBTStatistics_a3bf710ae5862b7c6b171a70ed570dec4}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!dw\+Success\+\_\+vec@{dw\+Success\+\_\+vec}}
+\index{dw\+Success\+\_\+vec@{dw\+Success\+\_\+vec}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{dw\+Success\+\_\+vec}]{\setlength{\rightskip}{0pt plus 5cm}c\+Out\+Vector B\+T\+Statistics\+::dw\+Success\+\_\+vec\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_a3bf710ae5862b7c6b171a70ed570dec4}
+\hypertarget{classBTStatistics_ad6701a3f8b96df4e7535020f9f57c8e6}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!num\+Block\+Fail@{num\+Block\+Fail}}
+\index{num\+Block\+Fail@{num\+Block\+Fail}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{num\+Block\+Fail}]{\setlength{\rightskip}{0pt plus 5cm}c\+Std\+Dev$\ast$ B\+T\+Statistics\+::num\+Block\+Fail\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_ad6701a3f8b96df4e7535020f9f57c8e6}
+\hypertarget{classBTStatistics_ab9542f9a68503485c303d5d6667c8a44}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!num\+Block\+Fail\+\_\+vec@{num\+Block\+Fail\+\_\+vec}}
+\index{num\+Block\+Fail\+\_\+vec@{num\+Block\+Fail\+\_\+vec}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{num\+Block\+Fail\+\_\+vec}]{\setlength{\rightskip}{0pt plus 5cm}c\+Out\+Vector B\+T\+Statistics\+::num\+Block\+Fail\+\_\+vec\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_ab9542f9a68503485c303d5d6667c8a44}
+\hypertarget{classBTStatistics_ac24ef388a8ae35c9e4427dc146db48be}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!num\+Hits@{num\+Hits}}
+\index{num\+Hits@{num\+Hits}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{num\+Hits}]{\setlength{\rightskip}{0pt plus 5cm}c\+Std\+Dev$\ast$ B\+T\+Statistics\+::num\+Hits\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_ac24ef388a8ae35c9e4427dc146db48be}
+\hypertarget{classBTStatistics_af717deda266c06bcbb0395b4e4d70908}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!num\+Hits\+\_\+vec@{num\+Hits\+\_\+vec}}
+\index{num\+Hits\+\_\+vec@{num\+Hits\+\_\+vec}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{num\+Hits\+\_\+vec}]{\setlength{\rightskip}{0pt plus 5cm}c\+Out\+Vector B\+T\+Statistics\+::num\+Hits\+\_\+vec\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_af717deda266c06bcbb0395b4e4d70908}
+\hypertarget{classBTStatistics_aa1fc0cbf7c6596091752c923da48b334}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!num\+Misses@{num\+Misses}}
+\index{num\+Misses@{num\+Misses}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{num\+Misses}]{\setlength{\rightskip}{0pt plus 5cm}c\+Std\+Dev$\ast$ B\+T\+Statistics\+::num\+Misses\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_aa1fc0cbf7c6596091752c923da48b334}
+\hypertarget{classBTStatistics_aa2be128331e707564905616f8be6e113}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!num\+Misses\+\_\+vec@{num\+Misses\+\_\+vec}}
+\index{num\+Misses\+\_\+vec@{num\+Misses\+\_\+vec}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{num\+Misses\+\_\+vec}]{\setlength{\rightskip}{0pt plus 5cm}c\+Out\+Vector B\+T\+Statistics\+::num\+Misses\+\_\+vec\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_aa2be128331e707564905616f8be6e113}
+\hypertarget{classBTStatistics_ab0754ded61dc5b410ba3345415eb0cbe}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!num\+Seeder\+Blocks@{num\+Seeder\+Blocks}}
+\index{num\+Seeder\+Blocks@{num\+Seeder\+Blocks}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{num\+Seeder\+Blocks}]{\setlength{\rightskip}{0pt plus 5cm}c\+Std\+Dev$\ast$ B\+T\+Statistics\+::num\+Seeder\+Blocks\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_ab0754ded61dc5b410ba3345415eb0cbe}
+\hypertarget{classBTStatistics_a6ff3cdec7cc91846c2482ebf1a1ebfe6}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!num\+Seeder\+Blocks\+\_\+vec@{num\+Seeder\+Blocks\+\_\+vec}}
+\index{num\+Seeder\+Blocks\+\_\+vec@{num\+Seeder\+Blocks\+\_\+vec}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{num\+Seeder\+Blocks\+\_\+vec}]{\setlength{\rightskip}{0pt plus 5cm}c\+Out\+Vector B\+T\+Statistics\+::num\+Seeder\+Blocks\+\_\+vec\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_a6ff3cdec7cc91846c2482ebf1a1ebfe6}
+\hypertarget{classBTStatistics_a85c632cdb7b255da257b65e5370000b4}{}\index{B\+T\+Statistics@{B\+T\+Statistics}!target\+Overlay\+Terminal\+Num@{target\+Overlay\+Terminal\+Num}}
+\index{target\+Overlay\+Terminal\+Num@{target\+Overlay\+Terminal\+Num}!B\+T\+Statistics@{B\+T\+Statistics}}
+\subsubsection[{target\+Overlay\+Terminal\+Num}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Statistics\+::target\+Overlay\+Terminal\+Num\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatistics_a85c632cdb7b255da257b65e5370000b4}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTStatistics_8h}{B\+T\+Statistics.\+h}\item 
+\hyperlink{BTStatistics_8cc}{B\+T\+Statistics.\+cc}\end{DoxyCompactItemize}

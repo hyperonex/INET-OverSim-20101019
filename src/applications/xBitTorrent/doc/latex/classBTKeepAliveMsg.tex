@@ -1,0 +1,146 @@
+\hypertarget{classBTKeepAliveMsg}{}\section{B\+T\+Keep\+Alive\+Msg Class Reference}
+\label{classBTKeepAliveMsg}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+
+
+{\ttfamily \#include $<$B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h$>$}
+
+Inheritance diagram for B\+T\+Keep\+Alive\+Msg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTKeepAliveMsg}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTKeepAliveMsg_a7d9a58900831a1ba095dfbde7d7be33a}{B\+T\+Keep\+Alive\+Msg} (const char $\ast$name=N\+U\+L\+L, int kind=0)
+\item 
+\hyperlink{classBTKeepAliveMsg_a9ce38e0df3601cd71f4d2f51ff2bd09d}{B\+T\+Keep\+Alive\+Msg} (const \hyperlink{classBTKeepAliveMsg}{B\+T\+Keep\+Alive\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTKeepAliveMsg_a6c23e4aac5102beca1de9988a145c0e8}{$\sim$\+B\+T\+Keep\+Alive\+Msg} ()
+\item 
+\hyperlink{classBTKeepAliveMsg}{B\+T\+Keep\+Alive\+Msg} \& \hyperlink{classBTKeepAliveMsg_a7c915b5dcf9eb4f6dbc13b54aaba54c3}{operator=} (const \hyperlink{classBTKeepAliveMsg}{B\+T\+Keep\+Alive\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTKeepAliveMsg}{B\+T\+Keep\+Alive\+Msg} $\ast$ \hyperlink{classBTKeepAliveMsg_a78c1a768c8a1724a3920c38825fd76f2}{dup} () const 
+\item 
+virtual void \hyperlink{classBTKeepAliveMsg_ad7fca4e57bb7bc2e0f52714b1ab59497}{parsim\+Pack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual void \hyperlink{classBTKeepAliveMsg_abc3e9c12e7bd5031abf370577b23ee84}{parsim\+Unpack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual int \hyperlink{classBTKeepAliveMsg_a2f9bca506f768fd7a15e6e0d8692c540}{length\+\_\+prefix} () const 
+\item 
+virtual void \hyperlink{classBTKeepAliveMsg_a491c41f40ffc11c132e48393fe2c5c52}{set\+Length\+\_\+prefix} (int \hyperlink{classBTKeepAliveMsg_a966d742d7272d0ae62f7954fa2607644}{length\+\_\+prefix\+\_\+var})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBTKeepAliveMsg_a472011fff095254246151f1abbc919d9}{operator==} (const \hyperlink{classBTKeepAliveMsg}{B\+T\+Keep\+Alive\+Msg} \&)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classBTKeepAliveMsg_a966d742d7272d0ae62f7954fa2607644}{length\+\_\+prefix\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class generated from {\ttfamily applications/x\+Bit\+Torrent/\+B\+T\+Peer\+Wire\+Msg.\+msg} by opp\+\_\+msgc. 
+\begin{DoxyPre}
+message \hyperlink{classBTKeepAliveMsg}{BTKeepAliveMsg} extends GenericAppMsg
+\{
+    (true);\end{DoxyPre}
+
+
+
+\begin{DoxyPre}    int length\_prefix;
+\}
+\end{DoxyPre}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTKeepAliveMsg_a7d9a58900831a1ba095dfbde7d7be33a}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{B\+T\+Keep\+Alive\+Msg(const char $\ast$name=\+N\+U\+L\+L, int kind=0)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Keep\+Alive\+Msg\+::\+B\+T\+Keep\+Alive\+Msg (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name = {\ttfamily NULL}, }
+\item[{int}]{kind = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classBTKeepAliveMsg_a7d9a58900831a1ba095dfbde7d7be33a}
+\hypertarget{classBTKeepAliveMsg_a9ce38e0df3601cd71f4d2f51ff2bd09d}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{B\+T\+Keep\+Alive\+Msg(const B\+T\+Keep\+Alive\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Keep\+Alive\+Msg\+::\+B\+T\+Keep\+Alive\+Msg (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Keep\+Alive\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTKeepAliveMsg_a9ce38e0df3601cd71f4d2f51ff2bd09d}
+\hypertarget{classBTKeepAliveMsg_a6c23e4aac5102beca1de9988a145c0e8}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!````~B\+T\+Keep\+Alive\+Msg@{$\sim$\+B\+T\+Keep\+Alive\+Msg}}
+\index{````~B\+T\+Keep\+Alive\+Msg@{$\sim$\+B\+T\+Keep\+Alive\+Msg}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{$\sim$\+B\+T\+Keep\+Alive\+Msg()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Keep\+Alive\+Msg\+::$\sim$\+B\+T\+Keep\+Alive\+Msg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTKeepAliveMsg_a6c23e4aac5102beca1de9988a145c0e8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTKeepAliveMsg_a78c1a768c8a1724a3920c38825fd76f2}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!dup@{dup}}
+\index{dup@{dup}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{dup() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+T\+Keep\+Alive\+Msg}$\ast$ B\+T\+Keep\+Alive\+Msg\+::dup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTKeepAliveMsg_a78c1a768c8a1724a3920c38825fd76f2}
+\hypertarget{classBTKeepAliveMsg_a2f9bca506f768fd7a15e6e0d8692c540}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!length\+\_\+prefix@{length\+\_\+prefix}}
+\index{length\+\_\+prefix@{length\+\_\+prefix}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{length\+\_\+prefix() const }]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Keep\+Alive\+Msg\+::length\+\_\+prefix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTKeepAliveMsg_a2f9bca506f768fd7a15e6e0d8692c540}
+\hypertarget{classBTKeepAliveMsg_a7c915b5dcf9eb4f6dbc13b54aaba54c3}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{operator=(const B\+T\+Keep\+Alive\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Keep\+Alive\+Msg} \& B\+T\+Keep\+Alive\+Msg\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Keep\+Alive\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTKeepAliveMsg_a7c915b5dcf9eb4f6dbc13b54aaba54c3}
+\hypertarget{classBTKeepAliveMsg_a472011fff095254246151f1abbc919d9}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!operator==@{operator==}}
+\index{operator==@{operator==}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{operator==(const B\+T\+Keep\+Alive\+Msg \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Keep\+Alive\+Msg\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Keep\+Alive\+Msg} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTKeepAliveMsg_a472011fff095254246151f1abbc919d9}
+\hypertarget{classBTKeepAliveMsg_ad7fca4e57bb7bc2e0f52714b1ab59497}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!parsim\+Pack@{parsim\+Pack}}
+\index{parsim\+Pack@{parsim\+Pack}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{parsim\+Pack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Keep\+Alive\+Msg\+::parsim\+Pack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTKeepAliveMsg_ad7fca4e57bb7bc2e0f52714b1ab59497}
+\hypertarget{classBTKeepAliveMsg_abc3e9c12e7bd5031abf370577b23ee84}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!parsim\+Unpack@{parsim\+Unpack}}
+\index{parsim\+Unpack@{parsim\+Unpack}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{parsim\+Unpack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Keep\+Alive\+Msg\+::parsim\+Unpack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTKeepAliveMsg_abc3e9c12e7bd5031abf370577b23ee84}
+\hypertarget{classBTKeepAliveMsg_a491c41f40ffc11c132e48393fe2c5c52}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!set\+Length\+\_\+prefix@{set\+Length\+\_\+prefix}}
+\index{set\+Length\+\_\+prefix@{set\+Length\+\_\+prefix}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{set\+Length\+\_\+prefix(int length\+\_\+prefix\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Keep\+Alive\+Msg\+::set\+Length\+\_\+prefix (
+\begin{DoxyParamCaption}
+\item[{int}]{length\+\_\+prefix\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTKeepAliveMsg_a491c41f40ffc11c132e48393fe2c5c52}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTKeepAliveMsg_a966d742d7272d0ae62f7954fa2607644}{}\index{B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}!length\+\_\+prefix\+\_\+var@{length\+\_\+prefix\+\_\+var}}
+\index{length\+\_\+prefix\+\_\+var@{length\+\_\+prefix\+\_\+var}!B\+T\+Keep\+Alive\+Msg@{B\+T\+Keep\+Alive\+Msg}}
+\subsubsection[{length\+\_\+prefix\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Keep\+Alive\+Msg\+::length\+\_\+prefix\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTKeepAliveMsg_a966d742d7272d0ae62f7954fa2607644}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTPeerWireMsg__m_8h}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h}\item 
+\hyperlink{BTPeerWireMsg__m_8cc}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}\end{DoxyCompactItemize}

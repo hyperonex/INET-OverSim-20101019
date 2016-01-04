@@ -1,0 +1,144 @@
+\hypertarget{BTStatisticsMsg__m_8cc}{}\section{B\+T\+Statistics\+Msg\+\_\+m.\+cc File Reference}
+\label{BTStatisticsMsg__m_8cc}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include \char`\"{}B\+T\+Statistics\+Msg\+\_\+m.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classBTStatisticsDWLMsgDescriptor}{B\+T\+Statistics\+D\+W\+L\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTStatisticsNumProvidersMsgDescriptor}{B\+T\+Statistics\+Num\+Providers\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTStatisticsNumSeederBlocksMsgDescriptor}{B\+T\+Statistics\+Num\+Seeder\+Blocks\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTStatisticsNumHitsMsgDescriptor}{B\+T\+Statistics\+Num\+Hits\+Msg\+Descriptor}
+\item 
+class \hyperlink{classBTStatisticsNumMissesMsgDescriptor}{B\+T\+Statistics\+Num\+Misses\+Msg\+Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \hyperlink{BTStatisticsMsg__m_8cc_abe11a22228762d74cdc9a8f3b0a5e471}{operator$<$$<$} (std\+::ostream \&out, const T \&)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{BTStatisticsMsg__m_8cc_a755186d879e9062ff0ab1a9c5ac6d1f3}{do\+Packing} (c\+Comm\+Buffer $\ast$, T \&t)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{BTStatisticsMsg__m_8cc_a71a00faa3eb0e796485c67c5dc0031ac}{do\+Unpacking} (c\+Comm\+Buffer $\ast$, T \&t)
+\item 
+\hyperlink{BTStatisticsMsg__m_8cc_a1f4a76b1c4b7a998c60fc742f538541f}{Register\+\_\+\+Class} (\hyperlink{classBTStatisticsDWLMsg}{B\+T\+Statistics\+D\+W\+L\+Msg})
+\item 
+\hyperlink{BTStatisticsMsg__m_8cc_a4f59a22db28a40367dd8a63ff6e42610}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTStatisticsDWLMsgDescriptor}{B\+T\+Statistics\+D\+W\+L\+Msg\+Descriptor})
+\item 
+\hyperlink{BTStatisticsMsg__m_8cc_adf1b01bbd507007435adfa6681c3dfa2}{Register\+\_\+\+Class} (\hyperlink{classBTStatisticsNumProvidersMsg}{B\+T\+Statistics\+Num\+Providers\+Msg})
+\item 
+\hyperlink{BTStatisticsMsg__m_8cc_a39148c232ba656a2a0210b467541ba4f}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTStatisticsNumProvidersMsgDescriptor}{B\+T\+Statistics\+Num\+Providers\+Msg\+Descriptor})
+\item 
+\hyperlink{BTStatisticsMsg__m_8cc_a8c5e7373b37e8a910031b667908fc2c8}{Register\+\_\+\+Class} (\hyperlink{classBTStatisticsNumSeederBlocksMsg}{B\+T\+Statistics\+Num\+Seeder\+Blocks\+Msg})
+\item 
+\hyperlink{BTStatisticsMsg__m_8cc_a575cb056ff2c8e5501e36f812b2d16a1}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTStatisticsNumSeederBlocksMsgDescriptor}{B\+T\+Statistics\+Num\+Seeder\+Blocks\+Msg\+Descriptor})
+\item 
+\hyperlink{BTStatisticsMsg__m_8cc_ae1b34ad3eb487af50d0f1217a38b1e30}{Register\+\_\+\+Class} (\hyperlink{classBTStatisticsNumHitsMsg}{B\+T\+Statistics\+Num\+Hits\+Msg})
+\item 
+\hyperlink{BTStatisticsMsg__m_8cc_aff3d6101cfdefe9e810acad037779904}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTStatisticsNumHitsMsgDescriptor}{B\+T\+Statistics\+Num\+Hits\+Msg\+Descriptor})
+\item 
+\hyperlink{BTStatisticsMsg__m_8cc_a86df9cc640b2dcac0b5fa9652bce6c12}{Register\+\_\+\+Class} (\hyperlink{classBTStatisticsNumMissesMsg}{B\+T\+Statistics\+Num\+Misses\+Msg})
+\item 
+\hyperlink{BTStatisticsMsg__m_8cc_a409966b61a4d3bc0ba52dc3360330f99}{Register\+\_\+\+Class\+Descriptor} (\hyperlink{classBTStatisticsNumMissesMsgDescriptor}{B\+T\+Statistics\+Num\+Misses\+Msg\+Descriptor})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{BTStatisticsMsg__m_8cc_a755186d879e9062ff0ab1a9c5ac6d1f3}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!do\+Packing@{do\+Packing}}
+\index{do\+Packing@{do\+Packing}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{do\+Packing(c\+Comm\+Buffer $\ast$, T \&t)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void do\+Packing (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{, }
+\item[{T \&}]{t}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_a755186d879e9062ff0ab1a9c5ac6d1f3}
+\hypertarget{BTStatisticsMsg__m_8cc_a71a00faa3eb0e796485c67c5dc0031ac}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!do\+Unpacking@{do\+Unpacking}}
+\index{do\+Unpacking@{do\+Unpacking}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{do\+Unpacking(c\+Comm\+Buffer $\ast$, T \&t)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void do\+Unpacking (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{, }
+\item[{T \&}]{t}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_a71a00faa3eb0e796485c67c5dc0031ac}
+\hypertarget{BTStatisticsMsg__m_8cc_abe11a22228762d74cdc9a8f3b0a5e471}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{operator$<$$<$(std\+::ostream \&out, const T \&)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{const T \&}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_abe11a22228762d74cdc9a8f3b0a5e471}
+\hypertarget{BTStatisticsMsg__m_8cc_a1f4a76b1c4b7a998c60fc742f538541f}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Statistics\+D\+W\+L\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Statistics\+D\+W\+L\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_a1f4a76b1c4b7a998c60fc742f538541f}
+\hypertarget{BTStatisticsMsg__m_8cc_adf1b01bbd507007435adfa6681c3dfa2}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Statistics\+Num\+Providers\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Statistics\+Num\+Providers\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_adf1b01bbd507007435adfa6681c3dfa2}
+\hypertarget{BTStatisticsMsg__m_8cc_a8c5e7373b37e8a910031b667908fc2c8}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Statistics\+Num\+Seeder\+Blocks\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Statistics\+Num\+Seeder\+Blocks\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_a8c5e7373b37e8a910031b667908fc2c8}
+\hypertarget{BTStatisticsMsg__m_8cc_ae1b34ad3eb487af50d0f1217a38b1e30}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Statistics\+Num\+Hits\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Statistics\+Num\+Hits\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_ae1b34ad3eb487af50d0f1217a38b1e30}
+\hypertarget{BTStatisticsMsg__m_8cc_a86df9cc640b2dcac0b5fa9652bce6c12}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class@{Register\+\_\+\+Class}}
+\index{Register\+\_\+\+Class@{Register\+\_\+\+Class}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class(\+B\+T\+Statistics\+Num\+Misses\+Msg)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Statistics\+Num\+Misses\+Msg}}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_a86df9cc640b2dcac0b5fa9652bce6c12}
+\hypertarget{BTStatisticsMsg__m_8cc_a4f59a22db28a40367dd8a63ff6e42610}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Statistics\+D\+W\+L\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Statistics\+D\+W\+L\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_a4f59a22db28a40367dd8a63ff6e42610}
+\hypertarget{BTStatisticsMsg__m_8cc_a39148c232ba656a2a0210b467541ba4f}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Statistics\+Num\+Providers\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Statistics\+Num\+Providers\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_a39148c232ba656a2a0210b467541ba4f}
+\hypertarget{BTStatisticsMsg__m_8cc_a575cb056ff2c8e5501e36f812b2d16a1}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Statistics\+Num\+Seeder\+Blocks\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Statistics\+Num\+Seeder\+Blocks\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_a575cb056ff2c8e5501e36f812b2d16a1}
+\hypertarget{BTStatisticsMsg__m_8cc_aff3d6101cfdefe9e810acad037779904}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Statistics\+Num\+Hits\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Statistics\+Num\+Hits\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_aff3d6101cfdefe9e810acad037779904}
+\hypertarget{BTStatisticsMsg__m_8cc_a409966b61a4d3bc0ba52dc3360330f99}{}\index{B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}!Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}}
+\index{Register\+\_\+\+Class\+Descriptor@{Register\+\_\+\+Class\+Descriptor}!B\+T\+Statistics\+Msg\+\_\+m.\+cc@{B\+T\+Statistics\+Msg\+\_\+m.\+cc}}
+\subsubsection[{Register\+\_\+\+Class\+Descriptor(\+B\+T\+Statistics\+Num\+Misses\+Msg\+Descriptor)}]{\setlength{\rightskip}{0pt plus 5cm}Register\+\_\+\+Class\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Statistics\+Num\+Misses\+Msg\+Descriptor}}]{}
+\end{DoxyParamCaption}
+)}\label{BTStatisticsMsg__m_8cc_a409966b61a4d3bc0ba52dc3360330f99}

@@ -1,0 +1,192 @@
+\hypertarget{classPeerState}{}\section{Peer\+State Class Reference}
+\label{classPeerState}\index{Peer\+State@{Peer\+State}}
+
+
+{\ttfamily \#include $<$B\+T\+Utils.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPeerState_abcf9aab5e943f87e78b15d4e0f8c2eff}{add\+Peer} (\hyperlink{structPEER}{P\+E\+E\+R}, T\+C\+P\+Server\+Thread\+Base $\ast$)
+\item 
+void \hyperlink{classPeerState_a1c100faee655ba7d937f425228e788dc}{add\+Peer} (\hyperlink{structPEER}{P\+E\+E\+R}, T\+C\+P\+Server\+Thread\+Base $\ast$, double)
+\item 
+int \hyperlink{classPeerState_acdef140ea86d90b8316bb47b115193de}{find\+Peer} (string)
+\item 
+int \hyperlink{classPeerState_a7870e82a269cee5a2fa118bf518dc829}{find\+Peer} (I\+Pv\+X\+Address)
+\item 
+int \hyperlink{classPeerState_a750b687f72ad5c1c19b04217c8840b56}{find\+Peer} (I\+Pv\+X\+Address, unsigned int)
+\item 
+void \hyperlink{classPeerState_ada531732fc1e97467a9eba46c411a6f9}{remove\+Peer} (string)
+\item 
+void \hyperlink{classPeerState_a6237759c93d6de6d5d4626f8e9f5194f}{update\+Peer\+I\+D} (int, opp\+\_\+string)
+\item 
+void \hyperlink{classPeerState_ad344aaae448c271ccb803693207413da}{sort\+Peers} ()
+\item 
+\hyperlink{BTUtils_8h_a5088ee9871539d4eb966586338bbed6f}{Peer\+Entry\+Vector} \hyperlink{classPeerState_a17e1859e95d50d72dfb7e9e0d45db230}{get\+Vector} ()
+\item 
+void \hyperlink{classPeerState_a112c1e60241207adf7d213cf6873105e}{print} ()
+\item 
+\hyperlink{classPeerEntry}{Peer\+Entry} \hyperlink{classPeerState_aaef15b31facf166ce583263a9161b6b9}{get\+Peer\+Entry} (unsigned int)
+\item 
+\hyperlink{classPeerEntry}{Peer\+Entry} $\ast$ \hyperlink{classPeerState_a9e305e522559cb0cccdde6dab89c86fb}{get\+Peer\+Entry\+Ref} (unsigned int)
+\item 
+\hyperlink{classPeerEntry}{Peer\+Entry} \hyperlink{classPeerState_a08b847e1c32f826cd360c2c4b81eedba}{get\+Peer\+Entry} (const char $\ast$)
+\item 
+float \hyperlink{classPeerState_a8041a6abf3ea401455d0ec303c914837}{min\+Downloader\+Rate} ()
+\item 
+void \hyperlink{classPeerState_aced622022490d44be65e4db6a2f0b9f6}{set\+Min\+Downloader\+Rate} (float rate)
+\item 
+int \hyperlink{classPeerState_aef0c57cb484880f49cf69cb26a5bd1a5}{size} ()
+\item 
+void \hyperlink{classPeerState_a0250365c716338636ee3c9ab3740419b}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTUtils_8h_a5088ee9871539d4eb966586338bbed6f}{Peer\+Entry\+Vector} \hyperlink{classPeerState_a378d9d144d96858759912cd003eade76}{peer\+Vector}
+\item 
+float \hyperlink{classPeerState_afdaff8677c9f6ba7a3f3ef01a50e6853}{min\+Downloader\+Rate\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPeerState_abcf9aab5e943f87e78b15d4e0f8c2eff}{}\index{Peer\+State@{Peer\+State}!add\+Peer@{add\+Peer}}
+\index{add\+Peer@{add\+Peer}!Peer\+State@{Peer\+State}}
+\subsubsection[{add\+Peer(\+P\+E\+E\+R, T\+C\+P\+Server\+Thread\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+State\+::add\+Peer (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+E\+E\+R}}]{peer, }
+\item[{T\+C\+P\+Server\+Thread\+Base $\ast$}]{thread}
+\end{DoxyParamCaption}
+)}\label{classPeerState_abcf9aab5e943f87e78b15d4e0f8c2eff}
+\hypertarget{classPeerState_a1c100faee655ba7d937f425228e788dc}{}\index{Peer\+State@{Peer\+State}!add\+Peer@{add\+Peer}}
+\index{add\+Peer@{add\+Peer}!Peer\+State@{Peer\+State}}
+\subsubsection[{add\+Peer(\+P\+E\+E\+R, T\+C\+P\+Server\+Thread\+Base $\ast$, double)}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+State\+::add\+Peer (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+E\+E\+R}}]{peer, }
+\item[{T\+C\+P\+Server\+Thread\+Base $\ast$}]{thread, }
+\item[{double}]{conn\+Time}
+\end{DoxyParamCaption}
+)}\label{classPeerState_a1c100faee655ba7d937f425228e788dc}
+\hypertarget{classPeerState_a0250365c716338636ee3c9ab3740419b}{}\index{Peer\+State@{Peer\+State}!clear@{clear}}
+\index{clear@{clear}!Peer\+State@{Peer\+State}}
+\subsubsection[{clear()}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+State\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerState_a0250365c716338636ee3c9ab3740419b}
+\hypertarget{classPeerState_acdef140ea86d90b8316bb47b115193de}{}\index{Peer\+State@{Peer\+State}!find\+Peer@{find\+Peer}}
+\index{find\+Peer@{find\+Peer}!Peer\+State@{Peer\+State}}
+\subsubsection[{find\+Peer(string)}]{\setlength{\rightskip}{0pt plus 5cm}int Peer\+State\+::find\+Peer (
+\begin{DoxyParamCaption}
+\item[{string}]{id}
+\end{DoxyParamCaption}
+)}\label{classPeerState_acdef140ea86d90b8316bb47b115193de}
+\hypertarget{classPeerState_a7870e82a269cee5a2fa118bf518dc829}{}\index{Peer\+State@{Peer\+State}!find\+Peer@{find\+Peer}}
+\index{find\+Peer@{find\+Peer}!Peer\+State@{Peer\+State}}
+\subsubsection[{find\+Peer(\+I\+Pv\+X\+Address)}]{\setlength{\rightskip}{0pt plus 5cm}int Peer\+State\+::find\+Peer (
+\begin{DoxyParamCaption}
+\item[{I\+Pv\+X\+Address}]{I\+P}
+\end{DoxyParamCaption}
+)}\label{classPeerState_a7870e82a269cee5a2fa118bf518dc829}
+\hypertarget{classPeerState_a750b687f72ad5c1c19b04217c8840b56}{}\index{Peer\+State@{Peer\+State}!find\+Peer@{find\+Peer}}
+\index{find\+Peer@{find\+Peer}!Peer\+State@{Peer\+State}}
+\subsubsection[{find\+Peer(\+I\+Pv\+X\+Address, unsigned int)}]{\setlength{\rightskip}{0pt plus 5cm}int Peer\+State\+::find\+Peer (
+\begin{DoxyParamCaption}
+\item[{I\+Pv\+X\+Address}]{I\+P, }
+\item[{unsigned int}]{port}
+\end{DoxyParamCaption}
+)}\label{classPeerState_a750b687f72ad5c1c19b04217c8840b56}
+\hypertarget{classPeerState_aaef15b31facf166ce583263a9161b6b9}{}\index{Peer\+State@{Peer\+State}!get\+Peer\+Entry@{get\+Peer\+Entry}}
+\index{get\+Peer\+Entry@{get\+Peer\+Entry}!Peer\+State@{Peer\+State}}
+\subsubsection[{get\+Peer\+Entry(unsigned int)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Peer\+Entry} Peer\+State\+::get\+Peer\+Entry (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}\label{classPeerState_aaef15b31facf166ce583263a9161b6b9}
+\hypertarget{classPeerState_a08b847e1c32f826cd360c2c4b81eedba}{}\index{Peer\+State@{Peer\+State}!get\+Peer\+Entry@{get\+Peer\+Entry}}
+\index{get\+Peer\+Entry@{get\+Peer\+Entry}!Peer\+State@{Peer\+State}}
+\subsubsection[{get\+Peer\+Entry(const char $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Peer\+Entry} Peer\+State\+::get\+Peer\+Entry (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{id}
+\end{DoxyParamCaption}
+)}\label{classPeerState_a08b847e1c32f826cd360c2c4b81eedba}
+\hypertarget{classPeerState_a9e305e522559cb0cccdde6dab89c86fb}{}\index{Peer\+State@{Peer\+State}!get\+Peer\+Entry\+Ref@{get\+Peer\+Entry\+Ref}}
+\index{get\+Peer\+Entry\+Ref@{get\+Peer\+Entry\+Ref}!Peer\+State@{Peer\+State}}
+\subsubsection[{get\+Peer\+Entry\+Ref(unsigned int)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Peer\+Entry} $\ast$ Peer\+State\+::get\+Peer\+Entry\+Ref (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}\label{classPeerState_a9e305e522559cb0cccdde6dab89c86fb}
+\hypertarget{classPeerState_a17e1859e95d50d72dfb7e9e0d45db230}{}\index{Peer\+State@{Peer\+State}!get\+Vector@{get\+Vector}}
+\index{get\+Vector@{get\+Vector}!Peer\+State@{Peer\+State}}
+\subsubsection[{get\+Vector()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Peer\+Entry\+Vector} Peer\+State\+::get\+Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classPeerState_a17e1859e95d50d72dfb7e9e0d45db230}
+\hypertarget{classPeerState_a8041a6abf3ea401455d0ec303c914837}{}\index{Peer\+State@{Peer\+State}!min\+Downloader\+Rate@{min\+Downloader\+Rate}}
+\index{min\+Downloader\+Rate@{min\+Downloader\+Rate}!Peer\+State@{Peer\+State}}
+\subsubsection[{min\+Downloader\+Rate()}]{\setlength{\rightskip}{0pt plus 5cm}float Peer\+State\+::min\+Downloader\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerState_a8041a6abf3ea401455d0ec303c914837}
+\hypertarget{classPeerState_a112c1e60241207adf7d213cf6873105e}{}\index{Peer\+State@{Peer\+State}!print@{print}}
+\index{print@{print}!Peer\+State@{Peer\+State}}
+\subsubsection[{print()}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+State\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerState_a112c1e60241207adf7d213cf6873105e}
+\hypertarget{classPeerState_ada531732fc1e97467a9eba46c411a6f9}{}\index{Peer\+State@{Peer\+State}!remove\+Peer@{remove\+Peer}}
+\index{remove\+Peer@{remove\+Peer}!Peer\+State@{Peer\+State}}
+\subsubsection[{remove\+Peer(string)}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+State\+::remove\+Peer (
+\begin{DoxyParamCaption}
+\item[{string}]{id}
+\end{DoxyParamCaption}
+)}\label{classPeerState_ada531732fc1e97467a9eba46c411a6f9}
+\hypertarget{classPeerState_aced622022490d44be65e4db6a2f0b9f6}{}\index{Peer\+State@{Peer\+State}!set\+Min\+Downloader\+Rate@{set\+Min\+Downloader\+Rate}}
+\index{set\+Min\+Downloader\+Rate@{set\+Min\+Downloader\+Rate}!Peer\+State@{Peer\+State}}
+\subsubsection[{set\+Min\+Downloader\+Rate(float rate)}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+State\+::set\+Min\+Downloader\+Rate (
+\begin{DoxyParamCaption}
+\item[{float}]{rate}
+\end{DoxyParamCaption}
+)}\label{classPeerState_aced622022490d44be65e4db6a2f0b9f6}
+\hypertarget{classPeerState_aef0c57cb484880f49cf69cb26a5bd1a5}{}\index{Peer\+State@{Peer\+State}!size@{size}}
+\index{size@{size}!Peer\+State@{Peer\+State}}
+\subsubsection[{size()}]{\setlength{\rightskip}{0pt plus 5cm}int Peer\+State\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerState_aef0c57cb484880f49cf69cb26a5bd1a5}
+\hypertarget{classPeerState_ad344aaae448c271ccb803693207413da}{}\index{Peer\+State@{Peer\+State}!sort\+Peers@{sort\+Peers}}
+\index{sort\+Peers@{sort\+Peers}!Peer\+State@{Peer\+State}}
+\subsubsection[{sort\+Peers()}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+State\+::sort\+Peers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPeerState_ad344aaae448c271ccb803693207413da}
+\hypertarget{classPeerState_a6237759c93d6de6d5d4626f8e9f5194f}{}\index{Peer\+State@{Peer\+State}!update\+Peer\+I\+D@{update\+Peer\+I\+D}}
+\index{update\+Peer\+I\+D@{update\+Peer\+I\+D}!Peer\+State@{Peer\+State}}
+\subsubsection[{update\+Peer\+I\+D(int, opp\+\_\+string)}]{\setlength{\rightskip}{0pt plus 5cm}void Peer\+State\+::update\+Peer\+I\+D (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{opp\+\_\+string}]{id}
+\end{DoxyParamCaption}
+)}\label{classPeerState_a6237759c93d6de6d5d4626f8e9f5194f}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPeerState_afdaff8677c9f6ba7a3f3ef01a50e6853}{}\index{Peer\+State@{Peer\+State}!min\+Downloader\+Rate\+\_\+var@{min\+Downloader\+Rate\+\_\+var}}
+\index{min\+Downloader\+Rate\+\_\+var@{min\+Downloader\+Rate\+\_\+var}!Peer\+State@{Peer\+State}}
+\subsubsection[{min\+Downloader\+Rate\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}float Peer\+State\+::min\+Downloader\+Rate\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classPeerState_afdaff8677c9f6ba7a3f3ef01a50e6853}
+\hypertarget{classPeerState_a378d9d144d96858759912cd003eade76}{}\index{Peer\+State@{Peer\+State}!peer\+Vector@{peer\+Vector}}
+\index{peer\+Vector@{peer\+Vector}!Peer\+State@{Peer\+State}}
+\subsubsection[{peer\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Peer\+Entry\+Vector} Peer\+State\+::peer\+Vector\hspace{0.3cm}{\ttfamily [protected]}}\label{classPeerState_a378d9d144d96858759912cd003eade76}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTUtils_8h}{B\+T\+Utils.\+h}\item 
+\hyperlink{BTUtils_8cc}{B\+T\+Utils.\+cc}\end{DoxyCompactItemize}

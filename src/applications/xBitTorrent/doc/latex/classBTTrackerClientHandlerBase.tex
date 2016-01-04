@@ -1,0 +1,202 @@
+\hypertarget{classBTTrackerClientHandlerBase}{}\section{B\+T\+Tracker\+Client\+Handler\+Base Class Reference}
+\label{classBTTrackerClientHandlerBase}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+
+
+{\ttfamily \#include $<$B\+T\+Tracker\+Base.\+h$>$}
+
+Inheritance diagram for B\+T\+Tracker\+Client\+Handler\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTTrackerClientHandlerBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTTrackerClientHandlerBase_a47bb3ebcd53cbe2c5e97761daf238848}{B\+T\+Tracker\+Client\+Handler\+Base} ()
+\item 
+virtual \hyperlink{classBTTrackerClientHandlerBase_a7e6bb440aeb7dc131534bddb87f8e4bf}{$\sim$\+B\+T\+Tracker\+Client\+Handler\+Base} ()
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientHandlerBase_a97fe99f749f9c35265a869be509ebb97}{tstate} () const 
+\item 
+void \hyperlink{classBTTrackerClientHandlerBase_a1ce8a476cd3678af5b6d1a6722d5dac1}{set\+Tstate} (size\+\_\+t state)
+\item 
+\hyperlink{classBTTrackerBase}{B\+T\+Tracker\+Base} $\ast$ \hyperlink{classBTTrackerClientHandlerBase_a8d94ff69bfee7c7fec56ff10b023190e}{host\+Module} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classBTTrackerClientHandlerBase_a08b80c81147a46c822974fc45a5abc03}{process\+Announce} (\hyperlink{classBTTrackerMsgAnnounce}{B\+T\+Tracker\+Msg\+Announce} $\ast$)
+\item 
+virtual void \hyperlink{classBTTrackerClientHandlerBase_a5866e5c45a061fe832b117eb7203021f}{send\+Response} (int, \hyperlink{classBTTrackerMsgAnnounce}{B\+T\+Tracker\+Msg\+Announce} $\ast$)
+\item 
+virtual void \hyperlink{classBTTrackerClientHandlerBase_ad736dafdf1a33bdc269cc095633aa525}{fill\+Peers\+In\+Response} (\hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} $\ast$, bool, bool)
+\item 
+virtual void \hyperlink{classBTTrackerClientHandlerBase_aab404299d6998b7e1d25bcd44797d203}{find\+And\+Set\+Response\+Size} (\hyperlink{classBTTrackerMsgResponse}{B\+T\+Tracker\+Msg\+Response} $\ast$, bool, bool)
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientHandlerBase_af3f5db2319771924d2768867d1e645f9}{size\+Of\+Str\+Int} (size\+\_\+t) const 
+\item 
+virtual void \hyperlink{classBTTrackerClientHandlerBase_a169bd0bce2bc7d184b968e49bc6af07a}{established} ()
+\item 
+virtual void \hyperlink{classBTTrackerClientHandlerBase_aade96a45939d0424c55c5285cacc2f51}{data\+Arrived} (c\+Message $\ast$, bool)
+\item 
+virtual void \hyperlink{classBTTrackerClientHandlerBase_aa5f6520bb9f47a19e5113de551639fcb}{timer\+Expired} (c\+Message $\ast$)
+\item 
+virtual void \hyperlink{classBTTrackerClientHandlerBase_a2fc1e4ee37fc117ac76ee1b0ed60627e}{peer\+Closed} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+c\+Message $\ast$ \hyperlink{classBTTrackerClientHandlerBase_a8291f72257d451243e30b1a0b77ed1e6}{evt\+Tout}
+\item 
+size\+\_\+t \hyperlink{classBTTrackerClientHandlerBase_a1f5c8ad3f3fddc535e349468eb3ac526}{state\+\_\+var}
+\item 
+int \hyperlink{classBTTrackerClientHandlerBase_ae06f0ce4f1021ec9cc94f8900dac50b5}{c\+Peer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bit\+Torrent protocol. The connection handler thread. Spawned from Bit\+Torrent\+Tracker\+Base each time a new announce is made. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTTrackerClientHandlerBase_a47bb3ebcd53cbe2c5e97761daf238848}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{B\+T\+Tracker\+Client\+Handler\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Client\+Handler\+Base\+::\+B\+T\+Tracker\+Client\+Handler\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientHandlerBase_a47bb3ebcd53cbe2c5e97761daf238848}
+Constructor. \hypertarget{classBTTrackerClientHandlerBase_a7e6bb440aeb7dc131534bddb87f8e4bf}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!````~B\+T\+Tracker\+Client\+Handler\+Base@{$\sim$\+B\+T\+Tracker\+Client\+Handler\+Base}}
+\index{````~B\+T\+Tracker\+Client\+Handler\+Base@{$\sim$\+B\+T\+Tracker\+Client\+Handler\+Base}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{$\sim$\+B\+T\+Tracker\+Client\+Handler\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Tracker\+Client\+Handler\+Base\+::$\sim$\+B\+T\+Tracker\+Client\+Handler\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTTrackerClientHandlerBase_a7e6bb440aeb7dc131534bddb87f8e4bf}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTTrackerClientHandlerBase_aade96a45939d0424c55c5285cacc2f51}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!data\+Arrived@{data\+Arrived}}
+\index{data\+Arrived@{data\+Arrived}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{data\+Arrived(c\+Message $\ast$, bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Handler\+Base\+::data\+Arrived (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg, }
+\item[{bool}]{urgent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientHandlerBase_aade96a45939d0424c55c5285cacc2f51}
+Handles the reception of an announce.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the tracker. \hypertarget{classBTTrackerClientHandlerBase_a169bd0bce2bc7d184b968e49bc6af07a}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!established@{established}}
+\index{established@{established}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{established()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Handler\+Base\+::established (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientHandlerBase_a169bd0bce2bc7d184b968e49bc6af07a}
+Initializes the session variables and performs some logging.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the tracker. \hypertarget{classBTTrackerClientHandlerBase_ad736dafdf1a33bdc269cc095633aa525}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!fill\+Peers\+In\+Response@{fill\+Peers\+In\+Response}}
+\index{fill\+Peers\+In\+Response@{fill\+Peers\+In\+Response}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{fill\+Peers\+In\+Response(\+B\+T\+Tracker\+Msg\+Response $\ast$, bool, bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Handler\+Base\+::fill\+Peers\+In\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Tracker\+Msg\+Response} $\ast$}]{rmsg, }
+\item[{bool}]{seed, }
+\item[{bool}]{no\+\_\+peer\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientHandlerBase_ad736dafdf1a33bdc269cc095633aa525}
+Fill the response with peers.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the tracker. \hypertarget{classBTTrackerClientHandlerBase_aab404299d6998b7e1d25bcd44797d203}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!find\+And\+Set\+Response\+Size@{find\+And\+Set\+Response\+Size}}
+\index{find\+And\+Set\+Response\+Size@{find\+And\+Set\+Response\+Size}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{find\+And\+Set\+Response\+Size(\+B\+T\+Tracker\+Msg\+Response $\ast$, bool, bool)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Handler\+Base\+::find\+And\+Set\+Response\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Tracker\+Msg\+Response} $\ast$}]{rmsg, }
+\item[{bool}]{compact, }
+\item[{bool}]{no\+\_\+peer\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientHandlerBase_aab404299d6998b7e1d25bcd44797d203}
+Set the size of the response message.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the tracker. \hypertarget{classBTTrackerClientHandlerBase_a8d94ff69bfee7c7fec56ff10b023190e}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!host\+Module@{host\+Module}}
+\index{host\+Module@{host\+Module}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{host\+Module()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Tracker\+Base} $\ast$ B\+T\+Tracker\+Client\+Handler\+Base\+::host\+Module (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientHandlerBase_a8d94ff69bfee7c7fec56ff10b023190e}
+Get the host get\+Module(i.\+e., the instance of \hyperlink{classBTTrackerBase}{B\+T\+Tracker\+Base} which spawns the thread). \hypertarget{classBTTrackerClientHandlerBase_a2fc1e4ee37fc117ac76ee1b0ed60627e}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!peer\+Closed@{peer\+Closed}}
+\index{peer\+Closed@{peer\+Closed}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{peer\+Closed()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Handler\+Base\+::peer\+Closed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientHandlerBase_a2fc1e4ee37fc117ac76ee1b0ed60627e}
+Handles the teardown of the thread.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the tracker. \hypertarget{classBTTrackerClientHandlerBase_a08b80c81147a46c822974fc45a5abc03}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!process\+Announce@{process\+Announce}}
+\index{process\+Announce@{process\+Announce}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{process\+Announce(\+B\+T\+Tracker\+Msg\+Announce $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Tracker\+Client\+Handler\+Base\+::process\+Announce (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Tracker\+Msg\+Announce} $\ast$}]{amsg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientHandlerBase_a08b80c81147a46c822974fc45a5abc03}
+Handle an announce. Returns the status of the process (i.\+e., a constant value which indicates what should the tracker reply with).
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the tracker. \hypertarget{classBTTrackerClientHandlerBase_a5866e5c45a061fe832b117eb7203021f}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!send\+Response@{send\+Response}}
+\index{send\+Response@{send\+Response}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{send\+Response(int, B\+T\+Tracker\+Msg\+Announce $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Handler\+Base\+::send\+Response (
+\begin{DoxyParamCaption}
+\item[{int}]{acode, }
+\item[{{\bf B\+T\+Tracker\+Msg\+Announce} $\ast$}]{amsg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientHandlerBase_a5866e5c45a061fe832b117eb7203021f}
+Send a response to a previous announce. Gets the announce message and the output of the \hyperlink{classBTTrackerClientHandlerBase_a08b80c81147a46c822974fc45a5abc03}{process\+Announce()} method.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the tracker. \hypertarget{classBTTrackerClientHandlerBase_a1ce8a476cd3678af5b6d1a6722d5dac1}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!set\+Tstate@{set\+Tstate}}
+\index{set\+Tstate@{set\+Tstate}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{set\+Tstate(size\+\_\+t state)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Handler\+Base\+::set\+Tstate (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{state}
+\end{DoxyParamCaption}
+)}\label{classBTTrackerClientHandlerBase_a1ce8a476cd3678af5b6d1a6722d5dac1}
+Set the state of the session/thread. \hypertarget{classBTTrackerClientHandlerBase_af3f5db2319771924d2768867d1e645f9}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!size\+Of\+Str\+Int@{size\+Of\+Str\+Int}}
+\index{size\+Of\+Str\+Int@{size\+Of\+Str\+Int}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{size\+Of\+Str\+Int(size\+\_\+t) const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Handler\+Base\+::size\+Of\+Str\+Int (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{uint}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientHandlerBase_af3f5db2319771924d2768867d1e645f9}
+Get the size of an integer when being in A\+S\+C\+I\+I form (i.\+e., 10 = 2 bytes, 100 = 3 bytes). \hypertarget{classBTTrackerClientHandlerBase_aa5f6520bb9f47a19e5113de551639fcb}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!timer\+Expired@{timer\+Expired}}
+\index{timer\+Expired@{timer\+Expired}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{timer\+Expired(c\+Message $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Tracker\+Client\+Handler\+Base\+::timer\+Expired (
+\begin{DoxyParamCaption}
+\item[{c\+Message $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTTrackerClientHandlerBase_aa5f6520bb9f47a19e5113de551639fcb}
+Handles a session timeout event.
+
+This method should re-\/implemented in future subclasses in order to extend/add/change the behavior of the tracker. \hypertarget{classBTTrackerClientHandlerBase_a97fe99f749f9c35265a869be509ebb97}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!tstate@{tstate}}
+\index{tstate@{tstate}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{tstate() const }]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Handler\+Base\+::tstate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classBTTrackerClientHandlerBase_a97fe99f749f9c35265a869be509ebb97}
+Get the state of the session/thread. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTTrackerClientHandlerBase_ae06f0ce4f1021ec9cc94f8900dac50b5}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!c\+Peer@{c\+Peer}}
+\index{c\+Peer@{c\+Peer}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{c\+Peer}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Tracker\+Client\+Handler\+Base\+::c\+Peer\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientHandlerBase_ae06f0ce4f1021ec9cc94f8900dac50b5}
+\hypertarget{classBTTrackerClientHandlerBase_a8291f72257d451243e30b1a0b77ed1e6}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!evt\+Tout@{evt\+Tout}}
+\index{evt\+Tout@{evt\+Tout}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{evt\+Tout}]{\setlength{\rightskip}{0pt plus 5cm}c\+Message$\ast$ B\+T\+Tracker\+Client\+Handler\+Base\+::evt\+Tout\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientHandlerBase_a8291f72257d451243e30b1a0b77ed1e6}
+\hypertarget{classBTTrackerClientHandlerBase_a1f5c8ad3f3fddc535e349468eb3ac526}{}\index{B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}!state\+\_\+var@{state\+\_\+var}}
+\index{state\+\_\+var@{state\+\_\+var}!B\+T\+Tracker\+Client\+Handler\+Base@{B\+T\+Tracker\+Client\+Handler\+Base}}
+\subsubsection[{state\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+T\+Tracker\+Client\+Handler\+Base\+::state\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTTrackerClientHandlerBase_a1f5c8ad3f3fddc535e349468eb3ac526}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTTrackerBase_8h}{B\+T\+Tracker\+Base.\+h}\item 
+\hyperlink{BTTrackerBase_8cc}{B\+T\+Tracker\+Base.\+cc}\end{DoxyCompactItemize}

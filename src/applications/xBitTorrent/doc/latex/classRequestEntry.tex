@@ -1,0 +1,221 @@
+\hypertarget{classRequestEntry}{}\section{Request\+Entry Class Reference}
+\label{classRequestEntry}\index{Request\+Entry@{Request\+Entry}}
+
+
+{\ttfamily \#include $<$B\+T\+Utils.\+h$>$}
+
+Inheritance diagram for Request\+Entry\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRequestEntry}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRequestEntry_a95d45a84e3e25909c5b065450bad4aad}{Request\+Entry} ()
+\item 
+\hyperlink{classRequestEntry_a69b1396e2e503cc704a3cf9157ca24e8}{Request\+Entry} (int, int, int, simtime\+\_\+t, const char $\ast$, httpt\+Base\+Message $\ast$)
+\item 
+\hyperlink{classRequestEntry_a85528d356b3ee23388b0297accb7fd12}{Request\+Entry} (const \hyperlink{classRequestEntry}{Request\+Entry} \&)
+\item 
+virtual \hyperlink{classRequestEntry_ab26a3ee47c31028f6771ed54e66fae28}{$\sim$\+Request\+Entry} ()
+\item 
+int \hyperlink{classRequestEntry_afb1e573d37bbf1cce5b20b6162c595c8}{get\+Index} ()
+\item 
+void \hyperlink{classRequestEntry_abe544acc9da02db6c8d4f35464097167}{set\+Index} (int)
+\item 
+int \hyperlink{classRequestEntry_afc8ad0d9147c91db24dcf92806d8e936}{begin} ()
+\item 
+void \hyperlink{classRequestEntry_a97d3640f9e93745f8356865e69a1bb48}{set\+Begin} (int)
+\item 
+int \hyperlink{classRequestEntry_a74e4135e2270898733bf8f0c5fcae8da}{length} ()
+\item 
+void \hyperlink{classRequestEntry_aacf772652f33c8dc3c8655dc3bb02c85}{set\+Bit\+Length} (int)
+\item 
+simtime\+\_\+t \hyperlink{classRequestEntry_a71cec14c796056ae048e669617239a40}{get\+Timestamp} ()
+\item 
+void \hyperlink{classRequestEntry_a89e2cf2af0520908c2f778eeba4ca8a4}{set\+Timestamp} (simtime\+\_\+t)
+\item 
+const char $\ast$ \hyperlink{classRequestEntry_a469a3d7a9242f3cbc3b9a5279782045a}{peer\+I\+D} ()
+\item 
+void \hyperlink{classRequestEntry_ad3a725cd00fd5e86db33a490fdfdc860}{set\+Peer\+I\+D} (const char $\ast$)
+\item 
+httpt\+Base\+Message $\ast$ \hyperlink{classRequestEntry_aa78d3b3d332bc540fd949a572a6b0252}{http\+Reply\+Message} ()
+\item 
+void \hyperlink{classRequestEntry_a5fa7c81c38d3a96918784090d73112c8}{set\+Http\+Reply\+Message} (httpt\+Base\+Message $\ast$)
+\item 
+\hyperlink{classRequestEntry}{Request\+Entry} \hyperlink{classRequestEntry_ad783916b2da98cd5e2e7cfea32eb72f6}{dup} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classRequestEntry_a8ab0e52289f7c8e9cff73de49bf3c7c3}{index\+\_\+var}
+\item 
+int \hyperlink{classRequestEntry_ad50fcc4c262ffae45bbd745e6371a472}{begin\+\_\+var}
+\item 
+int \hyperlink{classRequestEntry_aa52549120084c3fccd2101678e84c6fe}{length\+\_\+var}
+\item 
+simtime\+\_\+t \hyperlink{classRequestEntry_aeb81ed7dd1b44291051176524448c7c9}{timestamp\+\_\+var}
+\item 
+const char $\ast$ \hyperlink{classRequestEntry_a0b527dea15dd777cd9267ab9bc5ccdc2}{peer\+I\+D\+\_\+var}
+\item 
+httpt\+Base\+Message $\ast$ \hyperlink{classRequestEntry_a515e817884d92935dfaf47320aa1a47b}{http\+Reply\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRequestEntry_a95d45a84e3e25909c5b065450bad4aad}{}\index{Request\+Entry@{Request\+Entry}!Request\+Entry@{Request\+Entry}}
+\index{Request\+Entry@{Request\+Entry}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{Request\+Entry()}]{\setlength{\rightskip}{0pt plus 5cm}Request\+Entry\+::\+Request\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_a95d45a84e3e25909c5b065450bad4aad}
+\hypertarget{classRequestEntry_a69b1396e2e503cc704a3cf9157ca24e8}{}\index{Request\+Entry@{Request\+Entry}!Request\+Entry@{Request\+Entry}}
+\index{Request\+Entry@{Request\+Entry}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{Request\+Entry(int, int, int, simtime\+\_\+t, const char $\ast$, httpt\+Base\+Message $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}Request\+Entry\+::\+Request\+Entry (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{b, }
+\item[{int}]{l, }
+\item[{simtime\+\_\+t}]{t, }
+\item[{const char $\ast$}]{id, }
+\item[{httpt\+Base\+Message $\ast$}]{http\+Reply}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_a69b1396e2e503cc704a3cf9157ca24e8}
+\hypertarget{classRequestEntry_a85528d356b3ee23388b0297accb7fd12}{}\index{Request\+Entry@{Request\+Entry}!Request\+Entry@{Request\+Entry}}
+\index{Request\+Entry@{Request\+Entry}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{Request\+Entry(const Request\+Entry \&)}]{\setlength{\rightskip}{0pt plus 5cm}Request\+Entry\+::\+Request\+Entry (
+\begin{DoxyParamCaption}
+\item[{const {\bf Request\+Entry} \&}]{re}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_a85528d356b3ee23388b0297accb7fd12}
+\hypertarget{classRequestEntry_ab26a3ee47c31028f6771ed54e66fae28}{}\index{Request\+Entry@{Request\+Entry}!````~Request\+Entry@{$\sim$\+Request\+Entry}}
+\index{````~Request\+Entry@{$\sim$\+Request\+Entry}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{$\sim$\+Request\+Entry()}]{\setlength{\rightskip}{0pt plus 5cm}Request\+Entry\+::$\sim$\+Request\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classRequestEntry_ab26a3ee47c31028f6771ed54e66fae28}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRequestEntry_afc8ad0d9147c91db24dcf92806d8e936}{}\index{Request\+Entry@{Request\+Entry}!begin@{begin}}
+\index{begin@{begin}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{begin()}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Entry\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_afc8ad0d9147c91db24dcf92806d8e936}
+\hypertarget{classRequestEntry_ad783916b2da98cd5e2e7cfea32eb72f6}{}\index{Request\+Entry@{Request\+Entry}!dup@{dup}}
+\index{dup@{dup}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{dup()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request\+Entry} Request\+Entry\+::dup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_ad783916b2da98cd5e2e7cfea32eb72f6}
+\hypertarget{classRequestEntry_afb1e573d37bbf1cce5b20b6162c595c8}{}\index{Request\+Entry@{Request\+Entry}!get\+Index@{get\+Index}}
+\index{get\+Index@{get\+Index}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{get\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Entry\+::get\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_afb1e573d37bbf1cce5b20b6162c595c8}
+\hypertarget{classRequestEntry_a71cec14c796056ae048e669617239a40}{}\index{Request\+Entry@{Request\+Entry}!get\+Timestamp@{get\+Timestamp}}
+\index{get\+Timestamp@{get\+Timestamp}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{get\+Timestamp()}]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t Request\+Entry\+::get\+Timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_a71cec14c796056ae048e669617239a40}
+\hypertarget{classRequestEntry_aa78d3b3d332bc540fd949a572a6b0252}{}\index{Request\+Entry@{Request\+Entry}!http\+Reply\+Message@{http\+Reply\+Message}}
+\index{http\+Reply\+Message@{http\+Reply\+Message}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{http\+Reply\+Message()}]{\setlength{\rightskip}{0pt plus 5cm}httpt\+Base\+Message $\ast$ Request\+Entry\+::http\+Reply\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_aa78d3b3d332bc540fd949a572a6b0252}
+\hypertarget{classRequestEntry_a74e4135e2270898733bf8f0c5fcae8da}{}\index{Request\+Entry@{Request\+Entry}!length@{length}}
+\index{length@{length}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{length()}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Entry\+::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_a74e4135e2270898733bf8f0c5fcae8da}
+\hypertarget{classRequestEntry_a469a3d7a9242f3cbc3b9a5279782045a}{}\index{Request\+Entry@{Request\+Entry}!peer\+I\+D@{peer\+I\+D}}
+\index{peer\+I\+D@{peer\+I\+D}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{peer\+I\+D()}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Request\+Entry\+::peer\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_a469a3d7a9242f3cbc3b9a5279782045a}
+\hypertarget{classRequestEntry_a97d3640f9e93745f8356865e69a1bb48}{}\index{Request\+Entry@{Request\+Entry}!set\+Begin@{set\+Begin}}
+\index{set\+Begin@{set\+Begin}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{set\+Begin(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+Entry\+::set\+Begin (
+\begin{DoxyParamCaption}
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_a97d3640f9e93745f8356865e69a1bb48}
+\hypertarget{classRequestEntry_aacf772652f33c8dc3c8655dc3bb02c85}{}\index{Request\+Entry@{Request\+Entry}!set\+Bit\+Length@{set\+Bit\+Length}}
+\index{set\+Bit\+Length@{set\+Bit\+Length}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{set\+Bit\+Length(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+Entry\+::set\+Bit\+Length (
+\begin{DoxyParamCaption}
+\item[{int}]{l}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_aacf772652f33c8dc3c8655dc3bb02c85}
+\hypertarget{classRequestEntry_a5fa7c81c38d3a96918784090d73112c8}{}\index{Request\+Entry@{Request\+Entry}!set\+Http\+Reply\+Message@{set\+Http\+Reply\+Message}}
+\index{set\+Http\+Reply\+Message@{set\+Http\+Reply\+Message}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{set\+Http\+Reply\+Message(httpt\+Base\+Message $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+Entry\+::set\+Http\+Reply\+Message (
+\begin{DoxyParamCaption}
+\item[{httpt\+Base\+Message $\ast$}]{http\+Reply}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_a5fa7c81c38d3a96918784090d73112c8}
+\hypertarget{classRequestEntry_abe544acc9da02db6c8d4f35464097167}{}\index{Request\+Entry@{Request\+Entry}!set\+Index@{set\+Index}}
+\index{set\+Index@{set\+Index}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{set\+Index(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+Entry\+::set\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_abe544acc9da02db6c8d4f35464097167}
+\hypertarget{classRequestEntry_ad3a725cd00fd5e86db33a490fdfdc860}{}\index{Request\+Entry@{Request\+Entry}!set\+Peer\+I\+D@{set\+Peer\+I\+D}}
+\index{set\+Peer\+I\+D@{set\+Peer\+I\+D}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{set\+Peer\+I\+D(const char $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+Entry\+::set\+Peer\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{id}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_ad3a725cd00fd5e86db33a490fdfdc860}
+\hypertarget{classRequestEntry_a89e2cf2af0520908c2f778eeba4ca8a4}{}\index{Request\+Entry@{Request\+Entry}!set\+Timestamp@{set\+Timestamp}}
+\index{set\+Timestamp@{set\+Timestamp}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{set\+Timestamp(simtime\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void Request\+Entry\+::set\+Timestamp (
+\begin{DoxyParamCaption}
+\item[{simtime\+\_\+t}]{timestamp}
+\end{DoxyParamCaption}
+)}\label{classRequestEntry_a89e2cf2af0520908c2f778eeba4ca8a4}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRequestEntry_ad50fcc4c262ffae45bbd745e6371a472}{}\index{Request\+Entry@{Request\+Entry}!begin\+\_\+var@{begin\+\_\+var}}
+\index{begin\+\_\+var@{begin\+\_\+var}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{begin\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Entry\+::begin\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classRequestEntry_ad50fcc4c262ffae45bbd745e6371a472}
+\hypertarget{classRequestEntry_a515e817884d92935dfaf47320aa1a47b}{}\index{Request\+Entry@{Request\+Entry}!http\+Reply\+\_\+var@{http\+Reply\+\_\+var}}
+\index{http\+Reply\+\_\+var@{http\+Reply\+\_\+var}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{http\+Reply\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}httpt\+Base\+Message$\ast$ Request\+Entry\+::http\+Reply\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classRequestEntry_a515e817884d92935dfaf47320aa1a47b}
+\hypertarget{classRequestEntry_a8ab0e52289f7c8e9cff73de49bf3c7c3}{}\index{Request\+Entry@{Request\+Entry}!index\+\_\+var@{index\+\_\+var}}
+\index{index\+\_\+var@{index\+\_\+var}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{index\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Entry\+::index\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classRequestEntry_a8ab0e52289f7c8e9cff73de49bf3c7c3}
+\hypertarget{classRequestEntry_aa52549120084c3fccd2101678e84c6fe}{}\index{Request\+Entry@{Request\+Entry}!length\+\_\+var@{length\+\_\+var}}
+\index{length\+\_\+var@{length\+\_\+var}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{length\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Entry\+::length\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classRequestEntry_aa52549120084c3fccd2101678e84c6fe}
+\hypertarget{classRequestEntry_a0b527dea15dd777cd9267ab9bc5ccdc2}{}\index{Request\+Entry@{Request\+Entry}!peer\+I\+D\+\_\+var@{peer\+I\+D\+\_\+var}}
+\index{peer\+I\+D\+\_\+var@{peer\+I\+D\+\_\+var}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{peer\+I\+D\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Request\+Entry\+::peer\+I\+D\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classRequestEntry_a0b527dea15dd777cd9267ab9bc5ccdc2}
+\hypertarget{classRequestEntry_aeb81ed7dd1b44291051176524448c7c9}{}\index{Request\+Entry@{Request\+Entry}!timestamp\+\_\+var@{timestamp\+\_\+var}}
+\index{timestamp\+\_\+var@{timestamp\+\_\+var}!Request\+Entry@{Request\+Entry}}
+\subsubsection[{timestamp\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t Request\+Entry\+::timestamp\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classRequestEntry_aeb81ed7dd1b44291051176524448c7c9}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTUtils_8h}{B\+T\+Utils.\+h}\item 
+\hyperlink{BTUtils_8cc}{B\+T\+Utils.\+cc}\end{DoxyCompactItemize}

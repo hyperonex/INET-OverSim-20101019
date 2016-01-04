@@ -1,0 +1,189 @@
+\hypertarget{classBTCache}{}\section{B\+T\+Cache Class Reference}
+\label{classBTCache}\index{B\+T\+Cache@{B\+T\+Cache}}
+
+
+{\ttfamily \#include $<$B\+T\+Cache.\+h$>$}
+
+Inheritance diagram for B\+T\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTCache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTCache_a473a22048f77d193d17086f0d8cb3cc8}{B\+T\+Cache} ()
+\item 
+virtual \hyperlink{classBTCache_a8770b01f578dcca7a657d58a6d844f73}{$\sim$\+B\+T\+Cache} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ T\+C\+P\+Socket $\ast$, c\+Packet $\ast$ $>$ \hyperlink{classBTCache_ac80b2a8f5787af11c89dbd05a187029e}{Client\+Map}
+\item 
+typedef std\+::set$<$ int $>$ \hyperlink{classBTCache_ae334281f1ee5074cc1d6e82b661b60e4}{T\+Set}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classBTCache_aab85cef7a8a821c2fca105264b97f6ac}{update\+Display} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+httpt\+Controller $\ast$ \hyperlink{classBTCache_ac46f1f65119dfee3d87c5363101aa58b}{controller}
+\item 
+T\+C\+P\+Socket $\ast$ \hyperlink{classBTCache_ae3203717845093fb0a6e779f9d3d0b52}{listensocket}
+\item 
+T\+C\+P\+Socket\+Map \hyperlink{classBTCache_a43a311974146b2ef6bc69f6859d24e8e}{sock\+Collection}
+\item 
+T\+C\+P $\ast$ \hyperlink{classBTCache_ae867f4ad74074c00b641e390d3a9e372}{tcp}
+\item 
+c\+Module $\ast$ \hyperlink{classBTCache_a404b5d16a842340af5de6fab08181da9}{bt\+Statistics\+Module}
+\item 
+c\+Simple\+Module $\ast$ \hyperlink{classBTCache_a8299e74f2c743652ed3301c011656928}{bt\+Statistics}
+\item 
+\hyperlink{classBTCache_ac80b2a8f5787af11c89dbd05a187029e}{Client\+Map} \hyperlink{classBTCache_a27d62db096c4d09c449ecb10d8d19abf}{pending\+Requests}
+\item 
+unsigned long \hyperlink{classBTCache_a8f2f146c44949bcf78646c043caaae40}{server\+Sockets\+Broken}
+\item 
+unsigned long \hyperlink{classBTCache_a2b79808f6ff3b27684cebbb78d8801a6}{server\+Sockets\+Opened}
+\item 
+unsigned long \hyperlink{classBTCache_a59899107c3f728fe1f5703ad116b092c}{client\+Sockets\+Broken}
+\item 
+unsigned long \hyperlink{classBTCache_af68542d10296c40d603c98ee977a46d6}{client\+Sockets\+Opened}
+\item 
+unsigned long \hyperlink{classBTCache_ad1d45c4a6c3eb41f97723c052831c63f}{num\+Broken}
+\item 
+unsigned long \hyperlink{classBTCache_ada2e7c16bb0919521475b4fd6014cd80}{sockets\+Opened}
+\item 
+unsigned long \hyperlink{classBTCache_a14de443ddf388fb6b61381b5a881e099}{requests\+Received}
+\item 
+c\+Std\+Dev $\ast$ \hyperlink{classBTCache_a7432b26e77f5a8e3d5b910b5cbc179b3}{num\+Hits}
+\item 
+c\+Out\+Vector \hyperlink{classBTCache_a0ac804101085c06566877a36baa591e7}{num\+Hits\+\_\+vec}
+\item 
+c\+Std\+Dev $\ast$ \hyperlink{classBTCache_aeee4cfae3f278ceba5e900ab9c549f0e}{num\+Misses}
+\item 
+c\+Out\+Vector \hyperlink{classBTCache_ab687064d70f88dca7d7b5102fe2c1966}{num\+Misses\+\_\+vec}
+\item 
+Cache $\ast$ \hyperlink{classBTCache_ae126841ec3ca00972a328ff64a832e6a}{resource\+Cache}
+\item 
+int \hyperlink{classBTCache_a48ba69d513530368d210c5e97d19edbc}{hits}
+\item 
+int \hyperlink{classBTCache_a8ed86c3269e334690fb483a1884ee20a}{misses}
+\item 
+\hyperlink{classBTCache_ae334281f1ee5074cc1d6e82b661b60e4}{T\+Set} \hyperlink{classBTCache_a464a4dd8ca5b0313b24675deeb7fec6e}{server\+Connections}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classBTCache_ac80b2a8f5787af11c89dbd05a187029e}{}\index{B\+T\+Cache@{B\+T\+Cache}!Client\+Map@{Client\+Map}}
+\index{Client\+Map@{Client\+Map}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{Client\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$T\+C\+P\+Socket$\ast$, c\+Packet$\ast$$>$ {\bf B\+T\+Cache\+::\+Client\+Map}\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_ac80b2a8f5787af11c89dbd05a187029e}
+\hypertarget{classBTCache_ae334281f1ee5074cc1d6e82b661b60e4}{}\index{B\+T\+Cache@{B\+T\+Cache}!T\+Set@{T\+Set}}
+\index{T\+Set@{T\+Set}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{T\+Set}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::set$<$int$>$ {\bf B\+T\+Cache\+::\+T\+Set}\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_ae334281f1ee5074cc1d6e82b661b60e4}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTCache_a473a22048f77d193d17086f0d8cb3cc8}{}\index{B\+T\+Cache@{B\+T\+Cache}!B\+T\+Cache@{B\+T\+Cache}}
+\index{B\+T\+Cache@{B\+T\+Cache}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{B\+T\+Cache()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Cache\+::\+B\+T\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBTCache_a473a22048f77d193d17086f0d8cb3cc8}
+\hypertarget{classBTCache_a8770b01f578dcca7a657d58a6d844f73}{}\index{B\+T\+Cache@{B\+T\+Cache}!````~B\+T\+Cache@{$\sim$\+B\+T\+Cache}}
+\index{````~B\+T\+Cache@{$\sim$\+B\+T\+Cache}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{$\sim$\+B\+T\+Cache()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Cache\+::$\sim$\+B\+T\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTCache_a8770b01f578dcca7a657d58a6d844f73}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTCache_aab85cef7a8a821c2fca105264b97f6ac}{}\index{B\+T\+Cache@{B\+T\+Cache}!update\+Display@{update\+Display}}
+\index{update\+Display@{update\+Display}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{update\+Display()}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Cache\+::update\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classBTCache_aab85cef7a8a821c2fca105264b97f6ac}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTCache_a8299e74f2c743652ed3301c011656928}{}\index{B\+T\+Cache@{B\+T\+Cache}!bt\+Statistics@{bt\+Statistics}}
+\index{bt\+Statistics@{bt\+Statistics}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{bt\+Statistics}]{\setlength{\rightskip}{0pt plus 5cm}c\+Simple\+Module$\ast$ B\+T\+Cache\+::bt\+Statistics\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a8299e74f2c743652ed3301c011656928}
+\hypertarget{classBTCache_a404b5d16a842340af5de6fab08181da9}{}\index{B\+T\+Cache@{B\+T\+Cache}!bt\+Statistics\+Module@{bt\+Statistics\+Module}}
+\index{bt\+Statistics\+Module@{bt\+Statistics\+Module}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{bt\+Statistics\+Module}]{\setlength{\rightskip}{0pt plus 5cm}c\+Module$\ast$ B\+T\+Cache\+::bt\+Statistics\+Module\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a404b5d16a842340af5de6fab08181da9}
+\hypertarget{classBTCache_a59899107c3f728fe1f5703ad116b092c}{}\index{B\+T\+Cache@{B\+T\+Cache}!client\+Sockets\+Broken@{client\+Sockets\+Broken}}
+\index{client\+Sockets\+Broken@{client\+Sockets\+Broken}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{client\+Sockets\+Broken}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long B\+T\+Cache\+::client\+Sockets\+Broken\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a59899107c3f728fe1f5703ad116b092c}
+\hypertarget{classBTCache_af68542d10296c40d603c98ee977a46d6}{}\index{B\+T\+Cache@{B\+T\+Cache}!client\+Sockets\+Opened@{client\+Sockets\+Opened}}
+\index{client\+Sockets\+Opened@{client\+Sockets\+Opened}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{client\+Sockets\+Opened}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long B\+T\+Cache\+::client\+Sockets\+Opened\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_af68542d10296c40d603c98ee977a46d6}
+\hypertarget{classBTCache_ac46f1f65119dfee3d87c5363101aa58b}{}\index{B\+T\+Cache@{B\+T\+Cache}!controller@{controller}}
+\index{controller@{controller}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{controller}]{\setlength{\rightskip}{0pt plus 5cm}httpt\+Controller$\ast$ B\+T\+Cache\+::controller\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_ac46f1f65119dfee3d87c5363101aa58b}
+\hypertarget{classBTCache_a48ba69d513530368d210c5e97d19edbc}{}\index{B\+T\+Cache@{B\+T\+Cache}!hits@{hits}}
+\index{hits@{hits}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{hits}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Cache\+::hits\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a48ba69d513530368d210c5e97d19edbc}
+\hypertarget{classBTCache_ae3203717845093fb0a6e779f9d3d0b52}{}\index{B\+T\+Cache@{B\+T\+Cache}!listensocket@{listensocket}}
+\index{listensocket@{listensocket}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{listensocket}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P\+Socket$\ast$ B\+T\+Cache\+::listensocket\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_ae3203717845093fb0a6e779f9d3d0b52}
+\hypertarget{classBTCache_a8ed86c3269e334690fb483a1884ee20a}{}\index{B\+T\+Cache@{B\+T\+Cache}!misses@{misses}}
+\index{misses@{misses}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{misses}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Cache\+::misses\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a8ed86c3269e334690fb483a1884ee20a}
+\hypertarget{classBTCache_ad1d45c4a6c3eb41f97723c052831c63f}{}\index{B\+T\+Cache@{B\+T\+Cache}!num\+Broken@{num\+Broken}}
+\index{num\+Broken@{num\+Broken}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{num\+Broken}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long B\+T\+Cache\+::num\+Broken\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_ad1d45c4a6c3eb41f97723c052831c63f}
+\hypertarget{classBTCache_a7432b26e77f5a8e3d5b910b5cbc179b3}{}\index{B\+T\+Cache@{B\+T\+Cache}!num\+Hits@{num\+Hits}}
+\index{num\+Hits@{num\+Hits}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{num\+Hits}]{\setlength{\rightskip}{0pt plus 5cm}c\+Std\+Dev$\ast$ B\+T\+Cache\+::num\+Hits\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a7432b26e77f5a8e3d5b910b5cbc179b3}
+\hypertarget{classBTCache_a0ac804101085c06566877a36baa591e7}{}\index{B\+T\+Cache@{B\+T\+Cache}!num\+Hits\+\_\+vec@{num\+Hits\+\_\+vec}}
+\index{num\+Hits\+\_\+vec@{num\+Hits\+\_\+vec}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{num\+Hits\+\_\+vec}]{\setlength{\rightskip}{0pt plus 5cm}c\+Out\+Vector B\+T\+Cache\+::num\+Hits\+\_\+vec\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a0ac804101085c06566877a36baa591e7}
+\hypertarget{classBTCache_aeee4cfae3f278ceba5e900ab9c549f0e}{}\index{B\+T\+Cache@{B\+T\+Cache}!num\+Misses@{num\+Misses}}
+\index{num\+Misses@{num\+Misses}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{num\+Misses}]{\setlength{\rightskip}{0pt plus 5cm}c\+Std\+Dev$\ast$ B\+T\+Cache\+::num\+Misses\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_aeee4cfae3f278ceba5e900ab9c549f0e}
+\hypertarget{classBTCache_ab687064d70f88dca7d7b5102fe2c1966}{}\index{B\+T\+Cache@{B\+T\+Cache}!num\+Misses\+\_\+vec@{num\+Misses\+\_\+vec}}
+\index{num\+Misses\+\_\+vec@{num\+Misses\+\_\+vec}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{num\+Misses\+\_\+vec}]{\setlength{\rightskip}{0pt plus 5cm}c\+Out\+Vector B\+T\+Cache\+::num\+Misses\+\_\+vec\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_ab687064d70f88dca7d7b5102fe2c1966}
+\hypertarget{classBTCache_a27d62db096c4d09c449ecb10d8d19abf}{}\index{B\+T\+Cache@{B\+T\+Cache}!pending\+Requests@{pending\+Requests}}
+\index{pending\+Requests@{pending\+Requests}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{pending\+Requests}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client\+Map} B\+T\+Cache\+::pending\+Requests\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a27d62db096c4d09c449ecb10d8d19abf}
+\hypertarget{classBTCache_a14de443ddf388fb6b61381b5a881e099}{}\index{B\+T\+Cache@{B\+T\+Cache}!requests\+Received@{requests\+Received}}
+\index{requests\+Received@{requests\+Received}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{requests\+Received}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long B\+T\+Cache\+::requests\+Received\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a14de443ddf388fb6b61381b5a881e099}
+\hypertarget{classBTCache_ae126841ec3ca00972a328ff64a832e6a}{}\index{B\+T\+Cache@{B\+T\+Cache}!resource\+Cache@{resource\+Cache}}
+\index{resource\+Cache@{resource\+Cache}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{resource\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}Cache$\ast$ B\+T\+Cache\+::resource\+Cache\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_ae126841ec3ca00972a328ff64a832e6a}
+\hypertarget{classBTCache_a464a4dd8ca5b0313b24675deeb7fec6e}{}\index{B\+T\+Cache@{B\+T\+Cache}!server\+Connections@{server\+Connections}}
+\index{server\+Connections@{server\+Connections}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{server\+Connections}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Set} B\+T\+Cache\+::server\+Connections\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a464a4dd8ca5b0313b24675deeb7fec6e}
+\hypertarget{classBTCache_a8f2f146c44949bcf78646c043caaae40}{}\index{B\+T\+Cache@{B\+T\+Cache}!server\+Sockets\+Broken@{server\+Sockets\+Broken}}
+\index{server\+Sockets\+Broken@{server\+Sockets\+Broken}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{server\+Sockets\+Broken}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long B\+T\+Cache\+::server\+Sockets\+Broken\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a8f2f146c44949bcf78646c043caaae40}
+\hypertarget{classBTCache_a2b79808f6ff3b27684cebbb78d8801a6}{}\index{B\+T\+Cache@{B\+T\+Cache}!server\+Sockets\+Opened@{server\+Sockets\+Opened}}
+\index{server\+Sockets\+Opened@{server\+Sockets\+Opened}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{server\+Sockets\+Opened}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long B\+T\+Cache\+::server\+Sockets\+Opened\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a2b79808f6ff3b27684cebbb78d8801a6}
+\hypertarget{classBTCache_a43a311974146b2ef6bc69f6859d24e8e}{}\index{B\+T\+Cache@{B\+T\+Cache}!sock\+Collection@{sock\+Collection}}
+\index{sock\+Collection@{sock\+Collection}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{sock\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P\+Socket\+Map B\+T\+Cache\+::sock\+Collection\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_a43a311974146b2ef6bc69f6859d24e8e}
+\hypertarget{classBTCache_ada2e7c16bb0919521475b4fd6014cd80}{}\index{B\+T\+Cache@{B\+T\+Cache}!sockets\+Opened@{sockets\+Opened}}
+\index{sockets\+Opened@{sockets\+Opened}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{sockets\+Opened}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long B\+T\+Cache\+::sockets\+Opened\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_ada2e7c16bb0919521475b4fd6014cd80}
+\hypertarget{classBTCache_ae867f4ad74074c00b641e390d3a9e372}{}\index{B\+T\+Cache@{B\+T\+Cache}!tcp@{tcp}}
+\index{tcp@{tcp}!B\+T\+Cache@{B\+T\+Cache}}
+\subsubsection[{tcp}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P$\ast$ B\+T\+Cache\+::tcp\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTCache_ae867f4ad74074c00b641e390d3a9e372}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTCache_8h}{B\+T\+Cache.\+h}\item 
+\hyperlink{BTCache_8cc}{B\+T\+Cache.\+cc}\end{DoxyCompactItemize}

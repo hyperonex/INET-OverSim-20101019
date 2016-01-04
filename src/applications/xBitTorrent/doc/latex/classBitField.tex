@@ -1,0 +1,449 @@
+\hypertarget{classBitField}{}\section{Bit\+Field Class Reference}
+\label{classBitField}\index{Bit\+Field@{Bit\+Field}}
+
+
+{\ttfamily \#include $<$Bit\+Field.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBitField_a1c2fa43c831330abdfcf561403e4702a}{Bit\+Field} (int, int, bool)
+\item 
+\hyperlink{classBitField_aabc26baca38da071e537309ac3054711}{Bit\+Field} (\hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} $\ast$, int)
+\item 
+virtual \hyperlink{classBitField_ace6c4b4b88b610b8b960dca27ce0e327}{$\sim$\+Bit\+Field} ()
+\item 
+void \hyperlink{classBitField_a44f5269832b8e569436defa583940583}{update} (int)
+\item 
+bool \hyperlink{classBitField_a68303775853513b2dce8e6143f03acac}{update} (int, int, bool)
+\item 
+void \hyperlink{classBitField_afab731950ba15b13b2cecfc03f2309f7}{update} (\hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} $\ast$msg)
+\item 
+void \hyperlink{classBitField_acc9bc492966e1ae3122761245fd3adb1}{fill\+Blocks} ()
+\item 
+void \hyperlink{classBitField_a76f983ecfbe3ff2b9c5bbd942b874b61}{put\+In\+Message} (\hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} $\ast$)
+\item 
+bool \hyperlink{classBitField_aa849078186430ec77a4c59e668e5fd06}{is\+Piece\+Available} (int)
+\item 
+bool \hyperlink{classBitField_a51fc08f5f0cbfc7e264867ce3384923e}{is\+Block\+Available} (int, int)
+\item 
+bool \hyperlink{classBitField_a6c2724efafba0b901919439e73bfe92f}{is\+Piece\+Requested} (int)
+\item 
+bool \hyperlink{classBitField_a4f694bc138ca12894182ee60cd80d8d9}{is\+Block\+Requested} (int, int)
+\item 
+int \hyperlink{classBitField_a87f3cca7acd6cbdb356e433c0419c3f4}{set\+Block\+Requested} (int, int, bool)
+\item 
+int \hyperlink{classBitField_ac43f2900de3c3bf9fcef000769b3a9e7}{current\+Block} (int)
+\item 
+bool \hyperlink{classBitField_a29095dd18f528dd5772b97aa40d267b2}{finished\+Downloading} ()
+\item 
+int \hyperlink{classBitField_a7b930cde4be059cd50ad3772273c3f92}{num\+Pieces} ()
+\item 
+int \hyperlink{classBitField_ac9ceee65e3727bfa51882c621f9010b4}{num\+Blocks} ()
+\item 
+int \hyperlink{classBitField_ac4b18c3b59a9d285c6357cfa9eecd848}{num\+Remaining\+Pieces} ()
+\item 
+void \hyperlink{classBitField_aad8a041f764e82dfcfb9db68393306ac}{set\+Num\+Remaining\+Pieces} (int)
+\item 
+int \hyperlink{classBitField_a5827dc80e7a21e77a9ca02cf0e9e40f7}{num\+Remaining\+Blocks} ()
+\item 
+void \hyperlink{classBitField_ada5051c7ed068b2d5608f88296473b72}{set\+Num\+Remaining\+Blocks} (int)
+\item 
+int \hyperlink{classBitField_abcc7f9aab24281d30ee05110fe8d4dbc}{num\+Requested\+Pieces} ()
+\item 
+void \hyperlink{classBitField_af4354b2c5c2325e3224612794fa7f5c1}{set\+Num\+Requested\+Pieces} (int)
+\item 
+int \hyperlink{classBitField_aab778612b1788879ab8af5f4ffe0a99e}{num\+Requested\+Blocks} ()
+\item 
+void \hyperlink{classBitField_a25f725b3ff6a37d7c1ecfc4716142a36}{set\+Num\+Requested\+Blocks} (int)
+\item 
+int \hyperlink{classBitField_af5d0224419a073acfb969e731a47fd9a}{num\+Non\+Requested\+Non\+Available\+Blocks} ()
+\item 
+void \hyperlink{classBitField_aeed97c1a8befffc76c4057d810bdbddd}{set\+Num\+Non\+Requested\+Non\+Available\+Blocks} (int)
+\item 
+void \hyperlink{classBitField_af5970a0081c0bb511e989de40146e2eb}{decrease\+Currently\+Requested\+Piece\+Blocks} (int)
+\item 
+bool \hyperlink{classBitField_a9702d12e88ad507b45dc609777c01d22}{local} ()
+\item 
+void \hyperlink{classBitField_a5af51c0d3d580a15615ac48505e28924}{set\+Local} (bool)
+\item 
+bool \hyperlink{classBitField_a12c8dddec7afec5e0ddcfe82d8befc38}{have\+Piece} ()
+\item 
+simtime\+\_\+t \hyperlink{classBitField_aff81afe67c74bb715e0ee0b8735281a2}{last\+Download\+Time} ()
+\item 
+void \hyperlink{classBitField_ac3ecb63ef77660a1a009dd835d3c9c02}{set\+Last\+Download\+Time} (simtime\+\_\+t)
+\item 
+void \hyperlink{classBitField_aceb7162148604b26efdd3be60c8930de}{print\+Remaining\+Pieces} ()
+\item 
+void \hyperlink{classBitField_ae79538d925f1fb7c45fbb71d3b9e6090}{print\+Remaining\+Blocks} ()
+\item 
+int \hyperlink{classBitField_a0f1d950ba2d78e2f589db52ecf002844}{next\+Block} (int)
+\item 
+int \hyperlink{classBitField_a47ff07b1fca1db8c8583f6111261d124}{find\+Next\+Block} (int)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classBitField_afefece68e8e5e1e4776d397eaf42380b}{num\+Pieces\+\_\+var}
+\item 
+int \hyperlink{classBitField_afa9fe0b1c09333b56a13a08a4c38ecde}{num\+Blocks\+\_\+var}
+\item 
+bool $\ast$ \hyperlink{classBitField_aa7d89d95390116a5858f58238e4ac70b}{bitfield}
+\item 
+bool $\ast$$\ast$ \hyperlink{classBitField_a118a658e23e172630dce6f02492d787f}{blockfield}
+\item 
+bool $\ast$$\ast$ \hyperlink{classBitField_a47a55c1562e21daa9c9712da2158800c}{requested}
+\item 
+int $\ast$ \hyperlink{classBitField_ad3cdde40d15e215ebf2872519bb9f70a}{currently\+Requested\+Piece\+Blocks\+\_\+var}
+\item 
+int \hyperlink{classBitField_a61c4e98def318eb51962e05277eda15b}{num\+Requested\+Pieces\+\_\+var}
+\item 
+int \hyperlink{classBitField_a9a421bd70a6585033d9780bf02914a37}{num\+Requested\+Blocks\+\_\+var}
+\item 
+int \hyperlink{classBitField_aa28ebc12ceb0bc128d26982fe6a109fc}{num\+Non\+Requested\+Non\+Available\+Blocks\+\_\+var}
+\item 
+int $\ast$ \hyperlink{classBitField_af0f28125e5efbfbf6ec38ad0bc9c9f6d}{current\+Block\+\_\+var}
+\item 
+int $\ast$ \hyperlink{classBitField_a9a444fae1b93310db9f3570efae32533}{next\+Block\+\_\+var}
+\item 
+int \hyperlink{classBitField_a2965edfff1a1a987020b18a5be8847d8}{num\+Remaining\+Pieces\+\_\+var}
+\item 
+int \hyperlink{classBitField_ae065179fd1f18ca75cd5dcc65b295c69}{num\+Remaining\+Blocks\+\_\+var}
+\item 
+bool \hyperlink{classBitField_ab199e8d887a5795c5eb2e25f47242848}{local\+\_\+var}
+\item 
+bool \hyperlink{classBitField_a750a21d8360389c5c1bbdd99cdeb11b1}{init\+\_\+from\+\_\+msg}
+\item 
+simtime\+\_\+t \hyperlink{classBitField_ab469de80cb93b832804f64679045d95e}{last\+Download\+Time\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBitField_a1c2fa43c831330abdfcf561403e4702a}{}\index{Bit\+Field@{Bit\+Field}!Bit\+Field@{Bit\+Field}}
+\index{Bit\+Field@{Bit\+Field}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{Bit\+Field(int, int, bool)}]{\setlength{\rightskip}{0pt plus 5cm}Bit\+Field\+::\+Bit\+Field (
+\begin{DoxyParamCaption}
+\item[{int}]{pieces, }
+\item[{int}]{blocks, }
+\item[{bool}]{seeder}
+\end{DoxyParamCaption}
+)}\label{classBitField_a1c2fa43c831330abdfcf561403e4702a}
+\hypertarget{classBitField_aabc26baca38da071e537309ac3054711}{}\index{Bit\+Field@{Bit\+Field}!Bit\+Field@{Bit\+Field}}
+\index{Bit\+Field@{Bit\+Field}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{Bit\+Field(\+B\+T\+Bitfield\+Msg $\ast$, int)}]{\setlength{\rightskip}{0pt plus 5cm}Bit\+Field\+::\+Bit\+Field (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Bitfield\+Msg} $\ast$}]{msg, }
+\item[{int}]{numblocks}
+\end{DoxyParamCaption}
+)}\label{classBitField_aabc26baca38da071e537309ac3054711}
+\hypertarget{classBitField_ace6c4b4b88b610b8b960dca27ce0e327}{}\index{Bit\+Field@{Bit\+Field}!````~Bit\+Field@{$\sim$\+Bit\+Field}}
+\index{````~Bit\+Field@{$\sim$\+Bit\+Field}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{$\sim$\+Bit\+Field()}]{\setlength{\rightskip}{0pt plus 5cm}Bit\+Field\+::$\sim$\+Bit\+Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBitField_ace6c4b4b88b610b8b960dca27ce0e327}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBitField_ac43f2900de3c3bf9fcef000769b3a9e7}{}\index{Bit\+Field@{Bit\+Field}!current\+Block@{current\+Block}}
+\index{current\+Block@{current\+Block}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{current\+Block(int)}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::current\+Block (
+\begin{DoxyParamCaption}
+\item[{int}]{bitfield\+Index}
+\end{DoxyParamCaption}
+)}\label{classBitField_ac43f2900de3c3bf9fcef000769b3a9e7}
+\hypertarget{classBitField_af5970a0081c0bb511e989de40146e2eb}{}\index{Bit\+Field@{Bit\+Field}!decrease\+Currently\+Requested\+Piece\+Blocks@{decrease\+Currently\+Requested\+Piece\+Blocks}}
+\index{decrease\+Currently\+Requested\+Piece\+Blocks@{decrease\+Currently\+Requested\+Piece\+Blocks}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{decrease\+Currently\+Requested\+Piece\+Blocks(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::decrease\+Currently\+Requested\+Piece\+Blocks (
+\begin{DoxyParamCaption}
+\item[{int}]{bitfield\+Index}
+\end{DoxyParamCaption}
+)}\label{classBitField_af5970a0081c0bb511e989de40146e2eb}
+\hypertarget{classBitField_acc9bc492966e1ae3122761245fd3adb1}{}\index{Bit\+Field@{Bit\+Field}!fill\+Blocks@{fill\+Blocks}}
+\index{fill\+Blocks@{fill\+Blocks}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{fill\+Blocks()}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::fill\+Blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_acc9bc492966e1ae3122761245fd3adb1}
+\hypertarget{classBitField_a47ff07b1fca1db8c8583f6111261d124}{}\index{Bit\+Field@{Bit\+Field}!find\+Next\+Block@{find\+Next\+Block}}
+\index{find\+Next\+Block@{find\+Next\+Block}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{find\+Next\+Block(int)}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::find\+Next\+Block (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\+Index}
+\end{DoxyParamCaption}
+)}\label{classBitField_a47ff07b1fca1db8c8583f6111261d124}
+\hypertarget{classBitField_a29095dd18f528dd5772b97aa40d267b2}{}\index{Bit\+Field@{Bit\+Field}!finished\+Downloading@{finished\+Downloading}}
+\index{finished\+Downloading@{finished\+Downloading}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{finished\+Downloading()}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Field\+::finished\+Downloading (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_a29095dd18f528dd5772b97aa40d267b2}
+\hypertarget{classBitField_a12c8dddec7afec5e0ddcfe82d8befc38}{}\index{Bit\+Field@{Bit\+Field}!have\+Piece@{have\+Piece}}
+\index{have\+Piece@{have\+Piece}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{have\+Piece()}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Field\+::have\+Piece (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_a12c8dddec7afec5e0ddcfe82d8befc38}
+\hypertarget{classBitField_a51fc08f5f0cbfc7e264867ce3384923e}{}\index{Bit\+Field@{Bit\+Field}!is\+Block\+Available@{is\+Block\+Available}}
+\index{is\+Block\+Available@{is\+Block\+Available}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{is\+Block\+Available(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Field\+::is\+Block\+Available (
+\begin{DoxyParamCaption}
+\item[{int}]{bitfield\+Index, }
+\item[{int}]{blockfield\+Index}
+\end{DoxyParamCaption}
+)}\label{classBitField_a51fc08f5f0cbfc7e264867ce3384923e}
+\hypertarget{classBitField_a4f694bc138ca12894182ee60cd80d8d9}{}\index{Bit\+Field@{Bit\+Field}!is\+Block\+Requested@{is\+Block\+Requested}}
+\index{is\+Block\+Requested@{is\+Block\+Requested}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{is\+Block\+Requested(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Field\+::is\+Block\+Requested (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\+Index, }
+\item[{int}]{block\+Index}
+\end{DoxyParamCaption}
+)}\label{classBitField_a4f694bc138ca12894182ee60cd80d8d9}
+\hypertarget{classBitField_aa849078186430ec77a4c59e668e5fd06}{}\index{Bit\+Field@{Bit\+Field}!is\+Piece\+Available@{is\+Piece\+Available}}
+\index{is\+Piece\+Available@{is\+Piece\+Available}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{is\+Piece\+Available(int)}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Field\+::is\+Piece\+Available (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{classBitField_aa849078186430ec77a4c59e668e5fd06}
+\hypertarget{classBitField_a6c2724efafba0b901919439e73bfe92f}{}\index{Bit\+Field@{Bit\+Field}!is\+Piece\+Requested@{is\+Piece\+Requested}}
+\index{is\+Piece\+Requested@{is\+Piece\+Requested}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{is\+Piece\+Requested(int)}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Field\+::is\+Piece\+Requested (
+\begin{DoxyParamCaption}
+\item[{int}]{bitfield\+Index}
+\end{DoxyParamCaption}
+)}\label{classBitField_a6c2724efafba0b901919439e73bfe92f}
+\hypertarget{classBitField_aff81afe67c74bb715e0ee0b8735281a2}{}\index{Bit\+Field@{Bit\+Field}!last\+Download\+Time@{last\+Download\+Time}}
+\index{last\+Download\+Time@{last\+Download\+Time}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{last\+Download\+Time()}]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t Bit\+Field\+::last\+Download\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_aff81afe67c74bb715e0ee0b8735281a2}
+\hypertarget{classBitField_a9702d12e88ad507b45dc609777c01d22}{}\index{Bit\+Field@{Bit\+Field}!local@{local}}
+\index{local@{local}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{local()}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Field\+::local (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_a9702d12e88ad507b45dc609777c01d22}
+\hypertarget{classBitField_a0f1d950ba2d78e2f589db52ecf002844}{}\index{Bit\+Field@{Bit\+Field}!next\+Block@{next\+Block}}
+\index{next\+Block@{next\+Block}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{next\+Block(int)}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::next\+Block (
+\begin{DoxyParamCaption}
+\item[{int}]{bitfield\+Index}
+\end{DoxyParamCaption}
+)}\label{classBitField_a0f1d950ba2d78e2f589db52ecf002844}
+\hypertarget{classBitField_ac9ceee65e3727bfa51882c621f9010b4}{}\index{Bit\+Field@{Bit\+Field}!num\+Blocks@{num\+Blocks}}
+\index{num\+Blocks@{num\+Blocks}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Blocks()}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_ac9ceee65e3727bfa51882c621f9010b4}
+\hypertarget{classBitField_af5d0224419a073acfb969e731a47fd9a}{}\index{Bit\+Field@{Bit\+Field}!num\+Non\+Requested\+Non\+Available\+Blocks@{num\+Non\+Requested\+Non\+Available\+Blocks}}
+\index{num\+Non\+Requested\+Non\+Available\+Blocks@{num\+Non\+Requested\+Non\+Available\+Blocks}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Non\+Requested\+Non\+Available\+Blocks()}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Non\+Requested\+Non\+Available\+Blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_af5d0224419a073acfb969e731a47fd9a}
+\hypertarget{classBitField_a7b930cde4be059cd50ad3772273c3f92}{}\index{Bit\+Field@{Bit\+Field}!num\+Pieces@{num\+Pieces}}
+\index{num\+Pieces@{num\+Pieces}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Pieces()}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Pieces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_a7b930cde4be059cd50ad3772273c3f92}
+\hypertarget{classBitField_a5827dc80e7a21e77a9ca02cf0e9e40f7}{}\index{Bit\+Field@{Bit\+Field}!num\+Remaining\+Blocks@{num\+Remaining\+Blocks}}
+\index{num\+Remaining\+Blocks@{num\+Remaining\+Blocks}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Remaining\+Blocks()}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Remaining\+Blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_a5827dc80e7a21e77a9ca02cf0e9e40f7}
+\hypertarget{classBitField_ac4b18c3b59a9d285c6357cfa9eecd848}{}\index{Bit\+Field@{Bit\+Field}!num\+Remaining\+Pieces@{num\+Remaining\+Pieces}}
+\index{num\+Remaining\+Pieces@{num\+Remaining\+Pieces}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Remaining\+Pieces()}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Remaining\+Pieces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_ac4b18c3b59a9d285c6357cfa9eecd848}
+\hypertarget{classBitField_aab778612b1788879ab8af5f4ffe0a99e}{}\index{Bit\+Field@{Bit\+Field}!num\+Requested\+Blocks@{num\+Requested\+Blocks}}
+\index{num\+Requested\+Blocks@{num\+Requested\+Blocks}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Requested\+Blocks()}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Requested\+Blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_aab778612b1788879ab8af5f4ffe0a99e}
+\hypertarget{classBitField_abcc7f9aab24281d30ee05110fe8d4dbc}{}\index{Bit\+Field@{Bit\+Field}!num\+Requested\+Pieces@{num\+Requested\+Pieces}}
+\index{num\+Requested\+Pieces@{num\+Requested\+Pieces}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Requested\+Pieces()}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Requested\+Pieces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_abcc7f9aab24281d30ee05110fe8d4dbc}
+\hypertarget{classBitField_ae79538d925f1fb7c45fbb71d3b9e6090}{}\index{Bit\+Field@{Bit\+Field}!print\+Remaining\+Blocks@{print\+Remaining\+Blocks}}
+\index{print\+Remaining\+Blocks@{print\+Remaining\+Blocks}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{print\+Remaining\+Blocks()}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::print\+Remaining\+Blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_ae79538d925f1fb7c45fbb71d3b9e6090}
+\hypertarget{classBitField_aceb7162148604b26efdd3be60c8930de}{}\index{Bit\+Field@{Bit\+Field}!print\+Remaining\+Pieces@{print\+Remaining\+Pieces}}
+\index{print\+Remaining\+Pieces@{print\+Remaining\+Pieces}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{print\+Remaining\+Pieces()}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::print\+Remaining\+Pieces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classBitField_aceb7162148604b26efdd3be60c8930de}
+\hypertarget{classBitField_a76f983ecfbe3ff2b9c5bbd942b874b61}{}\index{Bit\+Field@{Bit\+Field}!put\+In\+Message@{put\+In\+Message}}
+\index{put\+In\+Message@{put\+In\+Message}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{put\+In\+Message(\+B\+T\+Bitfield\+Msg $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::put\+In\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Bitfield\+Msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\label{classBitField_a76f983ecfbe3ff2b9c5bbd942b874b61}
+\hypertarget{classBitField_a87f3cca7acd6cbdb356e433c0419c3f4}{}\index{Bit\+Field@{Bit\+Field}!set\+Block\+Requested@{set\+Block\+Requested}}
+\index{set\+Block\+Requested@{set\+Block\+Requested}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{set\+Block\+Requested(int, int, bool)}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::set\+Block\+Requested (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\+Index, }
+\item[{int}]{block\+Index, }
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}\label{classBitField_a87f3cca7acd6cbdb356e433c0419c3f4}
+\hypertarget{classBitField_ac3ecb63ef77660a1a009dd835d3c9c02}{}\index{Bit\+Field@{Bit\+Field}!set\+Last\+Download\+Time@{set\+Last\+Download\+Time}}
+\index{set\+Last\+Download\+Time@{set\+Last\+Download\+Time}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{set\+Last\+Download\+Time(simtime\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::set\+Last\+Download\+Time (
+\begin{DoxyParamCaption}
+\item[{simtime\+\_\+t}]{last\+Download\+Time}
+\end{DoxyParamCaption}
+)}\label{classBitField_ac3ecb63ef77660a1a009dd835d3c9c02}
+\hypertarget{classBitField_a5af51c0d3d580a15615ac48505e28924}{}\index{Bit\+Field@{Bit\+Field}!set\+Local@{set\+Local}}
+\index{set\+Local@{set\+Local}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{set\+Local(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::set\+Local (
+\begin{DoxyParamCaption}
+\item[{bool}]{local}
+\end{DoxyParamCaption}
+)}\label{classBitField_a5af51c0d3d580a15615ac48505e28924}
+\hypertarget{classBitField_aeed97c1a8befffc76c4057d810bdbddd}{}\index{Bit\+Field@{Bit\+Field}!set\+Num\+Non\+Requested\+Non\+Available\+Blocks@{set\+Num\+Non\+Requested\+Non\+Available\+Blocks}}
+\index{set\+Num\+Non\+Requested\+Non\+Available\+Blocks@{set\+Num\+Non\+Requested\+Non\+Available\+Blocks}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{set\+Num\+Non\+Requested\+Non\+Available\+Blocks(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::set\+Num\+Non\+Requested\+Non\+Available\+Blocks (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Non\+Requested\+Non\+Available\+Blocks}
+\end{DoxyParamCaption}
+)}\label{classBitField_aeed97c1a8befffc76c4057d810bdbddd}
+\hypertarget{classBitField_ada5051c7ed068b2d5608f88296473b72}{}\index{Bit\+Field@{Bit\+Field}!set\+Num\+Remaining\+Blocks@{set\+Num\+Remaining\+Blocks}}
+\index{set\+Num\+Remaining\+Blocks@{set\+Num\+Remaining\+Blocks}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{set\+Num\+Remaining\+Blocks(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::set\+Num\+Remaining\+Blocks (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Remaining\+Blocks}
+\end{DoxyParamCaption}
+)}\label{classBitField_ada5051c7ed068b2d5608f88296473b72}
+\hypertarget{classBitField_aad8a041f764e82dfcfb9db68393306ac}{}\index{Bit\+Field@{Bit\+Field}!set\+Num\+Remaining\+Pieces@{set\+Num\+Remaining\+Pieces}}
+\index{set\+Num\+Remaining\+Pieces@{set\+Num\+Remaining\+Pieces}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{set\+Num\+Remaining\+Pieces(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::set\+Num\+Remaining\+Pieces (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Remaining\+Pieces}
+\end{DoxyParamCaption}
+)}\label{classBitField_aad8a041f764e82dfcfb9db68393306ac}
+\hypertarget{classBitField_a25f725b3ff6a37d7c1ecfc4716142a36}{}\index{Bit\+Field@{Bit\+Field}!set\+Num\+Requested\+Blocks@{set\+Num\+Requested\+Blocks}}
+\index{set\+Num\+Requested\+Blocks@{set\+Num\+Requested\+Blocks}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{set\+Num\+Requested\+Blocks(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::set\+Num\+Requested\+Blocks (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Requested\+Blocks}
+\end{DoxyParamCaption}
+)}\label{classBitField_a25f725b3ff6a37d7c1ecfc4716142a36}
+\hypertarget{classBitField_af4354b2c5c2325e3224612794fa7f5c1}{}\index{Bit\+Field@{Bit\+Field}!set\+Num\+Requested\+Pieces@{set\+Num\+Requested\+Pieces}}
+\index{set\+Num\+Requested\+Pieces@{set\+Num\+Requested\+Pieces}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{set\+Num\+Requested\+Pieces(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::set\+Num\+Requested\+Pieces (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Requested\+Pieces}
+\end{DoxyParamCaption}
+)}\label{classBitField_af4354b2c5c2325e3224612794fa7f5c1}
+\hypertarget{classBitField_a44f5269832b8e569436defa583940583}{}\index{Bit\+Field@{Bit\+Field}!update@{update}}
+\index{update@{update}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{update(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::update (
+\begin{DoxyParamCaption}
+\item[{int}]{bitfield\+Index}
+\end{DoxyParamCaption}
+)}\label{classBitField_a44f5269832b8e569436defa583940583}
+\hypertarget{classBitField_a68303775853513b2dce8e6143f03acac}{}\index{Bit\+Field@{Bit\+Field}!update@{update}}
+\index{update@{update}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{update(int, int, bool)}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Field\+::update (
+\begin{DoxyParamCaption}
+\item[{int}]{bitfield\+Index, }
+\item[{int}]{blockfield\+Index, }
+\item[{bool}]{expected}
+\end{DoxyParamCaption}
+)}\label{classBitField_a68303775853513b2dce8e6143f03acac}
+\hypertarget{classBitField_afab731950ba15b13b2cecfc03f2309f7}{}\index{Bit\+Field@{Bit\+Field}!update@{update}}
+\index{update@{update}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{update(\+B\+T\+Bitfield\+Msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Field\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Bitfield\+Msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\label{classBitField_afab731950ba15b13b2cecfc03f2309f7}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBitField_aa7d89d95390116a5858f58238e4ac70b}{}\index{Bit\+Field@{Bit\+Field}!bitfield@{bitfield}}
+\index{bitfield@{bitfield}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{bitfield}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$ Bit\+Field\+::bitfield\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_aa7d89d95390116a5858f58238e4ac70b}
+\hypertarget{classBitField_a118a658e23e172630dce6f02492d787f}{}\index{Bit\+Field@{Bit\+Field}!blockfield@{blockfield}}
+\index{blockfield@{blockfield}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{blockfield}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$$\ast$ Bit\+Field\+::blockfield\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_a118a658e23e172630dce6f02492d787f}
+\hypertarget{classBitField_af0f28125e5efbfbf6ec38ad0bc9c9f6d}{}\index{Bit\+Field@{Bit\+Field}!current\+Block\+\_\+var@{current\+Block\+\_\+var}}
+\index{current\+Block\+\_\+var@{current\+Block\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{current\+Block\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Bit\+Field\+::current\+Block\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_af0f28125e5efbfbf6ec38ad0bc9c9f6d}
+\hypertarget{classBitField_ad3cdde40d15e215ebf2872519bb9f70a}{}\index{Bit\+Field@{Bit\+Field}!currently\+Requested\+Piece\+Blocks\+\_\+var@{currently\+Requested\+Piece\+Blocks\+\_\+var}}
+\index{currently\+Requested\+Piece\+Blocks\+\_\+var@{currently\+Requested\+Piece\+Blocks\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{currently\+Requested\+Piece\+Blocks\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Bit\+Field\+::currently\+Requested\+Piece\+Blocks\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_ad3cdde40d15e215ebf2872519bb9f70a}
+\hypertarget{classBitField_a750a21d8360389c5c1bbdd99cdeb11b1}{}\index{Bit\+Field@{Bit\+Field}!init\+\_\+from\+\_\+msg@{init\+\_\+from\+\_\+msg}}
+\index{init\+\_\+from\+\_\+msg@{init\+\_\+from\+\_\+msg}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{init\+\_\+from\+\_\+msg}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Field\+::init\+\_\+from\+\_\+msg\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_a750a21d8360389c5c1bbdd99cdeb11b1}
+\hypertarget{classBitField_ab469de80cb93b832804f64679045d95e}{}\index{Bit\+Field@{Bit\+Field}!last\+Download\+Time\+\_\+var@{last\+Download\+Time\+\_\+var}}
+\index{last\+Download\+Time\+\_\+var@{last\+Download\+Time\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{last\+Download\+Time\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}simtime\+\_\+t Bit\+Field\+::last\+Download\+Time\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_ab469de80cb93b832804f64679045d95e}
+\hypertarget{classBitField_ab199e8d887a5795c5eb2e25f47242848}{}\index{Bit\+Field@{Bit\+Field}!local\+\_\+var@{local\+\_\+var}}
+\index{local\+\_\+var@{local\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{local\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Field\+::local\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_ab199e8d887a5795c5eb2e25f47242848}
+\hypertarget{classBitField_a9a444fae1b93310db9f3570efae32533}{}\index{Bit\+Field@{Bit\+Field}!next\+Block\+\_\+var@{next\+Block\+\_\+var}}
+\index{next\+Block\+\_\+var@{next\+Block\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{next\+Block\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Bit\+Field\+::next\+Block\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_a9a444fae1b93310db9f3570efae32533}
+\hypertarget{classBitField_afa9fe0b1c09333b56a13a08a4c38ecde}{}\index{Bit\+Field@{Bit\+Field}!num\+Blocks\+\_\+var@{num\+Blocks\+\_\+var}}
+\index{num\+Blocks\+\_\+var@{num\+Blocks\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Blocks\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Blocks\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_afa9fe0b1c09333b56a13a08a4c38ecde}
+\hypertarget{classBitField_aa28ebc12ceb0bc128d26982fe6a109fc}{}\index{Bit\+Field@{Bit\+Field}!num\+Non\+Requested\+Non\+Available\+Blocks\+\_\+var@{num\+Non\+Requested\+Non\+Available\+Blocks\+\_\+var}}
+\index{num\+Non\+Requested\+Non\+Available\+Blocks\+\_\+var@{num\+Non\+Requested\+Non\+Available\+Blocks\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Non\+Requested\+Non\+Available\+Blocks\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Non\+Requested\+Non\+Available\+Blocks\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_aa28ebc12ceb0bc128d26982fe6a109fc}
+\hypertarget{classBitField_afefece68e8e5e1e4776d397eaf42380b}{}\index{Bit\+Field@{Bit\+Field}!num\+Pieces\+\_\+var@{num\+Pieces\+\_\+var}}
+\index{num\+Pieces\+\_\+var@{num\+Pieces\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Pieces\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Pieces\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_afefece68e8e5e1e4776d397eaf42380b}
+\hypertarget{classBitField_ae065179fd1f18ca75cd5dcc65b295c69}{}\index{Bit\+Field@{Bit\+Field}!num\+Remaining\+Blocks\+\_\+var@{num\+Remaining\+Blocks\+\_\+var}}
+\index{num\+Remaining\+Blocks\+\_\+var@{num\+Remaining\+Blocks\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Remaining\+Blocks\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Remaining\+Blocks\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_ae065179fd1f18ca75cd5dcc65b295c69}
+\hypertarget{classBitField_a2965edfff1a1a987020b18a5be8847d8}{}\index{Bit\+Field@{Bit\+Field}!num\+Remaining\+Pieces\+\_\+var@{num\+Remaining\+Pieces\+\_\+var}}
+\index{num\+Remaining\+Pieces\+\_\+var@{num\+Remaining\+Pieces\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Remaining\+Pieces\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Remaining\+Pieces\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_a2965edfff1a1a987020b18a5be8847d8}
+\hypertarget{classBitField_a9a421bd70a6585033d9780bf02914a37}{}\index{Bit\+Field@{Bit\+Field}!num\+Requested\+Blocks\+\_\+var@{num\+Requested\+Blocks\+\_\+var}}
+\index{num\+Requested\+Blocks\+\_\+var@{num\+Requested\+Blocks\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Requested\+Blocks\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Requested\+Blocks\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_a9a421bd70a6585033d9780bf02914a37}
+\hypertarget{classBitField_a61c4e98def318eb51962e05277eda15b}{}\index{Bit\+Field@{Bit\+Field}!num\+Requested\+Pieces\+\_\+var@{num\+Requested\+Pieces\+\_\+var}}
+\index{num\+Requested\+Pieces\+\_\+var@{num\+Requested\+Pieces\+\_\+var}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{num\+Requested\+Pieces\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int Bit\+Field\+::num\+Requested\+Pieces\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_a61c4e98def318eb51962e05277eda15b}
+\hypertarget{classBitField_a47a55c1562e21daa9c9712da2158800c}{}\index{Bit\+Field@{Bit\+Field}!requested@{requested}}
+\index{requested@{requested}!Bit\+Field@{Bit\+Field}}
+\subsubsection[{requested}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$$\ast$ Bit\+Field\+::requested\hspace{0.3cm}{\ttfamily [protected]}}\label{classBitField_a47a55c1562e21daa9c9712da2158800c}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BitField_8h}{Bit\+Field.\+h}\item 
+\hyperlink{BitField_8cc}{Bit\+Field.\+cc}\end{DoxyCompactItemize}

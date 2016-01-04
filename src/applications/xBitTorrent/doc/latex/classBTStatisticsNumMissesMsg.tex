@@ -1,0 +1,146 @@
+\hypertarget{classBTStatisticsNumMissesMsg}{}\section{B\+T\+Statistics\+Num\+Misses\+Msg Class Reference}
+\label{classBTStatisticsNumMissesMsg}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+
+
+{\ttfamily \#include $<$B\+T\+Statistics\+Msg\+\_\+m.\+h$>$}
+
+Inheritance diagram for B\+T\+Statistics\+Num\+Misses\+Msg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTStatisticsNumMissesMsg}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTStatisticsNumMissesMsg_a12062190375e684b1ab12e51b3b11e6d}{B\+T\+Statistics\+Num\+Misses\+Msg} (const char $\ast$name=N\+U\+L\+L, int kind=0)
+\item 
+\hyperlink{classBTStatisticsNumMissesMsg_ab731ecc85c292a7d74d99bf09c099e57}{B\+T\+Statistics\+Num\+Misses\+Msg} (const \hyperlink{classBTStatisticsNumMissesMsg}{B\+T\+Statistics\+Num\+Misses\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTStatisticsNumMissesMsg_a07705f4e854c08cca570365556993408}{$\sim$\+B\+T\+Statistics\+Num\+Misses\+Msg} ()
+\item 
+\hyperlink{classBTStatisticsNumMissesMsg}{B\+T\+Statistics\+Num\+Misses\+Msg} \& \hyperlink{classBTStatisticsNumMissesMsg_a4975eb2d2cc3f64083f4a643c236fcff}{operator=} (const \hyperlink{classBTStatisticsNumMissesMsg}{B\+T\+Statistics\+Num\+Misses\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTStatisticsNumMissesMsg}{B\+T\+Statistics\+Num\+Misses\+Msg} $\ast$ \hyperlink{classBTStatisticsNumMissesMsg_ac9bf69db530be787cb6b13063927f8e1}{dup} () const 
+\item 
+virtual void \hyperlink{classBTStatisticsNumMissesMsg_af0ede08af67692ee012ee06f076a5a67}{parsim\+Pack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual void \hyperlink{classBTStatisticsNumMissesMsg_a80c048371a7e616236d8f3118d59e6b3}{parsim\+Unpack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual double \hyperlink{classBTStatisticsNumMissesMsg_a92411392b465eb6262f7ca3cd17b9195}{num\+Misses} () const 
+\item 
+virtual void \hyperlink{classBTStatisticsNumMissesMsg_ab89ff20783a4bed86f5eb21e58ae09b6}{set\+Num\+Misses} (double \hyperlink{classBTStatisticsNumMissesMsg_a28bbdae0b44bd313c2377e841097b5b4}{num\+Misses\+\_\+var})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBTStatisticsNumMissesMsg_acced5f9552f3768cd03717ac574190b8}{operator==} (const \hyperlink{classBTStatisticsNumMissesMsg}{B\+T\+Statistics\+Num\+Misses\+Msg} \&)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classBTStatisticsNumMissesMsg_a28bbdae0b44bd313c2377e841097b5b4}{num\+Misses\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class generated from {\ttfamily applications/x\+Bit\+Torrent/\+B\+T\+Statistics\+Msg.\+msg} by opp\+\_\+msgc. 
+\begin{DoxyPre}
+message \hyperlink{classBTStatisticsNumMissesMsg}{BTStatisticsNumMissesMsg} extends GenericAppMsg
+\{
+     (true);\end{DoxyPre}
+
+
+
+\begin{DoxyPre}    double numMisses;
+\}
+\end{DoxyPre}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTStatisticsNumMissesMsg_a12062190375e684b1ab12e51b3b11e6d}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{B\+T\+Statistics\+Num\+Misses\+Msg(const char $\ast$name=\+N\+U\+L\+L, int kind=0)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Statistics\+Num\+Misses\+Msg\+::\+B\+T\+Statistics\+Num\+Misses\+Msg (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name = {\ttfamily NULL}, }
+\item[{int}]{kind = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classBTStatisticsNumMissesMsg_a12062190375e684b1ab12e51b3b11e6d}
+\hypertarget{classBTStatisticsNumMissesMsg_ab731ecc85c292a7d74d99bf09c099e57}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{B\+T\+Statistics\+Num\+Misses\+Msg(const B\+T\+Statistics\+Num\+Misses\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Statistics\+Num\+Misses\+Msg\+::\+B\+T\+Statistics\+Num\+Misses\+Msg (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Statistics\+Num\+Misses\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTStatisticsNumMissesMsg_ab731ecc85c292a7d74d99bf09c099e57}
+\hypertarget{classBTStatisticsNumMissesMsg_a07705f4e854c08cca570365556993408}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!````~B\+T\+Statistics\+Num\+Misses\+Msg@{$\sim$\+B\+T\+Statistics\+Num\+Misses\+Msg}}
+\index{````~B\+T\+Statistics\+Num\+Misses\+Msg@{$\sim$\+B\+T\+Statistics\+Num\+Misses\+Msg}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{$\sim$\+B\+T\+Statistics\+Num\+Misses\+Msg()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Statistics\+Num\+Misses\+Msg\+::$\sim$\+B\+T\+Statistics\+Num\+Misses\+Msg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTStatisticsNumMissesMsg_a07705f4e854c08cca570365556993408}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTStatisticsNumMissesMsg_ac9bf69db530be787cb6b13063927f8e1}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!dup@{dup}}
+\index{dup@{dup}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{dup() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+T\+Statistics\+Num\+Misses\+Msg}$\ast$ B\+T\+Statistics\+Num\+Misses\+Msg\+::dup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTStatisticsNumMissesMsg_ac9bf69db530be787cb6b13063927f8e1}
+\hypertarget{classBTStatisticsNumMissesMsg_a92411392b465eb6262f7ca3cd17b9195}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!num\+Misses@{num\+Misses}}
+\index{num\+Misses@{num\+Misses}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{num\+Misses() const }]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Statistics\+Num\+Misses\+Msg\+::num\+Misses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTStatisticsNumMissesMsg_a92411392b465eb6262f7ca3cd17b9195}
+\hypertarget{classBTStatisticsNumMissesMsg_a4975eb2d2cc3f64083f4a643c236fcff}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{operator=(const B\+T\+Statistics\+Num\+Misses\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Statistics\+Num\+Misses\+Msg} \& B\+T\+Statistics\+Num\+Misses\+Msg\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Statistics\+Num\+Misses\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTStatisticsNumMissesMsg_a4975eb2d2cc3f64083f4a643c236fcff}
+\hypertarget{classBTStatisticsNumMissesMsg_acced5f9552f3768cd03717ac574190b8}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!operator==@{operator==}}
+\index{operator==@{operator==}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{operator==(const B\+T\+Statistics\+Num\+Misses\+Msg \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Statistics\+Num\+Misses\+Msg\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Statistics\+Num\+Misses\+Msg} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatisticsNumMissesMsg_acced5f9552f3768cd03717ac574190b8}
+\hypertarget{classBTStatisticsNumMissesMsg_af0ede08af67692ee012ee06f076a5a67}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!parsim\+Pack@{parsim\+Pack}}
+\index{parsim\+Pack@{parsim\+Pack}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{parsim\+Pack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+Num\+Misses\+Msg\+::parsim\+Pack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTStatisticsNumMissesMsg_af0ede08af67692ee012ee06f076a5a67}
+\hypertarget{classBTStatisticsNumMissesMsg_a80c048371a7e616236d8f3118d59e6b3}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!parsim\+Unpack@{parsim\+Unpack}}
+\index{parsim\+Unpack@{parsim\+Unpack}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{parsim\+Unpack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+Num\+Misses\+Msg\+::parsim\+Unpack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTStatisticsNumMissesMsg_a80c048371a7e616236d8f3118d59e6b3}
+\hypertarget{classBTStatisticsNumMissesMsg_ab89ff20783a4bed86f5eb21e58ae09b6}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!set\+Num\+Misses@{set\+Num\+Misses}}
+\index{set\+Num\+Misses@{set\+Num\+Misses}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{set\+Num\+Misses(double num\+Misses\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Statistics\+Num\+Misses\+Msg\+::set\+Num\+Misses (
+\begin{DoxyParamCaption}
+\item[{double}]{num\+Misses\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTStatisticsNumMissesMsg_ab89ff20783a4bed86f5eb21e58ae09b6}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTStatisticsNumMissesMsg_a28bbdae0b44bd313c2377e841097b5b4}{}\index{B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}!num\+Misses\+\_\+var@{num\+Misses\+\_\+var}}
+\index{num\+Misses\+\_\+var@{num\+Misses\+\_\+var}!B\+T\+Statistics\+Num\+Misses\+Msg@{B\+T\+Statistics\+Num\+Misses\+Msg}}
+\subsubsection[{num\+Misses\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}double B\+T\+Statistics\+Num\+Misses\+Msg\+::num\+Misses\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTStatisticsNumMissesMsg_a28bbdae0b44bd313c2377e841097b5b4}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTStatisticsMsg__m_8h}{B\+T\+Statistics\+Msg\+\_\+m.\+h}\item 
+\hyperlink{BTStatisticsMsg__m_8cc}{B\+T\+Statistics\+Msg\+\_\+m.\+cc}\end{DoxyCompactItemize}

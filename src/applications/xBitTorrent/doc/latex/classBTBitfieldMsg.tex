@@ -1,0 +1,202 @@
+\hypertarget{classBTBitfieldMsg}{}\section{B\+T\+Bitfield\+Msg Class Reference}
+\label{classBTBitfieldMsg}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+
+
+{\ttfamily \#include $<$B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h$>$}
+
+Inheritance diagram for B\+T\+Bitfield\+Msg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTBitfieldMsg}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTBitfieldMsg_ae71b7868e1f9b27629f6f391b352c911}{B\+T\+Bitfield\+Msg} (const char $\ast$name=N\+U\+L\+L, int kind=0)
+\item 
+\hyperlink{classBTBitfieldMsg_a3106cbcfeff6258360d37dd64ac337f8}{B\+T\+Bitfield\+Msg} (const \hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTBitfieldMsg_a9233620b684aec4bbb3c1ae5db992962}{$\sim$\+B\+T\+Bitfield\+Msg} ()
+\item 
+\hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} \& \hyperlink{classBTBitfieldMsg_a08e92e1add02c4b44de4b3c9805dff07}{operator=} (const \hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} \&other)
+\item 
+virtual \hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} $\ast$ \hyperlink{classBTBitfieldMsg_aa868c1c4c6f41c1e39eb740e7cd3f55f}{dup} () const 
+\item 
+virtual void \hyperlink{classBTBitfieldMsg_a8ae00cea21bf256b774a6a618516a1df}{parsim\+Pack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual void \hyperlink{classBTBitfieldMsg_a793a3596151d3d008bf8268b30ab30a1}{parsim\+Unpack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual int \hyperlink{classBTBitfieldMsg_a4b19acf793716974286b30e51a4ae6a6}{length\+\_\+prefix} () const 
+\item 
+virtual void \hyperlink{classBTBitfieldMsg_aa8a72966bdfa717d283efd63d1c77bc8}{set\+Length\+\_\+prefix} (int \hyperlink{classBTBitfieldMsg_a9040140b874e54a8dc67450a91ffb71b}{length\+\_\+prefix\+\_\+var})
+\item 
+virtual unsigned short \hyperlink{classBTBitfieldMsg_a0ab3c6abff00a0efe57031e83b34a926}{I\+D} () const 
+\item 
+virtual void \hyperlink{classBTBitfieldMsg_a80d7334c46ea207cdd2c269c155b7332}{set\+I\+D} (unsigned short \hyperlink{classBTBitfieldMsg_a9b73c5b2ce95effc48060f120ac49062}{I\+D\+\_\+var})
+\item 
+virtual void \hyperlink{classBTBitfieldMsg_a502a312ee81437e26312b20d3889d548}{set\+Bitfield\+Array\+Size} (unsigned int size)
+\item 
+virtual unsigned int \hyperlink{classBTBitfieldMsg_adac91263151d7859e2f0465172fa01d4}{bitfield\+Array\+Size} () const 
+\item 
+virtual bool \hyperlink{classBTBitfieldMsg_acc2ab9019bbbbdf32111a21240cc23d9}{bitfield} (unsigned int k) const 
+\item 
+virtual void \hyperlink{classBTBitfieldMsg_a5e0e12234ad65a8e1b386229951b7b74}{set\+Bitfield} (unsigned int k, bool \hyperlink{classBTBitfieldMsg_aef51fc463d47fdaefb5db5eec449448d}{bitfield\+\_\+var})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBTBitfieldMsg_ad6f057b2001791771943f62c5c796a9c}{operator==} (const \hyperlink{classBTBitfieldMsg}{B\+T\+Bitfield\+Msg} \&)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classBTBitfieldMsg_a9040140b874e54a8dc67450a91ffb71b}{length\+\_\+prefix\+\_\+var}
+\item 
+unsigned short \hyperlink{classBTBitfieldMsg_a9b73c5b2ce95effc48060f120ac49062}{I\+D\+\_\+var}
+\item 
+bool $\ast$ \hyperlink{classBTBitfieldMsg_aef51fc463d47fdaefb5db5eec449448d}{bitfield\+\_\+var}
+\item 
+unsigned int \hyperlink{classBTBitfieldMsg_aed336aa06c9d5bf68f7d16e552c79ef3}{bitfield\+\_\+arraysize}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTBitfieldMsg_ae71b7868e1f9b27629f6f391b352c911}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{B\+T\+Bitfield\+Msg(const char $\ast$name=\+N\+U\+L\+L, int kind=0)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Bitfield\+Msg\+::\+B\+T\+Bitfield\+Msg (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name = {\ttfamily NULL}, }
+\item[{int}]{kind = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classBTBitfieldMsg_ae71b7868e1f9b27629f6f391b352c911}
+\hypertarget{classBTBitfieldMsg_a3106cbcfeff6258360d37dd64ac337f8}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{B\+T\+Bitfield\+Msg(const B\+T\+Bitfield\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Bitfield\+Msg\+::\+B\+T\+Bitfield\+Msg (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Bitfield\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTBitfieldMsg_a3106cbcfeff6258360d37dd64ac337f8}
+\hypertarget{classBTBitfieldMsg_a9233620b684aec4bbb3c1ae5db992962}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!````~B\+T\+Bitfield\+Msg@{$\sim$\+B\+T\+Bitfield\+Msg}}
+\index{````~B\+T\+Bitfield\+Msg@{$\sim$\+B\+T\+Bitfield\+Msg}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{$\sim$\+B\+T\+Bitfield\+Msg()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Bitfield\+Msg\+::$\sim$\+B\+T\+Bitfield\+Msg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_a9233620b684aec4bbb3c1ae5db992962}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTBitfieldMsg_acc2ab9019bbbbdf32111a21240cc23d9}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!bitfield@{bitfield}}
+\index{bitfield@{bitfield}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{bitfield(unsigned int k) const }]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Bitfield\+Msg\+::bitfield (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_acc2ab9019bbbbdf32111a21240cc23d9}
+\hypertarget{classBTBitfieldMsg_adac91263151d7859e2f0465172fa01d4}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!bitfield\+Array\+Size@{bitfield\+Array\+Size}}
+\index{bitfield\+Array\+Size@{bitfield\+Array\+Size}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{bitfield\+Array\+Size() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Bitfield\+Msg\+::bitfield\+Array\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_adac91263151d7859e2f0465172fa01d4}
+\hypertarget{classBTBitfieldMsg_aa868c1c4c6f41c1e39eb740e7cd3f55f}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!dup@{dup}}
+\index{dup@{dup}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{dup() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+T\+Bitfield\+Msg}$\ast$ B\+T\+Bitfield\+Msg\+::dup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTBitfieldMsg_aa868c1c4c6f41c1e39eb740e7cd3f55f}
+\hypertarget{classBTBitfieldMsg_a0ab3c6abff00a0efe57031e83b34a926}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!I\+D@{I\+D}}
+\index{I\+D@{I\+D}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{I\+D() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned short B\+T\+Bitfield\+Msg\+::\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_a0ab3c6abff00a0efe57031e83b34a926}
+\hypertarget{classBTBitfieldMsg_a4b19acf793716974286b30e51a4ae6a6}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!length\+\_\+prefix@{length\+\_\+prefix}}
+\index{length\+\_\+prefix@{length\+\_\+prefix}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{length\+\_\+prefix() const }]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Bitfield\+Msg\+::length\+\_\+prefix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_a4b19acf793716974286b30e51a4ae6a6}
+\hypertarget{classBTBitfieldMsg_a08e92e1add02c4b44de4b3c9805dff07}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{operator=(const B\+T\+Bitfield\+Msg \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Bitfield\+Msg} \& B\+T\+Bitfield\+Msg\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Bitfield\+Msg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTBitfieldMsg_a08e92e1add02c4b44de4b3c9805dff07}
+\hypertarget{classBTBitfieldMsg_ad6f057b2001791771943f62c5c796a9c}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!operator==@{operator==}}
+\index{operator==@{operator==}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{operator==(const B\+T\+Bitfield\+Msg \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Bitfield\+Msg\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Bitfield\+Msg} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTBitfieldMsg_ad6f057b2001791771943f62c5c796a9c}
+\hypertarget{classBTBitfieldMsg_a8ae00cea21bf256b774a6a618516a1df}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!parsim\+Pack@{parsim\+Pack}}
+\index{parsim\+Pack@{parsim\+Pack}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{parsim\+Pack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Bitfield\+Msg\+::parsim\+Pack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_a8ae00cea21bf256b774a6a618516a1df}
+\hypertarget{classBTBitfieldMsg_a793a3596151d3d008bf8268b30ab30a1}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!parsim\+Unpack@{parsim\+Unpack}}
+\index{parsim\+Unpack@{parsim\+Unpack}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{parsim\+Unpack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Bitfield\+Msg\+::parsim\+Unpack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_a793a3596151d3d008bf8268b30ab30a1}
+\hypertarget{classBTBitfieldMsg_a5e0e12234ad65a8e1b386229951b7b74}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!set\+Bitfield@{set\+Bitfield}}
+\index{set\+Bitfield@{set\+Bitfield}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{set\+Bitfield(unsigned int k, bool bitfield\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Bitfield\+Msg\+::set\+Bitfield (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{k, }
+\item[{bool}]{bitfield\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_a5e0e12234ad65a8e1b386229951b7b74}
+\hypertarget{classBTBitfieldMsg_a502a312ee81437e26312b20d3889d548}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!set\+Bitfield\+Array\+Size@{set\+Bitfield\+Array\+Size}}
+\index{set\+Bitfield\+Array\+Size@{set\+Bitfield\+Array\+Size}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{set\+Bitfield\+Array\+Size(unsigned int size)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Bitfield\+Msg\+::set\+Bitfield\+Array\+Size (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_a502a312ee81437e26312b20d3889d548}
+\hypertarget{classBTBitfieldMsg_a80d7334c46ea207cdd2c269c155b7332}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!set\+I\+D@{set\+I\+D}}
+\index{set\+I\+D@{set\+I\+D}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{set\+I\+D(unsigned short I\+D\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Bitfield\+Msg\+::set\+I\+D (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{I\+D\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_a80d7334c46ea207cdd2c269c155b7332}
+\hypertarget{classBTBitfieldMsg_aa8a72966bdfa717d283efd63d1c77bc8}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!set\+Length\+\_\+prefix@{set\+Length\+\_\+prefix}}
+\index{set\+Length\+\_\+prefix@{set\+Length\+\_\+prefix}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{set\+Length\+\_\+prefix(int length\+\_\+prefix\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Bitfield\+Msg\+::set\+Length\+\_\+prefix (
+\begin{DoxyParamCaption}
+\item[{int}]{length\+\_\+prefix\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTBitfieldMsg_aa8a72966bdfa717d283efd63d1c77bc8}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTBitfieldMsg_aed336aa06c9d5bf68f7d16e552c79ef3}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!bitfield\+\_\+arraysize@{bitfield\+\_\+arraysize}}
+\index{bitfield\+\_\+arraysize@{bitfield\+\_\+arraysize}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{bitfield\+\_\+arraysize}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Bitfield\+Msg\+::bitfield\+\_\+arraysize\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTBitfieldMsg_aed336aa06c9d5bf68f7d16e552c79ef3}
+\hypertarget{classBTBitfieldMsg_aef51fc463d47fdaefb5db5eec449448d}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!bitfield\+\_\+var@{bitfield\+\_\+var}}
+\index{bitfield\+\_\+var@{bitfield\+\_\+var}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{bitfield\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$ B\+T\+Bitfield\+Msg\+::bitfield\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTBitfieldMsg_aef51fc463d47fdaefb5db5eec449448d}
+\hypertarget{classBTBitfieldMsg_a9b73c5b2ce95effc48060f120ac49062}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!I\+D\+\_\+var@{I\+D\+\_\+var}}
+\index{I\+D\+\_\+var@{I\+D\+\_\+var}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{I\+D\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short B\+T\+Bitfield\+Msg\+::\+I\+D\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTBitfieldMsg_a9b73c5b2ce95effc48060f120ac49062}
+\hypertarget{classBTBitfieldMsg_a9040140b874e54a8dc67450a91ffb71b}{}\index{B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}!length\+\_\+prefix\+\_\+var@{length\+\_\+prefix\+\_\+var}}
+\index{length\+\_\+prefix\+\_\+var@{length\+\_\+prefix\+\_\+var}!B\+T\+Bitfield\+Msg@{B\+T\+Bitfield\+Msg}}
+\subsubsection[{length\+\_\+prefix\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}int B\+T\+Bitfield\+Msg\+::length\+\_\+prefix\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTBitfieldMsg_a9040140b874e54a8dc67450a91ffb71b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTPeerWireMsg__m_8h}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h}\item 
+\hyperlink{BTPeerWireMsg__m_8cc}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}\end{DoxyCompactItemize}

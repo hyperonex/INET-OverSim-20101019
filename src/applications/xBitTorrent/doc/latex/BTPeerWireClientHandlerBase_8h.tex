@@ -1,0 +1,65 @@
+\hypertarget{BTPeerWireClientHandlerBase_8h}{}\section{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h File Reference}
+\label{BTPeerWireClientHandlerBase_8h}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}
+{\ttfamily \#include \char`\"{}B\+T\+Peer\+Wire\+Base.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}B\+T\+Tracker\+Client\+Base.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$T\+C\+P\+Connection.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classBTPeerWireClientHandlerBase}{B\+T\+Peer\+Wire\+Client\+Handler\+Base}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2}{Peer\+Wire\+States} \{ \\*
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a6ffa9c6b70d7e137b1dcb7cb6275cdb8}{E\+A\+R\+L\+Y\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G}, 
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2abf09e27dfbed779848c3e43023ba0417}{A\+C\+T\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G}, 
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2aa62f53c83e88a1a05405ff740f5efce8}{P\+A\+S\+S\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G}, 
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a7116db6906963fd0720c4a85be250cf4}{I\+N\+I\+T\+I\+A\+L}, 
+\\*
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a7a691a2430ec26878897b5fbc9c22a4c}{C\+O\+N\+N\+E\+C\+T\+E\+D}, 
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a639487dc3b6a365f88c70dbfa95315b2}{A\+C\+T\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}, 
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ad0ecaac9050360937b109cc8123492fe}{P\+A\+S\+S\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}, 
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a5de265677c9ed9d61e79d3b678007687}{S\+E\+N\+T\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}, 
+\\*
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ae739f6f564889183ce921e29adcc5f4f}{R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}, 
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a9793ae553d4d47f514faee14f3e49dfa}{H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E}, 
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ac99b6abe4f2d5768b00b199a69acc959}{B\+I\+T\+F\+I\+E\+L\+D\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E}, 
+\hyperlink{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ad7e53ed85376ae0e7c4ca781449590e8}{A\+N\+T\+I\+\_\+\+S\+N\+U\+B\+B\+I\+N\+G}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2}{}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!Peer\+Wire\+States@{Peer\+Wire\+States}}
+\index{Peer\+Wire\+States@{Peer\+Wire\+States}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}
+\subsubsection[{Peer\+Wire\+States}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Peer\+Wire\+States}}\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+A\+R\+L\+Y\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G@{E\+A\+R\+L\+Y\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!E\+A\+R\+L\+Y\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G@{E\+A\+R\+L\+Y\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a6ffa9c6b70d7e137b1dcb7cb6275cdb8}{}E\+A\+R\+L\+Y\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a6ffa9c6b70d7e137b1dcb7cb6275cdb8}
+}]\index{A\+C\+T\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G@{A\+C\+T\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!A\+C\+T\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G@{A\+C\+T\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2abf09e27dfbed779848c3e43023ba0417}{}A\+C\+T\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2abf09e27dfbed779848c3e43023ba0417}
+}]\index{P\+A\+S\+S\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G@{P\+A\+S\+S\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!P\+A\+S\+S\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G@{P\+A\+S\+S\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2aa62f53c83e88a1a05405ff740f5efce8}{}P\+A\+S\+S\+I\+V\+E\+\_\+\+A\+B\+O\+R\+T\+I\+N\+G\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2aa62f53c83e88a1a05405ff740f5efce8}
+}]\index{I\+N\+I\+T\+I\+A\+L@{I\+N\+I\+T\+I\+A\+L}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!I\+N\+I\+T\+I\+A\+L@{I\+N\+I\+T\+I\+A\+L}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a7116db6906963fd0720c4a85be250cf4}{}I\+N\+I\+T\+I\+A\+L\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a7116db6906963fd0720c4a85be250cf4}
+}]\index{C\+O\+N\+N\+E\+C\+T\+E\+D@{C\+O\+N\+N\+E\+C\+T\+E\+D}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!C\+O\+N\+N\+E\+C\+T\+E\+D@{C\+O\+N\+N\+E\+C\+T\+E\+D}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a7a691a2430ec26878897b5fbc9c22a4c}{}C\+O\+N\+N\+E\+C\+T\+E\+D\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a7a691a2430ec26878897b5fbc9c22a4c}
+}]\index{A\+C\+T\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E@{A\+C\+T\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!A\+C\+T\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E@{A\+C\+T\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a639487dc3b6a365f88c70dbfa95315b2}{}A\+C\+T\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a639487dc3b6a365f88c70dbfa95315b2}
+}]\index{P\+A\+S\+S\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E@{P\+A\+S\+S\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!P\+A\+S\+S\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E@{P\+A\+S\+S\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ad0ecaac9050360937b109cc8123492fe}{}P\+A\+S\+S\+I\+V\+E\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ad0ecaac9050360937b109cc8123492fe}
+}]\index{S\+E\+N\+T\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E@{S\+E\+N\+T\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!S\+E\+N\+T\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E@{S\+E\+N\+T\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a5de265677c9ed9d61e79d3b678007687}{}S\+E\+N\+T\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a5de265677c9ed9d61e79d3b678007687}
+}]\index{R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E@{R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E@{R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ae739f6f564889183ce921e29adcc5f4f}{}R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+H\+A\+N\+D\+S\+H\+A\+K\+E\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ae739f6f564889183ce921e29adcc5f4f}
+}]\index{H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E@{H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E@{H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a9793ae553d4d47f514faee14f3e49dfa}{}H\+A\+N\+D\+S\+H\+A\+K\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2a9793ae553d4d47f514faee14f3e49dfa}
+}]\index{B\+I\+T\+F\+I\+E\+L\+D\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E@{B\+I\+T\+F\+I\+E\+L\+D\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!B\+I\+T\+F\+I\+E\+L\+D\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E@{B\+I\+T\+F\+I\+E\+L\+D\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ac99b6abe4f2d5768b00b199a69acc959}{}B\+I\+T\+F\+I\+E\+L\+D\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ac99b6abe4f2d5768b00b199a69acc959}
+}]\index{A\+N\+T\+I\+\_\+\+S\+N\+U\+B\+B\+I\+N\+G@{A\+N\+T\+I\+\_\+\+S\+N\+U\+B\+B\+I\+N\+G}!B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}}\index{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h@{B\+T\+Peer\+Wire\+Client\+Handler\+Base.\+h}!A\+N\+T\+I\+\_\+\+S\+N\+U\+B\+B\+I\+N\+G@{A\+N\+T\+I\+\_\+\+S\+N\+U\+B\+B\+I\+N\+G}}\item[{\em 
+\hypertarget{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ad7e53ed85376ae0e7c4ca781449590e8}{}A\+N\+T\+I\+\_\+\+S\+N\+U\+B\+B\+I\+N\+G\label{BTPeerWireClientHandlerBase_8h_a96f8b865d9840149830633a601d44ee2ad7e53ed85376ae0e7c4ca781449590e8}
+}]\end{description}
+\end{Desc}

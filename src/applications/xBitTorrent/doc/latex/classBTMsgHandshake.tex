@@ -1,0 +1,255 @@
+\hypertarget{classBTMsgHandshake}{}\section{B\+T\+Msg\+Handshake Class Reference}
+\label{classBTMsgHandshake}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+
+
+{\ttfamily \#include $<$B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h$>$}
+
+Inheritance diagram for B\+T\+Msg\+Handshake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBTMsgHandshake}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBTMsgHandshake_a3647388b293bcfe86ee4d3d6978499dd}{B\+T\+Msg\+Handshake} (const char $\ast$name=N\+U\+L\+L, int kind=0)
+\item 
+\hyperlink{classBTMsgHandshake_aabdd16aad5b8045597daa66ae351da79}{B\+T\+Msg\+Handshake} (const \hyperlink{classBTMsgHandshake}{B\+T\+Msg\+Handshake} \&other)
+\item 
+virtual \hyperlink{classBTMsgHandshake_a769ddebed475d96a9e98af23442c18a0}{$\sim$\+B\+T\+Msg\+Handshake} ()
+\item 
+\hyperlink{classBTMsgHandshake}{B\+T\+Msg\+Handshake} \& \hyperlink{classBTMsgHandshake_a31bab774b8a182471abf501acfcedc4a}{operator=} (const \hyperlink{classBTMsgHandshake}{B\+T\+Msg\+Handshake} \&other)
+\item 
+virtual \hyperlink{classBTMsgHandshake}{B\+T\+Msg\+Handshake} $\ast$ \hyperlink{classBTMsgHandshake_a5dc5693ae117aae06ee66308974c0623}{dup} () const 
+\item 
+virtual void \hyperlink{classBTMsgHandshake_ad8c48e46aa80079dff589d99fafdc637}{parsim\+Pack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual void \hyperlink{classBTMsgHandshake_afd07f5ee1198c520ba32f9ac9fdfd060}{parsim\+Unpack} (c\+Comm\+Buffer $\ast$b)
+\item 
+virtual char \hyperlink{classBTMsgHandshake_a25c0d32b72fde124d1b6c57965df964f}{pstrlen} () const 
+\item 
+virtual void \hyperlink{classBTMsgHandshake_a9b81e33ee9cfe17c04a9dd41214860c5}{set\+Pstrlen} (char \hyperlink{classBTMsgHandshake_aac6817b686487e3646ff1ec8ffe28965}{pstrlen\+\_\+var})
+\item 
+virtual const char $\ast$ \hyperlink{classBTMsgHandshake_a0b8d1d3f7aabc420d382089767833b5b}{pstr} () const 
+\item 
+virtual void \hyperlink{classBTMsgHandshake_a2e8a2858b089b1fa12c2bda68f64390a}{set\+Pstr} (const char $\ast$\hyperlink{classBTMsgHandshake_a913d64395dfd4230c77881950871df18}{pstr\+\_\+var})
+\item 
+virtual unsigned int \hyperlink{classBTMsgHandshake_a2e850e68903d55d95dc64a7c3db48fe4}{reserved\+Array\+Size} () const 
+\item 
+virtual bool \hyperlink{classBTMsgHandshake_a9c39003dbbd8c136928073e77a51a403}{reserved} (unsigned int k) const 
+\item 
+virtual void \hyperlink{classBTMsgHandshake_ade2372fe17094b3aefc6bb5bd6d32bbd}{set\+Reserved} (unsigned int k, bool \hyperlink{classBTMsgHandshake_a289f010d689e2d2649e1585c6eb8a683}{reserved\+\_\+var})
+\item 
+virtual const char $\ast$ \hyperlink{classBTMsgHandshake_a5a74e2bd313765bcb504119e97d80a47}{info\+Hash} () const 
+\item 
+virtual void \hyperlink{classBTMsgHandshake_a546d2963e8e7e8066bceb00e1e4d1df2}{set\+Info\+Hash} (const char $\ast$\hyperlink{classBTMsgHandshake_a6c79f9de6d2c47ecf9a1f7172ce10bef}{info\+Hash\+\_\+var})
+\item 
+virtual const char $\ast$ \hyperlink{classBTMsgHandshake_ab9e8f0a422844b270542b94813f6d564}{peer\+Id} () const 
+\item 
+virtual void \hyperlink{classBTMsgHandshake_a0556438c3711ed78b72732942f357585}{set\+Peer\+Id} (const char $\ast$\hyperlink{classBTMsgHandshake_a269237a5af72db85d27cd1080e998cd8}{peer\+Id\+\_\+var})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBTMsgHandshake_ad8a228811e1c2fc12272a7d263becef2}{operator==} (const \hyperlink{classBTMsgHandshake}{B\+T\+Msg\+Handshake} \&)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{classBTMsgHandshake_aac6817b686487e3646ff1ec8ffe28965}{pstrlen\+\_\+var}
+\item 
+opp\+\_\+string \hyperlink{classBTMsgHandshake_a913d64395dfd4230c77881950871df18}{pstr\+\_\+var}
+\item 
+bool \hyperlink{classBTMsgHandshake_a289f010d689e2d2649e1585c6eb8a683}{reserved\+\_\+var} \mbox{[}8\mbox{]}
+\item 
+opp\+\_\+string \hyperlink{classBTMsgHandshake_a6c79f9de6d2c47ecf9a1f7172ce10bef}{info\+Hash\+\_\+var}
+\item 
+opp\+\_\+string \hyperlink{classBTMsgHandshake_a269237a5af72db85d27cd1080e998cd8}{peer\+Id\+\_\+var}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class generated from {\ttfamily applications/x\+Bit\+Torrent/\+B\+T\+Peer\+Wire\+Msg.\+msg} by opp\+\_\+msgc. 
+\begin{DoxyPre}
+message \hyperlink{classBTMsgHandshake}{BTMsgHandshake} extends GenericAppMsg
+\{
+    (true);\end{DoxyPre}
+
+
+
+\begin{DoxyPre}    char pstrlen;       
+    string pstr;
+    bool reserved[8];
+    string infoHash;
+    string peerId;\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\}
+\end{DoxyPre}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBTMsgHandshake_a3647388b293bcfe86ee4d3d6978499dd}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{B\+T\+Msg\+Handshake(const char $\ast$name=\+N\+U\+L\+L, int kind=0)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Msg\+Handshake\+::\+B\+T\+Msg\+Handshake (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name = {\ttfamily NULL}, }
+\item[{int}]{kind = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classBTMsgHandshake_a3647388b293bcfe86ee4d3d6978499dd}
+\hypertarget{classBTMsgHandshake_aabdd16aad5b8045597daa66ae351da79}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{B\+T\+Msg\+Handshake(const B\+T\+Msg\+Handshake \&other)}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Msg\+Handshake\+::\+B\+T\+Msg\+Handshake (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Msg\+Handshake} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTMsgHandshake_aabdd16aad5b8045597daa66ae351da79}
+\hypertarget{classBTMsgHandshake_a769ddebed475d96a9e98af23442c18a0}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!````~B\+T\+Msg\+Handshake@{$\sim$\+B\+T\+Msg\+Handshake}}
+\index{````~B\+T\+Msg\+Handshake@{$\sim$\+B\+T\+Msg\+Handshake}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{$\sim$\+B\+T\+Msg\+Handshake()}]{\setlength{\rightskip}{0pt plus 5cm}B\+T\+Msg\+Handshake\+::$\sim$\+B\+T\+Msg\+Handshake (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_a769ddebed475d96a9e98af23442c18a0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBTMsgHandshake_a5dc5693ae117aae06ee66308974c0623}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!dup@{dup}}
+\index{dup@{dup}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{dup() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+T\+Msg\+Handshake}$\ast$ B\+T\+Msg\+Handshake\+::dup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classBTMsgHandshake_a5dc5693ae117aae06ee66308974c0623}
+\hypertarget{classBTMsgHandshake_a5a74e2bd313765bcb504119e97d80a47}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!info\+Hash@{info\+Hash}}
+\index{info\+Hash@{info\+Hash}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{info\+Hash() const }]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Msg\+Handshake\+::info\+Hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_a5a74e2bd313765bcb504119e97d80a47}
+\hypertarget{classBTMsgHandshake_a31bab774b8a182471abf501acfcedc4a}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{operator=(const B\+T\+Msg\+Handshake \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Msg\+Handshake} \& B\+T\+Msg\+Handshake\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Msg\+Handshake} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classBTMsgHandshake_a31bab774b8a182471abf501acfcedc4a}
+\hypertarget{classBTMsgHandshake_ad8a228811e1c2fc12272a7d263becef2}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!operator==@{operator==}}
+\index{operator==@{operator==}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{operator==(const B\+T\+Msg\+Handshake \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Msg\+Handshake\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+T\+Msg\+Handshake} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTMsgHandshake_ad8a228811e1c2fc12272a7d263becef2}
+\hypertarget{classBTMsgHandshake_ad8c48e46aa80079dff589d99fafdc637}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!parsim\+Pack@{parsim\+Pack}}
+\index{parsim\+Pack@{parsim\+Pack}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{parsim\+Pack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Msg\+Handshake\+::parsim\+Pack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_ad8c48e46aa80079dff589d99fafdc637}
+\hypertarget{classBTMsgHandshake_afd07f5ee1198c520ba32f9ac9fdfd060}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!parsim\+Unpack@{parsim\+Unpack}}
+\index{parsim\+Unpack@{parsim\+Unpack}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{parsim\+Unpack(c\+Comm\+Buffer $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Msg\+Handshake\+::parsim\+Unpack (
+\begin{DoxyParamCaption}
+\item[{c\+Comm\+Buffer $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_afd07f5ee1198c520ba32f9ac9fdfd060}
+\hypertarget{classBTMsgHandshake_ab9e8f0a422844b270542b94813f6d564}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!peer\+Id@{peer\+Id}}
+\index{peer\+Id@{peer\+Id}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{peer\+Id() const }]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Msg\+Handshake\+::peer\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_ab9e8f0a422844b270542b94813f6d564}
+\hypertarget{classBTMsgHandshake_a0b8d1d3f7aabc420d382089767833b5b}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!pstr@{pstr}}
+\index{pstr@{pstr}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{pstr() const }]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ B\+T\+Msg\+Handshake\+::pstr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_a0b8d1d3f7aabc420d382089767833b5b}
+\hypertarget{classBTMsgHandshake_a25c0d32b72fde124d1b6c57965df964f}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!pstrlen@{pstrlen}}
+\index{pstrlen@{pstrlen}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{pstrlen() const }]{\setlength{\rightskip}{0pt plus 5cm}char B\+T\+Msg\+Handshake\+::pstrlen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_a25c0d32b72fde124d1b6c57965df964f}
+\hypertarget{classBTMsgHandshake_a9c39003dbbd8c136928073e77a51a403}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!reserved@{reserved}}
+\index{reserved@{reserved}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{reserved(unsigned int k) const }]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Msg\+Handshake\+::reserved (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_a9c39003dbbd8c136928073e77a51a403}
+\hypertarget{classBTMsgHandshake_a2e850e68903d55d95dc64a7c3db48fe4}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!reserved\+Array\+Size@{reserved\+Array\+Size}}
+\index{reserved\+Array\+Size@{reserved\+Array\+Size}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{reserved\+Array\+Size() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned int B\+T\+Msg\+Handshake\+::reserved\+Array\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_a2e850e68903d55d95dc64a7c3db48fe4}
+\hypertarget{classBTMsgHandshake_a546d2963e8e7e8066bceb00e1e4d1df2}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!set\+Info\+Hash@{set\+Info\+Hash}}
+\index{set\+Info\+Hash@{set\+Info\+Hash}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{set\+Info\+Hash(const char $\ast$info\+Hash\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Msg\+Handshake\+::set\+Info\+Hash (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{info\+Hash\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_a546d2963e8e7e8066bceb00e1e4d1df2}
+\hypertarget{classBTMsgHandshake_a0556438c3711ed78b72732942f357585}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!set\+Peer\+Id@{set\+Peer\+Id}}
+\index{set\+Peer\+Id@{set\+Peer\+Id}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{set\+Peer\+Id(const char $\ast$peer\+Id\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Msg\+Handshake\+::set\+Peer\+Id (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{peer\+Id\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_a0556438c3711ed78b72732942f357585}
+\hypertarget{classBTMsgHandshake_a2e8a2858b089b1fa12c2bda68f64390a}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!set\+Pstr@{set\+Pstr}}
+\index{set\+Pstr@{set\+Pstr}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{set\+Pstr(const char $\ast$pstr\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Msg\+Handshake\+::set\+Pstr (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{pstr\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_a2e8a2858b089b1fa12c2bda68f64390a}
+\hypertarget{classBTMsgHandshake_a9b81e33ee9cfe17c04a9dd41214860c5}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!set\+Pstrlen@{set\+Pstrlen}}
+\index{set\+Pstrlen@{set\+Pstrlen}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{set\+Pstrlen(char pstrlen\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Msg\+Handshake\+::set\+Pstrlen (
+\begin{DoxyParamCaption}
+\item[{char}]{pstrlen\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_a9b81e33ee9cfe17c04a9dd41214860c5}
+\hypertarget{classBTMsgHandshake_ade2372fe17094b3aefc6bb5bd6d32bbd}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!set\+Reserved@{set\+Reserved}}
+\index{set\+Reserved@{set\+Reserved}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{set\+Reserved(unsigned int k, bool reserved\+\_\+var)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+Msg\+Handshake\+::set\+Reserved (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{k, }
+\item[{bool}]{reserved\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classBTMsgHandshake_ade2372fe17094b3aefc6bb5bd6d32bbd}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBTMsgHandshake_a6c79f9de6d2c47ecf9a1f7172ce10bef}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!info\+Hash\+\_\+var@{info\+Hash\+\_\+var}}
+\index{info\+Hash\+\_\+var@{info\+Hash\+\_\+var}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{info\+Hash\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}opp\+\_\+string B\+T\+Msg\+Handshake\+::info\+Hash\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTMsgHandshake_a6c79f9de6d2c47ecf9a1f7172ce10bef}
+\hypertarget{classBTMsgHandshake_a269237a5af72db85d27cd1080e998cd8}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!peer\+Id\+\_\+var@{peer\+Id\+\_\+var}}
+\index{peer\+Id\+\_\+var@{peer\+Id\+\_\+var}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{peer\+Id\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}opp\+\_\+string B\+T\+Msg\+Handshake\+::peer\+Id\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTMsgHandshake_a269237a5af72db85d27cd1080e998cd8}
+\hypertarget{classBTMsgHandshake_a913d64395dfd4230c77881950871df18}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!pstr\+\_\+var@{pstr\+\_\+var}}
+\index{pstr\+\_\+var@{pstr\+\_\+var}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{pstr\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}opp\+\_\+string B\+T\+Msg\+Handshake\+::pstr\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTMsgHandshake_a913d64395dfd4230c77881950871df18}
+\hypertarget{classBTMsgHandshake_aac6817b686487e3646ff1ec8ffe28965}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!pstrlen\+\_\+var@{pstrlen\+\_\+var}}
+\index{pstrlen\+\_\+var@{pstrlen\+\_\+var}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{pstrlen\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}char B\+T\+Msg\+Handshake\+::pstrlen\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTMsgHandshake_aac6817b686487e3646ff1ec8ffe28965}
+\hypertarget{classBTMsgHandshake_a289f010d689e2d2649e1585c6eb8a683}{}\index{B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}!reserved\+\_\+var@{reserved\+\_\+var}}
+\index{reserved\+\_\+var@{reserved\+\_\+var}!B\+T\+Msg\+Handshake@{B\+T\+Msg\+Handshake}}
+\subsubsection[{reserved\+\_\+var}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+T\+Msg\+Handshake\+::reserved\+\_\+var\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classBTMsgHandshake_a289f010d689e2d2649e1585c6eb8a683}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BTPeerWireMsg__m_8h}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+h}\item 
+\hyperlink{BTPeerWireMsg__m_8cc}{B\+T\+Peer\+Wire\+Msg\+\_\+m.\+cc}\end{DoxyCompactItemize}

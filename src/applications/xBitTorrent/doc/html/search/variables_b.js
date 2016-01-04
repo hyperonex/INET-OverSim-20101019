@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['newlyconnectedoptunchokeprob_5fvar',['newlyConnectedOptUnchokeProb_var',['../classBTPeerWireBase.html#acb9f3589a323f2512b50ecfc7cd133ba',1,'BTPeerWireBase']]],
+  ['nextblock_5fvar',['nextBlock_var',['../classBitField.html#a9a444fae1b93310db9f3570efae32533',1,'BitField']]],
+  ['nopeerid_5fvar',['noPeerId_var',['../classBTTrackerClientBase.html#ab23d101af767f0979c9de612fb2d511e',1,'BTTrackerClientBase::noPeerId_var()'],['../classBTTrackerMsgAnnounce.html#a3e10bd3398780f6490f349d749e0e578',1,'BTTrackerMsgAnnounce::noPeerId_var()']]],
+  ['numblockfail',['numBlockFail',['../classBTStatistics.html#ad6701a3f8b96df4e7535020f9f57c8e6',1,'BTStatistics']]],
+  ['numblockfail_5fvec',['numBlockFail_vec',['../classBTStatistics.html#ab9542f9a68503485c303d5d6667c8a44',1,'BTStatistics']]],
+  ['numblocks_5fvar',['numBlocks_var',['../classBitField.html#afa9fe0b1c09333b56a13a08a4c38ecde',1,'BitField::numBlocks_var()'],['../classBTPeerWireBase.html#a9e23c447331f54f304a1a80780f4c822',1,'BTPeerWireBase::numBlocks_var()'],['../classHttpVideoServer.html#a39d06af889c6ae735c472bd5a04d5fc5',1,'HttpVideoServer::numBlocks_var()']]],
+  ['numbroken',['numBroken',['../classBTCache.html#ad1d45c4a6c3eb41f97723c052831c63f',1,'BTCache']]],
+  ['numhits',['numHits',['../classBTCache.html#a7432b26e77f5a8e3d5b910b5cbc179b3',1,'BTCache::numHits()'],['../classBTStatistics.html#ac24ef388a8ae35c9e4427dc146db48be',1,'BTStatistics::numHits()']]],
+  ['numhits_5fvar',['numHits_var',['../classBTStatisticsNumHitsMsg.html#a88f5611c41dac9956bc6a07fe15f28eb',1,'BTStatisticsNumHitsMsg']]],
+  ['numhits_5fvec',['numHits_vec',['../classBTCache.html#a0ac804101085c06566877a36baa591e7',1,'BTCache::numHits_vec()'],['../classBTStatistics.html#af717deda266c06bcbb0395b4e4d70908',1,'BTStatistics::numHits_vec()']]],
+  ['nummisses',['numMisses',['../classBTCache.html#aeee4cfae3f278ceba5e900ab9c549f0e',1,'BTCache::numMisses()'],['../classBTStatistics.html#aa1fc0cbf7c6596091752c923da48b334',1,'BTStatistics::numMisses()']]],
+  ['nummisses_5fvar',['numMisses_var',['../classBTStatisticsNumMissesMsg.html#a28bbdae0b44bd313c2377e841097b5b4',1,'BTStatisticsNumMissesMsg']]],
+  ['nummisses_5fvec',['numMisses_vec',['../classBTCache.html#ab687064d70f88dca7d7b5102fe2c1966',1,'BTCache::numMisses_vec()'],['../classBTStatistics.html#aa2be128331e707564905616f8be6e113',1,'BTStatistics::numMisses_vec()']]],
+  ['numnonrequestednonavailableblocks_5fvar',['numNonRequestedNonAvailableBlocks_var',['../classBitField.html#aa28ebc12ceb0bc128d26982fe6a109fc',1,'BitField']]],
+  ['numpeers_5fvar',['numPeers_var',['../classBTStatisticsNumProvidersMsg.html#a245be09caa91893aebd3db42d5bc0e9d',1,'BTStatisticsNumProvidersMsg']]],
+  ['numpieces_5fvar',['numPieces_var',['../classBitField.html#afefece68e8e5e1e4776d397eaf42380b',1,'BitField::numPieces_var()'],['../classBTPeerWireBase.html#ac39f13c6abf79c49378ee6a2e2969b38',1,'BTPeerWireBase::numPieces_var()'],['../classHttpVideoServer.html#ae630ec3629f6a4e00a7a28e583395ee2',1,'HttpVideoServer::numPieces_var()']]],
+  ['numremainingblocks_5fvar',['numRemainingBlocks_var',['../classBitField.html#ae065179fd1f18ca75cd5dcc65b295c69',1,'BitField']]],
+  ['numremainingpieces_5fvar',['numRemainingPieces_var',['../classBitField.html#a2965edfff1a1a987020b18a5be8847d8',1,'BitField']]],
+  ['numrequestedblocks_5fvar',['numRequestedBlocks_var',['../classBitField.html#a9a421bd70a6585033d9780bf02914a37',1,'BitField']]],
+  ['numrequestedpieces_5fvar',['numRequestedPieces_var',['../classBitField.html#a61c4e98def318eb51962e05277eda15b',1,'BitField']]],
+  ['numseederblocks',['numSeederBlocks',['../classBTStatistics.html#ab0754ded61dc5b410ba3345415eb0cbe',1,'BTStatistics']]],
+  ['numseederblocks_5fvar',['numSeederBlocks_var',['../classBTStatisticsNumSeederBlocksMsg.html#a58db53e8c0c42406ba090ecc6bc0cd11',1,'BTStatisticsNumSeederBlocksMsg']]],
+  ['numseederblocks_5fvec',['numSeederBlocks_vec',['../classBTStatistics.html#a6ff3cdec7cc91846c2482ebf1a1ebfe6',1,'BTStatistics']]],
+  ['numwant_5fvar',['numWant_var',['../classBTTrackerClientBase.html#a8e15dea1f9c602da6e78d85e271092e6',1,'BTTrackerClientBase::numWant_var()'],['../classBTTrackerMsgAnnounce.html#a080f57e3a09c716d69410dcf0d62a705',1,'BTTrackerMsgAnnounce::numWant_var()']]]
+];
